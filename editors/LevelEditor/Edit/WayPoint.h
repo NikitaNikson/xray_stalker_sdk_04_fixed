@@ -103,6 +103,9 @@ public:
 	virtual void	FillProp		(LPCSTR pref, PropItemVec& items);
 
     virtual bool 	OnSelectionRemove();
+
+	virtual const	Fvector& GetPosition	()	const { return m_WayPoints.front()->m_vPosition; 	}
+	virtual void	SetPosition		(const Fvector& pos)	{ MoveTo(pos, Fvector().set(0,1,0) );	UpdateTransform();}
 };
 #endif /*_INCDEF_WayPoint_H_*/
 

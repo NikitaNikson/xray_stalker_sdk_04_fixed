@@ -661,6 +661,7 @@ void CWayObject::FillProp(LPCSTR pref, PropItemVec& items)
         	CWayPoint* W = *it;
             if ((*it)->m_bSelected){
             	PHelper().CreateNameCB	(items, PrepareKey(pref,"Way Point\\Name"),&W->m_Name,0,0,fastdelegate::bind<RTextValue::TOnAfterEditEvent>(this,&CWayObject::OnWayPointNameAfterEdit));
+				PHelper().CreateVector	(items, PrepareKey(pref,"Way Point\\Transform\\Position"),	&W->m_vPosition,	-10000,	10000, 0.01, 4);
                 for (WPLIt l_it=W->m_Links.begin(); l_it!=W->m_Links.end(); l_it++)
                     PHelper().CreateFloat	(items,	PrepareKey(pref,"Way Point\\Links",*(*l_it)->way_point->m_Name),&(*l_it)->probability);
                 for (int k=0; k<32; k++)
