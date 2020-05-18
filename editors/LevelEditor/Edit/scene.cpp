@@ -31,6 +31,7 @@ void st_LevelOptions::Reset()
     m_LevelPrefix		= "level_prefix";
     m_LightHemiQuality	= 3;
     m_LightSunQuality	= 3;
+	m_LightSunDispersion = 3.f;
 	m_BOPText			= "";
     m_BuildParams.Init	();
     m_BuildParams.setHighQuality();
@@ -520,6 +521,7 @@ void EScene::FillProp(LPCSTR pref, PropItemVec& items, ObjClassID cls_id)
     BOOL enabled				= (m_LevelOp.m_BuildParams.m_quality==ebqCustom);
     V=PHelper().CreateU8		(items,PrepareKey(pref,"Scene\\Build options\\Lighting\\Hemisphere quality [0-3]"),	&m_LevelOp.m_LightHemiQuality,	0,3);		V->Owner()->Enable(enabled);
     V=PHelper().CreateU8		(items,PrepareKey(pref,"Scene\\Build options\\Lighting\\Sun shadow quality [0-3]"),	&m_LevelOp.m_LightSunQuality,	0,3);       V->Owner()->Enable(enabled);
+    PHelper().CreateFloat		(items,PrepareKey(pref,"Scene\\Build options\\Lighting\\Sun dispersion"), &m_LevelOp.m_LightSunDispersion, 0.1f, 180.f);
 
     // Build Options
     // Normals & optimization
