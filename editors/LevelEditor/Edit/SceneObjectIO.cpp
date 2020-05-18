@@ -81,7 +81,7 @@ bool CSceneObject::Load(IReader& F)
 
             Scene->Modified();
         }
-        if(!CheckVersion())
+        if((!CheckVersion()) && (!strstr(GetCommandLine(),"-no_warn_fv")))
             ELog.Msg( mtError, "CSceneObject: '%s' different file version!", buf );
 
         // flags
