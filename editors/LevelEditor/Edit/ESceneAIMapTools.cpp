@@ -135,14 +135,15 @@ void ESceneAIMapTools::Clear(bool bOnlyNodes)
 	inherited::Clear	();
 	hash_Clear			();
 	for (AINodeIt it=m_Nodes.begin(); it!=m_Nodes.end(); it++)
-    	xr_delete		(*it);
+		xr_delete		(*it);
 	m_Nodes.clear_and_free();
 	if (!bOnlyNodes){
 //		m_SnapObjects.clear();
-        m_AIBBox.invalidate	();
-        ExecCommand		(COMMAND_REFRESH_SNAP_OBJECTS);
-		g_ainode_pool.clear	();   
-    }
+		m_AIBBox.invalidate	();
+		ExecCommand(COMMAND_REFRESH_SNAP_OBJECTS);
+		g_ainode_pool.clear();
+		RealUpdateSnapList();
+	}
 }
 //----------------------------------------------------
 
@@ -463,6 +464,7 @@ int ESceneAIMapTools::SelectionCount(bool testflag)
 void ESceneAIMapTools::FillProp(LPCSTR pref, PropItemVec& items)
 {                               
     PHelper().CreateFlag32	(items, PrepareKey(pref,"Common\\Draw Nodes"),			&m_Flags, 		flHideNodes, 0,0, FlagValueCustom::flInvertedDraw);
+	PHelper().CreateFlag32	(items, PrepareKey(pref,"Common\\Draw Nodes While Generating"), &m_Flags, 		flHideNodesWhileGenerating, 0, 0, FlagValueCustom::flInvertedDraw);
     PHelper().CreateFlag32	(items, PrepareKey(pref,"Common\\Slow Calculate Mode"),	&m_Flags, 		flSlowCalculate);
     PHelper().CreateFloat 	(items, PrepareKey(pref,"Common\\Visible Radius"),		&m_VisRadius, 	10.f, 	250.f);
     PHelper().CreateFloat 	(items, PrepareKey(pref,"Common\\Smooth Height"),		&m_SmoothHeight,0.1f,	100.f);
