@@ -43,12 +43,13 @@ void CCustomObject::SnapMove(Fvector& pos, Fvector& rot, const Fmatrix& rotRP, c
         }
     else pos.add(amount);
 }
-void CCustomObject::NormalAlign(Fvector& rot, const Fvector& up)
+void CCustomObject::NormalAlign(Fvector& rot, const Fvector& up, const Fvector& dir)
 {
     Fmatrix	mR;
     Fvector vR,vD,vN;
     vN.set(up);
-    vD.set(0,0,1);
+//	vD.set(0,0,1);
+	vD.set(dir);
     if (fabsf(vN.z)>0.99f) vD.set(1,0,0);
     vR.crossproduct(vN,vD); vR.normalize();
     vD.crossproduct(vR,vN); vD.normalize();
@@ -106,9 +107,11 @@ void CCustomObject::MoveTo(const Fvector& pos, const Fvector& up)
     Fvector v=PPosition;
     v.set(pos);
     if (Tools->GetSettings(etfNormalAlign)){
-        Fvector r=PRotation;
-    	NormalAlign(r,up);
-        PRotation = r;
+        Fmatrix 	M;
+        M.setXYZ	(PRotation);
+        Fvector ret_rot = PRotation;
+    	NormalAlign     (ret_rot, up, M.k);
+        PRotation        = ret_rot;
     }
     PPosition = v;
 }

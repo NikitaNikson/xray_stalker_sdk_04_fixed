@@ -210,7 +210,7 @@ public:
     PropertyGP(GetName,SetName) 			LPCSTR  	Name;
 public:
 	static void		SnapMove		(Fvector& pos, Fvector& rot, const Fmatrix& rotRP, const Fvector& amount);
-	static void		NormalAlign		(Fvector& rot, const Fvector& up);
+	static void		NormalAlign		(Fvector& rot, const Fvector& up, const Fvector& dir);
 };
 
 //----------------------------------------------------
