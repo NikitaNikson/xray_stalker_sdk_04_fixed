@@ -1,45 +1,131 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+Здесь размещены исходники сталкера "Тень Чернобыля" с правками, которые затрагивают только сдк.
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+Собранный (готовый к использованию) сдк: https://yadi.sk/d/YdtenRY9ghNnaw
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
-
----
-
-## Edit a file
-
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
-
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+Тема на форуме: https://www.gameru.net/forum/index.php?showtopic=59990
+где, в первую очередь, выкладываются новые версии (если они будут).
 
 ---
 
-## Create a file
+## Copyright
 
-Next, you’ll add a new file to this repository.
+Все правки взяты с:
 
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
+https://bitbucket.org/stalker/xray-csky_borscht_sdk/
+https://bitbucket.org/sv3nk/la-code/
+https://github.com/OGSR/OGSR-Engine/
 
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
+за что и спасибо тем людям!
 
 ---
 
-## Clone a repository
+## Изменения:
 
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
+Для всех редакторов включена поддержка LARGEADDRESSAWARE
+***
+Исправлены диалоговые окна в редакторах под win7 / win10
+***
+Поправлен экспорт DM (AE)
+***
+При экспорте дописывать в лог имя модели / анимации (AE)
+***
+Отключение оптимизации скелетных мешей (AE)
+***
+Теперь при изменении параметров костей обновляются только свойства, список не обновляется,
+дабы не сворачивались кости ниже выделенной (AE)
+***
+Загрузка / сохранение списка костей в bone parts (AE)
+***
+Поддержка drag'n'drop в АЕ
+***
+Флаг force 16bit motion (editor preferences > tools > motion export)
+***
+Не переименовать звуки в ~name.ogg при синхронизации
+***
+Писать имя surface в лог, если назначены несовместимые шейдеры
+***
+Сохранять build_details.dds как DXT3
+Увеличение максимального размера build_details.dds до 4096x4096
+***
+Увеличение максимального размера level_lods.dds до 4096x4096
+***
+Исправлена ошибка, если выбрать <none> при выборе группы
+***
+THM для групп теперь сохраняются в папку groups, а не в objects
+***
+Замена простого сообщения в лог на окошко с ошибкой, при попытке добавить неправильный детальный объект
+***
+Возможность регулировать дисперсию солнца в настройках сцены, чтобы заработали мягкие тени
+***
+Сверх качество хемисферы в настройках сцены (hemisphere quality: 4)
+***
+Правка ошибки при нажатии на пустоту в режиме Attach Object
+***
+Защита от пустых параметров $spawn, они иногда могут привести к ошибкам
+***
+Показывать имя файла объекта в сообщении, если тот не найден
+***
+Число одновременно добавляемых объектов (до 1024, в списках, где надо ставить галки)
+для детальных объектов в object list - 100
+***
+Снятие ограничения на количество валлмарков
+***
+Текстовый редактор для снап-листа
+***
+Не очищать snap list при выполнении Clear AI Map
+***
+Отдельная кнопка для экспорта level.snd_env
+***
+Форму со списком детальных объектов теперь можно растягивать в ширину,
+также можно регулировать ширину левой и правой её части.
+Высота элементов из списка регулируется колёсиком мышки.
+***
+Сообщение вместо окна с ошибкой, при отсутствующем ANM в поле Motion (zones, heli)
+***
+Окно с ошибкой при неверной спаун-секции
+***
+LE при построении уровня (Compile->Build) не удаляет маленькие полигоны
+***
+Отключение оптимизации объектов при загрузке
+***
+Теперь масштаб объекта учитывается при проверке invalid faces
+***
+Увеличена точность позиционирования объектов до 4 знаков после запятой. (AE, LE)
+***
+Правка генератора разбиваемых стёкол
+***
+Автофокусировка на некоторые окошки со списками
+***
+Раскрывать весь свиток (список костей и т.п.) по клику с зажатой клавишей ctrl
+***
+Правка ошибки в случае установки в ноль количества запоминаемых последних файлов (recent count)
+***
+В режиме вращение объектов добавлено фиксированное вращение (90 градусов) с зажатым ctrl
+***
+Сохранение вращения при перемещении объекта с привязкой Normal Aligment
+***
+Убраны сообщения, типа Please notify AlexMX...
+***
+Увеличен лимит по скорости (до 1000) в редакторах
+***
+Увеличен лимит pixel per meter (до 100) в настройках сцены
+***
+Не выводить окошко с подтверждением после создания sky small
+***
+Cохранять параметр Depth Tolerance (box pick in LE settings)
+***
+Флажок вкл / выкл для отрисовки нод при генерации ИИ-сетки (при выкл, процесс идёт быстрей)
+***
+Продолжать проигрывать анимацию частиц после изменения параметров, если была нажата кнопка Play (PE)
+***
+Более позиция выделения в Object List не сбрасывается (LE)
+***
+Разблокирована опция hemisphere control
+***
+Добавлены ключи для запуска редакторов:
 
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
+-no_warn_fv
+(отключает сообщения в логе: CSceneObject: 'file_name' different file version!)
 
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+-no_warn_ft
+(отключает сообщения в логе: Can't find texture 'texture_name')
