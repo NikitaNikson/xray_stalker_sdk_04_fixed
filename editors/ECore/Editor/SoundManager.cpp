@@ -306,6 +306,7 @@ void CSoundManager::CleanupSounds()
 
     SPBItem* pb = UI->ProgressStart(M_GAME_DEL.size()+M_THM_DEL.size(),"Cleanup sounds...");
     // mark game del sounds
+	/*
     it	= M_GAME_DEL.begin();
 	_E 	= M_GAME_DEL.end();
 	for (; it!=_E; it++){
@@ -315,6 +316,7 @@ void CSoundManager::CleanupSounds()
         EFS.MarkFile			(fn,true);
         pb->Inc					();
     }
+	*/
     // mark thm sounds
     it	= M_THM_DEL.begin();
 	_E 	= M_THM_DEL.end();
