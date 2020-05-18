@@ -13,6 +13,7 @@
 #include "CustomObject.h"
 #include "ESceneCustomMTools.h"
 #include "FrmDBXpacker.h"
+#include "../xrEProps/TextForm.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma link "ExtBtn"
@@ -718,6 +719,47 @@ void TfraLeftBar::RefreshBar()
 }
 //---------------------------------------------------------------------------
 
+void TfraLeftBar::EditSnapList()
+{
+	AnsiString snap_list;
+    ObjectList *list = Scene->GetSnapList(true);
+
+    if(list && !list->empty())
+    {
+    	ObjectIt I = list->begin();
+
+        while(I != list->end())
+        {
+        	snap_list += AnsiString((*I)->Name) + "\r\n";
+        	I++;
+        }
+    }
+
+    if(TfrmText::RunEditor(snap_list, "Snap list"))
+    {
+    	Scene->ClearSnapList(false);
+
+        char *s = xr_strdup(snap_list.c_str()), *t;
+
+        t = strtok(s, "\r\n");
+		while(t)
+        {
+        	CCustomObject *o = Scene->FindObjectByName(t, OBJCLASS_SCENEOBJECT);
+
+            if(o)
+            	Scene->AddToSnapList(o, false);
+
+            t = strtok(NULL, "\r\n");
+        }
+
+        xr_free(s);
+    }
+
+    UpdateSnapList();
+}
+
+//---------------------------------------------------------------------------
+
 void __fastcall TfraLeftBar::ClearDebugDraw1Click(TObject *Sender)
 {
 	ExecCommand(COMMAND_CLEAR_DEBUG_DRAW);
@@ -752,6 +794,18 @@ void __fastcall TfraLeftBar::SyncTHM1Click(TObject *Sender)
 void __fastcall TfraLeftBar::Makepack1Click(TObject *Sender)
 {
         TDB_packer::ActivatePacker();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TfraLeftBar::lbSnapListDblClick(TObject *Sender)
+{
+	EditSnapList();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TfraLeftBar::ebSnapListEditClick(TObject *Sender)
+{
+	EditSnapList();	
 }
 //---------------------------------------------------------------------------
 

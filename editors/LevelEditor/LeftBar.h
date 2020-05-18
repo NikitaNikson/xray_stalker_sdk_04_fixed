@@ -193,6 +193,7 @@ __published:	// IDE-managed Components
         TMenuItem *SyncTHM1;
         TMenuItem *N26;
         TMenuItem *Makepack1;
+	TExtBtn *ebSnapListEdit;
     void __fastcall ebClearClick(TObject *Sender);
     void __fastcall ebLoadClick(TObject *Sender);
     void __fastcall ebSaveClick(TObject *Sender);
@@ -287,8 +288,11 @@ __published:	// IDE-managed Components
     void __fastcall Editminimap1Click(TObject *Sender);
         void __fastcall SyncTHM1Click(TObject *Sender);
         void __fastcall Makepack1Click(TObject *Sender);
+	void __fastcall lbSnapListDblClick(TObject *Sender);
+	void __fastcall ebSnapListEditClick(TObject *Sender);
 private:	// User declarations
     void RedrawBar();
+	void EditSnapList();
 	void __fastcall miRecentFilesClick(TObject *Sender);
     xr_vector<TExtBtn*>	m_TargetButtons;
 public:		// User declarations

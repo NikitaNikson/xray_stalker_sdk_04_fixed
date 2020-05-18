@@ -2,7 +2,7 @@ object fraLeftBar: TfraLeftBar
   Left = 0
   Top = 0
   Width = 443
-  Height = 406
+  Height = 468
   HorzScrollBar.ButtonSize = 1
   HorzScrollBar.ParentColor = False
   HorzScrollBar.Visible = False
@@ -1710,6 +1710,22 @@ object fraLeftBar: TfraLeftBar
         ShowHint = True
         OnClick = ebClearSnapClick
       end
+      object ebSnapListEdit: TExtBtn
+        Left = 136
+        Top = 49
+        Width = 49
+        Height = 14
+        Hint = 'Manually edit snap list'
+        Align = alNone
+        AllowAllUp = True
+        BevelShow = False
+        HotTrack = True
+        HotColor = 15790320
+        Caption = 'Edit...'
+        ParentShowHint = False
+        ShowHint = True
+        OnClick = ebSnapListEditClick
+      end
       object lbSnapList: TListBox
         Left = 4
         Top = 66
@@ -1727,6 +1743,7 @@ object fraLeftBar: TfraLeftBar
         ParentFont = False
         Sorted = True
         TabOrder = 0
+	OnDblClick = lbSnapListDblClick
       end
     end
   end
