@@ -211,7 +211,8 @@ void  CActorTools::OnBoxAxisClick(ButtonValue* V, bool& bModif, bool& bSafe)
     case 2: BONE->shape.box.m_rotate.k.set(0,0,1); break;
     }
     Fvector::generate_orthonormal_basis_normalized(BONE->shape.box.m_rotate.k,BONE->shape.box.m_rotate.j,BONE->shape.box.m_rotate.i);
-	ExecCommand				(COMMAND_UPDATE_PROPERTIES);
+//	ExecCommand				(COMMAND_UPDATE_PROPERTIES);
+	RefreshSubProperties		();
 }
 
 void  CActorTools::OnCylinderAxisClick(ButtonValue* V, bool& bModif, bool& bSafe)
@@ -222,7 +223,8 @@ void  CActorTools::OnCylinderAxisClick(ButtonValue* V, bool& bModif, bool& bSafe
     case 1: BONE->shape.cylinder.m_direction.set(0,1,0); break;
     case 2: BONE->shape.cylinder.m_direction.set(0,0,1); break;
     }
-	ExecCommand				(COMMAND_UPDATE_PROPERTIES);
+//	ExecCommand				(COMMAND_UPDATE_PROPERTIES);
+	RefreshSubProperties		();
 }
 
 void CActorTools::FillMotionProperties(PropItemVec& items, LPCSTR pref, ListItem* sender)
@@ -326,12 +328,14 @@ static const LPCSTR axis[3]=
 
 void  CActorTools::OnJointTypeChange(PropValue* V)
 {
-	ExecCommand(COMMAND_UPDATE_PROPERTIES);
+//	ExecCommand(COMMAND_UPDATE_PROPERTIES);
+	RefreshSubProperties		();
 }
 void  CActorTools::OnShapeTypeChange(PropValue* V)
 {
 	UI->RedrawScene();
-	ExecCommand(COMMAND_UPDATE_PROPERTIES);
+//	ExecCommand(COMMAND_UPDATE_PROPERTIES);
+	RefreshSubProperties		();
 }
 void  CActorTools::OnBindTransformChange(PropValue* V)
 {
@@ -355,7 +359,8 @@ void  CActorTools::OnBoneEditClick(ButtonValue* V, bool& bModif, bool& bSafe)
     switch (V->btn_num){
     case 0: 
     	m_pEditObject->GotoBindPose(); 
-		ExecCommand(COMMAND_UPDATE_PROPERTIES);
+//		ExecCommand(COMMAND_UPDATE_PROPERTIES);
+		RefreshSubProperties		();
 	    bModif = false;
     break;
     case 1:
@@ -365,7 +370,8 @@ void  CActorTools::OnBoneEditClick(ButtonValue* V, bool& bModif, bool& bSafe)
     break;
     case 2:
 		m_pEditObject->ClampByLimits(false); 
-		ExecCommand(COMMAND_UPDATE_PROPERTIES);
+//		ExecCommand(COMMAND_UPDATE_PROPERTIES);
+		RefreshSubProperties		();
 	    bModif = false;
     break;
 	}
