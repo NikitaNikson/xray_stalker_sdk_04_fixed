@@ -10,6 +10,9 @@
 const int clpSMX = 28, clpSMY=16, clpSMZ=28;
 //---------------------------------------------------------------------------
 // refs
+
+extern ECORE_API BOOL g_force16BitTransformQuant;
+
 class CEditableObject;
 class CSurface;
 class CInifile;

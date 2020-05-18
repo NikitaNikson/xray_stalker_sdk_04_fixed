@@ -20,8 +20,9 @@ const	f32		KEY_QuantI			=	1.f/KEY_Quant;
 
 //*** Key frame definition ************************************************************************
 enum{
-    flTKeyPresent 	= (1<<0),
-    flRKeyAbsent 	= (1<<1),
+	flTKeyPresent 	= (1<<0),
+	flRKeyAbsent 	= (1<<1),
+	flTKey16IsBit 	= (1<<2),
 };
 #pragma pack(push,2)
 struct ENGINE_API CKey
@@ -37,6 +38,14 @@ struct ENGINE_API CKeyQT
 {
 	s8			x,y,z;
 };
+struct ENGINE_API CKeyQT8
+{
+	s8			x1,y1,z1;
+};
+struct ENGINE_API CKeyQT16
+{
+	s16			x1,y1,z1;
+};
 #pragma pack(pop)
 
 //*** Motion Data *********************************************************************************
@@ -47,10 +56,11 @@ class ENGINE_API		CMotion
 		u32				_count 	: 24;
     };
 public:
-    ref_smem<CKeyQR>	_keysR;
-    ref_smem<CKeyQT>	_keysT;
+	ref_smem<CKeyQR>	_keysR;
+	ref_smem<CKeyQT8>	_keysT8;
+	ref_smem<CKeyQT16>	_keysT16;
 	Fvector				_initT;
-    Fvector				_sizeT;
+	Fvector				_sizeT;
 public:    
     void				set_flags			(u8 val)			{_flags=val;}
     void				set_flag			(u8 mask, u8 val)	{if (val)_flags|=mask; else _flags&=~mask;}
@@ -64,7 +74,8 @@ public:
 	u32					mem_usage			(){ 
 		u32 sz			= sizeof(*this);
 		if (_keysR.size()) sz += _keysR.size()*sizeof(CKeyQR)/_keysR.ref_count();
-		if (_keysT.size()) sz += _keysT.size()*sizeof(CKeyQT)/_keysT.ref_count();
+		if (_keysT8.size()) sz += _keysT8.size()*sizeof(CKeyQT8)/_keysT8.ref_count();
+		if (_keysT16.size()) sz += _keysT16.size()*sizeof(CKeyQT16)/_keysT16.ref_count();
 		return			sz;
 	}
 };
