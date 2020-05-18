@@ -101,6 +101,10 @@ protected:
     FolderStoreMap		FolderStore;
 protected:     
     void __stdcall 		RenameItem				(LPCSTR fn0, LPCSTR fn1, EItemType type);
+
+	BEGIN_MESSAGE_MAP
+		VCL_MESSAGE_HANDLER(CM_MOUSEENTER, TMessage, OnMouseEnter);
+	END_MESSAGE_MAP(TForm);
 public:		// User declarations
 	enum{
     	// set

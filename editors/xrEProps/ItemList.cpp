@@ -125,12 +125,12 @@ void TItemList::ClearParams(TElTreeItem* node)
     }
 }
 //---------------------------------------------------------------------------
-void __fastcall TItemList::ClearList()
+void TItemList::ClearList()
 {
     ClearParams			();
 }
 //---------------------------------------------------------------------------
-void __fastcall TItemList::DeselectAll()
+void TItemList::DeselectAll()
 {
     if (tvItems->MultiSelect) 	tvItems->DeselectAll();
     else 						tvItems->Selected   = 0;
@@ -177,12 +177,12 @@ void TItemList::ShowList()
 	Show();
 }
 
-void __fastcall TItemList::ShowListModal()
+void TItemList::ShowListModal()
 {
 	ShowModal();
 }
 
-void __fastcall TItemList::HideList()
+void TItemList::HideList()
 {
 	Hide();
 }
@@ -196,7 +196,7 @@ void __fastcall TItemList::FormClose(TObject *Sender,
 }
 //---------------------------------------------------------------------------
 
-void __fastcall TItemList::AssignItems(ListItemsVec& items, bool full_expand, bool full_sort)
+void TItemList::AssignItems(ListItemsVec& items, bool full_expand, bool full_sort)
 {
 	// begin fill mode
 	LockUpdating			();
@@ -343,7 +343,7 @@ void __fastcall TItemList::tvItemsMouseUp(TObject *Sender,
 }
 //---------------------------------------------------------------------------
 
-int __fastcall TItemList::GetSelected(RStringVec& items)
+int TItemList::GetSelected(RStringVec& items)
 {
     for (TElTreeItem* item = tvItems->GetNextSelected(0); item; item = tvItems->GetNextSelected(item)){
         if (item->Hidden)	continue;
@@ -354,7 +354,7 @@ int __fastcall TItemList::GetSelected(RStringVec& items)
     return items.size();
 }
 
-int __fastcall TItemList::GetSelected(LPCSTR pref, ListItemsVec& items, bool bOnlyObject)
+int TItemList::GetSelected(LPCSTR pref, ListItemsVec& items, bool bOnlyObject)
 {
     for (TElTreeItem* item = tvItems->GetNextSelected(0); item; item = tvItems->GetNextSelected(item)){
         ListItem* prop 		= (ListItem*)item->Tag;
@@ -436,7 +436,7 @@ void __fastcall TItemList::miDrawThumbnailsClick(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
-void __fastcall TItemList::RefreshForm()
+void TItemList::RefreshForm()
 {
     LockUpdating					();
     for (TElTreeItem* item=tvItems->Items->GetFirstNode(); item; item=item->GetNext()){
