@@ -65,7 +65,8 @@ bool CSceneObject::Load(IReader& F)
             if(!bRes)
             {
                 if(mr == mrNone)
-                    mr = ELog.DlgMsg(mtConfirmation,TMsgDlgButtons() << mbYes << mbNo, "Object not found. Do you want to select it from library?");
+//                    mr = ELog.DlgMsg(mtConfirmation,TMsgDlgButtons() << mbYes << mbNo, "Object not found. Do you want to select it from library?");
+					mr = ELog.DlgMsg(mtConfirmation,TMsgDlgButtons() << mbYes << mbNo, "Object [%s] not found. Do you want to select it from library?", buf );
                 else
                     mr = mrNone;
 
