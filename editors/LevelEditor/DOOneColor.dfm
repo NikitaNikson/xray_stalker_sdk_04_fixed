@@ -4,8 +4,8 @@ object frmOneColor: TfrmOneColor
   Align = alTop
   BorderIcons = []
   BorderStyle = bsNone
-  ClientHeight = 57
-  ClientWidth = 143
+  ClientHeight = 58
+  ClientWidth = 196
   Color = 10528425
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -17,19 +17,24 @@ object frmOneColor: TfrmOneColor
   Position = poScreenCenter
   Scaled = False
   OnClose = FormClose
+  DesignSize = (
+    196
+    58)
   PixelsPerInch = 96
   TextHeight = 13
   object Bevel1: TBevel
     Left = 0
     Top = 0
-    Width = 143
-    Height = 57
+    Width = 195
+    Height = 58
+    Anchors = [akLeft, akTop, akRight, akBottom]
   end
   object Bevel2: TBevel
     Left = 1
     Top = 1
-    Width = 141
-    Height = 55
+    Width = 193
+    Height = 56
+    Anchors = [akLeft, akTop, akRight, akBottom]
     Style = bsRaised
   end
   object mcColor: TMultiObjColor
@@ -37,6 +42,7 @@ object frmOneColor: TfrmOneColor
     Top = 15
     Width = 23
     Height = 39
+    Anchors = [akLeft, akTop, akBottom]
     Shape = stRoundRect
     OnMouseDown = mcColorMouseDown
   end
@@ -70,14 +76,15 @@ object frmOneColor: TfrmOneColor
   object tvDOList: TElTree
     Left = 27
     Top = 2
-    Width = 113
-    Height = 52
+    Width = 166
+    Height = 54
     Cursor = crDefault
     LeftPosition = 0
     DragCursor = crDrag
     AlwaysKeepSelection = False
     AutoCollapse = False
     AutoExpand = True
+    Anchors = [akLeft, akTop, akRight, akBottom]
     DockOrientation = doNoOrient
     DefaultSectionWidth = 120
     BorderStyle = bsNone
@@ -141,7 +148,7 @@ object frmOneColor: TfrmOneColor
     HorizontalLines = True
     HorzDivLinesColor = 7368816
     HorzScrollBarStyles.ShowTrackHint = False
-    HorzScrollBarStyles.Width = 16
+    HorzScrollBarStyles.Width = 17
     HorzScrollBarStyles.ButtonSize = 14
     HorzScrollBarStyles.UseSystemMetrics = False
     HorzScrollBarStyles.UseXPThemes = False
@@ -170,7 +177,7 @@ object frmOneColor: TfrmOneColor
     Tracking = False
     TrackColor = clBlack
     VertScrollBarStyles.ShowTrackHint = True
-    VertScrollBarStyles.Width = 16
+    VertScrollBarStyles.Width = 17
     VertScrollBarStyles.ButtonSize = 14
     VertScrollBarStyles.UseSystemMetrics = False
     VertScrollBarStyles.UseXPThemes = False

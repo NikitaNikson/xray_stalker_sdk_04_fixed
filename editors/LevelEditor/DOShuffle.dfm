@@ -1,12 +1,11 @@
 object frmDOShuffle: TfrmDOShuffle
-  Left = 676
-  Top = 239
-  Width = 325
-  Height = 454
+  Left = 732
+  Top = 253
+  Width = 400
+  Height = 523
   BorderIcons = [biSystemMenu]
   Caption = 'Detail objects'
   Color = 10528425
-  Constraints.MaxWidth = 325
   Constraints.MinHeight = 454
   Constraints.MinWidth = 325
   Font.Charset = DEFAULT_CHARSET
@@ -24,19 +23,26 @@ object frmDOShuffle: TfrmDOShuffle
   OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
-  object paTools: TPanel
-    Left = 158
+  object Splitter2: TSplitter
+    Left = 162
     Top = 0
-    Width = 159
-    Height = 427
-    Align = alRight
+    Width = 5
+    Height = 494
+    Cursor = crHSplit
+  end
+  object paTools: TPanel
+    Left = 167
+    Top = 0
+    Width = 225
+    Height = 494
+    Align = alClient
     BevelOuter = bvNone
     ParentColor = True
     TabOrder = 0
     object Panel3: TPanel
       Left = 0
       Top = 0
-      Width = 159
+      Width = 225
       Height = 19
       Align = alTop
       BevelOuter = bvNone
@@ -95,8 +101,8 @@ object frmDOShuffle: TfrmDOShuffle
     object sbDO: TScrollBox
       Left = 0
       Top = 19
-      Width = 159
-      Height = 408
+      Width = 225
+      Height = 475
       VertScrollBar.ButtonSize = 11
       VertScrollBar.Increment = 10
       VertScrollBar.Size = 11
@@ -105,21 +111,23 @@ object frmDOShuffle: TfrmDOShuffle
       Align = alClient
       BorderStyle = bsNone
       TabOrder = 1
+      OnMouseWheelDown = sbDOMouseWheelDown
+      OnMouseWheelUp = sbDOMouseWheelUp
     end
   end
   object Panel2: TPanel
     Left = 0
     Top = 0
-    Width = 158
-    Height = 427
-    Align = alClient
+    Width = 162
+    Height = 494
+    Align = alLeft
     BevelOuter = bvNone
     ParentColor = True
     TabOrder = 1
     object Splitter1: TSplitter
       Left = 0
       Top = 241
-      Width = 158
+      Width = 162
       Height = 3
       Cursor = crVSplit
       Align = alTop
@@ -129,8 +137,8 @@ object frmDOShuffle: TfrmDOShuffle
     object tvItems: TElTree
       Left = 0
       Top = 244
-      Width = 158
-      Height = 164
+      Width = 162
+      Height = 231
       Cursor = crDefault
       LeftPosition = 0
       DragCursor = crDrag
@@ -201,7 +209,7 @@ object frmDOShuffle: TfrmDOShuffle
       HorizontalLines = True
       HorzDivLinesColor = 7368816
       HorzScrollBarStyles.ShowTrackHint = False
-      HorzScrollBarStyles.Width = 16
+      HorzScrollBarStyles.Width = 17
       HorzScrollBarStyles.ButtonSize = 14
       HorzScrollBarStyles.UseSystemMetrics = False
       HorzScrollBarStyles.UseXPThemes = False
@@ -232,7 +240,7 @@ object frmDOShuffle: TfrmDOShuffle
       Tracking = False
       TrackColor = clBlack
       VertScrollBarStyles.ShowTrackHint = True
-      VertScrollBarStyles.Width = 16
+      VertScrollBarStyles.Width = 17
       VertScrollBarStyles.ButtonSize = 14
       VertScrollBarStyles.UseSystemMetrics = False
       VertScrollBarStyles.UseXPThemes = False
@@ -249,7 +257,7 @@ object frmDOShuffle: TfrmDOShuffle
     object paObject: TPanel
       Left = 0
       Top = 0
-      Width = 158
+      Width = 162
       Height = 241
       Align = alTop
       BevelOuter = bvNone
@@ -259,7 +267,7 @@ object frmDOShuffle: TfrmDOShuffle
       object paObjectProps: TPanel
         Left = 0
         Top = 158
-        Width = 158
+        Width = 162
         Height = 83
         Align = alClient
         BevelOuter = bvNone
@@ -269,7 +277,7 @@ object frmDOShuffle: TfrmDOShuffle
       object paImage: TMxPanel
         Left = 0
         Top = 0
-        Width = 158
+        Width = 162
         Height = 158
         Align = alTop
         BevelOuter = bvLowered
@@ -281,8 +289,8 @@ object frmDOShuffle: TfrmDOShuffle
     end
     object Panel1: TPanel
       Left = 0
-      Top = 408
-      Width = 158
+      Top = 475
+      Width = 162
       Height = 19
       Align = alBottom
       BevelOuter = bvNone
@@ -406,7 +414,7 @@ object frmDOShuffle: TfrmDOShuffle
     OnSavePlacement = fsStorageSavePlacement
     OnRestorePlacement = fsStorageRestorePlacement
     StoredProps.Strings = (
-      'paObject.Height')
+      'Panel2.Width')
     StoredValues = <
       item
         Name = 'EmitterDirX'
