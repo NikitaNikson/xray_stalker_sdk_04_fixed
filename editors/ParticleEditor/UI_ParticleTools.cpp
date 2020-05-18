@@ -76,7 +76,7 @@ bool CParticleTools::OnCreate()
     m_EditPG		= (PS::CParticleGroup*)::Render->Models->CreatePG(0);
     m_ItemProps 	= TProperties::CreateForm("Item Props",fraLeftBar->paItemProps,alClient,fastdelegate::bind<TOnModifiedEvent>(this,&CParticleTools::OnItemModified),0,0,TProperties::plFolderStore|TProperties::plFullExpand|TProperties::plItemFolders|TProperties::plIFTop);
     // item list
-    m_PList			= TItemList::CreateForm("Items",fraLeftBar->paItemList,alClient,TItemList::ilEditMenu|TItemList::ilDragAllowed);
+    m_PList			= TItemList::CreateForm("Items",fraLeftBar->paItemList,alClient,TItemList::ilEditMenu|TItemList::ilDragAllowed|TItemList::ilFocusOnHover);
     m_PList->SetOnItemsFocusedEvent	(fastdelegate::bind<TOnILItemsFocused>(this,&CParticleTools::OnParticleItemFocused));
 	m_PList->SetOnItemRenameEvent	(fastdelegate::bind<TOnItemRename>(this,&CParticleTools::OnParticleItemRename));
     m_PList->SetOnItemRemoveEvent	(fastdelegate::bind<TOnItemRemove>(this,&CParticleTools::OnParticleItemRemove));
