@@ -1,6 +1,6 @@
 object frmBonePart: TfrmBonePart
-  Left = -578
-  Top = 225
+  Left = 276
+  Top = 154
   BorderStyle = bsToolWindow
   Caption = 'Bone Part'
   ClientHeight = 451
@@ -209,6 +209,40 @@ object frmBonePart: TfrmBonePart
     ParentFont = False
     FlatAlwaysEdge = True
     OnClick = ebClearClick
+  end
+object ebSaveTo: TExtBtn
+    Left = 103
+    Top = 434
+    Width = 66
+    Height = 17
+    Align = alNone
+    BevelShow = False
+    Caption = 'Save to'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    FlatAlwaysEdge = True
+    OnClick = ebSaveToClick
+  end
+  object ebLoadFrom: TExtBtn
+    Left = 167
+    Top = 434
+    Width = 66
+    Height = 17
+    Align = alNone
+    BevelShow = False
+    Caption = 'Load from'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    FlatAlwaysEdge = True
+    OnClick = ebLoadFromClick
   end
   object tvPart1: TElTree
     Left = 0
