@@ -88,15 +88,14 @@ void CParticleTools::RealUpdateProperties()
             I->SetIcon(1);
         }
 	}
-    {
-        PS::PGDIt Pg = ::Render->PSLibrary.FirstPGD();
-        PS::PGDIt Eg = ::Render->PSLibrary.LastPGD();
-        for (; Pg!=Eg; Pg++){
-            ListItem* I=LHelper().CreateItem(items,*(*Pg)->m_Name,emGroup,0,*Pg);
-            I->SetIcon(2);
-        }
-	}
+    bool was_playing;
+    switch(m_EditMode) {
+    	case emEffect:	was_playing = m_EditPE->IsPlaying(); break;
+        case emGroup:	was_playing = m_EditPG->IsPlaying(); break;
+        default:		was_playing = false;
+    }
 	m_PList->AssignItems(items,false,true);
+    if (was_playing)
+    	PlayCurrent();
 }
 
- 
