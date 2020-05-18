@@ -2240,6 +2240,10 @@ object fraLeftBar: TfraLeftBar
       Caption = 'Make Sound Occluder'
       OnClick = MakeSoundOccluder1Click
     end
+    object MakeSoundEnvironment: TMenuItem
+       Caption = 'Make Sound Environment'
+       OnClick = MakeSoundEnvironmentClick
+    end
     object MenuItem29: TMenuItem
       Caption = 'Make AI-Map'
       OnClick = MakeAIMap1Click

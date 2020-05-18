@@ -216,9 +216,9 @@ BOOL SceneBuilder::MakeSOM( )
             VERIFY_COMPILE(BuildSOMModel(),				"Failed to build SOM model.","");
         } while(0);
 
-        if (!error_text.IsEmpty()) 	ELog.DlgMsg(mtError,error_text.c_str());
-        else if (UI->NeedAbort())	ELog.DlgMsg(mtInformation,"Building terminated...");
-        else						ELog.DlgMsg(mtInformation,"Building OK...");
+        if (!error_text.IsEmpty()) 	ELog.Msg(mtError,error_text.c_str());
+        else if (UI->NeedAbort())	ELog.Msg(mtInformation,"Building Sound Occluder - terminated...");
+        else						ELog.Msg(mtInformation,"Building Sound Occluder - OK...");
     }catch(...){
     	ELog.DlgMsg(mtError,"Error has occured in builder routine. Editor aborted.");
         abort();
@@ -227,6 +227,22 @@ BOOL SceneBuilder::MakeSOM( )
 
 	return error_text.IsEmpty();
 }
+//------------------------------------------------------------------------------
+
+BOOL SceneBuilder::MakeSoundEnv()
+{
+	AnsiString error_text;
+	do{
+		VERIFY_COMPILE(PreparePath(), "Failed to prepare level path.","");
+		VERIFY_COMPILE(BuildSoundEnv(), "Failed to build sound environment.","");
+	}while(0);
+	if (!error_text.IsEmpty()) 	ELog.Msg(mtError,error_text.c_str());
+	else if (UI->NeedAbort())	ELog.Msg(mtInformation,"Building terminated.");
+	else						ELog.Msg(mtInformation,"Sound environment succesfully exported.");
+
+	return error_text.IsEmpty();
+}
+
 //------------------------------------------------------------------------------
 #include "../ECore/Editor/EditObject.h"
 void SceneBuilder::OnRender()

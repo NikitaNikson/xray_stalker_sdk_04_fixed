@@ -184,6 +184,7 @@ __published:	// IDE-managed Components
 	TMenuItem *ExportErrorList1;
 	TMenuItem *miHightlightTexture;
 	TMenuItem *MakeSoundOccluder1;
+	TMenuItem *MakeSoundEnvironment;
 	TMenuItem *N24;
 	TMenuItem *N25;
 	TMenuItem *ClearDebugDraw1;
@@ -283,6 +284,7 @@ __published:	// IDE-managed Components
 	void __fastcall ExportErrorList1Click(TObject *Sender);
 	void __fastcall miHightlightTextureClick(TObject *Sender);
 	void __fastcall MakeSoundOccluder1Click(TObject *Sender);
+	void __fastcall MakeSoundEnvironmentClick(TObject *Sender);
 	void __fastcall ClearDebugDraw1Click(TObject *Sender);
 	void __fastcall ebMultiRenameClick(TObject *Sender);
     void __fastcall Editminimap1Click(TObject *Sender);

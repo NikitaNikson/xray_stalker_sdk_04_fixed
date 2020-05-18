@@ -134,6 +134,7 @@ protected:
     BOOL	BuildSceneStat			();
     bool 	BuildHOMModel			();
     bool 	BuildSOMModel			();
+	bool	BuildSoundEnv			();
     bool	BuildAIMap				();
     bool	BuildWallmarks			();
     BOOL 	CompileStatic		   	();
@@ -149,6 +150,7 @@ public:
     BOOL 	MakeDetails				();
     BOOL 	MakeHOM					();
 	BOOL 	MakeSOM					();
+	BOOL	MakeSoundEnv			();
     BOOL	MakeAIMap				();
 
     void	OnRender				();

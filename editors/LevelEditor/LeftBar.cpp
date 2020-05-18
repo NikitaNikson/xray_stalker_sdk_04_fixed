@@ -478,6 +478,13 @@ void __fastcall TfraLeftBar::MakeSoundOccluder1Click(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
+void __fastcall TfraLeftBar::MakeSoundEnvironmentClick(TObject *Sender)
+{
+	ExecCommand(COMMAND_MAKE_SOUND_ENV);
+}
+
+//---------------------------------------------------------------------------
+
 void __fastcall TfraLeftBar::MakeAIMap1Click(TObject *Sender)
 {
 	ExecCommand( COMMAND_MAKE_AIMAP );
