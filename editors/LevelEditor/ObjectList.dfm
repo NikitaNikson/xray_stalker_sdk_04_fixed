@@ -1,8 +1,8 @@
 object frmObjectList: TfrmObjectList
-  Left = 409
-  Top = 122
-  Width = 297
-  Height = 360
+  Left = 348
+  Top = 415
+  Width = 411
+  Height = 504
   Caption = 'Object List'
   Color = clGray
   Constraints.MinHeight = 360
@@ -22,10 +22,10 @@ object frmObjectList: TfrmObjectList
   PixelsPerInch = 96
   TextHeight = 13
   object Panel1: TPanel
-    Left = 192
+    Left = 298
     Top = 0
     Width = 97
-    Height = 333
+    Height = 466
     Align = alRight
     BevelInner = bvRaised
     BevelOuter = bvNone
@@ -102,7 +102,7 @@ object frmObjectList: TfrmObjectList
     end
     object Panel2: TPanel
       Left = 1
-      Top = 292
+      Top = 425
       Width = 95
       Height = 40
       Align = alBottom
@@ -147,11 +147,19 @@ object frmObjectList: TfrmObjectList
       end
     end
   end
-  object tvItems: TElTree
+  object Panel3: TPanel
     Left = 0
     Top = 0
-    Width = 192
-    Height = 333
+    Width = 298
+    Height = 466
+    Align = alClient
+    Color = clGray
+    TabOrder = 1
+    object tvItems: TElTree
+      Left = 1
+      Top = 1
+      Width = 296
+      Height = 440
     Cursor = crDefault
     LeftPosition = 0
     DragCursor = crDrag
@@ -240,7 +248,7 @@ object frmObjectList: TfrmObjectList
     HorizontalLines = True
     HorzDivLinesColor = 7368816
     HorzScrollBarStyles.ShowTrackHint = False
-    HorzScrollBarStyles.Width = 16
+      HorzScrollBarStyles.Width = 17
     HorzScrollBarStyles.ButtonSize = 16
     HorzScrollBarStyles.UseSystemMetrics = False
     HorzScrollBarStyles.UseXPThemes = False
@@ -288,14 +296,14 @@ object frmObjectList: TfrmObjectList
     StripedOddColor = clGray
     StripedEvenColor = 8158332
     StripedItems = True
-    TabOrder = 1
+      TabOrder = 0
     TabStop = True
     Tracking = False
     TrackColor = 10526880
     VertDivLinesColor = 7368816
     VerticalLines = True
     VertScrollBarStyles.ShowTrackHint = True
-    VertScrollBarStyles.Width = 16
+      VertScrollBarStyles.Width = 17
     VertScrollBarStyles.ButtonSize = 16
     VertScrollBarStyles.UseSystemMetrics = False
     VertScrollBarStyles.UseXPThemes = False
@@ -305,11 +313,57 @@ object frmObjectList: TfrmObjectList
     BkColor = clGray
     OnAfterSelectionChange = tvItemsAfterSelectionChange
     OnItemFocused = tvItemsItemFocused
+      OnMouseDown = tvItemsMouseDown
     OnDblClick = tvItemsDblClick
     OnKeyPress = tvItemsKeyPress
+  end
+    object Panel4: TPanel
+      Left = 1
+      Top = 441
+      Width = 296
+      Height = 24
+      Align = alBottom
+      Color = clGray
+      TabOrder = 1
+      object ElEdit1: TElEdit
+        Left = 1
+        Top = 1
+        Width = 294
+        Height = 21
+        Cursor = crIBeam
+        VertScrollBarStyles.ShowTrackHint = False
+        VertScrollBarStyles.Width = 17
+        VertScrollBarStyles.ButtonSize = 17
+        HorzScrollBarStyles.ShowTrackHint = False
+        HorzScrollBarStyles.Width = 17
+        HorzScrollBarStyles.ButtonSize = 17
+        UseCustomScrollBars = True
+        Alignment = taLeftJustify
+        BorderSides = [ebsLeft, ebsRight, ebsTop, ebsBottom]
+        RTLContent = False
+        Transparent = False
+        TopMargin = 2
+        BorderStyle = bsSingle
+        LineBorderActiveColor = clBlack
+        LineBorderInactiveColor = clBlack
+        WordWrap = False
+        OnChange = ElEdit1Change
+        Align = alClient
+        Color = clWhite
+        Ctl3D = True
+        ParentColor = False
+        ParentCtl3D = False
+        TabOrder = 0
+        OnEnter = ElEdit1Change
+        OnExit = ElEdit1Exit
+        OnKeyDown = ElEdit1KeyDown
+      end
+    end
   end
   object fsStorage: TFormStorage
     IniSection = 'Object List'
     StoredValues = <>
+    Left = 336
+    Top = 160
   end
 end

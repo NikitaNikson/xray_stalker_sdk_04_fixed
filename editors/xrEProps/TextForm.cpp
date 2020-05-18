@@ -190,7 +190,14 @@ void __fastcall TfrmText::mmTextKeyUp(TObject *Sender, WORD &Key,
             sbStatusPanel->Hint = hint;
 //        	ELog.DlgMsg(mtInformation,hint);
         }
+    }else
+    if (Shift.Contains(ssCtrl)&&(Key==VK_RETURN))
+    { 
+		ebApply->Click();
+        Key=0; 
+		ebOkClick(Sender);
     }
+
 }
 //---------------------------------------------------------------------------
 
