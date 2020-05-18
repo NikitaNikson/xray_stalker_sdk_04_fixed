@@ -152,7 +152,8 @@
       -$A8 -v -JPHNE -M"/>
     <RFLAGS value=""/>
     <AFLAGS value="/mx /w2 /zi"/>
-    <LFLAGS value="-lx:\libraries -Ix:\intermediate_ed\le -D&quot;&quot; -aa -Tpe -GD -x -Gn -v"/>
+    <LFLAGS value="-lx:\libraries -Ix:\intermediate_ed\le -D&quot;&quot; -aa -Tpe -GD -x -Gn -v 
+	-GF:LARGEADDRESSAWARE"/>
     <OTHERFILES value=""/>
   </OPTIONS>
   <LINKER>

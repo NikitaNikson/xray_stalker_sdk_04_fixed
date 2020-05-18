@@ -54,7 +54,8 @@
       -v -JPHNE -M"/>
     <RFLAGS value=""/>
     <AFLAGS value="/mx /w2 /zi"/>
-    <LFLAGS value="-lx:\libraries -Ix:\intermediate_ed\pe -D&quot;&quot; -aa -Tpe -GD -x -v"/>
+    <LFLAGS value="-lx:\libraries -Ix:\intermediate_ed\pe -D&quot;&quot; -aa -Tpe -GD -x -v 
+	-GF:LARGEADDRESSAWARE"/>
     <OTHERFILES value=""/>
   </OPTIONS>
   <LINKER>
