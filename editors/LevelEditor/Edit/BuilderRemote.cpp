@@ -337,7 +337,7 @@ BOOL SceneBuilder::BuildMesh(const Fmatrix& parent, CEditableObject* object, CEd
 	    for (IntIt f_it=face_lst.begin(); f_it!=face_lst.end(); f_it++){
 			st_Face& face = mesh->m_Faces[*f_it];
             float _a		= CalcArea(mesh->m_Verts[face.pv[0].pindex],mesh->m_Verts[face.pv[1].pindex],mesh->m_Verts[face.pv[2].pindex]);
-	    	if (!_valid(_a) || (_a<EPS)){
+	    	if (!_valid(_a) || (_a<EPS_S)){
             	Tools->m_DebugDraw.AppendWireFace(mesh->m_Verts[face.pv[0].pindex],mesh->m_Verts[face.pv[1].pindex],mesh->m_Verts[face.pv[2].pindex]);
             	dwInvalidFaces++;
                 continue;
