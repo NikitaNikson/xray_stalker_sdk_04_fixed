@@ -1,0 +1,115 @@
+Для сборки тч:
+
+*********************************************************************
+
+Установить Microsoft Visual Studio 8 (2005) + sp1 + sp1 for vista
+https://rutracker.org/forum/viewtopic.php?t=2566619
+из раздачи нужны:
+Visual Studio 2005 Professional English - en_vs_2005_pro_dvd.iso
+Service Packs - Visual Studio 2005 SP1 - VS80sp1-KB926601-X86-ENU.exe
+Service Packs - Visual Studio 2005 SP1 Update for Windows Vista - VS80sp1-KB932232-X86-ENU.exe
+
+***
+
+Установить Borland C++ Builder 6
+https://rutracker.org/forum/viewtopic.php?t=3638325
+
+
+Скачать: https://drive.google.com/file/d/1WTLXUqOPPrcHTv9yhl75k57uSU-dYxdQ/view?usp=sharing
+
+и распаковать архив xray_engine.rar, как пример: D:\xray_engine
+
+Скопировать из D:\xray_engine\stalker\for_borland\, папку Borland в C:\Program Files (x86) или туда, куда установлен борланд.
+
+Скопировать из D:\xray_engine\stalker\SDK\components\ElPack\bpl
+...
+elpackB6.BPL
+elpkdbB6.BPL
+elpproB6.BPL
+...
+в windows\SysWOW64 или в windows\system32 (если x86)
+
+*********************************************************************
+
+Смонтировать диски: D:\xray_engine\xray_src_disks_mount.cmd
+
+Запустить Visual Studio, в Tools -> Options -> Projects and Solutions -> VC++ Directories -> Show directories for:
+
+добавить в include files:
+
+D:\xray_engine\stalker\SDK\boost_1_30_0
+D:\xray_engine\stalker\SDK\dxsdk9\include
+D:\xray_engine\stalker\SDK\eax\include
+D:\xray_engine\stalker\SDK\freeimage
+D:\xray_engine\stalker\SDK\loki
+D:\xray_engine\stalker\SDK\luabind\luabind
+D:\xray_engine\stalker\SDK\magicsoftware\sdk\include
+D:\xray_engine\stalker\SDK\openal\include
+D:\xray_engine\stalker\SDK\xiph\include
+D:\xray_engine\xray-svn-trunk\xrCore
+D:\xray_engine\xray-svn-trunk\xrLua\src
+
+
+добавить в library files:
+
+D:\xray_engine\stalker\SDK\dxsdk9\lib
+D:\xray_engine\stalker\SDK\eax
+D:\xray_engine\stalker\SDK\freeimage
+D:\xray_engine\stalker\SDK\magicsoftware\sdk\library\releasedll
+D:\xray_engine\stalker\SDK\openal\libs
+D:\xray_engine\stalker\SDK\xiph\libs
+D:\xray_engine\libraries
+
+*********************************************************************
+
+После, открыть D:\xray_engine\xray-svn-trunk\xr_3da\XR_3DA.sln
+
+Собрать нужные / все проекты. Для сборки сдк требуется собрать на Mixed-конфиге:
+...
+ETools
+xrCore
+xrSE_Factory
+и те, что требуются для этих 3-х
+
+(проверено: на релизном конфиге, собранный xrAI компилит сетку без укрытий, в mixed норм)
+
+*********************************************************************
+
+Запустить C++ Builder 6, в меню Tools -> Environment Options -> Environment Variables -> User Overrides -> New...
+
+добавить:
+
+AL_DIR = D:\xray_engine\stalker\SDK\openal
+COMPONENTS = D:\xray_engine\stalker\SDK\components
+CORE_DIR = D:\xray_engine\xray-svn-trunk\xrCore
+DXSDK9_DIR = D:\xray_engine\stalker\SDK\dxsdk9\include
+EAX_DIR = D:\xray_engine\stalker\SDK\eax
+ETOOLS_DIR = D:\xray_engine\xray-svn-trunk\ETools
+MAGIC_SW_DIR = D:\xray_engine\stalker\SDK\magicsoftware\freemagic\include
+SDK_DIR = D:\xray_engine\stalker\SDK
+XIPH_DIR = D:\xray_engine\stalker\SDK\xiph\include
+
+
+в меню Component -> Install Packages -> Add...
+
+D:\xray_engine\stalker\SDK\components\AlexMX\editor.bpl
+D:\xray_engine\stalker\SDK\components\ElPack\Code\dceldbB6.bpl
+D:\xray_engine\stalker\SDK\components\ElPack\Code\dcelppB6.bpl
+D:\xray_engine\stalker\SDK\components\ElPack\Code\dclelpB6.bpl
+
+*********************************************************************
+
+После, открыть D:\xray_engine\xray-svn-trunk\all_editors.bpg и собрать проекты.
+
+Порядок сборки:
+
+xrCoreB
+xrSoundB
+xrParticlesB
+xrEPropsB
+xrECoreB
+ActorEditor
+ParticleEditor
+ShaderEditor
+LevelEditor
+
