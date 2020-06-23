@@ -405,7 +405,7 @@ void TfrmImageLib::OnItemsFocused(ListItemsVec& items)
 
         	            if (!thm->Load(prop->Key(),_import_))
                         {
-            	            bool bLoad                      = thm->Load(fn.c_str(),_game_textures_);
+            	            bool bLoad                      = thm->Load(fn.c_str(),_textures_);
                             ImageLib.CreateTextureThumbnail (thm, prop->Key(), _import_, !bLoad);
                     	}
                     }
