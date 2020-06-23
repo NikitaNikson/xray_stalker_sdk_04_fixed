@@ -38,14 +38,14 @@
     <USERDEFINES value="_EDITOR;_SHADER_EDITOR;_DEBUG"/>
     <SYSDEFINES value="NO_STRICT;_RTLDLL;USEPACKAGES"/>
     <MAINSOURCE value="ShaderEditor.cpp"/>
-    <INCLUDEPATH value="$(DX9SDK_DIR)\Include;$(COMPONENTS)\alexmx;$(BCB)\include;$(BCB)\include\vcl;$(COMPONENTS)\ElPack\Code;$(COMPONENTS)\ElPack\Code\Source;$(CORE_DIR);../../xr_3da;../../xr_3da/xrRender;$(EAX_DIR)\Include"/>
+    <INCLUDEPATH value="$(DXSDK9_DIR)\Include;$(COMPONENTS)\alexmx;$(BCB)\include;$(BCB)\include\vcl;$(COMPONENTS)\ElPack\Code;$(COMPONENTS)\ElPack\Code\Source;$(CORE_DIR);../../xr_3da;../../xr_3da/xrRender;$(EAX_DIR)\Include"/>
     <LIBPATH value="$(BCB)\Projects;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects\Lib;$(COMPONENTS)\alexmx;$(COMPONENTS)\ElPack\Code;$(COMPONENTS)\ElPack\Code\Source;x:\libraries"/>
     <WARNINGS value="-w8092 -w8090 -w8089 -w8087 -wprc -wucp -wstv -wstu -wsig -wpin -w-par 
       -wnod -wnak -wdef -wcln -wbbf -wasm -wamp -wamb"/>
     <OTHERFILES value=""/>
   </MACROS>
   <OPTIONS>
-    <IDLCFLAGS value="-I$(DX9SDK_DIR)\Include -I$(COMPONENTS)\alexmx -I$(BCB)\include 
+    <IDLCFLAGS value="-I$(DXSDK9_DIR)\Include -I$(COMPONENTS)\alexmx -I$(BCB)\include 
       -I$(BCB)\include\vcl -I$(COMPONENTS)\ElPack\Code 
       -I$(COMPONENTS)\ElPack\Code\Source -I$(CORE_DIR) -I../../xr_3da 
       -I../../xr_3da/xrRender -I$(EAX_DIR) -src_suffix cpp -D_EDITOR 
@@ -57,7 +57,7 @@
     <RFLAGS value=""/>
     <AFLAGS value="/mx /w2 /zi"/>
     <LFLAGS value="-lx:\libraries -Ix:\intermediate_ed\se -D&quot;&quot; -aa -Tpe -GD -x -v 
-	-GF:LARGEADDRESSAWARE"/>
+      -GF:LARGEADDRESSAWARE"/>
     <OTHERFILES value=""/>
   </OPTIONS>
   <LINKER>
@@ -122,10 +122,10 @@ Comments=
 
 [HistoryLists\hlIncludePath]
 Count=22
-Item0=$(DX9SDK_DIR)\Include;$(COMPONENTS)\alexmx;$(BCB)\include;$(BCB)\include\vcl;$(COMPONENTS)\ElPack\Code;$(COMPONENTS)\ElPack\Code\Source;$(CORE_DIR);../../xr_3da;../../xr_3da/xrRender;$(EAX_DIR)
-Item1=$(DX9SDK_DIR)\Include;$(COMPONENTS)\alexmx;$(BCB)\include;$(BCB)\include\vcl;$(COMPONENTS)\ElPack\Code;$(COMPONENTS)\ElPack\Code\Source;$(CORE_DIR);../../xr_3da;../../xr_3da/xrRender;$(EAX_DIR)\Include
-Item2=$(DX9SDK_DIR)\Include;$(COMPONENTS)\alexmx;$(BCB)\include;$(BCB)\include\vcl;$(COMPONENTS)\ElPack\Code;$(COMPONENTS)\ElPack\Code\Source;$(CORE_DIR);../../xr_3da;../../xr_3da/xrRender
-Item3=$(DX9SDK_DIR)\Include;$(COMPONENTS)\alexmx;$(BCB)\include;$(BCB)\include\vcl;$(COMPONENTS)\ElPack\Code;$(COMPONENTS)\ElPack\Code\Source;$(CORE_DIR);../../xr_3da
+Item0=$(DXSDK9_DIR)\Include;$(COMPONENTS)\alexmx;$(BCB)\include;$(BCB)\include\vcl;$(COMPONENTS)\ElPack\Code;$(COMPONENTS)\ElPack\Code\Source;$(CORE_DIR);../../xr_3da;../../xr_3da/xrRender;$(EAX_DIR)
+Item1=$(DXSDK9_DIR)\Include;$(COMPONENTS)\alexmx;$(BCB)\include;$(BCB)\include\vcl;$(COMPONENTS)\ElPack\Code;$(COMPONENTS)\ElPack\Code\Source;$(CORE_DIR);../../xr_3da;../../xr_3da/xrRender;$(EAX_DIR)\Include
+Item2=$(DXSDK9_DIR)\Include;$(COMPONENTS)\alexmx;$(BCB)\include;$(BCB)\include\vcl;$(COMPONENTS)\ElPack\Code;$(COMPONENTS)\ElPack\Code\Source;$(CORE_DIR);../../xr_3da;../../xr_3da/xrRender
+Item3=$(DXSDK9_DIR)\Include;$(COMPONENTS)\alexmx;$(BCB)\include;$(BCB)\include\vcl;$(COMPONENTS)\ElPack\Code;$(COMPONENTS)\ElPack\Code\Source;$(CORE_DIR);../../xr_3da
 Item4=R:\SDK\Microsoft DirectX 9.0 SDK (April 2005)\Include;r:\borland\components6\alexmx;$(BCB)\include;$(BCB)\include\vcl;R:\SDK\MagicFM_Borland\Sdk\Include;R:\Borland\Components6\ElPack\Code;R:\Borland\Components6\ElPack\Code\Source;P:\xrCore;P:\xrSound;..\ECore;..\ECore\Editor;..\ECore\Engine;..\ECore\Engine\blenders;..\ECore\Engine\visuals;R:\SDK\eax20\Include;..\xrEProps
 Item5=R:\SDK\Microsoft DirectX 9.0 SDK (February 2005)\Include;r:\borland\components6\alexmx;$(BCB)\include;$(BCB)\include\vcl;R:\SDK\MagicFM_Borland\Sdk\Include;R:\Borland\Components6\ElPack\Code;R:\Borland\Components6\ElPack\Code\Source;P:\xrCore;P:\xrSound;..\ECore;..\ECore\Editor;..\ECore\Engine;..\ECore\Engine\blenders;..\ECore\Engine\visuals;R:\SDK\eax20\Include;..\xrEProps
 Item6=R:\SDK\Microsoft DirectX 9.0 SDK (February 2005)\Include;r:\borland\components6\alexmx;$(BCB)\include;$(BCB)\include\vcl;R:\SDK\MagicFM_Borland\Sdk\Include;R:\Borland\Components6\ElPack\Code;R:\Borland\Components6\ElPack\Code\Source;P:\xrCore;P:\xrCDB;P:\xrSound;..\ECore;..\ECore\Editor;..\ECore\Engine;..\ECore\Engine\blenders;..\ECore\Engine\visuals;R:\SDK\eax20\Include;..\xrEProps;R:\SDK\DirectX9.0_beta3\Include;P:\Tools\ETools

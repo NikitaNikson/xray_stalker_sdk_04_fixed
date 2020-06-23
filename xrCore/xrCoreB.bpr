@@ -63,14 +63,14 @@
     <USERDEFINES value="_EDITOR;_XRCOREB;XRCORE_EXPORTS;_DEBUG"/>
     <SYSDEFINES value="NO_STRICT;_RTLDLL;USEPACKAGES"/>
     <MAINSOURCE value="xrCoreB.bpf"/>
-    <INCLUDEPATH value="blackbox;$(ETOOLS_DIR);$(DX9SDK_DIR)\Include;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Include\Mfc"/>
+    <INCLUDEPATH value="blackbox;$(ETOOLS_DIR);$(DXSDK9_DIR)\Include;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Include\Mfc"/>
     <LIBPATH value="blackbox;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects\Lib;x:\libraries;$(BCB)\lib\psdk"/>
     <WARNINGS value="-w8092 -w8091 -w8090 -w8089 -w8087 -wprc -wucp -wstv -wstu -wsig -wpin 
       -w-par -wnod -wnak -wdef -wcln -wbbf -wasm -wamp -wamb"/>
     <OTHERFILES value=""/>
   </MACROS>
   <OPTIONS>
-    <IDLCFLAGS value="-Iblackbox -I$(ETOOLS_DIR) -I$(DX9SDK_DIR)\Include -I$(BCB)\include 
+    <IDLCFLAGS value="-Iblackbox -I$(ETOOLS_DIR) -I$(DXSDK9_DIR)\Include -I$(BCB)\include 
       -I$(BCB)\include\vcl -I$(BCB)\Include\Mfc -src_suffix cpp -D_EDITOR 
       -D_XRCOREB -DXRCORE_EXPORTS -D_DEBUG -boa"/>
     <CFLAG1 value="-WD -Od -H=x:\intermediate_ed\core\pch.csm -Q -Vx -Ve -xf -xp -VF -ff -X- 
@@ -273,9 +273,9 @@ E:\SDK\components\ElPack\Code\dclelpB6.bpl=EldoS Visual Components (Design-time)
 
 [HistoryLists\hlIncludePath]
 Count=30
-Item0=blackbox;$(ETOOLS_DIR);$(DX9SDK_DIR)\Include;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Include\Mfc
-Item1=$(ETOOLS_DIR);$(DX9SDK_DIR)\Include;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Include\Mfc
-Item2=$(DX9SDK_DIR)\Include;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Include\Mfc
+Item0=blackbox;$(ETOOLS_DIR);$(DXSDK9_DIR)\Include;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Include\Mfc
+Item1=$(ETOOLS_DIR);$(DXSDK9_DIR)\Include;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Include\Mfc
+Item2=$(DXSDK9_DIR)\Include;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Include\Mfc
 Item3=$(DXSDK)\Include;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\Include\Mfc
 Item4=I:\Program Files\Microsoft DirectX SDK (October 2006)\Include;$(BCB)\include;$(BCB)\include\vcl;R:\SDK\MagicFM_Borland\Sdk\Include;R:\Borland\Components6\AlexMX;R:\Borland\Components6\ElPack\Code\Source;$(BCB)\Include\Mfc
 Item5=R:\SDK\Microsoft DirectX 9.0 SDK (April 2005)\Include;$(BCB)\include;$(BCB)\include\vcl;R:\SDK\MagicFM_Borland\Sdk\Include;R:\Borland\Components6\AlexMX;R:\Borland\Components6\ElPack\Code\Source;$(BCB)\Include\Mfc
