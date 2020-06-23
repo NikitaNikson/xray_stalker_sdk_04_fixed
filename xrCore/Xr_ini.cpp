@@ -163,9 +163,16 @@ void	CInifile::Load(IReader* F, LPCSTR path)
                 strconcat	(sizeof(fn),fn,path,inc_name);
 				_splitpath	(fn,inc_path,folder, 0, 0 );
 				strcat		(inc_path,folder);
-            	IReader* I 	= FS.r_open(fn); R_ASSERT3(I,"Can't find include file:", inc_name);
-            	Load		(I,inc_path);
-                FS.r_close	(I);
+            	IReader* I 	= FS.r_open(fn);
+//				R_ASSERT3(I,"Can't find include file:", inc_name);
+//				Msg("Can't find include file: '%s' ", str );
+
+				if(!I)
+					Msg("Can't find include file: '%s' ", str );
+				else
+					Load		(I,inc_path);
+//					Msg("Found include file: '%s' ", str );
+					FS.r_close	(I);
             }
         }else if (str[0] && (str[0]=='[')){
 			// insert previous filled section
