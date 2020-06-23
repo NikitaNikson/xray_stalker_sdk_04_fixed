@@ -536,7 +536,7 @@ void compute_non_covers		()
 }
 #endif // PRIQUEL
 
-#define NUM_THREADS	3
+#define NUM_THREADS 8
 extern	void mem_Optimize();
 void	xrCover	(bool pure_covers)
 {

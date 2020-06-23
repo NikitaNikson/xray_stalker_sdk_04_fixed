@@ -41,14 +41,17 @@ extern void test_levels			();
 
 static const char* h_str = 
 	"The following keys are supported / required:\n"
-	"-? or -h   == this help\n"
-	"-f<NAME>   == compile level in gamedata/levels/<NAME>/\n"
-	"-o         == modify build options\n"
-#ifndef PRIQUEL
-	"-g<NAME>   == build off-line AI graph and cross-table to ai-map in gamedata/levels/<NAME>/\n"
-	"-m         == merge level graphs\n"
-#endif // PRIQUEL
-	"-s         == build game spawn data\n"
+	"-? or -h                == this help \n"
+	"\n"
+	"-draft -f <level_name>  == fast compile AI-map without covers \n"
+	"-verify <level_name>    == verify AI-map \n"
+	"-f <level_name>         == compile AI-map with covers in gamedata/levels/<level_name>/ \n"
+	"-g <level_name>         == build offline AI graph and cross-table to AI-map in gamedata/levels/<level_name>/ \n"
+	"-m (-m <level_name>)    == merge level graphs \n"
+	"-s (-s <level_name>)    == build game spawn data \n"
+	"\n"
+	"-no_separator_check     == skip check grid overlapping with restrictor shapes \n"
+	"-silent                 == suppress congratulation message \n"
 	"\n"
 	"NOTE: The last key is required for any functionality\n";
 
@@ -198,7 +201,10 @@ void Startup(LPSTR     lpCmdLine)
 	extern				HWND logWindow;
 	u32					dwEndTime = timeGetTime();
 	sprintf				(stats,"Time elapsed: %s",make_time((dwEndTime-dwStartupTime)/1000).c_str());
-	MessageBox			(logWindow,stats,"Congratulation!",MB_OK|MB_ICONINFORMATION);
+	clMsg("Build succesful!\n%s", stats);
+
+	if (!strstr(cmd, "-silent"))
+		MessageBox			(logWindow,stats,"Congratulation!",MB_OK|MB_ICONINFORMATION);
 
 	bClose				= TRUE;
 	FlushLog			();
@@ -227,6 +233,7 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 	create_entity			= (Factory_Create*)		GetProcAddress(hFactory,"_create_entity@4");	R_ASSERT(create_entity);
 	destroy_entity			= (Factory_Destroy*)	GetProcAddress(hFactory,"_destroy_entity@4");	R_ASSERT(destroy_entity);
 
+	Msg("Command line: '%s'", lpCmdLine);
 	Startup					(lpCmdLine);
 
 	FreeLibrary				(hFactory);
