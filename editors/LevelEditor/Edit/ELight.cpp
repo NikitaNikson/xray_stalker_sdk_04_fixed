@@ -85,7 +85,7 @@ void CLight::AffectD3D(BOOL flag){
 }
 //----------------------------------------------------
 
-bool CLight::GetBox( Fbox& box )
+bool CLight::GetBox( Fbox& box ) const
 {
 	box.set		(PPosition, PPosition);
 	box.min.sub	(m_Range);

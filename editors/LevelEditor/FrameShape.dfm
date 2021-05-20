@@ -1,10 +1,10 @@
 object fraShape: TfraShape
-  Left = 292
-  Top = 384
+  Left = 844
+  Top = 116
   VertScrollBar.Visible = False
   Align = alClient
   BorderStyle = bsNone
-  ClientHeight = 250
+  ClientHeight = 290
   ClientWidth = 217
   Color = 10528425
   Constraints.MinWidth = 206
@@ -177,6 +177,55 @@ object fraShape: TfraShape
       Font.Style = []
       ParentFont = False
       OnClick = ebDetachAllShapesClick
+    end
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 224
+    Width = 217
+    Height = 66
+    Align = alBottom
+    BorderStyle = bsSingle
+    Color = 10528425
+    TabOrder = 2
+    object ebEditLevelBoundMode: TExtBtn
+      Left = -2
+      Top = 9
+      Width = 215
+      Height = 14
+      Align = alNone
+      AllowAllUp = True
+      BevelShow = False
+      HotTrack = True
+      HotColor = 15790320
+      GroupIndex = 1
+      Caption = 'Edit Level Bound'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      OnClick = ebEditLevelBoundModeClick
+    end
+    object ebRecalcLB: TExtBtn
+      Left = -2
+      Top = 33
+      Width = 215
+      Height = 14
+      Align = alNone
+      BevelShow = False
+      HotTrack = True
+      HotColor = 15790320
+      Caption = 'Recalc'
+      Enabled = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      OnClick = ebRecalcLBClick
     end
   end
   object fsStorage: TFormStorage

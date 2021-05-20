@@ -392,7 +392,7 @@ bool CSpawnPoint::CreateSpawnData(LPCSTR entity_ref)
 }
 //----------------------------------------------------
 
-bool CSpawnPoint::GetBox( Fbox& box )
+bool CSpawnPoint::GetBox( Fbox& box ) const
 {
     switch (m_Type){
     case ptRPoint: 	

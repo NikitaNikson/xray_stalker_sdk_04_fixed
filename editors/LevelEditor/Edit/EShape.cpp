@@ -15,7 +15,14 @@
 //---------------------------------------------------------------------------
 #define SHAPE_CHUNK_VERSION 	0x0000
 #define SHAPE_CHUNK_SHAPES 		0x0001
+#define SHAPE_CHUNK_DATA 		0x0002
 //---------------------------------------------------------------------------
+
+xr_token shape_type_tok[]={
+	{ "common",	eShapeCommon		},
+	{ "level bound",	eShapeLevelBound},
+	{ 0,				0	}
+};
 
 CEditShape::CEditShape(LPVOID data, LPCSTR name):CCustomObject(data,name)
 {
@@ -31,6 +38,7 @@ void CEditShape::Construct(LPVOID data)
 	ClassID		= OBJCLASS_SHAPE;
     m_DrawTranspColor	= SHAPE_COLOR_TRANSP;
     m_DrawEdgeColor		= SHAPE_COLOR_EDGE;
+	m_shape_type		= eShapeCommon;
 	m_Box.invalidate();
 }
 
@@ -194,6 +202,14 @@ void CEditShape::Detach()
     }
 }
 
+void CEditShape::OnDetach()
+{
+	inherited::OnDetach	();
+
+    m_DrawTranspColor	= SHAPE_COLOR_TRANSP;
+    m_DrawEdgeColor		= SHAPE_COLOR_EDGE;
+}
+
 bool CEditShape::RayPick(float& distance, const Fvector& start, const Fvector& direction, SRayPickInfo* pinf)
 {
     float dist					= distance;
@@ -207,8 +223,10 @@ bool CEditShape::RayPick(float& distance, const Fvector& start, const Fvector& d
             M.transform_dir		(D,direction);
             FITransform.transform_tiny(S,start);
             Fsphere&	T		= it->data.sphere;
+			float bk_r = T.R;
             T.intersect			(S,D,dist);
             if (dist<=0.f)		dist = distance;
+			T.R					= bk_r;
 		}break;
 		case cfBox:{
         	Fbox box;
@@ -262,7 +280,7 @@ bool CEditShape::FrustumPick(const CFrustum& frustum)
 	return false;
 }
 
-bool CEditShape::GetBox(Fbox& box)
+bool CEditShape::GetBox(Fbox& box) const
 {
 	if (m_Box.is_valid()){
     	box.xform(m_Box,FTransform);
@@ -284,6 +302,9 @@ bool CEditShape::Load(IReader& F)
 	R_ASSERT(F.find_chunk(SHAPE_CHUNK_SHAPES));
     shapes.resize	(F.r_u32());
     F.r				(shapes.begin(),shapes.size()*sizeof(shape_def));
+	
+	if(F.find_chunk(SHAPE_CHUNK_DATA))
+    	m_shape_type	= F.r_u8();
 
 	ComputeBounds();
 	return true;
@@ -301,11 +322,16 @@ void CEditShape::Save(IWriter& F)
     F.w_u32			(shapes.size());
     F.w				(shapes.begin(),shapes.size()*sizeof(shape_def));
 	F.close_chunk	();
+	
+	F.open_chunk	(SHAPE_CHUNK_DATA);
+    F.w_u8			(m_shape_type);
+	F.close_chunk	();
 }
 
 void CEditShape::FillProp(LPCSTR pref, PropItemVec& values)
 {
 	inherited::FillProp(pref,values);
+	PHelper().CreateCaption	(values, PrepareKey(pref,"Shape usage"),m_shape_type==eShapeCommon?"common":"level bound");
 }
 
 void CEditShape::Render(int priority, bool strictB2F)
@@ -351,9 +377,17 @@ void CEditShape::Render(int priority, bool strictB2F)
     }
 }
 
+#include "FrameShape.h"
+
 void CEditShape::OnFrame()
 {
 	inherited::OnFrame();
+	if(m_shape_type==eShapeLevelBound)
+    {
+    	TfraShape* F 		= (TfraShape*)ParentTools->pFrame;
+    	BOOL bVis = F->ebEditLevelBoundMode->Down;
+    	m_CO_Flags.set(flVisible, bVis);
+    }
 }
 
 void CEditShape::OnShowHint(AStringVec& dest)

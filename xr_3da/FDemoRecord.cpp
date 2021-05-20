@@ -16,6 +16,23 @@
 
 CDemoRecord * xrDemoRecord = 0;
 
+Fbox curr_lm_fbox;
+Fbox get_level_screenshot_bound()
+{
+	Fbox res			=  g_pGameLevel->ObjectSpace.GetBoundingVolume();
+	if(g_pGameLevel->pLevel->section_exist("level_map"))
+	{
+		Fvector4 res2d = g_pGameLevel->pLevel->r_fvector4("level_map","bound_rect");
+		res.min.x = res2d.x;
+		res.min.z = res2d.y;
+
+		res.max.x = res2d.z;
+		res.max.z = res2d.w;
+	}
+
+	return res;
+}
+
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction
 //////////////////////////////////////////////////////////////////////
@@ -149,47 +166,48 @@ void CDemoRecord::MakeLevelMapProcess()
 		s_hud_flag.assign	(psHUD_Flags);
 		psHUD_Flags.assign	(0);
 
-		Fbox bb								= g_pGameLevel->ObjectSpace.GetBoundingVolume();
+		curr_lm_fbox		= get_level_screenshot_bound();
 
 
 		if (g_bDR_LM_UsePointsBBox)
 		{
-			bb.max.x = g_DR_LM_Max.x;
-			bb.max.z = g_DR_LM_Max.z;
+			curr_lm_fbox.max.x = g_DR_LM_Max.x;
+			curr_lm_fbox.max.z = g_DR_LM_Max.z;
 
-			bb.min.x = g_DR_LM_Min.x;
-			bb.min.z = g_DR_LM_Min.z;			
+			curr_lm_fbox.min.x = g_DR_LM_Min.x;
+			curr_lm_fbox.min.z = g_DR_LM_Min.z;			
 		}
-		if (g_bDR_LM_4Steps) GetLM_BBox(bb, g_iDR_LM_Step);
+		if (g_bDR_LM_4Steps) GetLM_BBox(curr_lm_fbox, g_iDR_LM_Step);
 		// build camera matrix
-		bb.getcenter						(Device.vCameraPosition);
+		curr_lm_fbox.getcenter						(Device.vCameraPosition);
 
 		Device.vCameraDirection.set			( 0.f,-1.f,0.f	);
 		Device.vCameraTop.set				( 0.f,0.f,1.f	);
 		Device.vCameraRight.set				( 1.f,0.f,0.f	);
 		Device.mView.build_camera_dir		(Device.vCameraPosition,Device.vCameraDirection,Device.vCameraTop);
 
-		bb.xform							(Device.mView);
+		curr_lm_fbox.xform							(Device.mView);
 		// build project matrix
-		Device.mProject.build_projection_ortho(bb.max.x-bb.min.x,bb.max.y-bb.min.y,bb.min.z,bb.max.z);
+		Device.mProject.build_projection_ortho(curr_lm_fbox.max.x-curr_lm_fbox.min.x,curr_lm_fbox.max.y-curr_lm_fbox.min.y,curr_lm_fbox.min.z,curr_lm_fbox.max.z);
 
 		}break;
 	case DEVICE_RESET_PRECACHE_FRAME_COUNT+2:{
 		m_bOverlapped				= FALSE;
 		string_path tmp;
-		Fbox bb						= g_pGameLevel->ObjectSpace.GetBoundingVolume();
+
+		curr_lm_fbox		= get_level_screenshot_bound();
 
 		if (g_bDR_LM_UsePointsBBox)
 		{
-			bb.max.x = g_DR_LM_Max.x;
-			bb.max.z = g_DR_LM_Max.z;
+			curr_lm_fbox.max.x = g_DR_LM_Max.x;
+			curr_lm_fbox.max.z = g_DR_LM_Max.z;
 
-			bb.min.x = g_DR_LM_Min.x;
-			bb.min.z = g_DR_LM_Min.z;			
+			curr_lm_fbox.min.x = g_DR_LM_Min.x;
+			curr_lm_fbox.min.z = g_DR_LM_Min.z;			
 		}
-		if (g_bDR_LM_4Steps) GetLM_BBox(bb, g_iDR_LM_Step);
+		if (g_bDR_LM_4Steps) GetLM_BBox(curr_lm_fbox, g_iDR_LM_Step);
 
-		sprintf_s					(tmp,sizeof(tmp),"%s_[%3.3f, %3.3f]-[%3.3f, %3.3f]",*g_pGameLevel->name(),bb.min.x,bb.min.z,bb.max.x,bb.max.z);
+		sprintf_s					(tmp,sizeof(tmp),"%s_[%3.3f, %3.3f]-[%3.3f, %3.3f]",*g_pGameLevel->name(),curr_lm_fbox.min.x,curr_lm_fbox.min.z,curr_lm_fbox.max.x,curr_lm_fbox.max.z);
 		Render->Screenshot			(IRender_interface::SM_FOR_LEVELMAP,tmp);
 		psHUD_Flags.assign			(s_hud_flag);
 		BOOL bDevReset				= !psDeviceFlags.equal(s_dev_flags,rsFullscreen);

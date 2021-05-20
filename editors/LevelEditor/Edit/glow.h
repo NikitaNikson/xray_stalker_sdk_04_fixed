@@ -42,7 +42,7 @@ public:
     virtual bool 	FrustumPick	( const CFrustum& frustum );
   	virtual bool 	Load		(IReader&);
 	virtual void 	Save		(IWriter&);
-	virtual bool    GetBox      ( Fbox& box );
+	virtual bool    GetBox      ( Fbox& box ) const;
     virtual void	FillProp	( LPCSTR pref, PropItemVec& values );
 
     // device dependent routine

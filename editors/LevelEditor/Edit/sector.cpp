@@ -116,7 +116,7 @@ int CSector::DelMesh	(CSceneObject* O, CEditableMesh* M)
     return res;
 }
 
-bool CSector::GetBox( Fbox& box )
+bool CSector::GetBox( Fbox& box ) const
 {
 	box.set(m_Box);
 	return true;

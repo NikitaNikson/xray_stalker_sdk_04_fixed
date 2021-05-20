@@ -5,6 +5,7 @@
 #include "ui_leveltools.h"
 #include "scene.h"
 #include "EShape.h"
+#include "ESceneShapeTools.h"
 #include "../ECore/Editor/ui_main.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
@@ -46,4 +47,22 @@ void __fastcall TfraShape::ebAttachShapeClick(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
+
+
+
+void __fastcall TfraShape::ebEditLevelBoundModeClick(TObject *Sender)
+{
+	ebRecalcLB->Enabled = ebEditLevelBoundMode->Down;
+	if(ebEditLevelBoundMode->Down)
+	{
+		tool->OnEditLevelBounds(false);
+	}
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TfraShape::ebRecalcLBClick(TObject *Sender)
+{
+	tool->OnEditLevelBounds(true);
+}
+//---------------------------------------------------------------------------
 

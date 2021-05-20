@@ -160,8 +160,8 @@ void CObjectSpace::Load	()
 	Static.build				( verts, H.vertcount, tris, H.facecount, build_callback );
 
 	m_BoundingVolume.set				(H.aabb);
-	g_SpatialSpace->initialize			(H.aabb);
-	g_SpatialSpacePhysic->initialize	(H.aabb);
+	g_SpatialSpace->initialize			(m_BoundingVolume);
+	g_SpatialSpacePhysic->initialize	(m_BoundingVolume);
 	Sound->set_geometry_occ				( &Static );
 	Sound->set_handler					( _sound_event );
 

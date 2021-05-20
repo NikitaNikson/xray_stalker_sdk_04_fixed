@@ -118,7 +118,7 @@ public:
 	virtual void    Render      	( int priority, bool strictB2F );
 	virtual bool    RayPick     	( float& distance,	const Fvector& start,	const Fvector& direction, SRayPickInfo* pinf = NULL );
     virtual bool 	FrustumPick		( const CFrustum& frustum );
-	virtual bool    GetBox      	(Fbox& box);
+	virtual bool    GetBox      	(Fbox& box) const;
 
 	virtual void 	OnFrame			();
 

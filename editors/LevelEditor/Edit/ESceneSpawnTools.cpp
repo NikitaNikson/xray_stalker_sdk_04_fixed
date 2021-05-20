@@ -7,6 +7,7 @@
 #include "FrameSpawn.h"
 #include "Scene.h"
 #include "spawnpoint.h"
+#include "EShape.h"
 
 static HMODULE hXRSE_FACTORY = 0;
 static LPCSTR xrse_factory_library	= "xrSE_Factory.dll";
@@ -105,8 +106,26 @@ ref_shader ESceneSpawnTools::GetIcon(shared_str name)
 
 CCustomObject* ESceneSpawnTools::CreateObject(LPVOID data, LPCSTR name)
 {
-	CCustomObject* O	= xr_new<CSpawnPoint>(data,name);
+	CSpawnPoint* O	= xr_new<CSpawnPoint>(data,name);
     O->ParentTools		= this;
+	
+	if(data && name)
+    {
+        if(pSettings->line_exist( (LPCSTR)data, "$def_sphere") )
+        {
+        	float size 			= pSettings->r_float( (LPCSTR)data, "$def_sphere");
+
+            CCustomObject* S	= Scene->GetOTools(OBJCLASS_SHAPE)->CreateObject(0,0);
+            CEditShape* shape 	= dynamic_cast<CEditShape*>(S);
+            R_ASSERT			(shape);
+
+            Fsphere 			Sph;
+            Sph.identity		();
+            Sph.R				= size;
+            shape->add_sphere	(Sph);
+            O->AttachObject		(S);
+        }
+    }
     return O;
 }
 //----------------------------------------------------

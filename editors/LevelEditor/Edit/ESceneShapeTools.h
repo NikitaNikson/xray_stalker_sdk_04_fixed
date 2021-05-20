@@ -27,6 +27,10 @@ public:
     virtual void		SaveSelection      		(IWriter&);
 
     virtual CCustomObject* CreateObject			(LPVOID data, LPCSTR name);
+			void		OnEditLevelBounds		(bool recalc);
+
+	virtual void		OnActivate				();
+	virtual void		OnDeactivate			();
 };
 //---------------------------------------------------------------------------
 #endif
