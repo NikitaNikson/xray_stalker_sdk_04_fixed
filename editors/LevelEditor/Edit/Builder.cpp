@@ -126,6 +126,7 @@ BOOL SceneBuilder::MakeGame( )
         	// build
             VERIFY_COMPILE(PreparePath(),				"Failed to prepare level path.","");
             VERIFY_COMPILE(GetBounding(),				"Failed to acquire level bounding volume.","");
+			VERIFY_COMPILE(RenumerateSectors(), 		"Failed to renumerate sectors","");
             VERIFY_COMPILE(BuildLTX(),					"Failed to build level description.","");
             VERIFY_COMPILE(BuildGame(),					"Failed to build game.","");
         } while(0);

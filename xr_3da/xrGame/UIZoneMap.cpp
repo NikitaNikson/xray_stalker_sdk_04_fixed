@@ -116,7 +116,44 @@ void CUIZoneMap::SetupCurrentMap()
 	
 	Fvector2						wnd_size;
 	float zoom_factor				= float(m_clipFrame.GetWndRect().width())/100.0f;
+	
+	LPCSTR ln						= Level().name().c_str();
+	if(	pGameIni->section_exist(ln) )
+	{
+		if(pGameIni->line_exist(ln, "minimap_zoom"))
+			zoom_factor *= pGameIni->r_float(ln, "minimap_zoom");
+	}else
+	if(g_pGameLevel->pLevel->section_exist("minimap_zoom"))
+	{
+		zoom_factor *= g_pGameLevel->pLevel->r_float("minimap_zoom", "value");
+	}
 	wnd_size.x						= m_activeMap->BoundRect().width()*zoom_factor;
 	wnd_size.y						= m_activeMap->BoundRect().height()*zoom_factor;
 	m_activeMap->SetWndSize			(wnd_size);
+}
+
+void CUIZoneMap::OnSectorChanged(int sector)
+{
+	if(!g_pGameLevel->pLevel->section_exist("sub_level_map") )
+		return;
+	u8			map_idx = u8(-1);
+	string64	s_sector;
+	sprintf	(s_sector, "%d", sector);
+	
+	if(!g_pGameLevel->pLevel->line_exist("sub_level_map", s_sector) )
+		return;
+
+	map_idx		= g_pGameLevel->pLevel->r_u8("sub_level_map", s_sector);
+	if(m_current_map_idx == map_idx)
+		return;
+
+	m_current_map_idx = map_idx;
+
+	string_path sub_texture;
+	sprintf(sub_texture,"%s#%d", m_activeMap->m_texture.c_str(), m_current_map_idx);
+	
+	if(map_idx==u8(-1))
+		sprintf(sub_texture,"%s", m_activeMap->m_texture.c_str());
+
+	m_activeMap->InitTextureEx(sub_texture, m_activeMap->m_shader_name.c_str());
 }

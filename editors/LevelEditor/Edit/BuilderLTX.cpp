@@ -15,6 +15,7 @@
 #include "xr_ini.h"
 #include "xr_efflensflare.h"
 #include "GroupObject.h"
+#include "sector.h"
 //----------------------------------------------------
 
 //----------------------------------------------------
@@ -38,6 +39,7 @@ BOOL SceneBuilder::BuildLTX()
 	// -- defaults --           
     IWriter* F		= FS.w_open(ltx_filename.c_str());
     if (F){
+		string256	buff;
     	F->w_string("[map_usage]");
         if(Scene->m_LevelOp.m_bDeathmatch)
         	F->w_string("deathmatch");
@@ -50,6 +52,18 @@ BOOL SceneBuilder::BuildLTX()
         F->w_string( "; level script file");
         if(Scene->m_LevelOp.m_BOPText.size())
             F->w_stringZ( Scene->m_LevelOp.m_BOPText );
+		
+		ObjectIt _F = Scene->FirstObj(OBJCLASS_SECTOR);
+		ObjectIt _E = Scene->LastObj(OBJCLASS_SECTOR);
+
+		F->w_string(";");
+		F->w_string("[sub_level_map]");
+		for(;_F!=_E;++_F)
+		{
+			CSector* _S		= (CSector*)(*_F);
+			sprintf			(buff,"%d = %d", _S->m_sector_num, _S->m_map_idx);
+			F->w_string		(buff);
+		}
 
         FS.w_close	(F);
     }else{

@@ -15,7 +15,7 @@
 #include "weaponhud.h"
 #include "stalker_animation_data_storage.h"
 #include "stalker_velocity_holder.h"
-
+#include "ui/UIMainIngameWnd.h"
 #include "../CameraManager.h"
 #include "actor.h"
 
@@ -524,4 +524,10 @@ void CGamePersistent::LoadTitle(LPCSTR str)
 bool CGamePersistent::CanBePaused()
 {
 	return IsGameTypeSingle	();
+}
+
+void CGamePersistent::OnSectorChanged(int sector)
+{
+	if(HUD().GetUI())
+		HUD().GetUI()->UIMainIngameWnd->OnSectorChanged(sector);
 }

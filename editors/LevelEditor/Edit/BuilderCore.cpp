@@ -73,7 +73,7 @@ bool SceneBuilder::RenumerateSectors()
     ObjectIt _E = Scene->LastObj(OBJCLASS_SECTOR);
     for(;_F!=_E;_F++,sector_num++){
     	CSector* _S=(CSector*)(*_F);
-        _S->sector_num = sector_num;
+        _S->m_sector_num = sector_num;
         if (_S->IsDefault()) m_iDefaultSectorNum=sector_num;
         pb->Inc();
 	}

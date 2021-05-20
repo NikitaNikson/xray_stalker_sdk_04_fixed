@@ -30,7 +30,11 @@ void CRender::Calculate		()
 	if (!vLastCameraPos.similar(Device.vCameraPosition,EPS_S)) 
 	{
 		CSector* pSector		= (CSector*)detectSector(Device.vCameraPosition);
-		if (0==pSector) pSector = pLastSector;
+		if (pSector && (pSector!=pLastSector))
+			g_pGamePersistent->OnSectorChanged( translateSector(pSector) );
+
+		if (0==pSector)
+			pSector = pLastSector;
 		pLastSector = pSector;
 		vLastCameraPos.set(Device.vCameraPosition);
 	}

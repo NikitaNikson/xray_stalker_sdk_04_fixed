@@ -25,6 +25,7 @@
 #define SECTOR_CHUNK_PRIVATE				0xF025
 #define SECTOR_CHUNK_ITEMS					0xF030
 #define 	SECTOR_CHUNK_ONE_ITEM			0xF031
+#define SECTOR_CHUNK_MAP_IDX				0xF032
 //----------------------------------------------------
 CSectorItem::CSectorItem(){
 	object=NULL;
@@ -52,9 +53,10 @@ void CSector::Construct(LPVOID data)
 	ClassID			= OBJCLASS_SECTOR;
     sector_color.set(1,1,1,0);
 	m_bDefault		= false;
-	sector_num		= -1;
+	m_sector_num		= -1;
 	m_bHasLoadError = false;
     m_Flags.zero	();
+	m_map_idx		= u8(-1);
 }
 
 CSector::~CSector()
@@ -394,7 +396,7 @@ void CSector::LoadSectorDef( IReader* F )
     R_ASSERT(F->find_chunk(SECTOR_CHUNK_ONE_ITEM));
 	F->r_stringZ(o_name,sizeof(o_name));
 	sitem.object=(CSceneObject*)Scene->FindObjectByName(o_name,OBJCLASS_SCENEOBJECT);
-    if (sitem.object==0){
+    if (sitem.object==NULL){
     	ELog.Msg(mtError,"Sector Item contains object '%s' - can't load.\nObject not found.",o_name);
         m_bHasLoadError = true;
         return;
@@ -449,6 +451,9 @@ bool CSector::Load(IReader& F)
         }
         OBJ->close();
     }
+	
+	if(F.find_chunk(SECTOR_CHUNK_MAP_IDX))
+		m_map_idx		= F.r_u8();
 
     if (sector_items.empty()) return false;
 
@@ -481,9 +486,49 @@ void CSector::Save(IWriter& F)
         F.close_chunk		();
     }
 	F.close_chunk	();
+	
+	F.open_chunk	(SECTOR_CHUNK_MAP_IDX);
+	F.w_u8			(m_map_idx);
+	F.close_chunk	();
 }
 
 //----------------------------------------------------
+xr_token level_sub_map[] =
+{
+	{"default", u8(-1)},
+	{"#0", 0},
+	{"#1", 1},
+	{"#2", 2},
+	{"#3", 3},
+	{"#4", 4},
+	{"#5", 5},
+	{"#6", 6},
+	{"#7", 7},
+	{"#8", 8},
+	{"#9", 9},
+	{"#10", 10},
+	{"#11", 11},
+	{"#12", 12},
+	{"#13", 13},
+	{"#14", 14},
+	{"#15", 15},
+	{"#16", 16},
+	{"#17", 17},
+	{"#18", 18},
+	{"#19", 19},
+	{"#20", 20},
+	{"#21", 21},
+	{"#22", 22},
+	{"#23", 23},
+	{"#24", 24},
+	{"#25", 25},
+	{"#26", 26},
+	{"#27", 27},
+	{"#28", 28},
+	{"#29", 29},
+	{"#30", 30},
+	{NULL, 31}
+};
 
 void CSector::FillProp(LPCSTR pref, PropItemVec& items)
 {
@@ -494,6 +539,7 @@ void CSector::FillProp(LPCSTR pref, PropItemVec& items)
     PHelper().CreateCaption(items,PrepareKey(pref,Name,"Contents\\Objects"),	AnsiString(objects).c_str());
     PHelper().CreateCaption(items,PrepareKey(pref,Name,"Contents\\Meshes"), 	AnsiString(meshes).c_str());
     PHelper().CreateCaption(items,PrepareKey(pref,Name,"Contents\\Faces"), 	AnsiString(faces).c_str());
+	PHelper().CreateToken8(items, PrepareKey(pref,Name,"Change LevelMap to"), &m_map_idx, level_sub_map);
 }
 //----------------------------------------------------
 

@@ -41,6 +41,10 @@ void CUICustomMap::Init	(shared_str name, CInifile& gameLtx, LPCSTR sh_name)
 	m_name				= name;
 	LPCSTR tex;
 	Fvector4 tmp;
+	//m_texture				= gameLtx.r_string(m_name,"texture");
+	m_texture				= gameLtx.line_exist(m_name,"texture") ? gameLtx.r_string(m_name,"texture") : m_texture;
+	m_shader_name			= sh_name;
+
 	if( gameLtx.line_exist(m_name,"texture") ){
 		tex			= gameLtx.r_string(m_name,"texture");
 		tmp		= gameLtx.r_fvector4(m_name,"bound_rect");

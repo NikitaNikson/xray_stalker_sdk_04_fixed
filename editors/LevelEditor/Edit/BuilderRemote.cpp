@@ -217,7 +217,7 @@ int SceneBuilder::CalculateSector(const Fvector& P, float R)
     	CSector* _S=(CSector*)(*_F);
         EVisible vis=_S->Intersect(P,R);
         if ((vis==fvPartialInside)||(vis==fvFully))
-        	if (_S->sector_num!=m_iDefaultSectorNum) return _S->sector_num;
+        	if (_S->m_sector_num!=m_iDefaultSectorNum) return _S->m_sector_num;
 	}
     return m_iDefaultSectorNum; // по умолчанию
 }
@@ -436,7 +436,7 @@ BOOL SceneBuilder::BuildObject(CSceneObject* obj)
 	// parse mesh data
     for(EditMeshIt M=O->FirstMesh();M!=O->LastMesh();M++){
 		CSector* S = PortalUtils.FindSector(obj,*M);
-	    int sect_num = S?S->sector_num:m_iDefaultSectorNum;
+	    int sect_num = S?S->m_sector_num:m_iDefaultSectorNum;
     	if (!BuildMesh(T,O,*M,sect_num,l_verts,l_vert_cnt,l_vert_it,l_faces,l_face_cnt,l_face_it,l_smgroups,obj->_Transform())) return FALSE;
         // fill DI vertices
         for (u32 pt_id=0; pt_id<(*M)->GetVCount(); pt_id++)
@@ -472,7 +472,7 @@ BOOL SceneBuilder::BuildMUObject(CSceneObject* obj)
 
     // detect sector
     CSector* S 			= PortalUtils.FindSector(obj,*O->FirstMesh());
-    int sect_num 		= S?S->sector_num:m_iDefaultSectorNum;
+    int sect_num 		= S?S->m_sector_num:m_iDefaultSectorNum;
 
     // build model
     if (-1==model_idx){
@@ -716,7 +716,7 @@ BOOL SceneBuilder::BuildLight(CLight* e)
                 CSector* _S=(CSector*)(*_F);
                 EVisible vis=_S->Intersect(pos,range);
                 if ((vis==fvPartialInside)||(vis==fvFully))
-                    sectors.push_back((u16)_S->sector_num);
+                    sectors.push_back((u16)_S->m_sector_num);
             }
             // test partial outside
             _F = Scene->FirstObj(OBJCLASS_SECTOR);
@@ -725,7 +725,7 @@ BOOL SceneBuilder::BuildLight(CLight* e)
                 CSector* _S=(CSector*)(*_F);
                 EVisible vis=_S->Intersect(pos,range);
                 if (vis==fvPartialOutside)
-                    sectors.push_back((u16)_S->sector_num);
+                    sectors.push_back((u16)_S->m_sector_num);
             }
             if (sectors.empty()) return FALSE;
         }else{
@@ -779,8 +779,8 @@ BOOL SceneBuilder::BuildGlow(CGlow* e)
 // Portal build functions
 //------------------------------------------------------------------------------
 void SceneBuilder::BuildPortal(b_portal* b, CPortal* e){
-	b->sector_front	= (u16)e->m_SectorFront->sector_num;
-	b->sector_back	= (u16)e->m_SectorBack->sector_num;
+	b->sector_front	= (u16)e->m_SectorFront->m_sector_num;
+	b->sector_back	= (u16)e->m_SectorBack->m_sector_num;
     b->vertices.resize(e->m_SimplifyVertices.size());
     CopyMemory(b->vertices.begin(),e->m_SimplifyVertices.begin(),e->m_SimplifyVertices.size()*sizeof(Fvector));
 }

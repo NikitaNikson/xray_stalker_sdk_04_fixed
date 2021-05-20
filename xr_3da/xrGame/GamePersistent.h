@@ -70,6 +70,7 @@ public:
 	virtual	void		LoadTitle				(LPCSTR str);
 
 	virtual bool		CanBePaused				();
+	virtual void		OnSectorChanged			(int sector);
 };
 
 IC CGamePersistent&		GamePersistent()		{ return *((CGamePersistent*) g_pGamePersistent);			}

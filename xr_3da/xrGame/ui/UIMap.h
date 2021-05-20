@@ -15,6 +15,8 @@ protected:
 	float			m_pointer_dist;
 public:
 	Frect			m_prevRect;
+	shared_str		m_texture;
+	shared_str		m_shader_name;
 					CUICustomMap					();
 	virtual			~CUICustomMap					();
 	virtual void	SetActivePoint					(const Fvector &vNewPoint);

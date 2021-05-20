@@ -138,6 +138,7 @@ public:
 	virtual IRender_Sector*			getSector				(int id);
 	virtual IRender_Visual*			getVisual				(int id);
 	virtual IRender_Sector*			detectSector			(const Fvector& P);
+	int								translateSector			(IRender_Sector* pSector);
 	virtual IRender_Target*			getTarget				();
 	
 	// Main 

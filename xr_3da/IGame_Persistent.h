@@ -83,6 +83,7 @@ public:
 	virtual void					OnGameEnd			();
 
 	virtual void					UpdateGameType		() {};
+	virtual void					OnSectorChanged		(int sector){};
 
 	virtual void					RegisterModel		(IRender_Visual* V)
 #ifndef _EDITOR

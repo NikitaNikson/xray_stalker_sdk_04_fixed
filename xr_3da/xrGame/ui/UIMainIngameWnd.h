@@ -151,6 +151,7 @@ protected:
 public:
 	CUICarPanel&		CarPanel							(){return UICarPanel;};
 	CUIMotionIcon&		MotionIcon							(){return UIMotionIcon;}
+	void				OnSectorChanged			(int sector);
 	void				OnConnected							();
 	void				reset_ui							();
 protected:

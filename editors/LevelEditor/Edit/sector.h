@@ -58,10 +58,11 @@ class CSector : public CCustomObject {
     Flags32			m_Flags;
 
     // only for build
-    int				sector_num;
+    int				m_sector_num;
 	void 			OnDestroy	();
     void			UpdateVolume();
 public:
+	u8				m_map_idx;
 					CSector		(LPVOID data, LPCSTR name);
 	void 			Construct	(LPVOID data);
 	virtual 		~CSector	();
