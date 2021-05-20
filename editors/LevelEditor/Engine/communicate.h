@@ -116,6 +116,7 @@ struct b_mu_model
     b_vertex*			verts;
     int					face_cnt;
     b_face*				faces;
+	u32*				m_smgroups;
 	u16					lod_id;				// u16(-1) = no lod, just static geometry
 };
 
@@ -195,6 +196,7 @@ enum EBUILD_CHUNKS
 	EB_LOD_models,
     EB_MU_models,
     EB_MU_refs,
+	EB_SmoothGroups,
 
 	EB_FORCE_DWORD = u32(-1)
 };

@@ -135,6 +135,10 @@ void SceneBuilder::SaveBuild()
         F->w		  	(l_faces,sizeof(b_face)*l_face_it); 	//. l_face_cnt
         F->close_chunk	();
 
+        F->open_chunk	(EB_SmoothGroups);
+        F->w		  	(l_smgroups, sizeof(u32)*l_face_it); 	//. l_face_cnt
+        F->close_chunk	();
+
         F->open_chunk	(EB_Materials);
         F->w	   		(l_materials.begin(),sizeof(b_material)*l_materials.size());
         F->close_chunk	();
@@ -193,6 +197,7 @@ void SceneBuilder::SaveBuild()
             F->w		(m.faces,sizeof(b_face)*m.face_cnt);
             // lod_id
             F->w_u16	(m.lod_id);
+            F->w		(m.m_smgroups,sizeof(int)*m.face_cnt);
         }
         F->close_chunk	();
 
@@ -226,10 +231,12 @@ void SceneBuilder::Clear ()
 	l_face_it				= 0;
     xr_free					(l_verts);
     xr_free					(l_faces);
+    xr_free					(l_smgroups);
     for (int k=0; k<(int)l_mu_models.size(); k++){
     	b_mu_model&	m 		= l_mu_models[k];
         xr_free				(m.verts);
         xr_free				(m.faces);
+        xr_free				(m.m_smgroups);
     }
     l_mu_models.clear		();
     l_mu_refs.clear			();
@@ -261,8 +268,18 @@ float CalcArea(const Fvector& v0, const Fvector& v1, const Fvector& v2)
 	return	_sqrt( p*(p-e1)*(p-e2)*(p-e3) );
 }
 
-BOOL SceneBuilder::BuildMesh(const Fmatrix& parent, CEditableObject* object, CEditableMesh* mesh, int sect_num,
-							b_vertex* verts, int& vert_cnt, int& vert_it, b_face* faces, int& face_cnt, int& face_it)
+BOOL SceneBuilder::BuildMesh(	const Fmatrix& parent,
+								CEditableObject* object,
+                                CEditableMesh* mesh,
+                                int sect_num,
+								b_vertex* verts,
+                                int& vert_cnt,
+                                int& vert_it,
+                                b_face* faces,
+                                int& face_cnt,
+                                int& face_it,
+                                u32* smgroups,
+                                const Fmatrix& real_transform)
 {
 	BOOL bResult = TRUE;
     int point_offs;
@@ -343,36 +360,42 @@ BOOL SceneBuilder::BuildMesh(const Fmatrix& parent, CEditableObject* object, CEd
                 continue;
             }
             R_ASSERT(face_it<face_cnt);
-            b_face& first_face 		= faces[face_it++];
+            b_face& first_face 		= faces[face_it];
         	{
+				smgroups[face_it]			= mesh->m_SGs[*f_it];
+				smgroups[face_it]			&= ~(1<<3);
+
                 first_face.dwMaterial 		= (u16)m_id;
                 first_face.dwMaterialGame 	= gm_id; 
-                for (int k=0; k<3; k++){
+                for (int k=0; k<3; ++k){
                     st_FaceVert& fv = face.pv[k];
                     // vertex index
                     R_ASSERT2((fv.pindex+point_offs)<vert_it,"Index out of range");
                     first_face.v[k] = fv.pindex+point_offs;
                     // uv maps
                     int offs = 0;
-                    for (u32 t=0; t<dwTexCnt; t++){
+                    for (u32 t=0; t<dwTexCnt; ++t){
                         st_VMapPt& vm_pt 	= mesh->m_VMRefs[fv.vmref].pts[t];
                         st_VMap& vmap		= *mesh->m_VMaps[vm_pt.vmap_index];
                         if (vmap.type!=vmtUV){
-                            offs++;
-                            t--;
+                            ++offs;
+                            --t;
                             continue;
                         }
                         first_face.t[k].set(vmap.getUV(vm_pt.index));
                     }
                 }
+			++face_it;
             }
 
 	        if (surf->m_Flags.is(CSurface::sf2Sided)){
 		    	R_ASSERT(face_it<face_cnt);
-                b_face& second_face 		= faces[face_it++];
+                b_face& second_face 		= faces[face_it];
                 second_face.dwMaterial 		= first_face.dwMaterial;
                 second_face.dwMaterialGame 	= first_face.dwMaterialGame;
-                for (int k=0; k<3; k++){
+				smgroups[face_it]			= mesh->m_SGs[*f_it];
+				smgroups[face_it]			|= (1<<3);
+                for (int k=0; k<3; ++k){
                     st_FaceVert& fv = face.pv[2-k];
                     // vertex index
                     second_face.v[k]=fv.pindex+point_offs;
@@ -382,13 +405,14 @@ BOOL SceneBuilder::BuildMesh(const Fmatrix& parent, CEditableObject* object, CEd
                         st_VMapPt& vm_pt 	= mesh->m_VMRefs[fv.vmref].pts[t];
                         st_VMap& vmap		= *mesh->m_VMaps[vm_pt.vmap_index];
                         if (vmap.type!=vmtUV){
-                            offs++;
-                            t--;
+                            ++offs;
+                            --t;
                             continue;
                         }
                         second_face.t[k].set(vmap.getUV(vm_pt.index));
                     }
                 }
+				++face_it;
             }
         }
         if (dwInvalidFaces)	Msg("!Object '%s' - '%s' has %d invalid face(s). Removed.",object->GetName(),mesh->Name().c_str(),dwInvalidFaces);
@@ -403,16 +427,28 @@ BOOL SceneBuilder::BuildObject(CSceneObject* obj)
     AnsiString temp; temp.sprintf("Building object: %s",obj->Name);
     UI->SetStatus(temp.c_str());
 
-    const Fmatrix& T 	= obj->_Transform();
+    Fmatrix T 			= obj->_Transform();
+	
+	Fmatrix cv 			= Fidentity;
+
+
+
 	// parse mesh data
     for(EditMeshIt M=O->FirstMesh();M!=O->LastMesh();M++){
 		CSector* S = PortalUtils.FindSector(obj,*M);
 	    int sect_num = S?S->sector_num:m_iDefaultSectorNum;
-    	if (!BuildMesh(T,O,*M,sect_num,l_verts,l_vert_cnt,l_vert_it,l_faces,l_face_cnt,l_face_it)) return FALSE;
+    	if (!BuildMesh(T,O,*M,sect_num,l_verts,l_vert_cnt,l_vert_it,l_faces,l_face_cnt,l_face_it,l_smgroups,obj->_Transform())) return FALSE;
         // fill DI vertices
-        for (u32 pt_id=0; pt_id<(*M)->GetVCount(); pt_id++){
-        	Fvector v; T.transform_tiny(v,(*M)->m_Verts[pt_id]);
-            l_scene_stat->add_svert(v);
+        for (u32 pt_id=0; pt_id<(*M)->GetVCount(); pt_id++)
+		{
+        	Fvector						v_res1, v_res2;
+        	const Fvector&	v_src 		= (*M)->m_Verts[pt_id];
+
+            Fvector 			tmp;
+            cv.transform_tiny	( tmp , 	v_src );
+            T.transform_tiny	( v_res1, 	tmp );
+
+          	l_scene_stat->add_svert(v_res1);
         }
     }
     return TRUE;
@@ -454,9 +490,12 @@ BOOL SceneBuilder::BuildMUObject(CSceneObject* obj)
         strcpy			(M.name,O->GetName());
         M.verts			= xr_alloc<b_vertex>(M.vert_cnt);
         M.faces			= xr_alloc<b_face>(M.face_cnt);
+		M.m_smgroups	= xr_alloc<u32>(M.face_cnt);
 		// parse mesh data
-	    for(EditMeshIt MESH=O->FirstMesh();MESH!=O->LastMesh();MESH++)
-	    	if (!BuildMesh(Fidentity,O,*MESH,sect_num,M.verts,M.vert_cnt,vert_it,M.faces,M.face_cnt,face_it)) return FALSE;
+		Fmatrix T;
+		T.identity();
+	    for(EditMeshIt MESH=O->FirstMesh();MESH!=O->LastMesh();++MESH)
+	    	if (!BuildMesh(T, O, *MESH, sect_num, M.verts, M.vert_cnt, vert_it, M.faces, M.face_cnt, face_it, M.m_smgroups, obj->_Transform())) return FALSE;
         M.face_cnt		= face_it;
         M.vert_cnt		= vert_it;
     }
@@ -470,7 +509,7 @@ BOOL SceneBuilder::BuildMUObject(CSceneObject* obj)
 
     // scene stats
     b_mu_model& M		= l_mu_models[model_idx];
-    for (u32 mu_vi=0; mu_vi<(u32)M.vert_cnt; mu_vi++)
+    for (u32 mu_vi=0; mu_vi<(u32)M.vert_cnt; ++mu_vi)
     	l_scene_stat->add_muvert(obj->_Transform(),M.verts[mu_vi]);
     
     return TRUE;
@@ -939,6 +978,7 @@ BOOL SceneBuilder::CompileStatic()
         if (mt)	mt->GetStaticDesc(l_vert_cnt,l_face_cnt);
     }
 	l_faces		= xr_alloc<b_face>(l_face_cnt);
+	l_smgroups  = xr_alloc<u32>		(l_face_cnt);
 	l_verts		= xr_alloc<b_vertex>(l_vert_cnt);
 
     l_scene_stat= xr_new<CSceneStat>(m_LevelBox);
