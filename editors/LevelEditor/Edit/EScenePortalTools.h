@@ -32,7 +32,7 @@ public:
     virtual void   		Save            		(IWriter&);
     virtual bool		LoadSelection      		(IReader&);
     virtual void		SaveSelection      		(IWriter&);
-
+    void 				RemoveSimilar			();
     virtual CCustomObject* CreateObject			(LPVOID data, LPCSTR name);
 };
 //---------------------------------------------------------------------------

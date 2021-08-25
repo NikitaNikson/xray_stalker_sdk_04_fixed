@@ -175,7 +175,7 @@ bool CPortalUtils::Validate(bool bMsg)
         	if (bMsg){ 
             	ELog.DlgMsg(mtError,"*ERROR: Scene has '%d' non associated face!",f_cnt);
                 for (SItemIt it=sector_def->sector_items.begin();it!=sector_def->sector_items.end();it++)
-                	Msg		("! - scene object: '%s' [O:'%s', M:'%s']",it->object->Name,it->object->RefName(),it->mesh->Name());
+                	Msg		("! - scene object: '%s' [O:'%s', M:'%s']",it->object->Name, it->object->RefName(), it->mesh->Name().c_str());
             }
             bResult = false;
         }
@@ -275,12 +275,19 @@ public:
 
         {
             U32Vec* vl;
-            vl = &(VM[ix][iy][iz]);
-            for(U32It it=vl->begin();it!=vl->end(); it++)
-                if( verts[*it].similar(V) )	{
+            vl 			= &(VM[ix][iy][iz]);
+            U32It it	= vl->begin();
+            U32It it_e	= vl->end();
+            xr_vector<sCollector::sVert>::iterator verts_begin = verts.begin();
+            for(;it!=it_e; ++it)
+            {
+//              if(verts[*it].similar(V) )	
+                if( (*(verts_begin+*it)).similar(V) )	
+                {
                     P = *it;
                     break;
                 }
+            }
         }
         if (0xffffffff==P){
             P = verts.size();
@@ -455,9 +462,12 @@ public:
     void export_portals()
     {
     	Tools->ClearDebugDraw();
-    	for (sPortalIt p_it=portals.begin(); p_it!=portals.end(); p_it++){
+        int ps = portals.size();
+        int curr = 0;
+    	for (sPortalIt p_it=portals.begin(); p_it!=portals.end(); ++p_it, ++curr){
 		    if (p_it->e.size()>1)
             {
+                Msg("portal %d of %d", curr, ps);
             	// build vert-list
                 xr_vector<int>	vlist;
                 xr_deque<int>&	elist=p_it->e;
