@@ -53,6 +53,7 @@ void CWayPoint::Render(LPCSTR parent_name, bool bParentSelect)
 {
 	Fvector pos;
     pos.set	(m_vPosition.x,m_vPosition.y+WAYPOINT_SIZE*0.85f,m_vPosition.z);
+#pragma todo(" ÷вет вейпоинта. ")
     DU.DrawCross(pos,WAYPOINT_RADIUS,WAYPOINT_SIZE*0.85f,WAYPOINT_RADIUS,WAYPOINT_RADIUS,WAYPOINT_SIZE*0.15f,WAYPOINT_RADIUS,0x0000ff00);
 	// draw links
 	Fvector p1;
@@ -80,6 +81,7 @@ void CWayPoint::Render(LPCSTR parent_name, bool bParentSelect)
     }
     
 	Fvector p2;
+#pragma todo(" ÷вет линий св€зи между вейпоинтами. ")
     u32 l = 0xff606000;
     if (bParentSelect) l = m_bSelected?0xffffff00:0xff909000;
     for (WPLIt it=m_Links.begin(); it!=m_Links.end(); it++){
