@@ -472,6 +472,9 @@ void ESceneAIMapTools::FillProp(LPCSTR pref, PropItemVec& items)
     PHelper().CreateU32	 	(items, PrepareKey(pref,"Params\\Brush Size"),			&m_BrushSize, 	1, 100);
     PHelper().CreateFloat 	(items, PrepareKey(pref,"Params\\Can Up"),				&m_Params.fCanUP, 	0.f, 10.f);
     PHelper().CreateFloat 	(items, PrepareKey(pref,"Params\\Can Down"),			&m_Params.fCanDOWN, 0.f, 10.f);
+
+	FloatValue *V = PHelper().CreateFloat(items, PrepareKey(pref,"Params\\Node Size"), &m_Params.fPatchSize, 0.1f, 1.0f);
+    V->OnChangeEvent.bind(this, &ESceneAIMapTools::OnPatchSizeChanged);
 }
 
 void ESceneAIMapTools::GetBBox(Fbox& bb, bool bSelOnly)
@@ -489,5 +492,10 @@ void ESceneAIMapTools::GetBBox(Fbox& bb, bool bSelOnly)
         }
     }break;
     }
+}
+
+void ESceneAIMapTools::OnPatchSizeChanged(PropValue*)
+{
+	ELog.DlgMsg(mtWarning, "Node size was changed, regenerate AI-Map");
 }
 
