@@ -71,6 +71,7 @@ __published:	// IDE-managed Components
 	TMenuItem *N6;
 	TExtBtn *ebMacro;
 	TMxPopupMenu *pmMacro;
+	void __fastcall paCameraDblClick(TObject *Sender);
     void __fastcall ClickOptionsMenuItem(TObject *Sender);
     void __fastcall QualityClick(TObject *Sender);
     void __fastcall fsStorageRestorePlacement(TObject *Sender);

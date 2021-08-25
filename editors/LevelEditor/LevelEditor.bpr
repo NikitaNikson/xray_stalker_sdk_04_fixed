@@ -109,7 +109,7 @@
       x:\intermediate_ed\le\CustomObject.obj 
       x:\intermediate_ed\le\CustomObjectAnimation.obj 
       x:\intermediate_ed\le\LevelPreferences.obj 
-      x:\intermediate_ed\le\FrmDBXpacker.obj"/>
+      x:\intermediate_ed\le\FrmDBXpacker.obj x:\intermediate_ed\le\FormCoord.obj"/>
     <RESFILES value="LevelEditor.res resource.res"/>
     <IDLFILES value=""/>
     <IDLGENFILES value=""/>
@@ -119,7 +119,7 @@
       FrameGroup.dfm FrameLight.dfm FrameObject.dfm FramePortal.dfm FramePS.dfm 
       FrameSector.dfm FrameShape.dfm FrameSpawn.dfm FrameWayPoint.dfm 
       LeftBar.dfm ObjectList.dfm previewimage.dfm PropertiesEObject.dfm 
-      Splash.dfm FrmDBXpacker.dfm"/>
+      Splash.dfm FrmDBXpacker.dfm FormCoord.dfm"/>
     <LIBFILES value=""/>
     <LIBRARIES value="editor.lib bcbsmp.lib"/>
     <SPARELIBS value="rtl.lib vcl.lib bcbsmp.lib vclx.lib editor.lib elpackB6.lib elpproB6.lib"/>
@@ -301,6 +301,7 @@
       <FILE FILENAME="Edit\CustomObjectAnimation.cpp" FORMNAME="" UNITNAME="CustomObjectAnimation.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="Edit\LevelPreferences.cpp" FORMNAME="" UNITNAME="LevelPreferences" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="FrmDBXpacker.cpp" FORMNAME="DB_packer" UNITNAME="FrmDBXpacker" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="FormCoord.cpp" FORMNAME="frmCoord" UNITNAME="FormCoord" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
   </FILELIST>
   <BUILDTOOLS>
   </BUILDTOOLS>
