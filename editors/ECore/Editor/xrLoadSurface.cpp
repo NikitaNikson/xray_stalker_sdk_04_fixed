@@ -115,6 +115,9 @@ u32*	Surface_Load(char* name, u32& w, u32& h)
 
 	FIBITMAP* map32		= Surface_Load(full);
 
+	if (!map32)
+		return NULL;
+
 	h					= FreeImage_GetHeight	(map32);
 	w					= FreeImage_GetWidth	(map32);
 
