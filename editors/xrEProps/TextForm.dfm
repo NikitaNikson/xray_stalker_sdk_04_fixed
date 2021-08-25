@@ -172,11 +172,11 @@ object frmText: TfrmText
     Width = 435
     Height = 217
     Align = alClient
-    Color = 10526880
+    Color = 15790320
     Font.Charset = RUSSIAN_CHARSET
     Font.Color = clWindowText
-    Font.Height = -11
-    Font.Name = 'Lucida Console'
+    Font.Height = -16
+    Font.Name = 'Consolas'
     Font.Style = []
     ParentFont = False
     ScrollBars = ssBoth
