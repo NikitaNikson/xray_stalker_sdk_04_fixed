@@ -113,7 +113,7 @@ struct ECORE_API STextureParams{
 	{
 		ZeroMemory		(this,sizeof(STextureParams));
 		flags.set		(flGenerateMipMaps,TRUE);
-		mip_filter		= kMIPFilterKaiser;
+		mip_filter		= kMIPFilterBox;
         width			= 0;
         height			= 0;
         detail_scale	= 1;
