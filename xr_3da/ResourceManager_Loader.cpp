@@ -100,7 +100,8 @@ void	CResourceManager::OnDeviceCreate	(IReader* F)
 			{
 				if	(B->getDescription().version != desc.version)
 				{
-					Msg			("! Version conflict in shader '%s'",desc.cName);
+					//Msg			("! Version conflict in shader '%s'",desc.cName);
+					Msg("! Version conflict in shader '%s', expected version: %d, but got: %d", desc.cName, B->getDescription().version, desc.version);
 				}
 
 				chunk->seek		(0);

@@ -130,7 +130,7 @@ void IGame_Persistent::OnGameStart()
 	u32		p_mem		=			Memory.mem_usage() - mem_0	;
 
 	Msg					("* [prefetch] time:    %d ms",	iFloor(p_time));
-	Msg					("* [prefetch] memory:  %dKb",	p_mem/1024);
+	Msg					("* [prefetch] memory:  %d Kb",	p_mem/1024);
 #endif
 }
 

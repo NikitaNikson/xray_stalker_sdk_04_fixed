@@ -63,7 +63,7 @@ void ESceneGroupTools::GroupObjects(bool bUndo)
 	    ELog.DlgMsg(mtInformation,"Group '%s' successfully created.\nContain %d object(s)",group->Name,group->ObjectCount());
         Scene->AppendObject(group,bUndo);
     }else{
-	    ELog.DlgMsg(mtError,"Group can't created.");
+	    ELog.DlgMsg(mtError,"Group can't be created.");
         xr_delete(group);
     }
 }

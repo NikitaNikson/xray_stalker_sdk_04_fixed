@@ -144,7 +144,7 @@ IClient*	xrServer::client_Find_Get	(ClientID ID)
 	net_Players.back()->server = this;
 	csPlayers.Leave();
 
-	Msg		("# Player not found. New player created.");
+	Msg		("* Player not found. New player created.");
 	return newCL;
 };
 

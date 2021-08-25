@@ -654,7 +654,7 @@ void CLocatorAPI::_initialize	(u32 flags, LPCSTR target_folder, LPCSTR fs_name)
 
 
 	u32	M2			= Memory.mem_usage();
-	Msg				("FS: %d files cached, %dKb memory used.",files.size(),(M2-M1)/1024);
+	Msg				("FS: %d files cached, %d Kb memory used.",files.size(),(M2-M1)/1024);
 
 	m_Flags.set		(flReady,TRUE);
 
@@ -1400,7 +1400,7 @@ void CLocatorAPI::set_file_age(LPCSTR nm, u32 age)
     tm.modtime	= age;
     int res 	= _utime(nm,&tm);
     if (0!=res){
-    	Msg			("!Can't set file age: '%s'. Error: '%s'",nm,_sys_errlist[errno]);
+    	Msg			("! Can't set file age: '%s'. Error: '%s'",nm,_sys_errlist[errno]);
     }else{
         // update record
         files_it I 		= file_find_it(nm);

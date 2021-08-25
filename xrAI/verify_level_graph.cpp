@@ -56,7 +56,7 @@ bool verify_invalid_links	(const CLevelGraph &graph)
 				continue;
 
 			if (vertex_id == link_vertex_id) {
-				Msg						("Vertex [%d][%f][%f][%f] has link to itself",vertex_id,VPUSH(graph.vertex_position(I)));
+				Msg						("Vertex [%d][%f,%f,%f] has link to itself",vertex_id,VPUSH(graph.vertex_position(I)));
 				result					= false;
 				continue;
 			}
@@ -122,7 +122,7 @@ void verify_level_graph	(LPCSTR name, bool verbose)
 			xr_vector<u32>::const_iterator	I = single_links.begin();
 			xr_vector<u32>::const_iterator	E = single_links.end();
 			for ( ; I != E; ++I)
-				Msg					("Vertex %d[%f][%f][%f] is single linked!",*I,VPUSH(level_graph->vertex_position(*I)));
+				Msg					("Vertex %d[%f,%f,%f] is single linked!",*I,VPUSH(level_graph->vertex_position(*I)));
 		}
 		Msg							("There are %d single linked nodes!",single_links.size());
 	}
@@ -139,7 +139,7 @@ void verify_level_graph	(LPCSTR name, bool verbose)
 		for ( ; II != EE; ++II)
 			if (!*II) {
 				valid	= false;
-				Msg		("AI-map is NOT valid :\nNode \n%6d[%f][%f][%f]\ncannot be reached from the node\n%6d[%f][%f][%f]\n",u32(II - BB),VPUSH(level_graph->vertex_position(u32(II - BB))),*I,VPUSH(level_graph->vertex_position(*I)));
+				Msg		("AI-map is NOT valid :\nNode \n%6d[%f,%f,%f]\ncannot be reached from the node\n%6d[%f,%f,%f]\n",u32(II - BB),VPUSH(level_graph->vertex_position(u32(II - BB))),*I,VPUSH(level_graph->vertex_position(*I)));
 				break;
 			}
 

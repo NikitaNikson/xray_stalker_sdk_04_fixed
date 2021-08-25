@@ -168,7 +168,7 @@ void	CInifile::Load(IReader* F, LPCSTR path)
 //				Msg("Can't find include file: '%s' ", str );
 
 				if(!I)
-					Msg("Can't find include file: '%s' ", str );
+					Msg("Can't find include file: %s", str );
 				else
 					Load		(I,inc_path);
 //					Msg("Found include file: '%s' ", str );

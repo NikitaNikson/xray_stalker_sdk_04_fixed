@@ -106,7 +106,7 @@ void CTextureDescrMngr::LoadTHM()
 {
 	FS_FileSet				flist;
 	FS.file_list			(flist,"$game_textures$",FS_ListFiles,"*.thm");
-	Msg						("count of .thm files=%d", flist.size());
+	Msg						("count of .thm files = %d", flist.size());
 	FS_FileSetIt It			= flist.begin();
 	FS_FileSetIt It_e		= flist.end();
 	STextureParams			tp;
@@ -176,7 +176,7 @@ void CTextureDescrMngr::Load()
 	LoadLTX					();
 	LoadTHM					();
 
-	Msg("load time=%d ms",TT.GetElapsed_ms());
+	Msg("load time = %d ms",TT.GetElapsed_ms());
 }
 
 void CTextureDescrMngr::UnLoad()

@@ -145,18 +145,18 @@ public:
 		
 		log_vminfo	();
 		
-		Msg		("* [ D3D ]: textures[%d K]", (m_base+m_lmaps)/1024);
+		Msg		("* [ D3D ]: textures[%d Kb]", (m_base+m_lmaps)/1024);
 
 #ifndef SEVERAL_ALLOCATORS
-		Msg		("* [x-ray]: crt heap[%d K], process heap[%d K]",_crt_heap/1024,_process_heap/1024);
+		Msg		("* [x-ray]: crt heap[%d Kb], process heap[%d Kb]",_crt_heap/1024,_process_heap/1024);
 #else // SEVERAL_ALLOCATORS
-		Msg		("* [x-ray]: crt heap[%d K], process heap[%d K], game lua[%d K], engine lua[%d K], render[%d K]",_crt_heap/1024,_process_heap/1024,_game_lua/1024,_engine_lua/1024,_render/1024);
+		Msg		("* [x-ray]: crt heap[%d Kb], process heap[%d Kb], game lua[%d Kb], engine lua[%d Kb], render[%d Kb]",_crt_heap/1024,_process_heap/1024,_game_lua/1024,_engine_lua/1024,_render/1024);
 #endif // SEVERAL_ALLOCATORS
 
-		Msg		("* [x-ray]: economy: strings[%d K], smem[%d K]",_eco_strings/1024,_eco_smem);
+		Msg		("* [x-ray]: economy: strings[%d Kb], smem[%d Kb]",_eco_strings/1024,_eco_smem);
 
 #ifdef DEBUG
-		Msg		("* [x-ray]: file mapping: memory[%d K], count[%d]",g_file_mapped_memory/1024,g_file_mapped_count);
+		Msg		("* [x-ray]: file mapping: memory[%d Kb], count[%d]",g_file_mapped_memory/1024,g_file_mapped_count);
 		dump_file_mappings	();
 #endif // DEBUG
 	}

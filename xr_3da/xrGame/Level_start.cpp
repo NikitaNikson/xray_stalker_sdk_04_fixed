@@ -299,7 +299,7 @@ void CLevel::InitializeClientGame	(NET_Packet& P)
 		return;
 	
 	xr_delete(game);
-	Msg("- Game configuring : Started ");
+	Msg("* Game configuring : Started");
 	CLASS_ID clsid			= game_GameState::getCLASS_ID(game_type_name,false);
 	game					= smart_cast<game_cl_GameState*> ( NEW_INSTANCE ( clsid ) );
 	game->set_type_name(game_type_name);
