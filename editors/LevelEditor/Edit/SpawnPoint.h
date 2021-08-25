@@ -22,7 +22,7 @@ class CSpawnPoint : public CCustomObject {
 public:                           
     class CLE_Visual{
     public:
-        bool                    b_tmp_lock;
+        static xr_map<xr_string, xr_string> replaced_visuals;
     	CSE_Visual*		source;
         IRender_Visual*	visual;
         void 			OnChangeVisual	();  

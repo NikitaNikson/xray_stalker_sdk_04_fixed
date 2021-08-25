@@ -52,11 +52,13 @@ void CSE_Visual::set_visual	   	(LPCSTR name, bool load)
 //------------------------------------------------------------------------------
 // CLE_Visual
 //------------------------------------------------------------------------------
+
+xr_map<xr_string, xr_string> CSpawnPoint::CLE_Visual::replaced_visuals;
+
 CSpawnPoint::CLE_Visual::CLE_Visual(CSE_Visual* src)
 {
 	source			= src;
     visual			= 0;
-    b_tmp_lock                  = false;
 }
 CSpawnPoint::CLE_Visual::~CLE_Visual()
 {
@@ -64,23 +66,43 @@ CSpawnPoint::CLE_Visual::~CLE_Visual()
 }
 void CSpawnPoint::CLE_Visual::OnChangeVisual	()
 {
-    if(b_tmp_lock) return;
     ::Render->model_Delete	(visual,TRUE);
     if (source->visual_name.size())
     {
         visual				= ::Render->model_Create(source->visual_name.c_str());
         if(NULL==visual)
         {
-         xr_string _msg = "Model [" + xr_string(source->visual_name.c_str())+"] not found. Do you want to select it from library?";
-              int mr = ELog.DlgMsg(mtConfirmation,TMsgDlgButtons() << mbYes << mbNo, _msg.c_str());
-              LPCSTR _new_val = 0;
-              b_tmp_lock = true;
-              if (mr==mrYes && TfrmChoseItem::SelectItem(smVisual,_new_val, 1) )
-              {
-                  source->visual_name  =  _new_val;
-                  visual = ::Render->model_Create(source->visual_name.c_str());
-              }
-              b_tmp_lock = false;
+        	xr_map<xr_string, xr_string>::iterator it = replaced_visuals.find(source->visual_name.c_str());
+
+        	if(it != replaced_visuals.end())
+            {
+            	if(it->second.size())
+                {
+                	source->visual_name = it->second.c_str();
+                	visual	= ::Render->model_Create(source->visual_name.c_str());
+                }
+            }
+            else
+            {
+				TIdleEvent idle_handler = NULL;
+            	std::swap(idle_handler, Application->OnIdle); // disable recursive onFrame call :)
+
+        		xr_string _msg = "Model [" + xr_string(source->visual_name.c_str())+"] not found. Do you want to select it from library?";
+            	int mr = ELog.DlgMsg(mtConfirmation,TMsgDlgButtons() << mbYes << mbNo, _msg.c_str());
+            	LPCSTR new_visual = 0;
+
+            	if(mr==mrYes && TfrmChoseItem::SelectItem(smVisual, new_visual, 1))
+            	{
+                	replaced_visuals.insert(std::make_pair(xr_string(source->visual_name.c_str()), xr_string(new_visual)));
+
+            		source->visual_name = new_visual;
+            		visual = ::Render->model_Create(source->visual_name.c_str());
+            	}
+                else
+                	replaced_visuals.insert(std::make_pair(xr_string(source->visual_name.c_str()), xr_string("")));
+
+            	std::swap(idle_handler, Application->OnIdle);
+            }
 
         }
         PlayAnimation		();
@@ -89,7 +111,6 @@ void CSpawnPoint::CLE_Visual::OnChangeVisual	()
 }
 void CSpawnPoint::CLE_Visual::PlayAnimation ()
 {
-     if(b_tmp_lock) return;
     // play motion if skeleton
     if (PKinematicsAnimated(visual)){ 
         MotionID			M = PKinematicsAnimated(visual)->ID_Cycle_Safe(source->startup_animation.c_str());
@@ -255,7 +276,10 @@ void CSpawnPoint::SSpawnData::OnFrame()
     // visual part
 	if (m_Visual){
 	    if (m_Data->m_editor_flags.is(ISE_Abstract::flVisualChange))
+		{
         	m_Visual->OnChangeVisual();
+			m_Data->m_editor_flags.set(ISE_Abstract::flVisualChange, FALSE);
+		}
 	    if (m_Data->m_editor_flags.is(ISE_Abstract::flVisualAnimationChange))
         	m_Visual->PlayAnimation();
     	if (m_Visual->visual&&PKinematics(m_Visual->visual))
@@ -264,7 +288,10 @@ void CSpawnPoint::SSpawnData::OnFrame()
     // motion part
     if (m_Motion){
 	    if (m_Data->m_editor_flags.is(ISE_Abstract::flMotionChange))
+		{
         	m_Motion->OnChangeMotion();
+			m_Data->m_editor_flags.set(ISE_Abstract::flMotionChange, FALSE);
+		}
     	if (m_Motion->animator)
     		m_Motion->animator->Update(Device.fTimeDelta);
     }
