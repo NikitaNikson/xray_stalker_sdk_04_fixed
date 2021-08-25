@@ -34,6 +34,7 @@ void CGlow::Construct(LPVOID data){
     m_bDefLoad	= false;
     m_Flags.zero();
     m_ShaderName= "effects\\glow";
+	m_TexName    = "glow\\glow_white";
 }
 
 CGlow::~CGlow()
