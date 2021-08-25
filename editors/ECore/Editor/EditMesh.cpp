@@ -145,7 +145,8 @@ void CEditableMesh::GenerateVNormals()
                     if (len>EPS_S){
 	                    N.div	(len);
                     }else{
-                    	Msg		("!Invalid smooth group found (MAX type). Object: '%s'. Vertex: [%3.2f, %3.2f, %3.2f]",m_Parent->GetName(),VPUSH(m_Verts[m_Faces[f_i].pv[k].pindex]));
+#pragma todo("Убран спам в лог о неправильном сглаживании. Теперь, как в ЗП, оно делается в 3д редакторе, а LevelEditor, при билде, не херачит всё с 75гр. углом.")
+                    	//Msg		("!Invalid smooth group found (MAX type). Object: '%s'. Vertex: [%3.2f, %3.2f, %3.2f]",m_Parent->GetName(),VPUSH(m_Verts[m_Faces[f_i].pv[k].pindex]));
                         N.set	(m_FNormals[a_lst.front()]);
                     }
 				}else{
@@ -171,7 +172,8 @@ void CEditableMesh::GenerateVNormals()
                     if (len>EPS_S){
 	                    N.div	(len);
                     }else{
-                    	Msg		("!Invalid smooth group found (Maya type). Object: '%s'. Vertex: [%3.2f, %3.2f, %3.2f]",m_Parent->GetName(),VPUSH(m_Verts[m_Faces[f_i].pv[k].pindex]));
+#pragma todo("Убран спам в лог о неправильном сглаживании. Теперь, как в ЗП, оно делается в 3д редакторе, а LevelEditor, при билде, не херачит всё с 75гр. углом.")
+                    	//Msg		("!Invalid smooth group found (Maya type). Object: '%s'. Vertex: [%3.2f, %3.2f, %3.2f]",m_Parent->GetName(),VPUSH(m_Verts[m_Faces[f_i].pv[k].pindex]));
                         N.set	(m_FNormals[a_lst.front()]);
                     }
 				}else{
