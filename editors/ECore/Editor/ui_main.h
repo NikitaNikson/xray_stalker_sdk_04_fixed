@@ -197,11 +197,13 @@ public:
     void 			OnDeviceCreate		();
     void			OnDeviceDestroy		();
 
-    // mailslot
+/*
+	// mailslot
 	bool 			CreateMailslot		();
 	void 			CheckMailslot		();
 	void 			OnReceiveMail		(LPCSTR msg);
 	void 			SendMail			(LPCSTR name, LPCSTR dest, LPCSTR msg);
+*/
 
     void			CheckWindowPos		(TForm* form);
 
