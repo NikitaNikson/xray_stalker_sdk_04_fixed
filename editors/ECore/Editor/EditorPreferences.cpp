@@ -244,7 +244,12 @@ void CCustomPreferences::Load(CInifile* I)
 	// read recent list    
     for (u32 i=0; i<scene_recent_count; i++){
     	shared_str fn  	= R_STRING_SAFE	("editor_prefs",AnsiString().sprintf("recent_files_%d",i).c_str(),shared_str("") );
-        if (fn.size())	scene_recent_list.push_back(*fn);
+        if (fn.size())
+        {
+        	AStringIt it =   std::find(scene_recent_list.begin(), scene_recent_list.end(), fn.c_str() ) ;
+            if (it==scene_recent_list.end())
+	        	scene_recent_list.push_back(*fn);
+        }
     }
     sWeather = R_STRING_SAFE	("editor_prefs", "weather", shared_str("") );
 	env_from_time 		= R_FLOAT_SAFE	("editor_prefs", "weather_from_time", 0.f);
