@@ -845,8 +845,9 @@ void CActorTools::MakeThumbnail()
         obj_name = ChangeFileExt(obj->GetName(),".object");
         FS_File 	F;
         string_path	fname;
-        FS.update_path(fname,_objects_,obj_name.c_str());
-        R_ASSERT	(FS.file_find(fname,F));
+        //FS.update_path(fname,_objects_,obj_name.c_str());
+        //R_ASSERT	(FS.file_find(fname,F));
+		R_ASSERT	(FS.file_find(obj_name.c_str(),F));
         if (ImageLib.CreateOBJThumbnail(tex_name.c_str(),obj,F.time_write)){
             ELog.Msg(mtInformation,"Thumbnail successfully created.");
         }else{
