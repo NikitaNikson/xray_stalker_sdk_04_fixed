@@ -80,6 +80,7 @@ int CLog::DlgMsg (TMsgDlgType mt, TMsgDlgButtons btn, LPCSTR _Format, ...)
         case mrYes: 	strcat(buf," - Yes."); 	break;
         case mrNo: 		strcat(buf," - No."); 	break;
         case mrCancel:  strcat(buf," - Cancel.");	break;
+        case mrNoToAll:  strcat(buf," - No To All.");	break;
         default: strcat(buf," - Something.");
         }
     }
@@ -127,6 +128,7 @@ int CLog::DlgMsg (TMsgDlgType mt, LPCSTR _Format, ...)
         case mrYes: 	strcat(buf," - Yes."); 	break;
         case mrNo: 		strcat(buf," - No."); 	break;
         case mrCancel:  strcat(buf," - Cancel.");	break;
+        case mrNoToAll:  strcat(buf," - No To All.");	break;
         default: strcat(buf," - Something.");
         }
     }

@@ -64,11 +64,20 @@ bool CSceneObject::Load(IReader& F)
             }
             if(!bRes)
             {
-                if(mr == mrNone)
-//                    mr = ELog.DlgMsg(mtConfirmation,TMsgDlgButtons() << mbYes << mbNo, "Object not found. Do you want to select it from library?");
-					mr = ELog.DlgMsg(mtConfirmation,TMsgDlgButtons() << mbYes << mbNo, "Object [%s] not found. Do you want to select it from library?", buf );
-                else
-                    mr = mrNone;
+				if (!psDeviceFlags.is(rsSkipAllObjects))
+				{
+					if(mr == mrNone)
+						mr = ELog.DlgMsg(mtConfirmation,TMsgDlgButtons() << mbYes << mbNo << mbNoToAll, "Object [%s] not found. Do you want to select it from library?", buf );
+					else
+						mr = mrNone;
+
+					if(mr == mrNoToAll)
+					{
+						psDeviceFlags.set(rsSkipAllObjects, TRUE);
+						mr = mbNo;
+					}
+				} else
+					mr = mrNo;
 
                 LPCSTR new_val = 0;
                 if ( (mr==mrNone||mr==mrYes) && TfrmChoseItem::SelectItem(smObject,new_val,1))
