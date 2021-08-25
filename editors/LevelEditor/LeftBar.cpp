@@ -816,3 +816,12 @@ void __fastcall TfraLeftBar::ebSnapListEditClick(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
+void __fastcall TfraLeftBar::LoadSoundOccluder1Click(TObject *Sender)
+{
+	ExecCommand				(COMMAND_LOAD_SOUND_OCCLUDER);
+}
+
+void __fastcall TfraLeftBar::About1Click(TObject *Sender)
+{
+	AboutForm->ShowModal();
+}

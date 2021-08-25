@@ -2390,5 +2390,9 @@ object fraLeftBar: TfraLeftBar
       Caption = 'Refresh Environment Geometry'
       OnClick = UpdateEnvironmentGeometry1Click
     end
+    object LoadSoundOccluder1: TMenuItem
+      Caption = 'Load Sound Occluder'
+      OnClick = LoadSoundOccluder1Click
+    end
   end
 end

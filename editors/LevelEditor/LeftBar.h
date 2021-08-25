@@ -195,6 +195,7 @@ __published:	// IDE-managed Components
         TMenuItem *N26;
         TMenuItem *Makepack1;
 	TExtBtn *ebSnapListEdit;
+	TMenuItem *LoadSoundOccluder1;
     void __fastcall ebClearClick(TObject *Sender);
     void __fastcall ebLoadClick(TObject *Sender);
     void __fastcall ebSaveClick(TObject *Sender);
@@ -292,6 +293,7 @@ __published:	// IDE-managed Components
         void __fastcall Makepack1Click(TObject *Sender);
 	void __fastcall lbSnapListDblClick(TObject *Sender);
 	void __fastcall ebSnapListEditClick(TObject *Sender);
+	void __fastcall LoadSoundOccluder1Click(TObject *Sender);
 private:	// User declarations
     void RedrawBar();
 	void EditSnapList();
