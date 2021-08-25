@@ -14,6 +14,7 @@
 #include "ESceneCustomMTools.h"
 #include "FrmDBXpacker.h"
 #include "../xrEProps/TextForm.h"
+#include "FormAbout.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma link "ExtBtn"

@@ -1840,6 +1840,10 @@ object fraLeftBar: TfraLeftBar
     object N24: TMenuItem
       Caption = '-'
     end
+    object About1: TMenuItem
+      Caption = 'About...'
+      OnClick = About1Click
+    end
     object Quit1: TMenuItem
       Caption = 'Quit'
       OnClick = Quit1Click

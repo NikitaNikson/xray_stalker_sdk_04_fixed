@@ -32,6 +32,7 @@ USEFORM("PropertiesEObject.cpp", frmPropertiesEObject);
 USEFORM("Splash.cpp", frmSplash);
 USEFORM("FrmDBXpacker.cpp", DB_packer);
 USEFORM("FormCoord.cpp", frmCoord);
+USEFORM("FormAbout.cpp", AboutForm);
 //---------------------------------------------------------------------------
 WINAPI WinMain(HINSTANCE hInst, HINSTANCE, LPSTR, int)
 {
@@ -61,6 +62,7 @@ WINAPI WinMain(HINSTANCE hInst, HINSTANCE, LPSTR, int)
         TfrmLog::CreateLog		();
 		Application->CreateForm(__classid(TfrmMain), &frmMain);
 		Application->CreateForm(__classid(TfrmCoord), &frmCoord);
+		Application->CreateForm(__classid(TAboutForm), &AboutForm);
 //.                 Application->CreateForm(__classid(TDB_packer), &DB_packer);
                  frmMain->SetHInst		(hInst);
 
