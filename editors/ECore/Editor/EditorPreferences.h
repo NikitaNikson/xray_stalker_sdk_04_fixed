@@ -60,6 +60,12 @@ public:
     // objects
     Flags32			object_flags;
     shared_str      sWeather;
+
+	// environment
+    float			env_from_time;
+    float			env_to_time;
+    float			env_speed;
+
 protected:
 	void 			OnKeyboardCommonFileClick	(ButtonValue* value, bool& bModif, bool& bSafe);
 	void 	__stdcall  OnClose	();
