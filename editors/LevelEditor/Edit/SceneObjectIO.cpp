@@ -90,8 +90,13 @@ bool CSceneObject::Load(IReader& F)
 
             Scene->Modified();
         }
-        if((!CheckVersion()) && (!strstr(GetCommandLine(),"-no_warn_fv")))
-            ELog.Msg( mtError, "CSceneObject: '%s' different file version!", buf );
+
+		if (EPrefs->object_flags.is(epoCheckVerObj))
+		{
+			if(!CheckVersion())
+				ELog.Msg( mtError, "CSceneObject: '%s' different file version!", buf );
+
+		}
 
         // flags
         if (F.find_chunk(SCENEOBJ_CHUNK_FLAGS)){

@@ -139,6 +139,7 @@ void CCustomPreferences::FillProp(PropItemVec& props)
     PHelper().CreateFlag32	(props,"Objects\\Show\\LOD",					&object_flags, 	epoDrawLOD);
     PHelper().CreateFlag32	(props,"Objects\\Loading\\Deferred Loading RB",	&object_flags, 	epoDeffLoadRB);
     PHelper().CreateFlag32	(props,"Objects\\Loading\\Deferred Loading CF",	&object_flags, 	epoDeffLoadCF);
+	PHelper().CreateFlag32	(props,"Objects\\Loading\\Check file version", &object_flags, epoCheckVerObj);
 
     PHelper().CreateU32		(props,"Scene\\Common\\Recent Count", 		    &scene_recent_count,0, 		25);
     PHelper().CreateU32		(props,"Scene\\Common\\Undo Level", 		    &scene_undo_level,	0, 		125);
