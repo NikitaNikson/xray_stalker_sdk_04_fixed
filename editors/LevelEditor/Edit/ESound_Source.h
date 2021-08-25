@@ -62,7 +62,7 @@ public:
     virtual	void	OnFrame			();
   	virtual bool 	Load			(IReader&);
 	virtual void 	Save			(IWriter&);
-	virtual bool 	GetBox			(Fbox& box);
+	virtual bool 	GetBox			(Fbox& box) const;
 	virtual void 	Scale			(Fvector& amount){;}
 	virtual void	FillProp		(LPCSTR pref, PropItemVec& values);
 	virtual bool 	GetSummaryInfo	(SSceneSummary* inf);

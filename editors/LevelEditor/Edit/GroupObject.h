@@ -39,7 +39,7 @@ public:
 	bool    		RefCompare		(LPCSTR nm){return m_ReferenceName.equal(nm);}
     
 	void			UpdatePivot		(LPCSTR nm, bool center);
-	virtual bool 	GetBox			(Fbox& box);
+	virtual bool 	GetBox			(Fbox& box) const;
     virtual bool	CanAttach		() {return false;}
 
     virtual void 	NumSetPosition	(const Fvector& pos);

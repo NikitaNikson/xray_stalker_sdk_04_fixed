@@ -64,7 +64,7 @@ ESoundSource::~ESoundSource()
 
 //----------------------------------------------------
 
-bool ESoundSource::GetBox( Fbox& box )
+bool ESoundSource::GetBox( Fbox& box ) const
 {
 	box.set( m_Params.position, m_Params.position );
 	box.min.sub(m_Params.max_distance);

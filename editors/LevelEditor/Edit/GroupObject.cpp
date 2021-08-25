@@ -53,11 +53,11 @@ void CGroupObject::Clear()
     xr_delete(m_PObjects);
 }
 
-bool CGroupObject::GetBox(Fbox& bb)
+bool CGroupObject::GetBox(Fbox& bb) const
 {
     bb.invalidate		();
     // update box
-    for (ObjectIt it=m_Objects.begin(); it!=m_Objects.end(); it++){
+    for (ObjectIt::const_iterator it=m_Objects.begin(); it!=m_Objects.end(); it++){
         switch((*it)->ClassID){
         case OBJCLASS_SPAWNPOINT:
         case OBJCLASS_SCENEOBJECT:{
