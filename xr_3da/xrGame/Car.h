@@ -11,7 +11,6 @@
 #include "PHCollisionDamageReceiver.h"
 #include "CarDamageParticles.h"
 #include "xrServer_Objects_ALife.h"
-#include "CarDamageParticles.h"
 #include "hit_immunity.h"
 #include "Explosive.h"
 #include "PHDestroyable.h"

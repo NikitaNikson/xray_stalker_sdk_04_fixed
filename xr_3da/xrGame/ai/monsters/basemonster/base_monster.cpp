@@ -15,7 +15,6 @@
 #include "../../../team_hierarchy_holder.h"
 #include "../../../squad_hierarchy_holder.h"
 #include "../../../group_hierarchy_holder.h"
-#include "../../../phdestroyable.h"
 #include "../../../../SkeletonCustom.h"
 #include "../../../detail_path_manager.h"
 #include "../../../HUDManager.h"

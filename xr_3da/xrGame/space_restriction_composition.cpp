@@ -10,7 +10,6 @@
 #include "space_restriction_bridge.h"
 #include "space_restriction_composition.h"
 #include "space_restriction_holder.h"
-#include "space_restriction_bridge.h"
 #include "restriction_space.h"
 #include "ai_space.h"
 #include "level_graph.h"

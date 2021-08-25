@@ -4,7 +4,6 @@
 #include "stdafx.h"
 #include "Stalker_net.h"
 #include "ServerDlg.h"
-#include ".\serverdlg.h"
 #include "Stalker_netDlg.h"
 #include "windows.h"
 

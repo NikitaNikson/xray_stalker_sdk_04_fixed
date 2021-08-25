@@ -210,8 +210,6 @@ void CUICarBodyWnd::UpdateLists_delayed()
 		m_b_need_update = true;
 }
 
-#include "UIInventoryUtilities.h"
-
 void CUICarBodyWnd::Hide()
 {
 	InventoryUtilities::SendInfoToActor			("ui_car_body_hide");

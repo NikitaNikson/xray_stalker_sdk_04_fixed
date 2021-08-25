@@ -10,7 +10,6 @@
 #include "clsid_game.h"
 #include "entity_alive.h"
 #include "PHDestroyableNotificate.h"
-#include "clsid_game.h"
 
 CMincer::CMincer(void) 
 {

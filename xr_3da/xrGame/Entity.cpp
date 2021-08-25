@@ -7,7 +7,6 @@
 #include "Entity.h"
 #include "Actor.h"
 #include "xrServer_Objects_ALife_Monsters.h"
-#include "entity.h"
 #include "Level.h"
 #include "seniority_hierarchy_holder.h"
 #include "team_hierarchy_holder.h"

@@ -6,7 +6,6 @@
 #include "SVGameTypeDlg.h"
 
 #include "ServerDlg.h"
-#include ".\svgametypedlg.h"
 // SVGameTypeDlg dialog
 
 IMPLEMENT_DYNAMIC(SVGameTypeDlg, CSubDlg)

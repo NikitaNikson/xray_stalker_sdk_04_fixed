@@ -40,7 +40,6 @@
 	#include "property_evaluator.h"
 	#include "script_world_state.h"
 	#include "script_world_property.h"
-#	include "ai/stalker/ai_stalker.h"
 	#include "script_effector.h"
 	#include "ParticlesObject.h"
 	#include "Level.h"

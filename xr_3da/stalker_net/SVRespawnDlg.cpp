@@ -4,7 +4,6 @@
 #include "stdafx.h"
 #include "Stalker_net.h"
 #include "SVRespawnDlg.h"
-#include ".\svrespawndlg.h"
 
 #include "GameTypes.h"
 // SVRespawnDlg dialog

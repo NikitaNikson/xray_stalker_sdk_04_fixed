@@ -247,7 +247,6 @@ void CUITradeWnd::Update()
 	}
 }
 
-#include "UIInventoryUtilities.h"
 void CUITradeWnd::Show()
 {
 	InventoryUtilities::SendInfoToActor("ui_trade");

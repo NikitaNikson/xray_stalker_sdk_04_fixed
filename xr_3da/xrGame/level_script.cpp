@@ -458,7 +458,6 @@ extern void remove_human_from_top_list	(u16 id);
 
 
 
-#include "ActorEffector.h"
 void add_complex_effector(LPCSTR section, int id)
 {
 	AddEffector(Actor(),id, section);

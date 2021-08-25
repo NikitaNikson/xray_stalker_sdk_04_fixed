@@ -25,7 +25,6 @@
 #include "../../../ui/UIStatic.h"
 #include "../../../ai_object_location.h"
 #include "../../../profiler.h"
-#include "../../../ActorEffector.h"
 #include "../../../../CameraBase.h"
 
 void CBaseMonster::feel_sound_new(CObject* who, int eType, CSound_UserDataPtr user_data, const Fvector &Position, float power)

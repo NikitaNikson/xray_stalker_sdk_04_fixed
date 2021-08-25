@@ -3,7 +3,7 @@
 #include "../SkeletonAnimated.h"
 #include "ZoneVisual.h"
 #include "xrServer_Objects_ALife_Monsters.h"
-#include "../SkeletonAnimated.h"
+
 CVisualZone::CVisualZone						()
 {
 }

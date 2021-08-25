@@ -6,7 +6,6 @@
 #include "SVSpectatorDlg.h"
 
 #include "ServerDlg.h"
-#include ".\SVSpectatorDlg.h"
 #include <stdio.h>
 // SVSpectatorDlg dialog
 

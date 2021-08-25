@@ -4,7 +4,6 @@
 #include "stdafx.h"
 #include "Stalker_net.h"
 #include "ClientDlg.h"
-#include ".\clientdlg.h"
 #include "Stalker_netDlg.h"
 #include "PasswordDlg.h"
 

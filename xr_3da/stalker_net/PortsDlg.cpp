@@ -5,7 +5,6 @@
 #include "Stalker_net.h"
 #include "PortsDlg.h"
 #include "Version_Define.h"
-#include ".\portsdlg.h"
 
 // CPortsDlg dialog
 

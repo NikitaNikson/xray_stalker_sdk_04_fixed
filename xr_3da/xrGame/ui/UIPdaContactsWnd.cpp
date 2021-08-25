@@ -8,7 +8,6 @@
 #include "UIFrameLineWnd.h"
 #include "UIAnimatedStatic.h"
 #include "UIScrollView.h"
-#include "../actor.h"
 #include "../string_table.h"
 
 #define PDA_CONTACT_HEIGHT 70

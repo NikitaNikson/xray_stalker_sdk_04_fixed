@@ -376,9 +376,6 @@ char*	game_cl_TeamDeathmatch::getTeamSection(int Team)
 	};
 };
 
-#include "string_table.h"
-#include "ui/teaminfo.h"
-
 void game_cl_TeamDeathmatch::shedule_Update			(u32 dt)
 {
 	CStringTable st;

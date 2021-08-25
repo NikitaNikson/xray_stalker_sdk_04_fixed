@@ -4,7 +4,6 @@
 #include "stdafx.h"
 #include "Stalker_net.h"
 #include "ServerOpts.h"
-//#include ".\serveropts.h"
 #include "ServerDlg.h"
 
 

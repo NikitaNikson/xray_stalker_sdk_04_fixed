@@ -156,8 +156,6 @@ void game_cl_ArtefactHunt::net_import_state	(NET_Packet& P)
 		dReinforcementTime = 0;
 }
 
-#include "string_table.h"
-
 void game_cl_ArtefactHunt::TranslateGameMessage	(u32 msg, NET_Packet& P)
 {
 	CStringTable st;

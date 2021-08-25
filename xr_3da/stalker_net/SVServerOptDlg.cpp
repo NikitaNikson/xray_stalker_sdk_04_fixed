@@ -5,7 +5,6 @@
 #include "Stalker_net.h"
 #include "Version_Define.h"
 #include "SVServerOptDlg.h"
-#include ".\svserveroptdlg.h"
 #include "PortsDlg.h"
 
 

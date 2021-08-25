@@ -11,13 +11,11 @@
 #include "Level.h"
 #include "ParticlesObject.h"
 #include "Actor.h"
-#include "game_base_space.h"
 #include "WeaponHUD.h"
 #include "stalker_animation_data_storage.h"
 #include "stalker_velocity_holder.h"
 #include "ui/UIMainIngameWnd.h"
 #include "../CameraManager.h"
-#include "actor.h"
 
 #ifndef MASTER_GOLD
 	#include "CustomMonster.h"

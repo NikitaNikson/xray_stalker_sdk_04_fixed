@@ -27,7 +27,6 @@
 	#include "ef_primary.h"
 	#include "string_table.h"
 	#include "alife_online_offline_group_brain.h"
-#	include "alife_simulator.h"
 	#include "alife_object_registry.h"
 	#include "date_time.h"
 #endif

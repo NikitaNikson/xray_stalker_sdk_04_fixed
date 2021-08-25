@@ -4,7 +4,6 @@
 #include "stdafx.h"
 #include "Stalker_net.h"
 #include "CDKeyDlg.h"
-#include ".\cdkeydlg.h"
 
 
 // CCDKeyDlg dialog

@@ -22,7 +22,6 @@
 #include "ui/UITextureMaster.h"
 #include "ui/UIVotingCategory.h"
 #include "ui/UIVote.h"
-#include "ui/UIMessageBoxEx.h"
 #include "string_table.h"
 #include "../IGame_Persistent.h"
 #include "MainMenu.h"

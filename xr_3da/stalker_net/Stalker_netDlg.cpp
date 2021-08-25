@@ -4,14 +4,12 @@
 #include "stdafx.h"
 #include "Stalker_net.h"
 #include "Stalker_netDlg.h"
-//#include ".\stalker_netdlg.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
 
 #include "Version_Define.h"
-#include ".\stalker_netdlg.h"
 
 // CStalker_netDlg dialog
 

@@ -23,7 +23,6 @@
 #include "../../xrNetServer/NET_utils.h"
 #include "xrMessages.h"
 #include "CustomMonster.h"
-#include "memory_manager.h"
 #include "visual_memory_manager.h"
 #include "sound_memory_manager.h"
 #include "hit_memory_manager.h"

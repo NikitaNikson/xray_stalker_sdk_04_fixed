@@ -12,7 +12,6 @@
 #include "UIScrollView.h"
 #include "UICharacterInfo.h"
 #include "UI3tButton.h"
-#include "UIInventoryUtilities.h"
 #include "../actor_statistic_mgr.h"
 #include "../character_community.h"
 #include "../character_reputation.h"

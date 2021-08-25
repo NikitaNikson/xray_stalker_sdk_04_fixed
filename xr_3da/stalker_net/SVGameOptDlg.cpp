@@ -5,7 +5,6 @@
 #include "Stalker_net.h"
 #include "SVGameOptDlg.h"
 #include "GameTypes.h"
-#include ".\svgameoptdlg.h"
 
 
 // SVGameOptDlg dialog

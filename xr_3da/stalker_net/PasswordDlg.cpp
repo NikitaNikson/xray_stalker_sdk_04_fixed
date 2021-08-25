@@ -4,7 +4,6 @@
 #include "stdafx.h"
 #include "Stalker_net.h"
 #include "PasswordDlg.h"
-#include ".\passworddlg.h"
 
 
 static char PswStr[1024] = "";

@@ -6,7 +6,6 @@
 #include "script_engine.h"
 #include "script_engine_space.h"
 #include "Level.h"
-#include "xrserver.h"
 #include "ai_space.h"
 #include "game_sv_event_queue.h"
 #include "../XR_IOConsole.h"

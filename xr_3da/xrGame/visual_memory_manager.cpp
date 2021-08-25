@@ -25,12 +25,10 @@
 #include "GamePersistent.h"
 #include "actor_memory.h"
 #include "client_spawn_manager.h"
-#include "client_spawn_manager.h"
 #include "memory_manager.h"
 
 #ifndef MASTER_GOLD
-#	include "clsid_game.h"
-#	include "ai_debug.h"
+	#include "ai_debug.h"
 #endif // MASTER_GOLD
 
 struct SRemoveOfflinePredicate {

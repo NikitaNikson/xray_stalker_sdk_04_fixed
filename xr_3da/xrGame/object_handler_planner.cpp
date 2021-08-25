@@ -17,7 +17,6 @@
 #include "object_handler_planner_impl.h"
 #include "WeaponMagazined.h"
 #include "Missile.h"
-#include "ai_monster_space.h"
 
 using namespace ObjectHandlerSpace;
 
