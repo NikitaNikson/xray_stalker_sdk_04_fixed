@@ -284,7 +284,8 @@ void CTexture::Unload	()
 {
 #ifdef DEBUG
 	string_path				msg_buff;
-	sprintf_s				(msg_buff,sizeof(msg_buff),"* Unloading texture [%s] pSurface RefCount=",cName.c_str());
+	if (strstr(Core.Params, "-dbg_log"))
+		sprintf_s				(msg_buff,sizeof(msg_buff),"* Unloading texture [%s] pSurface RefCount=",cName.c_str());
 #endif // DEBUG
 
 //.	if (flags.bLoaded)		Msg		("* Unloaded: %s",cName.c_str());
@@ -300,7 +301,8 @@ void CTexture::Unload	()
 	}
 
 #ifdef DEBUG
-	_SHOW_REF		(msg_buff, pSurface);
+	if (strstr(Core.Params, "-dbg_log"))
+		_SHOW_REF		(msg_buff, pSurface);
 #endif // DEBUG
 	_RELEASE		(pSurface);
 

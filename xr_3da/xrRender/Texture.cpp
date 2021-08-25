@@ -290,7 +290,7 @@ IDirect3DBaseTexture9*	CRender::texture_load(LPCSTR fRName, u32& ret_msize)
 	if (FS.exist(fn,"$game_textures$",	fname,	".dds"))							goto _DDS;
 
 #ifdef _EDITOR
-	if(!strstr(GetCommandLine(),"-no_warn_ft"))
+	if (strstr(Core.Params, "-dbg_log"))
 		ELog.Msg(mtError,"Can't find texture '%s'",fname);
 #else
 	Debug.fatal(DEBUG_INFO,"Can't find texture '%s'",fname);
@@ -302,9 +302,10 @@ _DDS:
 		// Load and get header
 		D3DXIMAGE_INFO			IMG;
 		S						= FS.r_open	(fn);
-#ifdef DEBUG
-		Msg						("* Loaded: %s[%d]b",fn,S->length());
-#endif // DEBUG
+
+		if (strstr(Core.Params, "-dbg_log"))
+			Msg						("* Loaded: %s[%d]",fn,S->length());
+
 		img_size				= S->length	();
 		R_ASSERT				(S);
 		R_CHK2					(D3DXGetImageInfoFromFileInMemory	(S->pointer(),S->length(),&IMG), fn);

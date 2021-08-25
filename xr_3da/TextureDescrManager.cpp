@@ -113,6 +113,8 @@ void CTextureDescrMngr::LoadTHM()
 	string_path				fn;
 	for(;It!=It_e;++It)
 	{
+		if (strstr(Core.Params, "-dbg_log"))
+			Msg("%s", (*It).name.c_str());
 		
 		FS.update_path		(fn,"$game_textures$", (*It).name.c_str());
 		IReader* F			= FS.r_open(fn);
