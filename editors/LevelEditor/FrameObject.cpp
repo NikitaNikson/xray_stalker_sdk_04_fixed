@@ -133,6 +133,7 @@ void __fastcall TfraObject::ebMultiAppendClick(TObject *Sender)
     if (TfrmChoseItem::SelectItem(smObject,N,1024,0)){
     	Fvector pos={0.f,0.f,0.f};
     	Fvector up={0.f,1.f,0.f};
+#pragma todo(" Заремить строку, чтобы не снималось выделение с объекта при Multipe Append. ")
         Scene->SelectObjects(false,OBJCLASS_SCENEOBJECT);
 	    AStringVec lst;
     	_SequenceToList(lst,N);
@@ -155,6 +156,8 @@ void __fastcall TfraObject::ebMultiAppendClick(TObject *Sender)
 */
             obj->MoveTo(pos,up);
             Scene->AppendObject( obj );
+#pragma todo(" Чтобы снималось выделение с объекта, который добавлен через Multipe Append. ")
+			//obj->Select(FALSE);
         }         
         UI->ProgressEnd(pb);
     }
