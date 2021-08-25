@@ -111,6 +111,9 @@ void CSpawnPoint::CLE_Visual::OnChangeVisual	()
 }
 void CSpawnPoint::CLE_Visual::PlayAnimation ()
 {
+	if(!source->startup_animation)
+		return;
+
     // play motion if skeleton
     if (PKinematicsAnimated(visual)){ 
         MotionID			M = PKinematicsAnimated(visual)->ID_Cycle_Safe(source->startup_animation.c_str());
