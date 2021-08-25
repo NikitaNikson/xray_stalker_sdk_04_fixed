@@ -47,7 +47,7 @@ xr_token eax_environment[]		= {
 CSHSoundEnvTools::CSHSoundEnvTools(ISHInit& init):ISHTools(init)
 {
     m_Env	 			= 0;
-    OnChangeWAV			(0);
+    m_SoundName			= "";
 }
 
 CSHSoundEnvTools::~CSHSoundEnvTools()
