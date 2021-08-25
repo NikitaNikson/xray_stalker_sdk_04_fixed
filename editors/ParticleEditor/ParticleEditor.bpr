@@ -30,32 +30,32 @@
     <PATHPAS value=".;"/>
     <PATHRC value=".;"/>
     <PATHASM value=".;"/>
-    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
-    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <DEBUGLIBPATH value="$(BCB)\Lib\Debug"/>
+    <RELEASELIBPATH value="$(BCB)\Lib\Release"/>
     <LINKER value="ilink32"/>
     <USERDEFINES value="_EDITOR;_PARTICLE_EDITOR;_DEBUG"/>
     <SYSDEFINES value="NO_STRICT;_RTLDLL;USEPACKAGES"/>
     <MAINSOURCE value="ParticleEditor.cpp"/>
-    <INCLUDEPATH value="..\ECore\Editor;$(DXSDK9_DIR)\Include;$(COMPONENTS)\alexmx;$(BCB)\include\vcl;$(BCB)\include;$(COMPONENTS)\ElPack\Code;$(COMPONENTS)\ElPack\Code\Source;..\..\xr_3da;$(CORE_DIR);..\..\xr_3da\xrRender"/>
-    <LIBPATH value="..\ECore\Editor;..\..\xr_3da;$(BCB)\Projects;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects\Lib;$(COMPONENTS)\alexmx;$(COMPONENTS)\ElPack\Code;$(COMPONENTS)\ElPack\Code\Source;x:\libraries"/>
+    <INCLUDEPATH value="..\ECore\Editor;$(DXSDK9_DIR);$(COMPONENTS)\AlexMX;$(BCB)\Include\Vcl;$(BCB)\Include;$(COMPONENTS)\ElPack\Code;$(COMPONENTS)\ElPack\Code\Source;..\..\xr_3da;$(CORE_DIR);..\..\xr_3da\xrRender"/>
+    <LIBPATH value="..\ECore\Editor;..\..\xr_3da;$(BCB)\Projects;$(BCB)\Lib;$(BCB)\Lib\Obj;$(BCB)\Projects\Lib;$(COMPONENTS)\AlexMX;$(COMPONENTS)\ElPack\Code;$(COMPONENTS)\ElPack\Code\Source;x:\libraries"/>
     <WARNINGS value="-w8092 -w8091 -w8090 -w8089 -w8087 -wprc -wuse -wucp -wstv -wstu -wsig 
-      -wpin -w-par -wnod -wnak -wdef -wcln -wbbf -wasm -wamp -wamb"/>
+      -wpin -w-par -wnod -wnak -wdef -wcln -wbbf -wasm -wamp -wamb -w-8059"/>
     <OTHERFILES value=""/>
   </MACROS>
   <OPTIONS>
-    <IDLCFLAGS value="-src_suffix cpp -D_EDITOR -D_PARTICLE_EDITOR -D_DEBUG -I..\ECore\Editor 
-      -I$(DXSDK9_DIR)\Include -I$(COMPONENTS)\alexmx -I$(BCB)\include\vcl 
-      -I$(BCB)\include -I$(COMPONENTS)\ElPack\Code 
+    <IDLCFLAGS value="-I..\ECore\Editor -I$(DXSDK9_DIR) -I$(COMPONENTS)\AlexMX 
+      -I$(BCB)\Include\Vcl -I$(BCB)\Include -I$(COMPONENTS)\ElPack\Code 
       -I$(COMPONENTS)\ElPack\Code\Source -I..\..\xr_3da -I$(CORE_DIR) 
-      -I..\..\xr_3da\xrRender -no_tie -boa"/>
-    <CFLAG1 value="-Od -H=x:\intermediate_ed\pe\pch.csm -Hc -Q -Vms -Vx -Ve -xf -xp -VF -ff 
-      -X- -r- -ps -a4 -6 -b- -k -y -v -vi- -He -c -tW -tWM"/>
+      -I..\..\xr_3da\xrRender -src_suffix cpp -D_EDITOR -D_PARTICLE_EDITOR 
+      -D_DEBUG -no_tie -boa"/>
+    <CFLAG1 value="-Od -H=x:\intermediate_ed\pe\pch.csm -Q -Vms -Vx -Ve -xf -xp -VF -ff -X- 
+      -r- -ps -a4 -6 -b- -k -y -v -vi- -He -c -tW -tWM"/>
     <PFLAGS value="-N2x:\intermediate_ed\pe -N0x:\intermediate_ed\pe -$Y+ -$W -$Q -$O- -$A8 
       -v -JPHNE -M"/>
     <RFLAGS value=""/>
     <AFLAGS value="/mx /w2 /zi"/>
-    <LFLAGS value="-lx:\libraries -Ix:\intermediate_ed\pe -D&quot;&quot; -aa -Tpe -GD -x -v 
-	-GF:LARGEADDRESSAWARE"/>
+    <LFLAGS value="-lx:\libraries -Ix:\intermediate_ed\pe -D&quot;&quot; -GC-GF:LARGEADDRESSAWARE 
+      -S:0x200000 -aa -Tpe -GD -x -v"/>
     <OTHERFILES value=""/>
   </OPTIONS>
   <LINKER>
@@ -108,85 +108,39 @@ CodePage=1252
 
 [Version Info Keys]
 CompanyName=
-FileDescription=
+FileDescription=Tool of SDK Stalker: Shadow of Chernobyl
 FileVersion=1.0.2.125
 InternalName=
-LegalCopyright=
+LegalCopyright=GSC Game World
 LegalTrademarks=
-OriginalFilename=
-ProductName=
+OriginalFilename=ParticleEditor
+ProductName=XRAY SDK
 ProductVersion=1.0.0.0
 Comments=
 
 [HistoryLists\hlIncludePath]
-Count=17
-Item0=..\ECore\Editor;$(DXSDK9_DIR)\Include;$(COMPONENTS)\alexmx;$(BCB)\include\vcl;$(BCB)\include;$(COMPONENTS)\ElPack\Code;$(COMPONENTS)\ElPack\Code\Source;..\..\xr_3da;$(CORE_DIR);..\..\xr_3da\xrRender
-Item1=..\ECore\Editor;$(DXSDK9_DIR)\Include;$(COMPONENTS)\alexmx;$(BCB)\include\vcl;$(BCB)\include;$(COMPONENTS)\ElPack\Code;$(COMPONENTS)\ElPack\Code\Source;..\..\xr_3da;$(CORE_DIR)
-Item2=$(DXSDK9_DIR)\Include;$(COMPONENTS)\alexmx;$(BCB)\include\vcl;$(BCB)\include;$(COMPONENTS)\ElPack\Code;$(COMPONENTS)\ElPack\Code\Source;..\..\xr_3da;$(CORE_DIR)
-Item3=R:\SDK\Microsoft DirectX 9.0 SDK (April 2005)\Include;r:\borland\components6\alexmx;$(BCB)\include\vcl;$(BCB)\include;R:\SDK\MagicFM_Borland\Sdk\Include;R:\Borland\Components6\ElPack\Code;R:\Borland\Components6\ElPack\Code\Source;P:\xrCore;P:\xrSound;..\ECore;..\ECore\Editor;..\ECore\Engine;..\ECore\Engine\blenders;..\ECore\Engine\visuals;..\xrEProps;..\..\xrParticles
-Item4=R:\SDK\Microsoft DirectX 9.0 SDK (February 2005)\Include;r:\borland\components6\alexmx;$(BCB)\include\vcl;$(BCB)\include;R:\SDK\MagicFM_Borland\Sdk\Include;R:\Borland\Components6\ElPack\Code;R:\Borland\Components6\ElPack\Code\Source;P:\xrCore;P:\xrSound;..\ECore;..\ECore\Editor;..\ECore\Engine;..\ECore\Engine\blenders;..\ECore\Engine\visuals;..\xrEProps;..\..\xrParticles
-Item5=R:\SDK\Microsoft DirectX 9.0 SDK (February 2005)\Include;r:\borland\components6\alexmx;$(BCB)\include;$(BCB)\include\vcl;R:\SDK\MagicFM_Borland\Sdk\Include;R:\Borland\Components6\ElPack\Code;R:\Borland\Components6\ElPack\Code\Source;P:\xrCore;P:\xrCDB;P:\xrSound;..\ECore;..\ECore\Editor;..\ECore\Engine;..\ECore\Engine\blenders;..\ECore\Engine\visuals;..\xrEProps;P:\Tools\ETools;..\..\xrParticles
-Item6=R:\SDK\Microsoft DirectX 9.0 SDK (October 2004)\Include;r:\borland\components6\alexmx;$(BCB)\include;$(BCB)\include\vcl;R:\SDK\MagicFM_Borland\Sdk\Include;R:\Borland\Components6\ElPack\Code;R:\Borland\Components6\ElPack\Code\Source;P:\xrCore;P:\xrCDB;P:\xrSound;..\ECore;..\ECore\Editor;..\ECore\Engine;..\ECore\Engine\blenders;..\ECore\Engine\visuals;..\xrEProps;P:\Tools\ETools;..\..\xrParticles
-Item7=R:\SDK\Microsoft DirectX 9.0 SDK (October 2004)\Include;r:\borland\components6\alexmx;$(BCB)\include;$(BCB)\include\vcl;R:\SDK\MagicFM_Borland\Sdk\Include;R:\Borland\Components6\ElPack\Code;R:\Borland\Components6\ElPack\Code\Source;P:\xrCore;P:\xrCDB;P:\xrSound;..\ECore;..\ECore\Editor;..\ECore\Engine;..\ECore\Engine\blenders;..\ECore\Engine\visuals;..\xrEProps;P:\Tools\ETools
-Item8=R:\SDK\DirectX9.0_sum_2004\Include;C:\Rad\Borland\CBuilder6\Projects;r:\borland\components6\alexmx;$(BCB)\include;$(BCB)\include\vcl;P:\MagicFM_Borland\Sdk\Include;R:\Borland\Components6\ElPack\Code;R:\Borland\Components6\ElPack\Code\Source;P:\xrCore;P:\xrCDB;P:\xrSound;..\ECore;..\ECore\Editor;..\ECore\Engine;..\ECore\Engine\blenders;..\ECore\Engine\visuals;..\xrEProps;P:\Tools\ETools
-Item9=R:\SDK\DirectX9.0_sum_2004\Include;C:\Rad\Borland\CBuilder6\Projects;r:\borland\components6\alexmx;$(BCB)\include;$(BCB)\include\vcl;P:\MagicFM_Borland\Sdk\Include;R:\Borland\Components6\ElPack\Code;R:\Borland\Components6\ElPack\Code\Source;P:\xrCore;P:\xrCDB;P:\xrSound;..\ECore;..\ECore\Editor;..\ECore\Engine;..\ECore\Engine\blenders;..\ECore\Engine\visuals;..\xrEProps
-Item10=C:\Rad\Borland\CBuilder6\Projects;r:\borland\components6\alexmx;R:\SDK\DirectX9.0_beta3\Include;$(BCB)\include;$(BCB)\include\vcl;P:\MagicFM_Borland\Sdk\Include;R:\Borland\Components6\ElPack\Code;R:\Borland\Components6\ElPack\Code\Source;P:\xrCore;P:\xrCDB;P:\xrSound;..\ECore;..\ECore\Editor;..\ECore\Engine;..\ECore\Engine\blenders;..\ECore\Engine\visuals;..\xrEProps
-Item11=C:\Rad\Borland\CBuilder6\Projects;r:\borland\components6\alexmx;$(BCB)\include;$(BCB)\include\vcl;R:\SDK\DirectX9.0_beta3\Include;P:\MagicFM_Borland\Sdk\Include;R:\Borland\Components6\ElPack\Code;R:\Borland\Components6\ElPack\Code\Source;P:\xrCore;P:\xrCDB;P:\xrSound;..\ECore;..\ECore\Editor;..\ECore\Engine;..\ECore\Engine\blenders;..\ECore\Engine\visuals;..\xrEProps
-Item12=C:\Rad\Borland\CBuilder6\Projects;r:\borland\components6\alexmx;$(BCB)\include;$(BCB)\include\vcl;P:\MagicFM_Borland\Sdk\Include;R:\Borland\Components6\ElPack\Code;R:\Borland\Components6\ElPack\Code\Source;P:\xrCore;P:\xrCDB;P:\xrSound;..\ECore;..\ECore\Editor;..\ECore\Engine;..\ECore\Engine\blenders;..\ECore\Engine\visuals;..\xrEProps
-Item13=C:\Rad\Borland\CBuilder6\Projects;r:\borland\components6\alexmx;R:\SDK\DirectX9.0\include;$(BCB)\include;$(BCB)\include\vcl;P:\MagicFM_Borland\Sdk\Include;R:\Borland\Components6\ElPack\Code;R:\Borland\Components6\ElPack\Code\Source;P:\xrCore;P:\xrCDB;P:\xrSound;..\ECore;..\ECore\Editor;..\ECore\Engine;..\ECore\Engine\blenders;..\ECore\Engine\visuals;..\xrEProps
-Item14=C:\Rad\Borland\CBuilder6\Projects;r:\borland\components6\alexmx;R:\SDK\DirectX9.0\include;$(BCB)\include;$(BCB)\include\vcl;P:\MagicFM_Borland\Sdk\Include;R:\Borland\Components6\ElPack\Code;R:\Borland\Components6\ElPack\Code\Source;P:\xrCore;P:\xrCDB;P:\xrSound;..\ECore;..\ECore\Editor;..\ECore\Engine;..\ECore\Engine\blenders;..\ECore\Engine\visuals
-Item15=r:\borland\components6\alexmx;R:\SDK\DirectX9.0\include;$(BCB)\include;$(BCB)\include\vcl;P:\MagicFM_Borland\Sdk\Include;R:\Borland\Components6\ElPack\Code;R:\Borland\Components6\ElPack\Code\Source;P:\xrCore;P:\xrCDB;P:\xrSound;..\ECore;..\ECore\Editor;..\ECore\Engine;..\ECore\Engine\blenders;..\ECore\Engine\visuals
-Item16=C:\Rad\Borland\CBuilder6\Projects;Engine\Animations;Engine\BLENDERS;r:\borland\components6\alexmx;editor;R:\SDK\DirectX9.0\include;$(BCB)\include;$(BCB)\include\vcl;engine;P:\MagicFM_Borland\Sdk\Include;R:\Borland\Components6\Elpack\Code;R:\Borland\Components6\Elpack\Code\Source;P:\xrCore
+Count=1
+Item0=..\ECore\Editor;$(DXSDK9_DIR);$(COMPONENTS)\AlexMX;$(BCB)\Include\Vcl;$(BCB)\Include;$(COMPONENTS)\ElPack\Code;$(COMPONENTS)\ElPack\Code\Source;..\..\xr_3da;$(CORE_DIR);..\..\xr_3da\xrRender
 
 [HistoryLists\hlLibraryPath]
-Count=4
-Item0=..\ECore\Editor;..\..\xr_3da;$(BCB)\Projects;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects\Lib;$(COMPONENTS)\alexmx;$(COMPONENTS)\ElPack\Code;$(COMPONENTS)\ElPack\Code\Source;x:\libraries
-Item1=$(BCB)\Projects;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects\Lib;$(COMPONENTS)\alexmx;$(COMPONENTS)\ElPack\Code;$(COMPONENTS)\ElPack\Code\Source;x:\libraries
-Item2=C:\Rad\Borland\CBuilder6\Projects;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects\Lib;r:\borland\components6\alexmx;R:\Borland\Components6\ElPack\Code;R:\Borland\Components6\ElPack\Code\Source;..\lib\dx;..\lib;x:\;..\ECore;..\ECore\Editor
-Item3=lib;Engine\Animations;Engine\BLENDERS;c:\rad\borland\CBuilder6\Projects;engine;editor;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects\Lib;r:\borland\components6\alexmx;R:\Borland\Components6\Elpack\Code\Source;R:\Borland\Components6\Elpack\Code;..\lib\dx;..\lib;x:\
+Count=1
+Item0=..\ECore\Editor;..\..\xr_3da;$(BCB)\Projects;$(BCB)\Lib;$(BCB)\Lib\Obj;$(BCB)\Projects\Lib;$(COMPONENTS)\AlexMX;$(COMPONENTS)\ElPack\Code;$(COMPONENTS)\ElPack\Code\Source;x:\libraries
 
 [HistoryLists\hlDebugSourcePath]
-Count=3
+Count=1
 Item0=$(BCB)\source\vcl
-Item1=c:\rad\borland\cbuilder5\source\vcl
-Item2=c:\rad\borland\cbuilder5\source\vcl;P:\Editor\QHull\
 
 [HistoryLists\hlConditionals]
-Count=14
+Count=1
 Item0=_EDITOR;_PARTICLE_EDITOR;_DEBUG
-Item1=_EDITOR;_PARTICLE_EDITOR;DEBUG;_DEBUG
-Item2=_EDITOR;_PARTICLE_EDITOR;DEBUG
-Item3=_EDITOR;_PARTICLE_EDITOR;_DEBUG;DEBUG
-Item4=_EDITORS;_PARTICLE_EDITOR;_DEBUG
-Item5=_EDITOR_FAMILY;_PARTICLE_EDITOR;_DEBUG
-Item6=_PARTICLE_EDITOR;_DEBUG
-Item7=_EDITOR;_DEBUG
-Item8=_EDITOR
-Item9=_EDITOR;_DEBUG;_STLP_USE_OWN_NAMESPACE
-Item10=_EDITOR;_DEBUG;_BORLAND
-Item11=_DEBUG;_EDITOR
-Item12=_DEBUG;_ED
-Item13=_DEBUG
 
 [HistoryLists\hlIntOutputDir]
-Count=3
+Count=1
 Item0=x:\intermediate_ed\pe
-Item1=Intermediate
-Item2=ParticleEditor
 
 [HistoryLists\hlFinalOutputDir]
-Count=11
+Count=1
 Item0=x:\binaries\
-Item1=x:\binaries
-Item2=x:\
-Item3=x:\build\
-Item4=x:\build
-Item5=x:\build\bins\editors\
-Item6=x:\build\bins\editors
-Item7=x:\build_karma\
-Item8=x:\build_karma
-Item9=!run\
-Item10=P:\Editor\!run
 
 [HistoryLists\hIBPIOutputDir]
 Count=1
@@ -196,7 +150,7 @@ Item0=x:\libraries
 DebugSourceDirs=$(BCB)\source\vcl
 
 [Parameters]
-RunParams=-wf I:\xray_sdk\sdk_build\
+RunParams=
 Launcher=
 UseLauncher=0
 DebugCWD=

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="windows-1251"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="8.00"
+	Version="8,00"
 	Name="xrRender_R2"
 	ProjectGUID="{963BA4E5-499A-454D-B002-1D5ECE0527A6}"
+	RootNamespace="xrRender_R2"
 	Keyword="Win32Proj"
 	>
 	<Platforms>
@@ -211,7 +212,7 @@
 		</Configuration>
 		<Configuration
 			Name="Mixed|Win32"
-			OutputDirectory="x:\binaries\"
+			OutputDirectory="x:\binaries"
 			IntermediateDirectory="x:\intermediate\$(ConfigurationName)\$(ProjectName)"
 			ConfigurationType="2"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"

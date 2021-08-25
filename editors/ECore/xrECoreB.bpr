@@ -175,28 +175,28 @@
     <PATHPAS value=".;"/>
     <PATHRC value=".;"/>
     <PATHASM value=".;"/>
-    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
-    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <DEBUGLIBPATH value="$(BCB)\Lib\Debug"/>
+    <RELEASELIBPATH value="$(BCB)\Lib\Release"/>
     <LINKER value="ilink32"/>
     <USERDEFINES value="_EDITOR;_ECOREB;_DEBUG;XRCDB_EXPORTS"/>
     <SYSDEFINES value="NO_STRICT;_RTLDLL;USEPACKAGES"/>
     <MAINSOURCE value="xrECoreB.bpf"/>
-    <INCLUDEPATH value="$(BCB)\Projects;blenders;..\..\xr_3da\xrRender_R1;..\..\xr_3da\blenders;..\..\xrCDB;..\..\xr_3da\xrCPU_Pipe;Engine\Blenders;..\..\xr_3da\xrRender;..\..\xr_3da;$(DXSDK9_DIR)\Include;WildMagic;Editor;Engine;$(BCB)\include;$(BCB)\include\vcl;$(COMPONENTS)\AlexMX;$(COMPONENTS)\ElPack\Code\Source;$(BCB)\Include\Mfc;$(CORE_DIR);..\xrEProps;$(XIPH_DIR);$(MAGIC_SW_DIR);$(SDK_DIR)\freeimage"/>
-    <LIBPATH value="$(BCB)\Projects;blenders;..\..\xr_3da\xrRender_R1;..\..\xr_3da\blenders;WildMagic;Editor;..\..\xrCDB;..\..\xr_3da\xrCPU_Pipe;Engine\Blenders;..\..\xr_3da\xrRender;..\..\xr_3da;Engine;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects\Lib;$(COMPONENTS)\AlexMX;$(COMPONENTS)\ElPack\Code\Source;$(COMPONENTS)\ElPack\Code;$(BCB)\Lib\Psdk;x:\libraries"/>
-    <WARNINGS value="-w8092 -w8090 -w8089 -w8087 -wprc -wucp -wstv -wstu -wsig -wpin -w-par 
+    <INCLUDEPATH value="$(BCB)\Projects;blenders;..\..\xr_3da\xrRender_R1;..\..\xr_3da\blenders;..\..\xrCDB;..\..\xr_3da\xrCPU_Pipe;Engine\Blenders;..\..\xr_3da\xrRender;..\..\xr_3da;$(DXSDK9_DIR);WildMagic;Editor;Engine;$(BCB)\Include;$(BCB)\Include\Vcl;$(COMPONENTS)\AlexMX;$(COMPONENTS)\ElPack\Code\Source;$(BCB)\Include\Mfc;$(CORE_DIR);..\xrEProps;$(XIPH_DIR);$(MAGIC_SW_DIR);$(SDK_DIR)\FreeImage"/>
+    <LIBPATH value="$(BCB)\Projects;blenders;..\..\xr_3da\xrRender_R1;..\..\xr_3da\blenders;WildMagic;Editor;..\..\xrCDB;..\..\xr_3da\xrCPU_Pipe;Engine\Blenders;..\..\xr_3da\xrRender;..\..\xr_3da;Engine;$(BCB)\Lib;$(BCB)\Lib\Obj;$(BCB)\Projects\Lib;$(COMPONENTS)\AlexMX;$(COMPONENTS)\ElPack\Code\Source;$(COMPONENTS)\ElPack\Code;$(BCB)\Lib\Psdk;x:\libraries"/>
+    <WARNINGS value="-w-8059 -w8092 -w8090 -w8089 -w8087 -wprc -wucp -wstv -wstu -wsig -wpin -w-par 
       -wnod -wnak -wdef -wcln -wbbf -wasm -wamp -wamb"/>
     <OTHERFILES value=""/>
   </MACROS>
   <OPTIONS>
-    <IDLCFLAGS value="-src_suffix cpp -D_EDITOR -D_ECOREB -D_DEBUG -DXRCDB_EXPORTS 
-      -I$(BCB)\Projects; -Iblenders 
-      -I..\..\xr_3da\xrRender_R1 -I..\..\xr_3da\blenders -I..\..\xrCDB 
-      -I..\..\xr_3da\xrCPU_Pipe -IEngine\Blenders -I..\..\xr_3da\xrRender 
-      -I..\..\xr_3da -I$(DXSDK9_DIR)\Include -IWildMagic -IEditor -IEngine 
-      -I$(BCB)\include -I$(BCB)\include\vcl -I$(COMPONENTS)\AlexMX 
-      -I$(COMPONENTS)\ElPack\Code\Source -I$(BCB)\Include\Mfc -I$(CORE_DIR) 
-      -I..\xrEProps -I$(XIPH_DIR) -I$(MAGIC_SW_DIR) -I$(SDK_DIR)\freeimage -boa"/>
-    <CFLAG1 value="-WD -Od -H=x:\intermediate_ed\ecore\pch.csm -Hc -Q -Vms -Vx -Ve -xf -xp 
+    <IDLCFLAGS value="-I$(BCB)\Projects -Iblenders -I..\..\xr_3da\xrRender_R1 
+      -I..\..\xr_3da\blenders -I..\..\xrCDB -I..\..\xr_3da\xrCPU_Pipe 
+      -IEngine\Blenders -I..\..\xr_3da\xrRender -I..\..\xr_3da -I$(DXSDK9_DIR) 
+      -IWildMagic -IEditor -IEngine -I$(BCB)\Include -I$(BCB)\Include\Vcl 
+      -I$(COMPONENTS)\AlexMX -I$(COMPONENTS)\ElPack\Code\Source 
+      -I$(BCB)\Include\Mfc -I$(CORE_DIR) -I..\xrEProps -I$(XIPH_DIR) 
+      -I$(MAGIC_SW_DIR) -I$(SDK_DIR)\FreeImage -src_suffix cpp -D_EDITOR 
+      -D_ECOREB -D_DEBUG -DXRCDB_EXPORTS -boa"/>
+    <CFLAG1 value="-WD -Od -H=x:\intermediate_ed\ecore\pch.csm -Q -Vms -Vx -Ve -xf -xp 
       -VF -ff -X- -r- -ps -a4 -6 -b- -k -y -v -vi- -tWD -tWM -c"/>
     <PFLAGS value="-N2x:\intermediate_ed\ecore -N0x:\intermediate_ed\ecore -$Y+ -$W -$O- -$A8 
       -v -JPHNE -M"/>
@@ -427,37 +427,24 @@ ProductVersion=1.0.0.0
 Comments=
 
 [HistoryLists\hlIncludePath]
-Count=7
-Item0=I:\Program Files\Borland\CBuilder6\Projects;blenders;..\..\xr_3da\xrRender_R1;..\..\xr_3da\blenders;..\..\xrCDB;..\..\xr_3da\xrCPU_Pipe;Engine\Blenders;..\..\xr_3da\xrRender;..\..\xr_3da;$(DXSDK9_DIR)\Include;WildMagic;Editor;Engine;$(BCB)\include;$(BCB)\include\vcl;$(COMPONENTS)\AlexMX;$(COMPONENTS)\ElPack\Code\Source;$(BCB)\Include\Mfc;$(CORE_DIR);..\xrEProps;$(XIPH_DIR);$(MAGIC_SW_DIR);$(SDK_DIR)\freeimage
-Item1=blenders;..\..\xr_3da\xrRender_R1;..\..\xr_3da\blenders;..\..\xrCDB;..\..\xr_3da\xrCPU_Pipe;Engine\Blenders;..\..\xr_3da\xrRender;..\..\xr_3da;$(DXSDK9_DIR)\Include;WildMagic;Editor;Engine;$(BCB)\include;$(BCB)\include\vcl;$(COMPONENTS)\AlexMX;$(COMPONENTS)\ElPack\Code\Source;$(BCB)\Include\Mfc;$(CORE_DIR);..\xrEProps;$(XIPH_DIR);$(MAGIC_SW_DIR);$(SDK_DIR)\freeimage
-Item2=blenders;..\..\xr_3da\xrRender_R1;..\..\xr_3da\blenders;..\..\xrCDB;..\..\xr_3da\xrCPU_Pipe;Engine\Blenders;..\..\xr_3da\xrRender;..\..\xr_3da;$(DXSDK9_DIR)\Include;WildMagic;Editor;Engine;$(BCB)\include;$(BCB)\include\vcl;$(COMPONENTS)\AlexMX;$(COMPONENTS)\ElPack\Code\Source;$(BCB)\Include\Mfc;$(CORE_DIR);..\xrEProps;$(XIPH_DIR);$(MAGIC_SW_DIR)
-Item3=..\..\xrCDB;..\..\xr_3da\xrCPU_Pipe;Engine\Blenders;..\..\xr_3da\xrRender;..\..\xr_3da;$(DXSDK9_DIR)\Include;WildMagic;Editor;Engine;$(BCB)\include;$(BCB)\include\vcl;$(COMPONENTS)\AlexMX;$(COMPONENTS)\ElPack\Code\Source;$(BCB)\Include\Mfc;$(CORE_DIR);..\xrEProps;$(XIPH_DIR);$(MAGIC_SW_DIR)
-Item4=..\..\xrCDB;..\..\xr_3da\xrCPU_Pipe;Engine\Blenders;..\..\xr_3da\xrRender;..\..\xr_3da;$(DXSDK9_DIR)\Include;WildMagic;Editor;Engine;$(BCB)\include;$(BCB)\include\vcl;$(COMPONENTS)\AlexMX;$(COMPONENTS)\ElPack\Code\Source;$(BCB)\Include\Mfc;$(CORE_DIR);..\xrEProps;$(XIPH_DIR)
-Item5=..\..\xrCDB;..\..\xr_3da\xrCPU_Pipe;Engine\Blenders;..\..\xr_3da\xrRender;..\..\xr_3da;$(DXSDK9_DIR)\Include;WildMagic;Editor;Engine;$(BCB)\include;$(BCB)\include\vcl;$(COMPONENTS)\AlexMX;$(COMPONENTS)\ElPack\Code\Source;$(BCB)\Include\Mfc;$(CORE_DIR);..\xrEProps;$(XIPH_DIR)\include
-Item6=$(DXSDK9_DIR)\Include;WildMagic;Editor;Engine;$(BCB)\include;$(BCB)\include\vcl;$(COMPONENTS)\AlexMX;$(COMPONENTS)\ElPack\Code\Source;$(BCB)\Include\Mfc;$(CORE_DIR);..\xrEProps;$(XIPH_DIR)\include
+Count=1
+Item0=$(BCB)\Projects;blenders;..\..\xr_3da\xrRender_R1;..\..\xr_3da\blenders;..\..\xrCDB;..\..\xr_3da\xrCPU_Pipe;Engine\Blenders;..\..\xr_3da\xrRender;..\..\xr_3da;$(DXSDK9_DIR);WildMagic;Editor;Engine;$(BCB)\Include;$(BCB)\Include\Vcl;$(COMPONENTS)\AlexMX;$(COMPONENTS)\ElPack\Code\Source;$(BCB)\Include\Mfc;$(CORE_DIR);..\xrEProps;$(XIPH_DIR);$(MAGIC_SW_DIR);$(SDK_DIR)\FreeImage
 
 [HistoryLists\hlLibraryPath]
-Count=4
-Item0=I:\Program Files\Borland\CBuilder6\Projects;blenders;..\..\xr_3da\xrRender_R1;..\..\xr_3da\blenders;WildMagic;Editor;..\..\xrCDB;..\..\xr_3da\xrCPU_Pipe;Engine\Blenders;..\..\xr_3da\xrRender;..\..\xr_3da;Engine;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects\Lib;$(COMPONENTS)\AlexMX;$(COMPONENTS)\ElPack\Code;$(BCB)\Lib\Psdk;x:\libraries
-Item1=blenders;..\..\xr_3da\xrRender_R1;..\..\xr_3da\blenders;WildMagic;Editor;..\..\xrCDB;..\..\xr_3da\xrCPU_Pipe;Engine\Blenders;..\..\xr_3da\xrRender;..\..\xr_3da;Engine;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects\Lib;$(COMPONENTS)\AlexMX;$(COMPONENTS)\ElPack\Code;$(BCB)\Lib\Psdk;x:\libraries
-Item2=WildMagic;Editor;..\..\xrCDB;..\..\xr_3da\xrCPU_Pipe;Engine\Blenders;..\..\xr_3da\xrRender;..\..\xr_3da;Engine;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects\Lib;$(COMPONENTS)\AlexMX;$(COMPONENTS)\ElPack\Code;$(BCB)\Lib\Psdk;x:\libraries
-Item3=Editor;WildMagic;Engine;$(BCB)\lib;$(BCB)\lib\obj;$(BCB)\Projects\Lib;$(COMPONENTS)\AlexMX;$(COMPONENTS)\ElPack\Code;$(BCB)\Lib\Psdk;x:\libraries
+Count=1
+Item0=$(BCB)\Projects;blenders;..\..\xr_3da\xrRender_R1;..\..\xr_3da\blenders;WildMagic;Editor;..\..\xrCDB;..\..\xr_3da\xrCPU_Pipe;Engine\Blenders;..\..\xr_3da\xrRender;..\..\xr_3da;Engine;$(BCB)\Lib;$(BCB)\Lib\Obj;$(BCB)\Projects\Lib;$(COMPONENTS)\AlexMX;$(COMPONENTS)\ElPack\Code\Source;$(COMPONENTS)\ElPack\Code;$(BCB)\Lib\Psdk;x:\libraries
 
 [HistoryLists\hlDebugSourcePath]
 Count=1
 Item0=$(BCB)\source\vcl
 
 [HistoryLists\hlConditionals]
-Count=2
+Count=1
 Item0=_EDITOR;_ECOREB;_DEBUG;XRCDB_EXPORTS
-Item1=_EDITOR;_ECOREB;_DEBUG
 
 [HistoryLists\hlIntOutputDir]
-Count=4
+Count=1
 Item0=x:\intermediate_ed\ecore
-Item1=Intermediate
-Item2=XRLC_Intermediate
-Item3=xrLC_Options
 
 [HistoryLists\hlFinalOutputDir]
 Count=1
@@ -471,11 +458,11 @@ Item0=x:\libraries
 DebugSourceDirs=$(BCB)\source\vcl
 
 [Parameters]
-RunParams=-wf x:\stalker_adn
+RunParams=
 Launcher=
 UseLauncher=0
 DebugCWD=
-HostApplication=x:\binaries\ActorEditor.exe
+HostApplication=
 RemoteHost=
 RemotePath=
 RemoteLauncher=

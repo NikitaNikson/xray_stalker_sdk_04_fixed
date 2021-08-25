@@ -1,14 +1,4 @@
 [Closed Files]
-File_0=SourceModule,'P:\Editors\!.txt',0,1,46,28,64,0,0
-File_1=SourceModule,'P:\Editors\EACTOREDITOR\main.cpp',0,1,16,19,24,0,0
-File_2=SourceModule,'P:\xrCore\xrDebug.cpp',0,1,90,1,105,0,0
-File_3=SourceModule,'P:\Editors\ECore\Editor\UI_MainCustom.cpp',0,1,403,26,421,0,0
-File_4=SourceModule,'P:\Editors\ECore\Editor\D3DUtils.cpp',0,1,966,25,988,0,0
-File_5=SourceModule,'P:\Editors\EACTOREDITOR\TopBar.cpp',0,1,93,1,108,0,0
-File_6=SourceModule,'P:\Editors\ECore\Editor\UI_MainCommand.cpp',0,1,25,1,39,0,0
-File_7=SourceModule,'P:\Editors\EACTOREDITOR\UI_Tools.cpp',0,1,125,32,140,0,0
-File_8=SourceModule,'P:\Editors\EACTOREDITOR\UI_Main.cpp',0,1,1,1,1,0,0
-File_9=SourceModule,'P:\Editors\EACTOREDITOR\UI_MainExtern.cpp',0,1,259,1,272,0,0
 
 [Modules]
 Module0=P:\Editors\EACTOREDITOR\Unit1.cpp
