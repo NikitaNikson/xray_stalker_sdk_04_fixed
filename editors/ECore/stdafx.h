@@ -25,7 +25,7 @@
 #include <fastmath.h>
 #include <io.h>
 #include <fcntl.h>
-#include <sys\stat.h>
+#include <sys/stat.h>
 #include <process.h>
 #include <utime.h>
 
@@ -85,9 +85,9 @@ __inline float expf	(float val)                           	{ return ::exp(val);}
 	DEFINE_VECTOR(ListItem*,ListItemsVec,ListItemsIt);
 #endif
 
-#include "..\..\xrCDB\xrCDB.h"
-#include "..\..\xrSound\Sound.h"
-#include "..\..\xr_3da\PSystem.h"
+#include "../../xrCDB/xrCDB.h"
+#include "../../xrSound/Sound.h"
+#include "../../xr_3da/psystem.h"
 
 // DirectX headers
 #include <d3d9.h>
@@ -96,8 +96,8 @@ __inline float expf	(float val)                           	{ return ::exp(val);}
 #include <dsound.h>
 
 // some user components
-#include "..\..\xr_3da\fmesh.h"
-#include "..\..\xr_3da\_d3d_extensions.h"
+#include "../../xr_3da/Fmesh.h"
+#include "../../xr_3da/_d3d_extensions.h"
 
 #include "D3DX_Wrapper.h"
 
@@ -105,9 +105,9 @@ DEFINE_VECTOR		(AnsiString,AStringVec,AStringIt);
 DEFINE_VECTOR		(AnsiString*,LPAStringVec,LPAStringIt);
 
 #include "xrEProps.h"
-#include "..\..\xrCore\Log.h"
-#include "editor\engine.h"
-#include "..\..\xr_3da\defines.h"
+#include "../../xrCore/Log.h"
+#include "editor/engine.h"
+#include "../../xr_3da/defines.h"
 
 struct str_pred : public std::binary_function<char*, char*, bool>
 {
@@ -121,9 +121,9 @@ struct astr_pred : public std::binary_function<const AnsiString&, const AnsiStri
 };
 
 #ifdef _EDITOR
-	#include "editor\device.h"
-	#include "..\..\xr_3da\properties.h"
-	#include "editor\render.h"
+	#include "editor/device.h"
+	#include "../../xr_3da/Properties.h"
+	#include "editor/render.h"
 	DEFINE_VECTOR(FVF::L,FLvertexVec,FLvertexIt);
 	DEFINE_VECTOR(FVF::TL,FTLvertexVec,FTLvertexIt);
 	DEFINE_VECTOR(FVF::LIT,FLITvertexVec,FLITvertexIt);
@@ -133,7 +133,7 @@ struct astr_pred : public std::binary_function<const AnsiString&, const AnsiStri
 #endif
 
 #ifdef _LEVEL_EDITOR                
-	#include "net_utils.h"
+	#include "../../xrNetServer/NET_utils.h"
 #endif
 
 #define INI_NAME(buf) 		{FS.update_path(buf,"$app_data_root$",EFS.ChangeFileExt(UI->EditorName(),"_soc.ini").c_str());}
