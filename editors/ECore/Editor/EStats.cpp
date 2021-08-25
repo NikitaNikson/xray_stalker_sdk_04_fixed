@@ -75,6 +75,8 @@ void CStats::Show(CGameFont* font)
 		F.OutNext	("VERT:         %d",			DPS.verts);
 		F.OutNext	("POLY:         %d",			DPS.polys);
 		F.OutNext	("DIP/DP:       %d",			DPS.calls);
+		F.OutNext	("VB:           %d",			DPS.vb);
+		F.OutNext	("IB:           %d",			DPS.ib);
 		F.OutNext	("SH/T/M/C:     %d/%d/%d/%d",	dwShader_Codes,dwShader_Textures,dwShader_Matrices,dwShader_Constants);
 		F.OutNext	("LIGHT S/T:    %d/%d",			dwLightInScene,dwTotalLight);
 		F.OutNext	("Skeletons:    %2.2fms, %d",	Animation.result,Animation.count);
@@ -97,10 +99,10 @@ void CStats::Show(CGameFont* font)
 		F.OutNext	("TEST 3:       %2.2fms, %d",	TEST3.result,TEST3.count);
 		F.OutSkip	();
 		F.OutNext	("GAME TIME:    %s",			FloatTimeToStrTime(g_pGamePersistent->Environment().GetGameTime()).c_str());
-//		F.OutSkip	(2.f);
-//        F.OutNext	("Level summary:");
-//        F.OutNext	(" Sel Faces:   %d",			dwLevelSelFaceCount);
-//        F.OutNext	(" Sel Verts:   %d",			dwLevelSelVertexCount);
+		F.OutSkip	(2.f);
+		F.OutNext	("Level summary:");
+		F.OutNext	(" Sel Faces:   %d",			dwLevelSelFaceCount);
+		F.OutNext	(" Sel Verts:   %d",			dwLevelSelVertexCount);
 	}
 
 	{

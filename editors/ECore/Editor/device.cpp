@@ -23,8 +23,8 @@ CRenderDevice::CRenderDevice()
 {
 	psDeviceFlags.assign(rsStatistic|rsFilterLinear|rsFog|rsDrawGrid);
 // dynamic buffer size
-	rsDVB_Size		= 2048;
-	rsDIB_Size		= 2048;
+	rsDVB_Size		= 32768;
+	rsDIB_Size		= 4096;
 // default initialization
     m_ScreenQuality = 1.f;
     dwWidth 		= dwHeight 	= 256;

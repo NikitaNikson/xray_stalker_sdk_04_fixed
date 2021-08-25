@@ -8,8 +8,8 @@
 // Construction/Destruction
 //////////////////////////////////////////////////////////////////////
 
-int		rsDVB_Size			= 512+1024;
-int		rsDIB_Size			= 512;
+int		rsDVB_Size			= 32768; //Fixed: (bytes_need<=mSize) && vl_Count
+int		rsDIB_Size			= 4096;
 
 void _VertexStream::Create	()
 {
@@ -22,7 +22,7 @@ void _VertexStream::Create	()
 	mPosition				= 0;
 	mDiscardID				= 0;
 
-	Msg("* DVB created: %dK", mSize/1024);
+	Msg("* DVB created: %d Kb", mSize/1024);
 }
 
 void _VertexStream::Destroy	()
@@ -105,7 +105,7 @@ void	_IndexStream::Create	()
 	mPosition				= 0;
 	mDiscardID				= 0;
 
-	Msg("* DIB created: %dK", mSize/1024);
+	Msg("* DIB created: %d Kb", mSize/1024);
 }
 
 void	_IndexStream::Destroy()
