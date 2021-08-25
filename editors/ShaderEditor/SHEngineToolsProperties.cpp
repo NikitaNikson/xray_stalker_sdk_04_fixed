@@ -3,9 +3,9 @@
 #pragma hdrstop
 
 #include "SHEngineTools.h"
-#include "blenders/Blender.h"
+#include "../../xr_3da/blenders/Blender.h"
 #include "../xrEProps/PropertiesList.h"
-#include "../xrEProps/folderlib.h"
+#include "../xrEProps/FolderLib.h"
 #include "../ECore/Editor/ui_main.h"
 
 //---------------------------------------------------------------------------

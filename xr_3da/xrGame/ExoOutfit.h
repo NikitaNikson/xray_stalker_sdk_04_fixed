@@ -6,7 +6,7 @@
 
 #pragma once
 
-#include "customoutfit.h"
+#include "CustomOutfit.h"
 
 class CExoOutfit: public CCustomOutfit
 {

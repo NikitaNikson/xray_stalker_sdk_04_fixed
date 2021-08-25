@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #pragma hdrstop
-#include "physicsshell.h"
+#include "PhysicsShell.h"
 #include "PHDynamicData.h"
 #include "Physics.h"
 #include "PHJoint.h"
@@ -8,9 +8,9 @@
 #include "PHJoint.h"
 #include "PHJointDestroyInfo.h"
 #include "PHSplitedShell.h"
-#include "gameobject.h"
-#include "physicsshellholder.h"
-#include "../skeletoncustom.h"
+#include "GameObject.h"
+#include "PhysicsShellHolder.h"
+#include "../SkeletonCustom.h"
 
 extern CPHWorld			*ph_world;
 CPhysicsShell::~CPhysicsShell()

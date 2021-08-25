@@ -1,6 +1,6 @@
 #include "stdafx.h"
-#include "xrtheora_surface.h"
-#include "xrtheora_stream.h"
+#include "xrTheora_Surface.h"
+#include "xrTheora_Stream.h"
 #ifndef _EDITOR
 #	include "xrTheora_Surface_mmx.h"
 #endif

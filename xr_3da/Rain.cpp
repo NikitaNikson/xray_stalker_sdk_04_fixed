@@ -2,14 +2,14 @@
 #pragma once
 
 #include "Rain.h"
-#include "igame_persistent.h"
-#include "environment.h"
+#include "IGame_Persistent.h"
+#include "Environment.h"
 
 #ifdef _EDITOR
-    #include "ui_toolscustom.h"
+	#include "UI_ToolsCustom.h"
 #else
-    #include "render.h"
-	#include "igame_level.h"
+	#include "Render.h"
+	#include "IGame_Level.h"
 	#include "xr_area.h"
 	#include "xr_object.h"
 #endif

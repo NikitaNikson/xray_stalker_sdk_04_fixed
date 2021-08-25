@@ -5,7 +5,7 @@
 
 #include "stdafx.h"
 
-#include "grenadelauncher.h"
+#include "GrenadeLauncher.h"
 //#include "PhysicsShell.h"
 
 CGrenadeLauncher::CGrenadeLauncher()

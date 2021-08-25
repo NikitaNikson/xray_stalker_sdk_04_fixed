@@ -2,8 +2,8 @@
 #ifndef ImageManagerH
 #define ImageManagerH
 
-#include "../xrEProps/folderlib.h"
-#include "../ECore/Editor/etextureparams.h"
+#include "../xrEProps/FolderLib.h"
+#include "../ECore/Editor/ETextureParams.h"
 #include "../ECore/Editor/EThumbnail.h"
 class CEditableObject;
 

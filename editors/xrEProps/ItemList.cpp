@@ -310,14 +310,14 @@ void __fastcall TItemList::tvItemsMouseDown(TObject *Sender,
             TPoint P; P.x = X; P.y = Y;
             P=tvItems->ClientToScreen(P);
             pmItems->Popup(P.x,P.y-10);
-			}
-			if(Button==mbLeft && Shift.Contains(ssCtrl))
-			{
-				if(item->Expanded)
-					item->Collapse(true);
-				else
-            		item->Expand(true);
         }
+		if(Button==mbLeft && Shift.Contains(ssCtrl))
+		{
+			if(item->Expanded)
+				item->Collapse(true);
+			else
+				item->Expand(true);
+		}
     };
     if (m_Flags.is(ilEditMenu)){
         if (Button==mbRight){

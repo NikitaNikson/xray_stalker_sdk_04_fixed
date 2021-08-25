@@ -1,10 +1,10 @@
 #include "stdafx.h"
 #include <lwrender.h>
 #include <lwhost.h>
-#include "..\..\Shared\editobject.h"
+#include "../../Shared/editobject.h"
 #include "FileSystem.h"
 #include "FS.h"
-#include "..\..\Shared\bone.h"
+#include "../../Shared/bone.h"
 #include <lwdisplay.h>
 #include <lwserver.h>
 

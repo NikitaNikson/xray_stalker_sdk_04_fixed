@@ -4,8 +4,8 @@
 #include "stdafx.h"
 #pragma hdrstop
 
-#include	"texmaps.h"
-#include	"XRayMtlRes.h"
+#include "texmaps.h"
+#include "XRayMtlRes.h"
 
 extern TCHAR *GetString(int id);
 

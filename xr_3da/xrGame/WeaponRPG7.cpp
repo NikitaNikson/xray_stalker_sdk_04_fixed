@@ -1,11 +1,11 @@
 #include "stdafx.h"
-#include "weaponrpg7.h"
+#include "WeaponRPG7.h"
 #include "WeaponHUD.h"
-#include "xrserver_objects_alife_items.h"
-#include "explosiverocket.h"
-#include "entity.h"
-#include "level.h"
-#include "../skeletoncustom.h"
+#include "xrServer_Objects_ALife_Items.h"
+#include "ExplosiveRocket.h"
+#include "Entity.h"
+#include "Level.h"
+#include "../SkeletonCustom.h"
 
 CWeaponRPG7::CWeaponRPG7(void) : CWeaponCustomPistol("RPG7") 
 {
@@ -92,8 +92,8 @@ void CWeaponRPG7::FireStart()
 	inherited::FireStart();
 }
 
-#include "inventory.h"
-#include "inventoryOwner.h"
+#include "Inventory.h"
+#include "InventoryOwner.h"
 void CWeaponRPG7::switch2_Fire	()
 {
 	m_iShotNum = 0;

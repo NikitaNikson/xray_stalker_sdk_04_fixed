@@ -1,7 +1,7 @@
 #include "stdafx.h"
 
 #include "ResourceManager.h"
-#include "render.h"
+#include "Render.h"
 #include "IGame_Persistent.h"
 
 void CRenderDevice::_Destroy	(BOOL bKeepTextures)

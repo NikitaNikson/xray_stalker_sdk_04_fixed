@@ -1,6 +1,6 @@
 #pragma once
 
-#include "gameobject.h"
+#include "GameObject.h"
 
 class CItemHealth :	public CGameObject
 {

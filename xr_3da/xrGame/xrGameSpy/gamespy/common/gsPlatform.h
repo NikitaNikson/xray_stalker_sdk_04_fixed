@@ -178,9 +178,9 @@
 
 	#include <pspnet/sys/socket.h>
 	#include <pspnet/netinet/in.h>
-	#include <utility\utility_common.h>
-	#include <utility\utility_netconf.h>
-	#include <utility\utility_netmodule.h>
+	#include <utility/utility_common.h>
+	#include <utility/utility_netconf.h>
+	#include <utility/utility_netmodule.h>
 // PS3
 #elif defined(_PS3)
 #include <netex/errno.h>

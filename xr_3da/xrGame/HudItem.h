@@ -12,7 +12,7 @@ struct HUD_SOUND;
 class CInventoryItem;
 
 #include "actor_defs.h"
-#include "weaponHUD.h"
+#include "WeaponHUD.h"
 
 class CHudItem {
 protected: //чтоб нельзя было вызвать на прямую

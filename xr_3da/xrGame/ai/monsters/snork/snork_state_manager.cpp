@@ -7,7 +7,7 @@
 #include "../control_movement_base.h"
 #include "../control_path_builder_base.h"
 
-#include "../../../level.h"
+#include "../../../Level.h"
 #include "../../../level_debug.h"
 #include "../states/monster_state_rest.h"
 #include "../states/monster_state_attack.h"
@@ -21,7 +21,7 @@
 #include "../states/state_test_state.h"
 #include "../states/monster_state_help_sound.h"
 
-#include "../../../entitycondition.h"
+#include "../../../EntityCondition.h"
 
 CStateManagerSnork::CStateManagerSnork(CSnork *obj) : inherited(obj)
 {

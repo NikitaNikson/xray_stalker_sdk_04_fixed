@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "fbasicvisual.h"
-#include "particlecustom.h"
+#include "FBasicVisual.h"
+#include "ParticleCustom.h"
 
 // generate constructor + destructor here

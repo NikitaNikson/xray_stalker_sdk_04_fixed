@@ -1,6 +1,6 @@
 #pragma once
 
-#include "iinputreceiver.h"
+#include "IInputReceiver.h"
 //#include "CameraManager.h"
 #include "xr_object_list.h"
 #include "xr_area.h"

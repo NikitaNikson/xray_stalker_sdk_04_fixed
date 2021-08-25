@@ -2,10 +2,10 @@
 #define R_BACKEND_RUNTIMEH
 #pragma once
 
-#include "sh_texture.h"
-#include "sh_matrix.h"
-#include "sh_constant.h"
-#include "sh_rt.h"
+#include "SH_Texture.h"
+#include "SH_Matrix.h"
+#include "SH_Constant.h"
+#include "SH_RT.h"
 
 IC void		R_xforms::set_c_w			(R_constant* C)		{	c_w		= C;	RCache.set_c(C,m_w);	};
 IC void		R_xforms::set_c_v			(R_constant* C)		{	c_v		= C;	RCache.set_c(C,m_v);	};

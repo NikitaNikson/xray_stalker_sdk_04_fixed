@@ -7,7 +7,7 @@
 #include "AIMapExport.h"
 #include "Shader_xrLC.h"
 #include "communicate.h"
-#include "Etextureparams.h"
+#include "ETextureParams.h"
 
 // base patch used all the time up to merging
 const u32 InvalidNode		= (1<<24)-1;

@@ -1,12 +1,12 @@
 #include "stdafx.h"
 #include "zone_effector.h"
-#include "level.h"
+#include "Level.h"
 #include "clsid_game.h"
 #include "../xr_object.h"
-#include "../cameramanager.h"
-#include "actor.h"
-#include "actoreffector.h"
-#include "postprocessanimator.h"
+#include "../CameraManager.h"
+#include "Actor.h"
+#include "ActorEffector.h"
+#include "PostprocessAnimator.h"
 
 CZoneEffector::CZoneEffector() 
 {

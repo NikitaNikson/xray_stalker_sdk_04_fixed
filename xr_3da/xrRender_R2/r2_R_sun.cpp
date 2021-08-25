@@ -1,6 +1,6 @@
 #include "stdafx.h"
-#include "..\igame_persistent.h"
-#include "..\irenderable.h"
+#include "../IGame_Persistent.h"
+#include "../IRenderable.h"
 
 const	float	tweak_COP_initial_offs			= 1200.f	;
 const	float	tweak_ortho_xform_initial_offs	= 1000.f	;	//. ?

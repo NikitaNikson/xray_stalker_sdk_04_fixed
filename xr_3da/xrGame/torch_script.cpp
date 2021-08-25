@@ -1,5 +1,5 @@
 #include "pch_script.h"
-#include "torch.h"
+#include "Torch.h"
 
 using namespace luabind;
 

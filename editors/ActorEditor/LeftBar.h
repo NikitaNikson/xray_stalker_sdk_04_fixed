@@ -19,7 +19,7 @@
 #include "ElTreeAdvEdit.hpp"
 #include "ElPgCtl.hpp"
 #include "MXCtrls.hpp"
-#include "../xrEProps/folderlib.h"
+#include "../xrEProps/FolderLib.h"
 #include "ElBtnCtl.hpp"
 #include "ElCheckCtl.hpp"
 

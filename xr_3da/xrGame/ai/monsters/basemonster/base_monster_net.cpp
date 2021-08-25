@@ -3,9 +3,9 @@
 
 #include "../../../ai_object_location.h"
 #include "../../../game_graph.h"
-#include "../../../../../xrNetServer/net_utils.h"
+#include "../../../../../xrNetServer/NET_utils.h"
 #include "../../../ai_space.h"
-#include "../../../hit.h"
+#include "../../../Hit.h"
 #include "../../../PHDestroyable.h"
 #include "../../../CharacterPhysicsSupport.h"
 void CBaseMonster::net_Save			(NET_Packet& P)

@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #pragma hdrstop
-#include "detailmodel.h"
+#include "DetailModel.h"
 
 CDetail::~CDetail()
 {
@@ -115,7 +115,7 @@ void CDetail::Load		(IReader* S)
 }
 
 #ifndef _EDITOR
-#include "xrstripify.h"
+#include "xrStripify.h"
 
 void CDetail::Optimize	()
 {

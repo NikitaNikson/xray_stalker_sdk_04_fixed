@@ -1,9 +1,9 @@
 #include "stdafx.h"
 
-#include "..\render.h"
-#include "..\irenderable.h"
-#include "..\igame_persistent.h"
-#include "..\environment.h"
+#include "../Render.h"
+#include "../IRenderable.h"
+#include "../IGame_Persistent.h"
+#include "../Environment.h"
 
 using namespace		R_dsgraph;
 
@@ -512,10 +512,10 @@ void	R_dsgraph_structure::r_dsgraph_render_subspace	(IRender_Sector* _sector, CF
 }
 
 #include "stdafx.h"
-#include "..\fhierrarhyvisual.h"
-#include "..\SkeletonCustom.h"
-#include "..\fmesh.h"
-#include "flod.h"
+#include "../FHierrarhyVisual.h"
+#include "../SkeletonCustom.h"
+#include "../Fmesh.h"
+#include "FLOD.h"
 
 void	R_dsgraph_structure::r_dsgraph_render_R1_box	(IRender_Sector* _S, Fbox& BB, int sh)
 {

@@ -12,10 +12,8 @@
 
 
 #ifdef XRGAME_EXPORTS
-
-#include "PhraseDialogDefs.h"
-#include "character_community.h"
-
+	#include "PhraseDialogDefs.h"
+	#include "character_community.h"
 #endif
 
 

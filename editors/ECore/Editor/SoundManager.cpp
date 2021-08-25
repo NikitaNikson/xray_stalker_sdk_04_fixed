@@ -2,7 +2,7 @@
 #pragma hdrstop
 
 #include "SoundManager.h"
-#include "../../../xrSound/soundrender_environment.h"
+#include "../../../xrSound/SoundRender_Environment.h"
 #include "EThumbnail.h"
 #include "ui_main.h"
 

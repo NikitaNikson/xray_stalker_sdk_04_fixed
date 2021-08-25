@@ -5,8 +5,8 @@
 
 #include "stdafx.h"
 #include "BottleItem.h"
-#include "xrmessages.h"
-#include "../../xrNetServer/net_utils.h"
+#include "xrMessages.h"
+#include "../../xrNetServer/NET_utils.h"
 #include "entity_alive.h"
 #include "EntityCondition.h"
 

@@ -3,10 +3,10 @@
 #include "IKLimbsController.h"
 
 #include "IK/IKLimb.h"
-#include "physicsshellholder.h"
+#include "PhysicsShellHolder.h"
 
 #include "ik_anim_state.h"
-#include "../ennumerateVertices.h"
+#include "../EnnumerateVertices.h"
 #ifdef DEBUG
 #include "PHDebug.h"
 #endif

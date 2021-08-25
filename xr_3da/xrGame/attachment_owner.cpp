@@ -9,9 +9,9 @@
 #include "stdafx.h"
 #include "attachment_owner.h"
 #include "attachable_item.h"
-#include "../skeletoncustom.h"
+#include "../SkeletonCustom.h"
 #include "inventory_item.h"
-#include "physicsshellholder.h"
+#include "PhysicsShellHolder.h"
 
 CAttachmentOwner::~CAttachmentOwner()
 {

@@ -3,22 +3,22 @@
 
 #include "stdafx.h"
 
-#include "actor.h"
-#include "inventory.h"
-#include "weapon.h"
+#include "Actor.h"
+#include "Inventory.h"
+#include "Weapon.h"
 #include "../CameraBase.h"
 #include "xrMessages.h"
 
-#include "level.h"
+#include "Level.h"
 #include "HUDManager.h"
 #include "UI.h"
 #include "string_table.h"
-#include "actorcondition.h"
+#include "ActorCondition.h"
 #include "game_cl_base.h"
 #include "WeaponMagazined.h"
 #include "CharacterPhysicsSupport.h"
 #ifdef DEBUG
-#include "phdebug.h"
+#include "PHDebug.h"
 #endif
 static const float	s_fLandingTime1		= 0.1f;// через сколько снять флаг Landing1 (т.е. включить следующую анимацию)
 static const float	s_fLandingTime2		= 0.3f;// через сколько снять флаг Landing2 (т.е. включить следующую анимацию)

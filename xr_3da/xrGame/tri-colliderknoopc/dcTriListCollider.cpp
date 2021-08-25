@@ -6,9 +6,9 @@
 #include "dSortTriPrimitive.h"
 #include "../dCylinder/dCylinder.h"
 #include "../MathUtils.h"
-#include "../level.h"
+#include "../Level.h"
 #ifdef	DEBUG
-#include "../phdebug.h"
+#include "../PHDebug.h"
 #endif
 
 dcTriListCollider::dcTriListCollider(dxGeom* Geometry)

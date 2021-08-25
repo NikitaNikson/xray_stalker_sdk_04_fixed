@@ -2,8 +2,8 @@
 #include "zombie.h"
 #include "zombie_state_manager.h"
 #include "../../../profiler.h"
-#include "../../../../skeletonanimated.h"
-#include "../../../entitycondition.h"
+#include "../../../../SkeletonAnimated.h"
+#include "../../../EntityCondition.h"
 #include "../monster_velocity_space.h"
 
 #include "../control_animation_base.h"

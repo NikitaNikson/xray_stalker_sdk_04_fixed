@@ -4,7 +4,7 @@
 #pragma once
 
 #ifdef _EDITOR
-	#include "..\editors\ECore\stdafx.h"
+	#include "../editors/ECore/stdafx.h"
 #else
 
 #include "../xrCore/xrCore.h"
@@ -36,7 +36,7 @@
 #define ECORE_API
 
 // Our headers
-#include "engine.h"
+#include "Engine.h"
 #include "defines.h"
 #ifndef NO_XRLOG
 #include "log.h"
@@ -46,7 +46,7 @@
 
 #include "xrXRC.h"
 
-#include "../xrSound/sound.h"
+#include "../xrSound/Sound.h"
 
 extern ENGINE_API CInifile *pGameIni;
 
@@ -62,7 +62,7 @@ extern ENGINE_API CInifile *pGameIni;
 #pragma comment( lib, "dxguid.lib"		)
 
 #ifndef DEBUG
-#	define LUABIND_NO_ERROR_CHECKING
+	#define LUABIND_NO_ERROR_CHECKING
 #endif
 
 #if	!defined(DEBUG) || defined(FORCE_NO_EXCEPTIONS)

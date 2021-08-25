@@ -8,7 +8,7 @@
 #include "UI_ActorTools.h"
 #include "../xrEProps/FolderLib.h"
 #include "../ECore/Editor/EditObject.h"
-#include "Motion.h"
+#include "motion.h"
 #include "../xrEProps/PropertiesList.h"
 #include "BonePart.h"
 #include "../xrEProps/NumericVector.h"

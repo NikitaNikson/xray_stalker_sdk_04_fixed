@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../feel_touch.h"
+#include "../Feel_Touch.h"
 #include "inventory_item_object.h"
 
 #include "InfoPortionDefs.h"

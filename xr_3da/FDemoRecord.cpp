@@ -3,15 +3,15 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "igame_level.h"
+#include "IGame_Level.h"
 #include "x_ray.h"
 
-#include "gamefont.h"
-#include "fDemoRecord.h"
-#include "xr_ioconsole.h"
+#include "GameFont.h"
+#include "FDemoRecord.h"
+#include "XR_IOConsole.h"
 #include "xr_input.h"
 #include "xr_object.h"
-#include "render.h"
+#include "Render.h"
 #include "CustomHUD.h"
 
 CDemoRecord * xrDemoRecord = 0;

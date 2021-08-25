@@ -1,12 +1,13 @@
 #include "stdafx.h"
 #include "HUDManager.h"
-#include "hudtarget.h"
+#include "HUDTarget.h"
 
-#include "actor.h"
-#include "../igame_level.h"
+#include "Actor.h"
+#include "../IGame_Level.h"
 #include "clsid_game.h"
 #include "GamePersistent.h"
-
+#include "ui/UIMainInGameWnd.h"
+#include "string_table.h"
 
 CFontManager::CFontManager()
 {
@@ -200,7 +201,7 @@ void CHUDManager::Render_Last()
 extern void draw_wnds_rects();
 extern ENGINE_API BOOL bShowPauseString;
 //отрисовка элементов интерфейса
-#include "string_table.h"
+
 void  CHUDManager::RenderUI()
 {
 	if(!b_online)					return;
@@ -262,7 +263,7 @@ void CHUDManager::SetHitmarkType		(LPCSTR tex_name)
 {
 	HitMarker.InitShader				(tex_name);
 }
-#include "ui\UIMainInGameWnd.h"
+
 void CHUDManager::OnScreenRatioChanged()
 {
 	xr_delete							(pUI->UIMainIngameWnd);

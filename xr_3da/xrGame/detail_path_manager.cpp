@@ -13,7 +13,7 @@
 #include "level_graph.h"
 
 #ifdef DEBUG
-#	include "custommonster.h"
+	#include "CustomMonster.h"
 #endif
 
 CDetailPathManager::CDetailPathManager	(CRestrictedObject *object)

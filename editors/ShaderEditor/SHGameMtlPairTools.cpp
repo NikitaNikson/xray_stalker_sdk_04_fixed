@@ -4,7 +4,7 @@
 
 #include "SHGameMtlPairTools.h"
 #include "UI_ShaderTools.h"
-#include "../xrEProps/folderlib.h"
+#include "../xrEProps/FolderLib.h"
 #include "../xrEProps/ChoseForm.h"
 #include "../ECore/Editor/UI_Main.h"
 #include "../xrEProps/ItemList.h"

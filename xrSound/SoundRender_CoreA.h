@@ -2,7 +2,7 @@
 #define SoundRender_CoreAH
 #pragma once
 
-#include "SoundRender_Core.h"            
+#include "SoundRender_Core.h"
 
 #include <al.h>
 #include <alc.h>

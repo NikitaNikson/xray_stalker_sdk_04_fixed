@@ -5,11 +5,11 @@
 
 #include "Exporter.h"
 #include "MeshExpUtility.h"
-#include "..\..\Shared\EditObject.h"
-#include "..\..\Shared\EditMesh.h"
-#include "..\..\Shared\Bone.h"
-#include "..\..\Shared\Motion.h"
-#include "..\..\Shared\Envelope.h"
+#include "../../Shared/EditObject.h"
+#include "../../Shared/EditMesh.h"
+#include "../../Shared/bone.h"
+#include "../../Shared/motion.h"
+#include "../../Shared/envelope.h"
 
 BOOL CExporter::ExportMotion(INode* pNode, LPCSTR fname)
 {

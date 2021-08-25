@@ -1,9 +1,9 @@
 #include "stdafx.h"
-#include "physicsskeletonobject.h"
+#include "PhysicsSkeletonObject.h"
 #include "PhysicsShell.h"
-#include "phsynchronize.h"
-#include "xrserver_objects_alife.h"
-#include "../skeletoncustom.h"
+#include "PHSynchronize.h"
+#include "xrServer_Objects_ALife.h"
+#include "../SkeletonCustom.h"
 #include "../xr_collide_form.h"
 
 CPhysicsSkeletonObject::CPhysicsSkeletonObject()

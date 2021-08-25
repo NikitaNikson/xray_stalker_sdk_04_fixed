@@ -4,7 +4,7 @@
 
 #include "SHToolsInterface.h"
 #include "../ECore/Editor/UI_ToolsCustom.h"
-#include "../ECore/Editor/ui_maincommand.h"
+#include "../ECore/Editor/UI_MainCommand.h"
 
 // refs
 class CEditableObject;

@@ -5,7 +5,7 @@
 #include "stdafx.h"
 #pragma hdrstop
 
-#include "..\..\xr_3da\fmesh.h"
+#include "../../xr_3da/Fmesh.h"
 #include "EditObject.h"
 #include "EditMesh.h"
 #ifdef _EDITOR

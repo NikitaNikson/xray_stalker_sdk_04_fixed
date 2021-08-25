@@ -1,15 +1,15 @@
 #include "stdafx.h"
 #include "game_cl_artefacthunt.h"
 #include "xrMessages.h"
-#include "hudmanager.h"
-#include "level.h"
+#include "HUDManager.h"
+#include "Level.h"
 #include "UIGameAHunt.h"
 #include "clsid_game.h"
 #include "map_manager.h"
 #include "LevelGameDef.h"
-#include "hit.h"
+#include "Hit.h"
 #include "PHDestroyable.h"
-#include "actor.h"
+#include "Actor.h"
 #include "ui/UIMainIngameWnd.h"
 #include "ui/UISkinSelector.h"
 #include "ui/UIPdaWnd.h"
@@ -24,15 +24,14 @@
 #include "ui/TeamInfo.h"
 #include "string_table.h"
 #include "CustomOutfit.h"
+#include "game_cl_artefacthunt_snd_msg.h"
+#include "../IGame_Persistent.h"
 
 #define TEAM0_MENU		"artefacthunt_team0"
 #define	TEAM1_MENU		"artefacthunt_team1"
 #define	TEAM2_MENU		"artefacthunt_team2"
 
 #define MESSAGE_MENUS	"ahunt_messages_menu"
-
-#include "game_cl_artefacthunt_snd_msg.h"
-#include "../IGame_Persistent.h"
 
 game_cl_ArtefactHunt::game_cl_ArtefactHunt()
 {

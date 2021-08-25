@@ -7,7 +7,7 @@
 
 #include "EditObject.h"
 #include "EditMesh.h"
-#include "scenscan\objectdb.h"
+#include "scenscan/objectdb.h"
 #include <lwhost.h>
 #include "bone.h"
 

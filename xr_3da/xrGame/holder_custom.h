@@ -1,6 +1,6 @@
 #pragma once
 
-//#include "gameobject.h"
+//#include "GameObject.h"
 
 #include "script_export_space.h"
 

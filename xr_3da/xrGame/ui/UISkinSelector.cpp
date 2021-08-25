@@ -1,8 +1,7 @@
 #include "StdAfx.h"
 #include <dinput.h>
 #include "UISkinSelector.h"
-#include "../level.h"
-//#include"../hudmanager.h"
+#include "../Level.h"
 #include "UIXmlInit.h"
 #include "UIStatic.h"
 #include "UIAnimatedStatic.h"

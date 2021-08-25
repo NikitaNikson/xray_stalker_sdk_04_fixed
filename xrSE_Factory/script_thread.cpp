@@ -20,7 +20,7 @@ extern "C" {
 #define LUABIND_HAS_BUGS_WITH_LUA_THREADS
 
 #ifdef USE_DEBUGGER
-#	include "script_debugger.h"
+	#include "script_debugger.h"
 #endif
 
 const LPCSTR main_function = "console_command_run_string_main_thread_function";

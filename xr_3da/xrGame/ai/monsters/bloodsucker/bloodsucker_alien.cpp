@@ -1,13 +1,13 @@
 #include "stdafx.h"
 #include "bloodsucker_alien.h"
 #include "bloodsucker.h"
-#include "../../../level.h"
-#include "../../../actor.h"
-#include "../../../inventory.h"
+#include "../../../Level.h"
+#include "../../../Actor.h"
+#include "../../../Inventory.h"
 #include "../../../HudItem.h"
 #include "../../../../CustomHUD.h"
-#include "../../../../effector.h"
-#include "../../../../effectorPP.h"
+#include "../../../../Effector.h"
+#include "../../../../EffectorPP.h"
 
 #define EFFECTOR_ID_GEN(type) (type( u32(u64(this) & u32(-1)) ))
 

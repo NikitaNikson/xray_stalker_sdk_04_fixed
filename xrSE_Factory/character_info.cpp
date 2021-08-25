@@ -7,18 +7,16 @@
 #include "character_info.h"
 
 #ifdef XRGAME_EXPORTS
-#	include "ui/xrUIXmlParser.h"
+	#include "ui/xrUIXmlParser.h"
 #else
-#	include "xrUIXmlParser.h"
+	#include "xrUIXmlParser.h"
 #endif
 
 
 #ifdef XRGAME_EXPORTS
-
-#include "PhraseDialog.h"
-#include "alife_registry_container_composition.h"
-#include "xrServer_Objects_ALife_Monsters.h"
-
+	#include "PhraseDialog.h"
+	#include "alife_registry_container_composition.h"
+	#include "xrServer_Objects_ALife_Monsters.h"
 #endif
 
 

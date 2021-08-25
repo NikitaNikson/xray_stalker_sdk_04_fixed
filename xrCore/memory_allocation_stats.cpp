@@ -3,10 +3,10 @@
 #ifdef DEBUG_MEMORY_MANAGER
 #	pragma warning(push)
 #	pragma warning(disable:4995)
-#	include <malloc.h>
+	#include <malloc.h>
 #	pragma warning(pop)
 
-#	include <boost/crc.hpp>
+	#include <boost/crc.hpp>
 
 	extern void BuildStackTrace		();
 

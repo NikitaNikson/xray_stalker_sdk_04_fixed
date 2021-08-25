@@ -3,15 +3,15 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "spectator.h"
-#include "effectorfall.h"
-#include "CameraLook.h"
+#include "Spectator.h"
+#include "EffectorFall.h"
+#include "cameralook.h"
 #include "CameraFirstEye.h"
-#include "actor.h"
-#include "hudmanager.h"
+#include "Actor.h"
+#include "HUDManager.h"
 #include "xrServer_Objects.h"
 #include "game_cl_base.h"
-#include "level.h"
+#include "Level.h"
 #include "xr_level_controller.h"
 #include "seniority_hierarchy_holder.h"
 #include "team_hierarchy_holder.h"
@@ -19,11 +19,12 @@
 #include "group_hierarchy_holder.h"
 #include "../CameraManager.h"
 #include "Inventory.h"
-#include "huditem.h"
+#include "HudItem.h"
 #include "clsid_game.h"
 #include "game_cl_mp.h"
 #include "string_table.h"
 #include "map_manager.h"
+#include "../IGame_Persistent.h"
 
 //--------------------------------------------------------------------
 //////////////////////////////////////////////////////////////////////
@@ -394,7 +395,6 @@ BOOL			CSpectator::net_Spawn				( CSE_Abstract*	DC )
 	return TRUE;
 };
 
-#include "../IGame_Persistent.h"
 void			CSpectator::net_Destroy	()
 {
 	inherited::net_Destroy	();

@@ -33,9 +33,9 @@ using std::string;
 #define FLT_MIN flt_max
 
 #include <io.h>
-#include <sys\stat.h>
+#include <sys/stat.h>
 #include <fcntl.h>
-#include <sys\utime.h>
+#include <sys/utime.h>
 
 #include "istdplug.h"
 #include "iparamb2.h"
@@ -66,7 +66,7 @@ DEFINE_VECTOR(AnsiString,AStringVec,AStringIt);
 //#include "clsid.h"
 //#include "Engine.h"
 //#include "Properties.h"
-#include "..\..\Shared\ELog.h"
+#include "../../Shared/ELog.h"
 
 #define THROW R_ASSERT(0)
 

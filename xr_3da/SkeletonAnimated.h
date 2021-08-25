@@ -2,8 +2,8 @@
 #ifndef SkeletonAnimatedH
 #define SkeletonAnimatedH
 
-#include		"skeletoncustom.h"
-#include		"skeletonmotions.h"
+#include "SkeletonCustom.h"
+#include "SkeletonMotions.h"
 
 // consts
 const	u32		MAX_BLENDED			=	16;

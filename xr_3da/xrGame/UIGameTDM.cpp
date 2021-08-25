@@ -1,14 +1,14 @@
 #include "stdafx.h"
 #include "UIGameTDM.h"
 
-//. #include "UITDMPlayerList.h"
-//.#include "UITDMFragList.h"
+// #include "UITDMPlayerList.h"
+// #include "UITDMFragList.h"
 #include "UIDMStatisticWnd.h"
 
-#include "hudmanager.h"
+#include "HUDManager.h"
 #include "game_cl_base.h"
 
-#include "game_cl_TeamDeathmatch.h"
+#include "game_cl_teamdeathmatch.h"
 
 #include "ui/UIFrags2.h"
 #include "ui/TeamInfo.h"

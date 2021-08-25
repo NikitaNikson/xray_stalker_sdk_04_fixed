@@ -9,7 +9,7 @@
 #include "ImageEditor.h"
 #include "MinimapEditor.h"
 #include "SoundEditor.h"
-#include "d3dutils.h"
+#include "D3DUtils.h"
 
 #include "PSLibrary.h"
 #include "Library.h"
@@ -18,7 +18,7 @@
 #include "ImageManager.h"
 #include "SoundManager.h"
 #include "ResourceManager.h"
-#include "igame_persistent.h"
+#include "IGame_Persistent.h"
 #include "NumericVector.h"
 
 #include "TextForm.h"

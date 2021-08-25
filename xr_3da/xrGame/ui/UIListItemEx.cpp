@@ -8,7 +8,7 @@
 // Copyright:   2004 GSC Game World
 
 #include "stdafx.h"
-#include ".\uilistitemex.h"
+#include "UIListItemEx.h"
 
 CUIListItemEx::CUIListItemEx(void)
 {

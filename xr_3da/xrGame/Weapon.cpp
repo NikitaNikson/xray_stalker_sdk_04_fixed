@@ -11,21 +11,21 @@
 #include "entity_alive.h"
 #include "inventory_item_impl.h"
 
-#include "inventory.h"
-#include "xrserver_objects_alife_items.h"
+#include "Inventory.h"
+#include "xrServer_Objects_ALife_Items.h"
 
-#include "actor.h"
-#include "actoreffector.h"
-#include "level.h"
+#include "Actor.h"
+#include "ActorEffector.h"
+#include "Level.h"
 
 #include "xr_level_controller.h"
 #include "game_cl_base.h"
-#include "../skeletoncustom.h"
+#include "../SkeletonCustom.h"
 #include "ai_object_location.h"
 #include "clsid_game.h"
-#include "mathutils.h"
+#include "MathUtils.h"
 #include "object_broker.h"
-#include "../igame_persistent.h"
+#include "../IGame_Persistent.h"
 
 #define WEAPON_REMOVE_TIME		60000
 #define ROTATION_TIME			0.25f

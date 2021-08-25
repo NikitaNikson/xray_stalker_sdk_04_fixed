@@ -3,8 +3,8 @@
 #define MotionH
 
 #ifdef _LW_EXPORT
-#include <lwrender.h>
-#include <lwhost.h>
+	#include <lwrender.h>
+	#include <lwhost.h>
 #endif
 
 #include "bone.h"

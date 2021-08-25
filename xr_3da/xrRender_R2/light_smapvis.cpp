@@ -1,5 +1,5 @@
 #include "StdAfx.h"
-#include "..\xrRender\light.h"
+#include "../xrRender/light.h"
 
 		smapvis::smapvis	()
 {

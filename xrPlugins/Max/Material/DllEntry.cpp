@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #pragma hdrstop
 
-#include "..\..\Shared\GameMaterial.h"
+#include "../../Shared/GameMaterial.h"
 
 extern ClassDesc2*	GetXRayMtlDesc		();
 extern TCHAR*		GetString			(int id);

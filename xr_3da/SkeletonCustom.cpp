@@ -1,12 +1,12 @@
 //---------------------------------------------------------------------------
-#include 	"stdafx.h"
+#include "stdafx.h"
 #pragma hdrstop
 
-#include 	"SkeletonCustom.h"
-#include	"SkeletonX.h"
-#include	"fmesh.h"
+#include "SkeletonCustom.h"
+#include "SkeletonX.h"
+#include "Fmesh.h"
 #ifndef _EDITOR
-    #include	"Render.h"
+	#include "Render.h"
 #endif
 int			psSkeletonUpdate	= 32;
 xrCriticalSection	UCalc_Mutex

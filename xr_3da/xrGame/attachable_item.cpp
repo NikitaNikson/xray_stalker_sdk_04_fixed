@@ -7,10 +7,10 @@
 ////////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "physicsshellholder.h"
+#include "PhysicsShellHolder.h"
 #include "attachable_item.h"
-#include "inventoryowner.h"
-#include "inventory.h"
+#include "InventoryOwner.h"
+#include "Inventory.h"
 
 #ifdef DEBUG
 	CAttachableItem*	CAttachableItem::m_dbgItem = NULL;

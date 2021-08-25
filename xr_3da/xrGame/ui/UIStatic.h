@@ -1,8 +1,8 @@
 #pragma once
 
 
-#include "uiwindow.h"
-#include "../uistaticitem.h"
+#include "UIWindow.h"
+#include "../UIStaticItem.h"
 #include "../script_export_space.h"
 
 class CUIFrameWindow;

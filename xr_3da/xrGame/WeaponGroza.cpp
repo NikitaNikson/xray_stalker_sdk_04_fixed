@@ -1,5 +1,5 @@
 #include "pch_script.h"
-#include "weapongroza.h"
+#include "WeaponGroza.h"
 #include "WeaponHUD.h"
 
 CWeaponGroza::CWeaponGroza(void) : CWeaponMagazinedWGrenade("GROZA",SOUND_TYPE_WEAPON_SUBMACHINEGUN) {

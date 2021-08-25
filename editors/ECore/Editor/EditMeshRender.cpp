@@ -9,7 +9,7 @@
 #include "EditMesh.h"
 #include "EditObject.h"
 #include "ui_main.h"
-#include "d3dutils.h"
+#include "D3DUtils.h"
 #include "render.h"
 //----------------------------------------------------
 #define F_LIM (10000)

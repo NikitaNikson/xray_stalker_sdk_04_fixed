@@ -7,11 +7,11 @@
 #pragma warning(pop)
 
 #include "ResourceManager.h"
-#include "blenders\Blender_Recorder.h"
-#include "blenders\Blender.h"
+#include "blenders/Blender_Recorder.h"
+#include "blenders/Blender.h"
 
-#include "igame_persistent.h"
-#include "environment.h"
+#include "IGame_Persistent.h"
+#include "Environment.h"
 
 // matrices
 #define	BIND_DECLARE(xf)	\

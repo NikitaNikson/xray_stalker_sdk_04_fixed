@@ -4,7 +4,7 @@
 
 #include "PropertiesList.h"
 #include "ui_main.h"
-#include "ui_toolscustom.h"
+#include "UI_ToolsCustom.h"
 //---------------------------------------------------------------------------
 CCustomPreferences* EPrefs=0;
 //---------------------------------------------------------------------------

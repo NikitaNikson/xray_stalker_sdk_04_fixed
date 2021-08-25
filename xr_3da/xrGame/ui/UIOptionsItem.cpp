@@ -1,7 +1,7 @@
 #include "StdAfx.h"
 #include "UIOptionsItem.h"
 #include "UIOptionsManager.h"
-#include "../../xr_ioconsole.h"
+#include "../../XR_IOConsole.h"
 
 CUIOptionsManager CUIOptionsItem::m_optionsManager;
 

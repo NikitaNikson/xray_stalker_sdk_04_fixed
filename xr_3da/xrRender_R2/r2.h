@@ -1,25 +1,25 @@
 #pragma once
 
-#include "..\xrRender\r__dsgraph_structure.h"
-#include "..\xrRender\r__occlusion.h"
+#include "../xrRender/r__dsgraph_structure.h"
+#include "../xrRender/r__occlusion.h"
 
-#include "..\xrRender\PSLibrary.h"
+#include "../xrRender/PSLibrary.h"
 
 #include "r2_types.h"
 #include "r2_rendertarget.h"
 
-#include "..\xrRender\hom.h"
-#include "..\xrRender\detailmanager.h"
-#include "..\xrRender\modelpool.h"
-#include "..\xrRender\wallmarksengine.h"
+#include "../xrRender/HOM.h"
+#include "../xrRender/DetailManager.h"
+#include "../xrRender/ModelPool.h"
+#include "../xrRender/WallmarksEngine.h"
 
-#include "smap_allocator.h"
-#include "..\xrRender\light_db.h"
-#include "light_render_direct.h"
-#include "..\xrRender\LightTrack.h"
+#include "SMAP_Allocator.h"
+#include "../xrRender/Light_DB.h"
+#include "Light_Render_Direct.h"
+#include "../xrRender/LightTrack.h"
 
-#include "../irenderable.h"
-#include "../fmesh.h"
+#include "../IRenderable.h"
+#include "../Fmesh.h"
 
 // definition
 class CRender													:	public R_dsgraph_structure

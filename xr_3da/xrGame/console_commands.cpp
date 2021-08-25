@@ -1,34 +1,34 @@
 #include "pch_script.h"
-#include "../xr_ioconsole.h"
+#include "../XR_IOConsole.h"
 #include "../xr_ioc_cmd.h"
-#include "../customhud.h"
-#include "../fdemorecord.h"
-#include "../fdemoplay.h"
+#include "../CustomHUD.h"
+#include "../FDemoRecord.h"
+#include "../FDemoPlay.h"
 #include "xrMessages.h"
-#include "xrserver.h"
-#include "level.h"
+#include "xrServer.h"
+#include "Level.h"
 #include "script_debugger.h"
 #include "ai_debug.h"
 #include "alife_simulator.h"
 #include "game_cl_base.h"
 #include "game_cl_single.h"
 #include "game_sv_single.h"
-#include "hit.h"
+#include "Hit.h"
 #include "PHDestroyable.h"
-#include "actor.h"
+#include "Actor.h"
 #include "Actor_Flags.h"
-#include "customzone.h"
+#include "CustomZone.h"
 #include "script_engine.h"
 #include "script_engine_space.h"
 #include "script_process.h"
 #include "xrServer_Objects.h"
 #include "ui/UIMainIngameWnd.h"
 #include "PhysicsGamePars.h"
-#include "phworld.h"
+#include "PHWorld.h"
 #include "string_table.h"
 #include "autosave_manager.h"
 #include "ai_space.h"
-#include "ai/monsters/BaseMonster/base_monster.h"
+#include "ai/monsters/basemonster/base_monster.h"
 #include "date_time.h"
 #include "mt_config.h"
 #include "ui/UIOptConCom.h"
@@ -37,7 +37,7 @@
 #include "MainMenu.h"
 #include "saved_game_wrapper.h"
 #include "level_graph.h"
-#include "../resourcemanager.h"
+#include "../ResourceManager.h"
 #include "doug_lea_memory_allocator.h"
 #include "cameralook.h"
 
@@ -45,12 +45,12 @@
 #include "GameSpy/GameSpy_Patching.h"
 
 #ifdef DEBUG
-#	include "PHDebug.h"
-#	include "ui/UIDebugFonts.h" 
-#	include "game_graph.h"
+	#include "PHDebug.h"
+	#include "ui/UIDebugFonts.h" 
+	#include "game_graph.h"
 #endif // DEBUG
 
-#include "hudmanager.h"
+#include "HUDManager.h"
 
 string_path		g_last_saved_game;
 
@@ -1004,7 +1004,7 @@ struct CCC_ClearSmartCastStats : public IConsole_Command {
 #endif
 
 #ifndef MASTER_GOLD
-#	include "game_graph.h"
+#include "game_graph.h"
 struct CCC_JumpToLevel : public IConsole_Command {
 	CCC_JumpToLevel(LPCSTR N) : IConsole_Command(N)  {};
 

@@ -1,5 +1,5 @@
 #pragma once
-#include "../BaseMonster/base_monster.h"
+#include "../basemonster/base_monster.h"
 #include "../../../script_export_space.h"
 
 class CChimera : public CBaseMonster {

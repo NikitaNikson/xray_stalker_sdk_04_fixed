@@ -4,12 +4,12 @@
 #include "xrMessages.h"
 #include "xrServer_Object_Base.h"
 #include "xrServer_Objects.h"
-#include "level.h"
-#include "xrserver_objects_alife_monsters.h"
-#include "actor.h"
+#include "Level.h"
+#include "xrServer_Objects_ALife_Monsters.h"
+#include "Actor.h"
 #include "clsid_game.h"
 #include "../XR_IOConsole.h"
-#include "../igame_persistent.h"
+#include "../IGame_Persistent.h"
 #include "date_time.h"
 #include "game_cl_base.h"
 #include "Spectator.h"
@@ -34,7 +34,7 @@ float		g_sv_mp_fVoteTime				= VOTE_LENGTH_TIME;
 
 extern xr_token	round_end_result_str[];
 
-#include "ui\UIBuyWndShared.h"
+#include "ui/UIBuyWndShared.h"
 
 game_sv_mp::game_sv_mp() :inherited()
 {

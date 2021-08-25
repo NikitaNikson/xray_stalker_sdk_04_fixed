@@ -3,11 +3,11 @@
 #define ParticleEffectDefH
 
 #ifdef _EDITOR
-    #include "FBasicVisual.h"
-    #include "ParticleCustom.h"
+	#include "FBasicVisual.h"
+	#include "ParticleCustom.h"
 #else
-    #include "..\FBasicVisual.h"
-    #include "..\ParticleCustom.h"
+	#include "../FBasicVisual.h"
+	#include "../ParticleCustom.h"
 #endif
 
 namespace PAPI

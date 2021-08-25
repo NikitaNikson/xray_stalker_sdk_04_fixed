@@ -9,14 +9,14 @@
 #include "pch_script.h"
 #include "space_restrictor.h"
 #include "xrServer_Objects_ALife.h"
-#include "level.h"
+#include "Level.h"
 #include "space_restriction_manager.h"
 #include "restriction_space.h"
 #include "ai_space.h"
 #include "CustomZone.h"
 
 #ifdef DEBUG
-#	include "debug_renderer.h"
+	#include "debug_renderer.h"
 #endif
 
 CSpaceRestrictor::~CSpaceRestrictor	()
@@ -201,8 +201,8 @@ continue_loop:
 
 #ifdef DEBUG
 
-#include "customzone.h"
-#include "hudmanager.h"
+#include "CustomZone.h"
+#include "HUDManager.h"
 
 extern	Flags32	dbg_net_Draw_Flags;
 

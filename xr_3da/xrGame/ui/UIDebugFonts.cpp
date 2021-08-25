@@ -9,8 +9,8 @@
 #include "StdAfx.h"
 #include "UIDebugFonts.h"
 #include "dinput.h"
-#include "../hudmanager.h"
-
+#include "../HUDManager.h"
+#include "../string_table.h"
 
 CUIDebugFonts::CUIDebugFonts(){
 	AttachChild			(&m_background);
@@ -39,7 +39,6 @@ bool CUIDebugFonts::OnKeyboard(int dik, EUIMessages keyboard_action){
 
     return true;
 }
-#include "../string_table.h"
 
 void CUIDebugFonts::FillUpList(){
 	CFontManager::FONTS_VEC& v = UI()->Font()->m_all_fonts;

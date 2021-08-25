@@ -5,8 +5,8 @@
 #include "BottomBar.h"
 #include "../ECore/Editor/LogForm.h"
 #include "../ECore/Editor/ui_main.h"
-#include "igame_persistent.h"
-#include "environment.h"
+#include "IGame_Persistent.h"
+#include "Environment.h"
 #include "../xrEProps/PropertiesListHelper.h"
 #include "../xrEProps/PropertiesList.h" 
 

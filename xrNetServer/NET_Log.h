@@ -1,6 +1,6 @@
 #pragma once
 
-#include "net_shared.h"
+#include "NET_Shared.h"
 struct SLogPacket
 {
 	u32			m_u32Time;

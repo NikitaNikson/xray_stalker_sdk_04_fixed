@@ -7,7 +7,7 @@
 #include "UI_ToolsCustom.h"
 
 #include "UI_Main.h"
-#include "d3dutils.h"
+#include "D3DUtils.h"
 #include "SoundManager.h"
 #include "PSLibrary.h"
 
@@ -291,8 +291,8 @@ void TUI::CheckWindowPos(TForm* form)
 	if (form->Top<0) 							form->Top 	= 0;
 }
 //---------------------------------------------------------------------------
-#include "igame_persistent.h"
-#include "environment.h"
+#include "IGame_Persistent.h"
+#include "Environment.h"
 
 void TUI::PrepareRedraw()
 {

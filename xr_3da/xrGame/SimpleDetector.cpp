@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "simpledetector.h"
+#include "SimpleDetector.h"
 
 CSimpleDetector::CSimpleDetector(void)
 {

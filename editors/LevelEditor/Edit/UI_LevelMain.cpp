@@ -17,7 +17,7 @@
 #include "main.h"
 #include "xr_input.h"
 #include "../ECore/Editor/ui_main.h"
-#include "d3dutils.h"
+#include "D3DUtils.h"
 #include "EditLightAnim.h"
 #include "builder.h"
 #include "SoundManager_LE.h"
@@ -553,29 +553,33 @@ CCommandVar CommandMakeSOM(CCommandVar p1, CCommandVar p2)
         if (mrYes!=ELog.DlgMsg(mtConfirmation, TMsgDlgButtons()<<mbYes<<mbNo, "Are you sure to export Sound Occlusion Model?"))
             return	FALSE;
     		BOOL result	= Builder.MakeSOM();
-		if(result){
+		if(result)
+		{
 			// load sound occluder
 			IReader *F = FS.r_open(Builder.MakeLevelPath("level.som").c_str());
-			if(F){
+			if(F)
+			{
 				::Sound->set_geometry_som(F);
 				FS.r_close		(F);
 			}
 		}
 		return					result;
-	}else{
-		ELog.DlgMsg( mtError, "Scene sharing violation" );
+    }else{
+        ELog.DlgMsg( mtError, "Scene sharing violation" );
 		return 					FALSE;
 	}
 }
 CCommandVar CommandMakeSoundEnv(CCommandVar p1, CCommandVar p2)
 {
-	if( !Scene->locked() ){
+	if( !Scene->locked() )
+	{
 		if (mrYes!=ELog.DlgMsg(mtConfirmation, TMsgDlgButtons()<<mbYes<<mbNo, "Are you sure to export Sound Environment?"))
 			return				FALSE;
 
 		BOOL result				= LSndLib->Validate() && Builder.MakeSoundEnv();
 		return					result;
-	}else{
+	}else
+	{
 		ELog.DlgMsg( mtError, "Scene sharing violation" );
 		return 					FALSE;
 	}

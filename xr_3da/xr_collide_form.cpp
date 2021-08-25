@@ -1,13 +1,13 @@
 #include "stdafx.h"
-#include "igame_level.h"
+#include "IGame_Level.h"
 #include "xr_collide_form.h"
 #include "xr_object.h"
 #include "xr_area.h"
 #include "x_ray.h"
 #include "xrLevel.h"
-#include "fmesh.h"
-#include "skeletoncustom.h"
-#include "frustum.h"
+#include "Fmesh.h"
+#include "SkeletonCustom.h"
+#include "Frustum.h"
 
 using namespace	collide;
 //----------------------------------------------------------------------

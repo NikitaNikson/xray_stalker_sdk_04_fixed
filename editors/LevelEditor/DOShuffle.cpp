@@ -10,7 +10,7 @@
 #include "DOOneColor.h"
 #include "../ECore/Editor/EditObject.h"
 #include "Scene.h"
-#include "../xrEProps/folderlib.h"
+#include "../xrEProps/FolderLib.h"
 #include "ESceneDOTools.h"
 #include "../ECore/Editor/ui_main.h"
 #include "../ECore/Editor/ImageManager.h"

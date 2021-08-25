@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #pragma hdrstop
 
-#include "d3dutils.h"
+#include "D3DUtils.h"
 #include "ui_main.h"
 #include "../xrEProps/PropertiesListHelper.h"
 #include "ParticleEffectActions.h"

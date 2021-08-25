@@ -10,7 +10,7 @@
 #include "../ECore/Editor/library.h"
 #include "../ECore/Editor/EditMesh.h"
 #include "../ECore/Editor/ui_main.h"
-#include "d3dutils.h"
+#include "D3DUtils.h"
 
 #ifdef _LEVEL_EDITOR
 	#include "scene.h"

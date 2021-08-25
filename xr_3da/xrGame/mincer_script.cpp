@@ -1,5 +1,5 @@
 #include "pch_script.h"
-#include "mincer.h"
+#include "Mincer.h"
 
 using namespace luabind;
 

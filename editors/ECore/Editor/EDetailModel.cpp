@@ -113,7 +113,7 @@ IC BOOL isEqual(U16Vec& ind, u16 v[3])
 
 bool EDetail::Update	(LPCSTR name)
 {
-	m_sRefs = name;
+	m_sRefs				= name;
 
     // update link
     CEditableObject* R;

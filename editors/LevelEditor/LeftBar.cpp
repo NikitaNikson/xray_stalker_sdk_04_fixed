@@ -780,8 +780,8 @@ void __fastcall TfraLeftBar::Editminimap1Click(TObject *Sender)
 	ExecCommand( COMMAND_MINIMAP_EDITOR );
 }
 //---------------------------------------------------------------------------
-//. #include "..\ECore\editor\EThumbnailTexture.h"
-#include "..\ECore\editor\EThumbnail.h"
+//. #include "../ECore/editor/EThumbnailTexture.h"
+#include "../ECore/editor/EThumbnail.h"
 void __fastcall TfraLeftBar::SyncTHM1Click(TObject *Sender)
 {
         FS_FileSet      files;

@@ -1,5 +1,5 @@
 #include "pch_script.h"
-#include "weaponvintorez.h"
+#include "WeaponVintorez.h"
 
 CWeaponVintorez::CWeaponVintorez(void) : CWeaponMagazined("VINTOREZ",SOUND_TYPE_WEAPON_SNIPERRIFLE)
 {

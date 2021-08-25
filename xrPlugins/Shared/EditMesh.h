@@ -14,7 +14,7 @@ class 	CExporter;
 class	CCustomObject;
 
 #ifdef _EDITOR
-#	include "pick_defs.h"
+	#include "pick_defs.h"
 #endif
 
 #include "bone.h"

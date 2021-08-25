@@ -3,17 +3,17 @@
 
 #include "xr_efflensflare.h"
 
-#include "igame_persistent.h"
+#include "IGame_Persistent.h"
 #include "Environment.h"
 #include "SkeletonCustom.h"
 #include "cl_intersect.h"
 
 #ifdef _EDITOR
-    #include "ui_toolscustom.h"
-    #include "ui_main.h"
+	#include "UI_ToolsCustom.h"
+	#include "ui_main.h"
 #else
 	#include "xr_object.h"
-	#include "igame_level.h"
+	#include "IGame_Level.h"
 #endif
 
 #define FAR_DIST g_pGamePersistent->Environment().CurrentEnv.far_plane

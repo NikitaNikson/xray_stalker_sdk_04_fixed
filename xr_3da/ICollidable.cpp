@@ -1,6 +1,6 @@
 #include "stdafx.h"
-#include "ispatial.h"
-#include "icollidable.h"
+#include "ISpatial.h"
+#include "ICollidable.h"
 #include "xr_collide_form.h"
 
 ICollidable::ICollidable()		

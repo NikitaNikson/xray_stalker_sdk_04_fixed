@@ -1,13 +1,13 @@
 #ifndef EditObjectH
 #define EditObjectH
 
-#include "Bone.h"
-#include "Motion.h"
+#include "bone.h"
+#include "motion.h"
 #ifdef _EDITOR
-#	include "PropertiesListTypes.h"
-//	#include "PropertiesListHelper.h"
-#	include "GameMtlLib.h"
-#	include "pick_defs.h"
+	#include "PropertiesListTypes.h"
+	//	#include "PropertiesListHelper.h"
+	#include "GameMtlLib.h"
+	#include "pick_defs.h"
 #endif
 //----------------------------------------------------
 struct 	SRayPickInfo;

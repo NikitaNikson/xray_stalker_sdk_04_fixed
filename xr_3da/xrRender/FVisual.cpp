@@ -9,8 +9,8 @@
 #include <d3dx9.h>
 #pragma warning(default:4995)
 
-#include "../fmesh.h"
-#include "fvisual.h"
+#include "../Fmesh.h"
+#include "FVisual.h"
 
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction

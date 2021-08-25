@@ -8,12 +8,12 @@
 
 #include "stdafx.h"
 #include "ai_stalker.h"
-#include "../../pda.h"
-#include "../../inventory.h"
-#include "../../xrmessages.h"
-#include "../../shootingobject.h"
-#include "../../../../xrNetServer/net_utils.h"
-#include "../../level.h"
+#include "../../PDA.h"
+#include "../../Inventory.h"
+#include "../../xrMessages.h"
+#include "../../ShootingObject.h"
+#include "../../../../xrNetServer/NET_utils.h"
+#include "../../Level.h"
 #include "../../ai_monster_space.h"
 
 using namespace StalkerSpace;

@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include "BoneProtections.h"
-#include "../skeletonanimated.h"
+#include "../SkeletonAnimated.h"
 
 float SBoneProtections::getBoneProtection	(s16 bone_id)
 {

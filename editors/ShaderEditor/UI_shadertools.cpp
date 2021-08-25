@@ -8,7 +8,7 @@
 #include "../ECore/Editor/ui_main.h"
 #include "leftbar.h"
 #include "../xrEProps/PropertiesList.h"
-#include "blenders/Blender.h"
+#include "../../xr_3da/blenders/Blender.h"
 #include "../ECore/Engine/GameMtlLib.h"
 #include "../xrEProps/ItemList.h"
 
@@ -122,7 +122,7 @@ void CShaderTools::OnDestroy()
 	UnregisterTools		();
 }
 
-#include "igame_persistent.h"
+#include "IGame_Persistent.h"
 
 void CShaderTools::RenderEnvironment()
 {

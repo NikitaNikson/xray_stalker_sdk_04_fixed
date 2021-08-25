@@ -6,7 +6,7 @@
 #include "UI_ShaderTools.h"
 #include "topbar.h"
 #include "leftbar.h"
-#include "D3DUtils.h"
+#include "../../xr_3da/D3DUtils.h"
 #include "bottombar.h"
 #include "xr_trims.h"
 #include "main.h"
@@ -18,7 +18,7 @@ CShaderMain*&	PUI=(CShaderMain*)UI;
 
 CShaderMain::CShaderMain()
 {
-	EPrefs			= xr_new<CSEPreferences>();
+    EPrefs			= xr_new<CSEPreferences>();
 }
 //---------------------------------------------------------------------------
 

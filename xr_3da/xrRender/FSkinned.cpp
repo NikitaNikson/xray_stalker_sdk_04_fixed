@@ -9,7 +9,7 @@
 #include <d3dx9.h>
 #pragma warning(default:4995)
 
-#include "../fmesh.h"
+#include "../Fmesh.h"
 #include "../xrCPU_Pipe.h"
 #include "FSkinned.h"
 

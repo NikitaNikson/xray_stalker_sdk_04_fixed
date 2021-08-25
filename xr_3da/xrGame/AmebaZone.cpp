@@ -5,8 +5,8 @@
 #include "PHObject.h"
 #include "PHMovementControl.h"
 #include "AmebaZone.h"
-#include "hudmanager.h"
-#include "level.h"
+#include "HUDManager.h"
+#include "Level.h"
 #include "entity_alive.h"
 #include "CharacterPhysicsSupport.h"
 CAmebaZone::CAmebaZone()

@@ -5,20 +5,20 @@
 
 #include "stdafx.h"
 #include "Level_Bullet_Manager.h"
-#include "entity.h"
-#include "gamemtllib.h"
-#include "level.h"
-#include "gamepersistent.h"
+#include "Entity.h"
+#include "GameMtlLib.h"
+#include "Level.h"
+#include "GamePersistent.h"
 #include "game_cl_base.h"
-#include "xrmessages.h"
+#include "xrMessages.h"
 #include "clsid_game.h"
-#include "../skeletoncustom.h"
+#include "../SkeletonCustom.h"
 #include "Actor.h"
 #include "AI/Stalker/ai_stalker.h"
 #include "character_info.h"
 #include "game_cl_base_weapon_usage_statistic.h"
 #include "../xr_collide_defs.h"
-#include "weapon.h"
+#include "Weapon.h"
 
 //константы shoot_factor, определ€ющие 
 //поведение пули при столкновении с объектом

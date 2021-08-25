@@ -3,17 +3,17 @@
 
 #include "WeaponMounted.h"
 #include "xrServer_Objects_ALife.h"
-#include "camerafirsteye.h"
-#include "actor.h"
-#include "weaponammo.h"
+#include "CameraFirstEye.h"
+#include "Actor.h"
+#include "WeaponAmmo.h"
 
 
-#include "actoreffector.h"
-#include "effectorshot.h"
+#include "ActorEffector.h"
+#include "EffectorShot.h"
 #include "ai_sounds.h"
-#include "level.h"
+#include "Level.h"
 #include "xr_level_controller.h"
-#include "../skeletoncustom.h"
+#include "../SkeletonCustom.h"
 #include "game_object_space.h"
 
 //----------------------------------------------------------------------------------------

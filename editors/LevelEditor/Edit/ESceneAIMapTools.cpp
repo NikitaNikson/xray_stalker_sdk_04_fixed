@@ -135,15 +135,15 @@ void ESceneAIMapTools::Clear(bool bOnlyNodes)
 	inherited::Clear	();
 	hash_Clear			();
 	for (AINodeIt it=m_Nodes.begin(); it!=m_Nodes.end(); it++)
-		xr_delete		(*it);
+    	xr_delete		(*it);
 	m_Nodes.clear_and_free();
 	if (!bOnlyNodes){
 //		m_SnapObjects.clear();
-		m_AIBBox.invalidate	();
-		ExecCommand(COMMAND_REFRESH_SNAP_OBJECTS);
-		g_ainode_pool.clear();
+        m_AIBBox.invalidate	();
+        ExecCommand		(COMMAND_REFRESH_SNAP_OBJECTS);
+		g_ainode_pool.clear	();   
 		RealUpdateSnapList();
-	}
+    }
 }
 //----------------------------------------------------
 

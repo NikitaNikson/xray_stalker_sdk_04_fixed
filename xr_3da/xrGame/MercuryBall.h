@@ -5,7 +5,7 @@
 ///////////////////////////////////////////////////////////////
 
 #pragma once
-#include "artifact.h"
+#include "Artifact.h"
 
 class CMercuryBall : public CArtefact 
 {
@@ -32,7 +32,7 @@ protected:
 /*
 
 #pragma once
-#include "gameobject.h"
+#include "GameObject.h"
 #include "PhysicsShell.h"
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////

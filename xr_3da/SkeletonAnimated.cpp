@@ -1,10 +1,10 @@
 //---------------------------------------------------------------------------
-#include 	"stdafx.h"
+#include "stdafx.h"
 #pragma hdrstop
 
-#include 	"SkeletonAnimated.h"
-#include	"SkeletonX.h"
-#include	"fmesh.h"
+#include "SkeletonAnimated.h"
+#include "SkeletonX.h"
+#include "Fmesh.h"
 
 extern int	psSkeletonUpdate;
 

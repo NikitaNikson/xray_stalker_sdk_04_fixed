@@ -1,5 +1,5 @@
 #include "pch_script.h"
-#include "f1.h"
+#include "F1.h"
 
 CF1::CF1(void) {
 }

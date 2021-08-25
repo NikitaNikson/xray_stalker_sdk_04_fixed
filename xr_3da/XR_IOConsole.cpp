@@ -3,11 +3,11 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "igame_level.h"
-#include "igame_persistent.h"
+#include "IGame_Level.h"
+#include "IGame_Persistent.h"
 
 #include "x_ray.h"
-#include "xr_ioconsole.h"
+#include "XR_IOConsole.h"
 #include "xr_input.h"
 #include "xr_ioc_cmd.h"
 #include "GameFont.h"

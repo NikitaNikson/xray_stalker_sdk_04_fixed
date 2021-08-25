@@ -1,12 +1,12 @@
 #include "stdafx.h"
 #pragma hdrstop
 
-#include "..\igame_persistent.h"
-#include "..\igame_level.h"
-#include "..\environment.h"
-#include "..\fmesh.h"
+#include "../IGame_Persistent.h"
+#include "../IGame_Level.h"
+#include "../Environment.h"
+#include "../Fmesh.h"
 
-#include "ftreevisual.h"
+#include "FTreeVisual.h"
 
 shared_str					m_xform		;
 shared_str					m_xform_v	;

@@ -3,11 +3,11 @@
 #pragma once
 
 #include "holder_custom.h"
-#include "shootingobject.h"
+#include "ShootingObject.h"
 
-#include "hudsound.h"
-#include "weaponammo.h"
-#include "physicsshellholder.h"
+#include "HudSound.h"
+#include "WeaponAmmo.h"
+#include "PhysicsShellHolder.h"
 
 class CWeaponMounted :	public CPhysicsShellHolder, 
 						public CHolderCustom,

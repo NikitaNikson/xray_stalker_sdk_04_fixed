@@ -1,7 +1,7 @@
 #include "pch_script.h"
 #include "base_monster.h"
 #include "../../../script_entity_action.h"
-#include "../../../phmovementcontrol.h"
+#include "../../../PHMovementControl.h"
 #include "../../../sight_manager.h"
 #include "../../../detail_path_manager.h"
 #include "../../../ai_object_location.h"
@@ -10,7 +10,7 @@
 #include "../state_manager.h"
 
 #include "../../../ai_debug.h"
-#include "../../../level.h"
+#include "../../../Level.h"
 #include "../../../level_debug.h"
 
 #include "../control_animation_base.h"

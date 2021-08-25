@@ -13,7 +13,7 @@
 #include <luabind/adopt_policy.hpp>
 
 #ifndef NO_XR_GAME
-#	include "attachable_item.h"
+	#include "attachable_item.h"
 
 ObjectFactory::CLIENT_BASE_CLASS *CObjectItemScript::client_object	() const
 {

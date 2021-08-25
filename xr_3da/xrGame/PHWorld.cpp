@@ -5,16 +5,16 @@
 #include "PhysicsCommon.h"
 #include "Level.h"
 #include "ExtendedGeom.h"
-#include "draymotions.h"
+#include "dRayMotions.h"
 #include "PHCollideValidator.h"
-#include "gamemtllib.h"
-#ifdef    DEBUG
-#	include "PHDebug.h"
+#include "GameMtlLib.h"
+#ifdef DEBUG
+	#include "PHDebug.h"
 #endif
 #include "PHCommander.h"
 #include "PHSimpleCalls.h"
 #include "PHSynchronize.h"
-#include "phnetstate.h"
+#include "PHNetState.h"
 //////////////////////////////////////////////////////////////
 //////////////CPHMesh///////////////////////////////////////////
 ///////////////////////////////////////////////////////////

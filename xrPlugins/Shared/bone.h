@@ -3,8 +3,8 @@
 #define BoneH
 
 #ifdef _LW_EXPORT
-#include <lwrender.h>
-#include <lwhost.h>
+	#include <lwrender.h>
+	#include <lwhost.h>
 #endif
 
 // refs

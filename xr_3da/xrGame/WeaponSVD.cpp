@@ -1,5 +1,5 @@
 #include "pch_script.h"
-#include "weaponsvd.h"
+#include "WeaponSVD.h"
 
 CWeaponSVD::CWeaponSVD(void) : CWeaponCustomPistol("SVD")
 {

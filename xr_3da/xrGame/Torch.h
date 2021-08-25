@@ -2,7 +2,7 @@
 
 #include "inventory_item_object.h"
 //#include "night_vision_effector.h"
-#include "hudsound.h"
+#include "HudSound.h"
 #include "script_export_space.h"
 
 class CLAItem;

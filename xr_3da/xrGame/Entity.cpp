@@ -3,18 +3,18 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "hudmanager.h"
+#include "HUDManager.h"
 #include "Entity.h"
-#include "actor.h"
-#include "xrserver_objects_alife_monsters.h"
+#include "Actor.h"
+#include "xrServer_Objects_ALife_Monsters.h"
 #include "entity.h"
-#include "level.h"
+#include "Level.h"
 #include "seniority_hierarchy_holder.h"
 #include "team_hierarchy_holder.h"
 #include "squad_hierarchy_holder.h"
 #include "group_hierarchy_holder.h"
 #include "clsid_game.h"
-#include "../skeletoncustom.h"
+#include "../SkeletonCustom.h"
 #include "monster_community.h"
 #include "ai_space.h"
 

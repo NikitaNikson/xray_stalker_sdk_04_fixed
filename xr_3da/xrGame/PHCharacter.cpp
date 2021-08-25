@@ -1,11 +1,11 @@
 #include "stdafx.h"
 
-#include "phcharacter.h"
+#include "PHCharacter.h"
 #include "PHDynamicData.h"
 #include "Physics.h"
 #include "ExtendedGeom.h"
 #include "../cl_intersect.h"
-#include "tri-colliderKNoOPC\__aabb_tri.h"
+#include "tri-colliderKNoOPC/__aabb_tri.h"
 #include "../../xrODE/ode/src/util.h"
 
 CPHCharacter::CPHCharacter(void):

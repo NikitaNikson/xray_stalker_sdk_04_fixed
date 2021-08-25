@@ -7,7 +7,7 @@
 ////////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "../../xrNetServer/net_utils.h"
+#include "../xrNetServer/NET_utils.h"
 #include "xrServer_Objects_ALife.h"
 #include "xrServer_Objects_ALife_Monsters.h"
 #include "game_base_space.h"
@@ -15,16 +15,16 @@
 #include "restriction_space.h"
 
 #ifndef AI_COMPILER
-#	include "character_info.h"
+	#include "character_info.h"
 #endif
 
 #ifndef XRGAME_EXPORTS
-#	include "bone.h"
-#	include "defines.h"
+	#include "bone.h"
+	#include "defines.h"
 	LPCSTR GAME_CONFIG = "game.ltx";
 #else
-#	include "..\bone.h"
-#	include "..\render.h"
+	#include "../bone.h"
+	#include "../Render.h"
 #endif
 
 bool SortStringsByAlphabetPred (const shared_str& s1, const shared_str& s2)

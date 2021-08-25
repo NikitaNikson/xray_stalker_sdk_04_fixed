@@ -14,14 +14,14 @@
 #include "script_space.h"
 
 #ifdef USE_DEBUGGER
-#	include "script_debugger.h"
+	#include "script_debugger.h"
 #endif
 
 #ifndef XRSE_FACTORY_EXPORTS
-#	ifdef DEBUG
-#		include "ai_debug.h"
+	#ifdef DEBUG
+		#include "ai_debug.h"
 		extern Flags32 psAI_Flags;
-#	endif
+	#endif
 #endif
 
 extern void export_classes(lua_State *L);

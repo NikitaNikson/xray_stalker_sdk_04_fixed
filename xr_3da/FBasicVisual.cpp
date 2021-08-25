@@ -6,10 +6,10 @@
 #pragma hdrstop
 
 #ifndef _EDITOR
-    #include "render.h"
-#endif    
-#include "fbasicvisual.h"
-#include "fmesh.h"
+	#include "Render.h"
+#endif
+#include "FBasicVisual.h"
+#include "Fmesh.h"
 
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction

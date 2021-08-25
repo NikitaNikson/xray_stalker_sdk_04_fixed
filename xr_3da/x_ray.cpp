@@ -6,17 +6,17 @@
 //	AlexMX		- Alexander Maksimchuk
 //-----------------------------------------------------------------------------
 #include "stdafx.h"
-#include "igame_level.h"
-#include "igame_persistent.h"
+#include "IGame_Level.h"
+#include "IGame_Persistent.h"
 
 #include "xr_input.h"
-#include "xr_ioconsole.h"
+#include "XR_IOConsole.h"
 #include "x_ray.h"
 #include "std_classes.h"
 #include "GameFont.h"
 #include "resource.h"
 #include "LightAnimLibrary.h"
-#include "ispatial.h"
+#include "ISpatial.h"
 #include "CopyProtection.h"
 #include "Text_Console.h"
 #include <process.h>

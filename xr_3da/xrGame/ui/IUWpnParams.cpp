@@ -1,7 +1,7 @@
 #include "pch_script.h"
 #include "UIWpnParams.h"
 #include "UIXmlInit.h"
-#include "../level.h"
+#include "../Level.h"
 #include "../game_base_space.h"
 #include "../ai_space.h"
 #include "../script_engine.h"

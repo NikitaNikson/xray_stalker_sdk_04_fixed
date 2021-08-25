@@ -1,6 +1,6 @@
 #include "pch_script.h"
 #include "UIScriptWnd.h"
-#include "../HudManager.h"
+#include "../HUDManager.h"
 #include "../object_broker.h"
 #include "../callback_info.h"
 

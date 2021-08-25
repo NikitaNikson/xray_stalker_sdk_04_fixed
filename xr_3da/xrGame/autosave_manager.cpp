@@ -10,9 +10,9 @@
 #include "autosave_manager.h"
 #include "date_time.h"
 #include "ai_space.h"
-#include "level.h"
+#include "Level.h"
 #include "xrMessages.h"
-#include "hudmanager.h"
+#include "HUDManager.h"
 
 extern LPCSTR alife_section;
 

@@ -5,7 +5,7 @@
 
 #include "SHCompilerTools.h"
 #include "ui_shadermain.h"
-#include "../xrEProps/folderlib.h"
+#include "../xrEProps/FolderLib.h"
 #include "leftbar.h"
 #include "../xrEProps/ItemList.h"
 //------------------------------------------------------------------------------

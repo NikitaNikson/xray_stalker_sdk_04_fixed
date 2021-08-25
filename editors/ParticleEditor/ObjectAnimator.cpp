@@ -41,15 +41,15 @@ void CObjectAnimator::SetActiveMotion(COMotion* mot)
 void CObjectAnimator::LoadMotions(LPCSTR fname)
 {
 	string_path			full_path;
-
 	if (!FS.exist( full_path, "$level$", fname ))
-		if (!FS.exist( full_path, "$game_anims$", fname )){
-			#ifdef _EDITOR
+		if (!FS.exist( full_path, "$game_anims$", fname ))
+		{
+		#ifdef _EDITOR
 			ELog.Msg(mtError, "Can't find motion file '%s'.", fname);
-            return;
-			#else
+			return;
+		#else
 			Debug.fatal(DEBUG_INFO,"Can't find motion file '%s'.",fname);
-			#endif
+		#endif
 		}
             
     LPCSTR  ext			= strext(full_path);
@@ -102,11 +102,11 @@ COMotion* CObjectAnimator::Play(bool loop, LPCSTR name)
 			m_MParam.Play	();
             return 		*it;
         }else{
-        	#ifdef _EDITOR
-            ELog.Msg(mtError, "OBJ ANIM::Cycle '%s' not found.", name);
-            #else
+		#ifdef _EDITOR
+			ELog.Msg(mtError, "OBJ ANIM::Cycle '%s' not found.", name);
+		#else
             Debug.fatal	(DEBUG_INFO,"OBJ ANIM::Cycle '%s' not found.",name);
-            #endif
+		#endif
             return NULL;
         }
     }else{
@@ -116,11 +116,11 @@ COMotion* CObjectAnimator::Play(bool loop, LPCSTR name)
 			m_MParam.Play	();
             return 		m_Motions.front();
         }else{
-        	#ifdef _EDITOR
-            ELog.Msg(mtError, "OBJ ANIM::Cycle '%s' not found.", name);
-            #else
+		#ifdef _EDITOR
+			ELog.Msg(mtError, "OBJ ANIM::Cycle '%s' not found.", name);
+		#else
             Debug.fatal	(DEBUG_INFO,"OBJ ANIM::Cycle '%s' not found.",name);
-            #endif
+		#endif
             return NULL;
         }
     }
@@ -141,7 +141,7 @@ float CObjectAnimator::GetLength		()
 
 #ifdef _EDITOR
 
-#include "d3dutils.h"
+#include "D3DUtils.h"
 #include "envelope.h"
 
 static FvectorVec path_points;

@@ -1,9 +1,9 @@
 #include "stdafx.h"
-#include "feel_vision.h"
-#include "render.h"
+#include "Feel_Vision.h"
+#include "Render.h"
 #include "xr_object.h"
 #include "xr_collide_form.h"
-#include "igame_level.h"
+#include "IGame_Level.h"
 #include "cl_intersect.h"
 
 namespace Feel {

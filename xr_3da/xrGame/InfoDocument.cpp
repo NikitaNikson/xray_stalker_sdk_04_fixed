@@ -6,9 +6,9 @@
 #include "InfoDocument.h"
 #include "PhysicsShell.h"
 #include "PDA.h"
-#include "inventoryowner.h"
-#include "xrserver_objects_alife_items.h"
-#include "../../xrNetServer/net_utils.h"
+#include "InventoryOwner.h"
+#include "xrServer_Objects_ALife_Items.h"
+#include "../../xrNetServer/NET_utils.h"
 
 CInfoDocument::CInfoDocument(void) 
 {

@@ -3,7 +3,7 @@
 
 #include "ESceneLightTools.h"
 #include "IGame_Persistent.h"
-#include "d3dutils.h"
+#include "D3DUtils.h"
 #include "communicate.h"
 #include "../ECore/Editor/ui_main.h"
 #include "../xrEProps/TextForm.h"

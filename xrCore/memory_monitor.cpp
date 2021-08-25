@@ -1,8 +1,8 @@
 #include "stdafx.h"
 
 #ifdef USE_MEMORY_MONITOR
-#	include <time.h>
-#	include <direct.h>
+	#include <time.h>
+	#include <direct.h>
 
 #define STATIC
 //#define STATIC	static

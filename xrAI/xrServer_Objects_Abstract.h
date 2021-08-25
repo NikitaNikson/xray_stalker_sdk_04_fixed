@@ -12,9 +12,9 @@
 #pragma pack(push,4)
 #include "xrServer_Space.h"
 #ifdef XRGAME_EXPORTS
-#	include "../../xrCDB/xrCDB.h"
+	#include "../../xrCDB/xrCDB.h"
 #else // XRGAME_EXPORTS
-#	include "../xrCDB/xrCDB.h"
+	#include "../xrCDB/xrCDB.h"
 #endif // XRGAME_EXPORTS
 #include "ShapeData.h"
 
@@ -22,7 +22,7 @@ class NET_Packet;
 class CDUInterface;
 
 #ifndef XRGAME_EXPORTS
-#	include "Sound.h"
+	#include "Sound.h"
 #endif
 
 #include "xrEProps.h"

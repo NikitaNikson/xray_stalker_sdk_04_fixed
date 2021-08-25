@@ -4,17 +4,17 @@
 #include "ode_include.h"
 #include "../StatGraph.h"
 #include "PHDebug.h"
-#include "phworld.h"
+#include "PHWorld.h"
 #endif
 #include "alife_space.h"
-#include "hit.h"
+#include "Hit.h"
 #include "PHDestroyable.h"
-#include "car.h"
-#include "actor.h"
+#include "Car.h"
+#include "Actor.h"
 #include "cameralook.h"
-#include "camerafirsteye.h"
-#include "level.h"
-#include "../cameramanager.h"
+#include "CameraFirstEye.h"
+#include "Level.h"
+#include "../CameraManager.h"
 
 bool CCar::HUDView() const		
 {

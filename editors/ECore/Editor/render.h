@@ -2,10 +2,10 @@
 #ifndef renderH
 #define renderH
 
-#include "frustum.h"
+#include "Frustum.h"
 #include "vis_common.h"
-#include "blenders\blender.h"
-#include "blenders\blender_clsid.h"
+#include "blenders/Blender.h"
+#include "blenders/Blender_CLSID.h"
 #include "xrRender_console.h"
 #include "PSLibrary.h"
 #include "IRenderDetailModel.H"

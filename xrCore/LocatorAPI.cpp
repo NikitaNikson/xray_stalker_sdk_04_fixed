@@ -8,7 +8,7 @@
 #pragma warning(disable:4995)
 #include <direct.h>
 #include <fcntl.h>
-#include <sys\stat.h>
+#include <sys/stat.h>
 #pragma warning(default:4995)
 
 #include "FS_internal.h"

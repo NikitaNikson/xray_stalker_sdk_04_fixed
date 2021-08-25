@@ -6,7 +6,7 @@
 #define AFX_XR_IOCONSOLE_H__ADEEFD61_7731_11D3_83D8_00C02610C34E__INCLUDED_
 #pragma once
 
-#include "iinputreceiver.h"
+#include "IInputReceiver.h"
 
 //refs
 class ENGINE_API CGameFont;

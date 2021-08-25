@@ -10,11 +10,11 @@
 #pragma warning(default:4995)
 
 #ifndef _EDITOR
-    #include	"Render.h"
+	#include "Render.h"
 #endif
 #include "SkeletonX.h"
 #include "SkeletonCustom.h"
-#include "fmesh.h"
+#include "Fmesh.h"
 #include "xrCPU_Pipe.h"
 
 //////////////////////////////////////////////////////////////////////

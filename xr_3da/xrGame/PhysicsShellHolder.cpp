@@ -3,15 +3,15 @@
 #include "PhysicsShell.h"
 #include "xrMessages.h"
 #include "ph_shell_interface.h"
-#include "../skeletoncustom.h"
+#include "../SkeletonCustom.h"
 #include "script_callback_ex.h"
 #include "Level.h"
 #include "PHCommander.h"
 #include "PHScriptCall.h"
 #include "CustomRocket.h"
 #include "Grenade.h"
-#include "phworld.h"
-#include "phactivationshape.h"
+#include "PHWorld.h"
+#include "PHActivationShape.h"
 #include "phvalide.h"
 CPhysicsShellHolder::CPhysicsShellHolder()
 {

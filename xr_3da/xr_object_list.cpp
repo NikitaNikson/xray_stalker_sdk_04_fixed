@@ -1,13 +1,13 @@
 #include "stdafx.h"
-#include "igame_level.h"
-#include "igame_persistent.h"
+#include "IGame_Level.h"
+#include "IGame_Persistent.h"
 
 #include "xrSheduler.h"
 #include "xr_object_list.h"
 #include "std_classes.h"
 
 #include "xr_object.h"
-#include "../xrNetServer/net_utils.h"
+#include "../xrNetServer/NET_utils.h"
 
 #include "CustomHUD.h"
 

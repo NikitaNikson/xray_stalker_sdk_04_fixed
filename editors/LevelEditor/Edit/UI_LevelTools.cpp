@@ -11,7 +11,7 @@
 #include "editlibrary.h"
 #include "ObjectList.h"
 
-#include "igame_persistent.h"
+#include "IGame_Persistent.h"
 #include "Builder.h"
 
 #define DETACH_FRAME(a) 	if (a){ (a)->Hide(); 	(a)->Parent = NULL; }
@@ -333,7 +333,7 @@ void __fastcall CLevelTools::OnFrame()
     }
 }
 //---------------------------------------------------------------------------
-#include "d3dutils.h"
+#include "D3DUtils.h"
 void __fastcall CLevelTools::RenderEnvironment()
 {
     // draw sky

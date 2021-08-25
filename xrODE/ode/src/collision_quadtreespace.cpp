@@ -72,7 +72,7 @@ public:
 
 
 #ifdef DRAWBLOCKS
-#include "..\..\Include\drawstuff\\drawstuff.h"
+#include "../../Include/drawstuff/drawstuff.h"
 
 static void DrawBlock(Block* Block){
 	dVector3 v[8];

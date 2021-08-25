@@ -7,7 +7,7 @@
 #include <io.h>
 #include <direct.h>
 #include <fcntl.h>
-#include <sys\stat.h>
+#include <sys/stat.h>
 #pragma warning(default:4995)
 
 typedef void DUMMY_STUFF (const void*,const u32&,void*);

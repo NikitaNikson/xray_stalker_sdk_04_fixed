@@ -4,7 +4,7 @@
 #include "tlsprite.h"
 #include "texture.h"
 #include "ui_main.h"
-#include "d3dutils.h"
+#include "D3DUtils.h"
 
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction

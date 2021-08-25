@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../../../../skeletoncustom.h"
-#include "../../../actor.h"
+#include "../../../../SkeletonCustom.h"
+#include "../../../Actor.h"
 #include "../../../../CameraBase.h"
 
 #define TEMPLATE_SPECIALIZATION template <\

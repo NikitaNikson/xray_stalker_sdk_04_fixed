@@ -7,13 +7,13 @@
 ////////////////////////////////////////////////////////////////////////////
 
 #include "pch_script.h"
-#include "level.h"
-#include "actor.h"
+#include "Level.h"
+#include "Actor.h"
 #include "script_game_object.h"
 #include "patrol_path_storage.h"
 #include "xrServer.h"
 #include "client_spawn_manager.h"
-#include "../igame_persistent.h"
+#include "../IGame_Persistent.h"
 #include "game_cl_base.h"
 #include "ui/UIDialogWnd.h"
 #include "date_time.h"
@@ -27,7 +27,7 @@
 
 #include "map_manager.h"
 #include "map_location.h"
-#include "phworld.h"
+#include "PHWorld.h"
 
 using namespace luabind;
 
@@ -400,7 +400,7 @@ void iterate_sounds2				(LPCSTR prefix, u32 max_count, luabind::object object, l
 	iterate_sounds				(prefix,max_count,temp);
 }
 
-#include "actoreffector.h"
+#include "ActorEffector.h"
 float add_cam_effector(LPCSTR fn, int id, bool cyclic, LPCSTR cb_func)
 {
 	CAnimatorCamEffectorScriptCB* e		= xr_new<CAnimatorCamEffectorScriptCB>(cb_func);
@@ -469,7 +469,7 @@ void remove_complex_effector(int id)
 	RemoveEffector(Actor(),id);
 }
 
-#include "postprocessanimator.h"
+#include "PostprocessAnimator.h"
 void add_pp_effector(LPCSTR fn, int id, bool cyclic)
 {
 	CPostprocessAnimator* pp		= xr_new<CPostprocessAnimator>(id, cyclic);

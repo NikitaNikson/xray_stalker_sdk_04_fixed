@@ -1,10 +1,10 @@
 #include "stdafx.h" 
 
 #include "SmdMaya.h"
-#include "..\..\Shared\EditObject.h"
-#include "..\..\Shared\EditMesh.h"
-#include "..\..\Shared\Motion.h"
-#include "..\..\Shared\Envelope.h"
+#include "../../Shared/EditObject.h"
+#include "../../Shared/EditMesh.h"
+#include "../../Shared/motion.h"
+#include "../../Shared/envelope.h"
 
 #pragma warning ( disable : 4786 )
 

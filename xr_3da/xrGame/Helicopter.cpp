@@ -1,17 +1,17 @@
 #include "pch_script.h"
 #include "helicopter.h"
-#include "xrserver_objects_alife.h"
+#include "xrServer_Objects_ALife.h"
 #include "PhysicsShell.h"
-#include "level.h"
+#include "Level.h"
 #include "ai_sounds.h"
 #include "clsid_game.h"
-#include "../skeletonanimated.h"
+#include "../SkeletonAnimated.h"
 #include "script_callback_ex.h"
 #include "game_object_space.h"
 #include "script_game_object.h"
 #include "../LightAnimLibrary.h"
-#include "HudManager.h"
-#include "physicscommon.h"
+#include "HUDManager.h"
+#include "PhysicsCommon.h"
 //50fps fixed
 float STEP=0.02f;
 

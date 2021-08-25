@@ -5,13 +5,13 @@
 
 #include "SHSoundEnvTools.h"
 #include "ui_shadermain.h"
-#include "../xrEProps/folderlib.h"
+#include "../xrEProps/FolderLib.h"
 #include "../xrEProps/ChoseForm.h"
 #include "leftbar.h"
 #include "../xrEProps/ItemList.h"
 #include "eax.h"
 #include "../../xrSound/SoundRender_Source.h"
-#include "D3DUtils.h"
+#include "../../xr_3da/D3DUtils.h"
 
 //------------------------------------------------------------------------------
 xr_token eax_environment[]		= {

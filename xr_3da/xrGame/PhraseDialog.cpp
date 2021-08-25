@@ -1,7 +1,7 @@
 #include "pch_script.h"
-#include "phrasedialog.h"
-#include "phrasedialogmanager.h"
-#include "gameobject.h"
+#include "PhraseDialog.h"
+#include "PhraseDialogManager.h"
+#include "GameObject.h"
 #include "ai_debug.h"
 
 SPhraseDialogData::SPhraseDialogData ()

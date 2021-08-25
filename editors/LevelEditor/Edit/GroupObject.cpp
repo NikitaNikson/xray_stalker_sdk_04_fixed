@@ -8,7 +8,7 @@
 #include "GroupObject.h"
 #include "Scene.h"
 #include "ESceneCustomMTools.h"
-#include "d3dutils.h"
+#include "D3DUtils.h"
 //----------------------------------------------------
 static const float EMPTY_GROUP_SIZE = 0.5f;
 //----------------------------------------------------

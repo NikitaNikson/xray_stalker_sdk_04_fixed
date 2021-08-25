@@ -17,8 +17,8 @@ TfrmMain *frmMain;
 
 //------------------------------------------------------------------------------
 #include "../xrEProps/ChoseForm.h"
-#include "shader.h"
-#include "shader_xrlc.h"
+#include "Shader.h"
+#include "Shader_xrLC.h"
 #include "../ECore/Engine/texture.h"
 #include "../ECore/Editor/Library.h"
 #include "../ECore/Editor/EditObject.h"
@@ -30,7 +30,7 @@ TfrmMain *frmMain;
 #include "../ECore/Editor/ui_main.h"
 #include "PSLibrary.h"
 #include "../ECore/Engine/GameMtlLib.h"
-#include "../../xrSound/soundrender_source.h"
+#include "../../xrSound/SoundRender_Source.h"
 #include "ResourceManager.h"
 #include "../xrEProps/EditorChooseEvents.h"
 
@@ -98,7 +98,7 @@ void __fastcall TfrmMain::FormCloseQuery(TObject *Sender, bool &CanClose)
 void __fastcall TfrmMain::FormCreate(TObject *Sender)
 {
 	DEFINE_INI(fsStorage);
-	Application->OnIdle = IdleHandler;
+    Application->OnIdle = IdleHandler;
 	DragAcceptFiles(Handle, true);
 }
 

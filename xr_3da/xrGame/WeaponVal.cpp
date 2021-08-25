@@ -1,5 +1,5 @@
 #include "pch_script.h"
-#include "weaponval.h"
+#include "WeaponVal.h"
 
 CWeaponVal::CWeaponVal(void) : CWeaponMagazined("VAL",SOUND_TYPE_WEAPON_SUBMACHINEGUN)
 {

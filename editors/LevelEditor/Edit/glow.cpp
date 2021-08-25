@@ -8,7 +8,7 @@
 #include "Glow.h"
 #include "xr_trims.h"
 #include "bottombar.h"
-#include "d3dutils.h"
+#include "D3DUtils.h"
 #include "scene.h"
 #include "ESceneGlowTools.h"
 

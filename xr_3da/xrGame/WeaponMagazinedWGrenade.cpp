@@ -1,22 +1,22 @@
 #include "stdafx.h"
-#include "weaponmagazinedwgrenade.h"
+#include "WeaponMagazinedWGrenade.h"
 #include "WeaponHUD.h"
 #include "HUDManager.h"
-#include "entity.h"
+#include "Entity.h"
 #include "ParticlesObject.h"
 #include "GrenadeLauncher.h"
-#include "xrserver_objects_alife_items.h"
+#include "xrServer_Objects_ALife_Items.h"
 #include "ExplosiveRocket.h"
 #include "Actor_Flags.h"
 #include "xr_level_controller.h"
-#include "level.h"
-#include "../skeletoncustom.h"
+#include "Level.h"
+#include "../SkeletonCustom.h"
 #include "object_broker.h"
 #include "game_base_space.h"
 #include "MathUtils.h"
 #include "clsid_game.h"
 #ifdef DEBUG
-#include "phdebug.h"
+#include "PHDebug.h"
 #endif
 
 CWeaponMagazinedWGrenade::CWeaponMagazinedWGrenade(LPCSTR name,ESoundTypes eSoundType) : CWeaponMagazined(name, eSoundType)
@@ -263,8 +263,8 @@ bool CWeaponMagazinedWGrenade::Action(s32 cmd, u32 flags)
 	return false;
 }
 
-#include "inventory.h"
-#include "inventoryOwner.h"
+#include "Inventory.h"
+#include "InventoryOwner.h"
 void CWeaponMagazinedWGrenade::state_Fire(float dt) 
 {
 	VERIFY(fTimeToFire>0.f);

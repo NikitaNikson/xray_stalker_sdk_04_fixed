@@ -1,12 +1,12 @@
 #include "stdafx.h"
-#include "flod.h"
+#include "FLOD.h"
 
 #ifdef _EDITOR
-#include "igame_persistent.h"
-#include "environment.h"
+#include "IGame_Persistent.h"
+#include "Environment.h"
 #else
-#include "..\igame_persistent.h"
-#include "..\environment.h"
+#include "../IGame_Persistent.h"
+#include "../Environment.h"
 #endif
 
 extern float	r_ssaLOD_A;

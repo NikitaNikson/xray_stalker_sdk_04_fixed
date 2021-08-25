@@ -13,8 +13,8 @@
 #include "xrServer_Objects_ALife.h"
 #include "script_binder_object.h"
 #include "script_game_object.h"
-#include "gameobject.h"
-#include "level.h"
+#include "GameObject.h"
+#include "Level.h"
 
 //#define DBG_DISABLE_SCRIPTS
 

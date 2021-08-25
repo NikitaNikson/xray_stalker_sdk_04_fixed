@@ -6,8 +6,8 @@
 #include "MeshExpUtility.h"
 #include "FileSystem.h"
 #include "MeshExpUtility.rh"
-#include "..\..\Shared\EditObject.h"
-#include "..\..\Shared\EditMesh.h"
+#include "../../Shared/EditObject.h"
+#include "../../Shared/EditMesh.h"
 //-------------------------------------------------------------------
 //  Dialog Handler for Utility
 

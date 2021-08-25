@@ -2,7 +2,7 @@
 #include "MathUtils.h"
 #include "Level.h"
 #include "Geometry.h"
-#include "tri-colliderknoopc/dtricollidermath.h"
+#include "tri-colliderknoopc/dTriColliderMath.h"
 ICF void GetNormal(CDB::TRI*XTri,Fvector &n)
 {
 	const Fvector* V_array=Level().ObjectSpace.GetStaticVerts();

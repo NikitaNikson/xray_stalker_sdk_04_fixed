@@ -1,6 +1,6 @@
 #include "stdafx.h"
-#include "..\..\Shared\bone.h"
-#include "..\..\Shared\envelope.h"
+#include "../../Shared/bone.h"
+#include "../../Shared/envelope.h"
 
 #ifdef _LW_EXPORT
 extern "C"	LWItemInfo		*g_iteminfo;

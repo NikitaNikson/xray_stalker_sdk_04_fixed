@@ -1,7 +1,7 @@
 #pragma once
 #include "inventory_item_object.h"
-#include "../feel_touch.h"
-#include "hudsound.h"
+#include "../Feel_Touch.h"
+#include "HudSound.h"
 
 class CCustomZone;
 //описание типа зоны

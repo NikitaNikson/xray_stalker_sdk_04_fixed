@@ -2,8 +2,8 @@
 #define __XR_WEAPON_MAG_H__
 #pragma once
 
-#include "weapon.h"
-#include "hudsound.h"
+#include "Weapon.h"
+#include "HudSound.h"
 #include "ai_sounds.h"
 
 class ENGINE_API CMotionDef;

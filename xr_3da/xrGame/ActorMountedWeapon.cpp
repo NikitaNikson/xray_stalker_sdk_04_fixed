@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #pragma hdrstop
 
-#include "actor.h"
+#include "Actor.h"
 #include "WeaponMounted.h"
 #include "../CameraBase.h"
 #include "ActorEffector.h"

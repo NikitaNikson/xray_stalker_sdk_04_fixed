@@ -8,8 +8,8 @@
 
 #include "stdafx.h"
 #include "eatable_item.h"
-#include "xrmessages.h"
-#include "../../xrNetServer/net_utils.h"
+#include "xrMessages.h"
+#include "../../xrNetServer/NET_utils.h"
 #include "physic_item.h"
 #include "Level.h"
 #include "entity_alive.h"

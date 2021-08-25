@@ -8,7 +8,7 @@
 #include "PropertiesList.h"
 #include "FolderLib.h"
 #include "ui_main.h"
-#include "../../../xrSound/soundrender_source.h"
+#include "../../../xrSound/SoundRender_Source.h"
 #include "ItemList.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)

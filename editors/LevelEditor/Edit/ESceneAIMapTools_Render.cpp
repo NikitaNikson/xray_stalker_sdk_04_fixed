@@ -5,7 +5,7 @@
 #pragma hdrstop
 
 #include "ESceneAIMapTools.h"
-#include "D3dUtils.h"
+#include "D3DUtils.h"
 #include "SceneObject.h"
 #include "bottombar.h"
 #include "ui_leveltools.h"

@@ -3,14 +3,14 @@
 #include "xrUIXmlParser.h"
 #include "UIXmlInit.h"
 #include "../HUDManager.h"
-#include "../level.h"
+#include "../Level.h"
 #include "UICharacterInfo.h"
 #include "UIDragDropListEx.h"
 #include "UIFrameWindow.h"
 #include "UIItemInfo.h"
 #include "UIPropertiesBox.h"
-#include "../ai/monsters/BaseMonster/base_monster.h"
-#include "../inventory.h"
+#include "../ai/monsters/basemonster/base_monster.h"
+#include "../Inventory.h"
 #include "UIInventoryUtilities.h"
 #include "UICellItem.h"
 #include "UICellItemFactory.h"
@@ -400,8 +400,8 @@ bool CUICarBodyWnd::OnKeyboard(int dik, EUIMessages keyboard_action)
 	return false;
 }
 
-#include "../Medkit.h"
-#include "../Antirad.h"
+#include "../medkit.h"
+#include "../antirad.h"
 
 void CUICarBodyWnd::ActivatePropertiesBox()
 {

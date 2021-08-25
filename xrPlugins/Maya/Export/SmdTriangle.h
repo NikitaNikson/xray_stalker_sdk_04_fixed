@@ -10,7 +10,7 @@
 #define TRIANGLE_H
 
 #include "SmdBone.h"
-#include "..\..\Shared\EditMesh.h"
+#include "../../Shared/EditMesh.h"
 
 class SmdVertex
 {

@@ -11,7 +11,7 @@
 #include "sector.h"
 #include "MgcConvexHull2D.h"
 #include "MgcAppr3DPlaneFit.h"
-#include "d3dutils.h"
+#include "D3DUtils.h"
 #include "../ECore/Editor/ui_main.h"
 #include "ui_leveltools.h"
 #include "SceneObject.h"

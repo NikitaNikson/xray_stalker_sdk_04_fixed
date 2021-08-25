@@ -9,11 +9,11 @@
 #include "r_constants.h"
 #include "xr_resource.h"
 
-#include "sh_atomic.h"
-#include "sh_texture.h"
-#include "sh_matrix.h"
-#include "sh_constant.h"
-#include "sh_rt.h"
+#include "SH_Atomic.h"
+#include "SH_Texture.h"
+#include "SH_Matrix.h"
+#include "SH_Constant.h"
+#include "SH_RT.h"
 
 typedef xr_vector<shared_str>	sh_list;
 class	ENGINE_API				CBlender_Compile;

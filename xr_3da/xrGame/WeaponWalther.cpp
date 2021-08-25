@@ -1,5 +1,5 @@
 #include "pch_script.h"
-#include "weaponwalther.h"
+#include "WeaponWalther.h"
 
 CWeaponWalther::CWeaponWalther(void) : CWeaponPistol("WALTHER")
 {

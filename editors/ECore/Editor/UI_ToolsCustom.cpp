@@ -12,9 +12,9 @@
 #include "motion.h"
 #include "bone.h"
 #include "library.h"
-#include "fmesh.h"
-#include "folderlib.h"
-#include "d3dutils.h"
+#include "Fmesh.h"
+#include "FolderLib.h"
+#include "D3DUtils.h"
 
 //------------------------------------------------------------------------------
 CToolsCustom* Tools=0;

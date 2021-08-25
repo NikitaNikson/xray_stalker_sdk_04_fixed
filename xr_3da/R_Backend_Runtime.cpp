@@ -6,7 +6,7 @@
 #include <d3dx9.h>
 #pragma warning(pop)
 
-#include "frustum.h"
+#include "Frustum.h"
 
 void CBackend::OnFrameEnd	()
 {

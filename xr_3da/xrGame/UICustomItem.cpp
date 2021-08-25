@@ -1,6 +1,6 @@
 #include "stdafx.h"
-#include "uicustomitem.h"
-#include "hudmanager.h"
+#include "UICustomItem.h"
+#include "HUDManager.h"
 
 CUICustomItem::CUICustomItem()
 {    

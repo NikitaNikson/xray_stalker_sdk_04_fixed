@@ -8,9 +8,9 @@
 
 #include "stdafx.h"
 #include "actor_memory.h"
-#include "actor.h"
-#include "../camerabase.h"
-#include "gamepersistent.h"
+#include "Actor.h"
+#include "../CameraBase.h"
+#include "GamePersistent.h"
 
 CActorMemory::CActorMemory					(CActor *actor) :
 	inherited		(

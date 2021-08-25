@@ -3,7 +3,7 @@
 #include "UIInventoryUtilities.h"
 #include "UIXmlInit.h"
 
-#include "../artifact.h"
+#include "../Artifact.h"
 
 using namespace InventoryUtilities;
 

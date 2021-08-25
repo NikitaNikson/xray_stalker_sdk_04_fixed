@@ -5,10 +5,10 @@
 #include "stdafx.h"
 #pragma hdrstop
 
-#include "..\..\Shared\EditObject.h"
+#include "../../Shared/EditObject.h"
 //#include "lwo2.h"
-#include "..\lw_shared\LW_SHADERDEF.h"
-#include "..\..\Shared\EditMesh.h"
+#include "../lw_shared/LW_SHADERDEF.h"
+#include "../../Shared/EditMesh.h"
 
 extern "C" {
 #include "lwo2.h"

@@ -2,14 +2,14 @@
 #pragma hdrstop
 
 #include "BreakableObject.h"
-#include "xrserver_objects_alife.h"
+#include "xrServer_Objects_ALife.h"
 #include "PHStaticGeomShell.h"
 #include "PhysicsShell.h"
 #include "Physics.h"
 #include "../xr_collide_form.h"
-#include "../../xrNetServer/net_utils.h"
+#include "../../xrNetServer/NET_utils.h"
 #include "clsid_game.h"
-#include "../skeletoncustom.h"
+#include "../SkeletonCustom.h"
 
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction

@@ -6,7 +6,7 @@
 #include "stdafx.h"
 #include "BastArtifact.h"
 #include "PhysicsShell.h"
-#include "extendedgeom.h"
+#include "ExtendedGeom.h"
 #include "ParticlesObject.h"
 
 

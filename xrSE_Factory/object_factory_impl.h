@@ -15,8 +15,8 @@
 #include "object_item_single.h"
 
 #ifndef NO_XR_GAME
-#	include "object_type_traits.h"
-#	include "object_item_client_server.h"
+	#include "object_type_traits.h"
+	#include "object_item_client_server.h"
 #endif
 
 #ifndef NO_XR_GAME

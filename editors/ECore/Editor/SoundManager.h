@@ -2,7 +2,7 @@
 #ifndef SoundManagerH
 #define SoundManagerH
 
-#include "../xrEProps/folderlib.h"
+#include "../xrEProps/FolderLib.h"
 
 // refs
 class ESoundThumbnail;

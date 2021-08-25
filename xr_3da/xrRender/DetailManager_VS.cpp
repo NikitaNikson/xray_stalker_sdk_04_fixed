@@ -1,14 +1,14 @@
 #include "stdafx.h"
 #pragma hdrstop
 
-#include "detailmanager.h"
+#include "DetailManager.h"
 
 #ifdef _EDITOR
-#	include "igame_persistent.h"
-#	include "environment.h"
+#	include "IGame_Persistent.h"
+#	include "Environment.h"
 #else
-#	include "..\igame_persistent.h"
-#	include "..\environment.h"
+#	include "../IGame_Persistent.h"
+#	include "../Environment.h"
 #endif
 
 const int			quant	= 16384;

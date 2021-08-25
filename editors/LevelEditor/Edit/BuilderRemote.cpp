@@ -439,8 +439,7 @@ BOOL SceneBuilder::BuildObject(CSceneObject* obj)
 	    int sect_num = S?S->m_sector_num:m_iDefaultSectorNum;
     	if (!BuildMesh(T,O,*M,sect_num,l_verts,l_vert_cnt,l_vert_it,l_faces,l_face_cnt,l_face_it,l_smgroups,obj->_Transform())) return FALSE;
         // fill DI vertices
-        for (u32 pt_id=0; pt_id<(*M)->GetVCount(); pt_id++)
-		{
+        for (u32 pt_id=0; pt_id<(*M)->GetVCount(); pt_id++){
         	Fvector						v_res1, v_res2;
         	const Fvector&	v_src 		= (*M)->m_Verts[pt_id];
 
@@ -600,16 +599,16 @@ BOOL SceneBuilder::BuildSun(u8 quality, float dispersion, Fvector2 dir)
     float mn_x  		= dir.x-disp/2;
     float mn_y  		= dir.y-disp/2;
     for (int x=0; x<samples; x++){
-			float _x = mn_x+x*da;
+        float _x = mn_x+x*da;
         for (int y=0; y<samples; y++){
-				float _y = mn_y+y*da;
+            float _y = mn_y+y*da;
             l_light_static.push_back(b_light_static());
             b_light_static& sl	= l_light_static.back();
             sl.controller_ID 	= controller_ID;
             sl.data.type		= D3DLIGHT_DIRECTIONAL;
             sl.data.position.set(0,0,0);
             sl.data.diffuse.set	(color);
-				sl.data.direction.setHP(_y,_x);
+            sl.data.direction.setHP(_y,_x);
 			}
         }
     }

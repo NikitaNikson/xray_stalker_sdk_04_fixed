@@ -10,7 +10,7 @@
 
 #include "object_broker.h"
 #ifdef XRSE_FACTORY_EXPORTS
-#	include "script_value.h"
+	#include "script_value.h"
 #endif
 
 IC	CScriptValueContainer::~CScriptValueContainer	()

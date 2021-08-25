@@ -1,9 +1,9 @@
 #include "pch_script.h"
 #include "helicopter.h"
-#include "level.h"
+#include "Level.h"
 #include "script_game_object.h"
 #include "game_object_space.h"
-#include "../skeletonanimated.h"
+#include "../SkeletonAnimated.h"
 #include "../LightAnimLibrary.h"
 #include "PhysicsShell.h"
 #include "clsid_game.h"
@@ -255,7 +255,7 @@ void CHelicopter::PHHit(float P,Fvector &dir, CObject *who,s16 element,Fvector p
 #include "team_hierarchy_holder.h"
 #include "squad_hierarchy_holder.h"
 
-#include "extendedgeom.h"
+#include "ExtendedGeom.h"
 void CollisionCallbackDead(bool& do_colide,bool bo1,dContact& c,SGameMtl* material_1,SGameMtl* material_2)
 {	
 	do_colide=true; 

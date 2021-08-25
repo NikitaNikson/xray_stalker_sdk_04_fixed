@@ -4,7 +4,7 @@
 #include "ResourceManager.h"
 
 #ifndef _EDITOR
-    #include "render.h"
+	#include "Render.h"
 #endif
     
 #include "tntQAVI.h"

@@ -7,29 +7,29 @@
 ////////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "../../xrNetServer/net_utils.h"
+#include "../xrNetServer/NET_utils.h"
 #include "xrServer_Objects_ALife_Items.h"
 #include "xrServer_Objects_ALife_Monsters.h"
 #include "object_broker.h"
 #include "alife_human_brain.h"
 
 #ifndef AI_COMPILER
-#	include "ai_space.h"
-#	include "character_info.h"
-#	include "specific_character.h"
+	#include "ai_space.h"
+	#include "character_info.h"
+	#include "specific_character.h"
 #endif
 
 #ifdef XRGAME_EXPORTS
-#	include "ef_storage.h"
-#	include "game_graph.h"
+	#include "ef_storage.h"
+	#include "game_graph.h"
+	#include "alife_simulator.h"
+	#include "alife_registry_container.h"
+	#include "ef_primary.h"
+	#include "string_table.h"
+	#include "alife_online_offline_group_brain.h"
 #	include "alife_simulator.h"
-#	include "alife_registry_container.h"
-#	include "ef_primary.h"
-#	include "string_table.h"
-#	include "alife_online_offline_group_brain.h"
-#	include "alife_simulator.h"
-#	include "alife_object_registry.h"
-#	include "date_time.h"
+	#include "alife_object_registry.h"
+	#include "date_time.h"
 #endif
 
 void setup_location_types_section(GameGraph::TERRAIN_VECTOR &m_vertex_types, CInifile *ini, LPCSTR section)
@@ -254,10 +254,8 @@ void CSE_ALifeTraderAbstract::OnChangeProfile(PropValue* sender)
 
 
 #ifdef XRGAME_EXPORTS
-
-#include "game_base_space.h"
-#include "Level.h"
-
+	#include "game_base_space.h"
+	#include "Level.h"
 #endif
 
 shared_str CSE_ALifeTraderAbstract::specific_character()

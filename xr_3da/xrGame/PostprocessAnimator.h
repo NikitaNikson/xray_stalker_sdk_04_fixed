@@ -3,15 +3,15 @@
 #pragma once
 
 #ifndef _PP_EDITOR_
-    #include "../envelope.h"
-    #include "../EffectorPP.h"
-	#include "../cameramanager.h"
+	#include "../envelope.h"
+	#include "../EffectorPP.h"
+	#include "../CameraManager.h"
 
 	class CEffectorController;
 #else
-    #include "envelope.h"
-    #include "EffectorPP.h"
-    #include "CameraManager.h"
+	#include "envelope.h"
+	#include "EffectorPP.h"
+	#include "CameraManager.h"
 #endif /*_PP_EDITOR_*/
 
 #define POSTPROCESS_PARAMS_COUNT    10

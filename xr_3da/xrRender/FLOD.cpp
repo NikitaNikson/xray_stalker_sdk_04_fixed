@@ -1,6 +1,6 @@
 #include "stdafx.h"
-#include "../fmesh.h"
-#include "flod.h"
+#include "../Fmesh.h"
+#include "FLOD.h"
 
 struct _hw 
 {

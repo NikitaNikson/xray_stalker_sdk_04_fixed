@@ -12,7 +12,7 @@
 #include "../xrCore/xrCore.h"
 #include <io.h>
 #include <fcntl.h>
-#include <sys\stat.h>
+#include <sys/stat.h>
 
 #define ENGINE_API
 #define XR_EPROPS_API

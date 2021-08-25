@@ -2,7 +2,7 @@
 #ifndef ParticleGroupH
 #define ParticleGroupH
 
-#include "..\ParticleCustom.h"
+#include "../ParticleCustom.h"
 
 namespace PS
 {

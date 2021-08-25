@@ -7,10 +7,10 @@
 #include "UIEditboxEx.h"
 
 //#include "UIMapList.h"
-#include "../level.h"
+#include "../Level.h"
 //#include "../game_cl_base.h"
 #include "../game_cl_teamdeathmatch.h"
-#include "../../xr_ioconsole.h"
+#include "../../XR_IOConsole.h"
 
 
 

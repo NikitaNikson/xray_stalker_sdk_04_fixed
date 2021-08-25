@@ -3,8 +3,8 @@
 #include "UITabControl.h"
 #include "UIStatic.h"
 #include "UIXmlInit.h"
-#include "../level.h"
-#include "../hudmanager.h"
+#include "../Level.h"
+#include "../HUDManager.h"
 #include <dinput.h>
 
 void CUIVideoPlayerWnd::SendMessage	(CUIWindow* pWnd, s16 msg, void* pData)

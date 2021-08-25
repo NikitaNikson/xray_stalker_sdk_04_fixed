@@ -12,12 +12,12 @@
 //.#include "ParticleSystem.h"
 #include "xr_trims.h"
 #include "../ECore/Editor/library.h"
-#include "../ECore/Editor/Render.h"
-#include "../xrEProps/folderlib.h"
+#include "../ECore/Editor/render.h"
+#include "../xrEProps/FolderLib.h"
 #include "../xrEProps/itemdialog.h"
 
 #include "../xrEProps/TextForm.h"
-#include "d3dutils.h"
+#include "D3DUtils.h"
 #include "ObjectAnimator.h"
 #include "../xrEProps/ItemList.h"
 #include "ParticleEffectActions.h"
@@ -148,7 +148,7 @@ void CParticleTools::OnItemModified()
     }
 	ExecCommand(COMMAND_UPDATE_PROPERTIES);
 }
-#include "igame_persistent.h"
+#include "IGame_Persistent.h"
 
 void CParticleTools::RenderEnvironment()
 {

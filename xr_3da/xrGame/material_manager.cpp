@@ -9,10 +9,10 @@
 #include "stdafx.h"
 #include "material_manager.h"
 #include "alife_space.h"
-#include "phmovementcontrol.h"
+#include "PHMovementControl.h"
 #include "entity_alive.h"
 #include "CharacterPhysicsSupport.h"
-#include "../skeletoncustom.h"
+#include "../SkeletonCustom.h"
 
 CMaterialManager::CMaterialManager	(CObject *object, CPHMovementControl *movement_control)
 {

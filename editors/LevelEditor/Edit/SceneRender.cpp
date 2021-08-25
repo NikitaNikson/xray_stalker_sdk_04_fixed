@@ -4,7 +4,7 @@
 #include "Scene.h"
 #include "SceneObject.h"
 #include "bottombar.h"
-#include "d3dutils.h"
+#include "D3DUtils.h"
 
 //------------------------------------------------------------------------------
 

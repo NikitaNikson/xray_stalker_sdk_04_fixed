@@ -3,7 +3,7 @@
 #pragma hdrstop
 
 #include "SHCompilerTools.h"
-#include "../xrEProps/folderlib.h"
+#include "../xrEProps/FolderLib.h"
 #include "../xrEProps/ItemList.h"
 //------------------------------------------------------------------------------
 

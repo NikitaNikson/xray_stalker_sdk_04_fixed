@@ -4,14 +4,14 @@
 
 #include "stdafx.h"
 #include "LightTrack.h"
-#include "..\xr_object.h"
+#include "../xr_object.h"
 
 #ifdef _EDITOR
-#include "igame_persistent.h"
-#include "environment.h"
+#include "IGame_Persistent.h"
+#include "Environment.h"
 #else
-#include "..\igame_persistent.h"
-#include "..\environment.h"
+#include "../IGame_Persistent.h"
+#include "../Environment.h"
 #endif
 
 //////////////////////////////////////////////////////////////////////

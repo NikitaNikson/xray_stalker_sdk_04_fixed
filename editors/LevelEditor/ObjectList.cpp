@@ -79,11 +79,9 @@ TElTreeItem* TfrmObjectList::FindFolderByType(int type)
 TElTreeItem* TfrmObjectList::FindObjectByType(int type, void *obj)
 {
     for ( TElTreeItem* node = tvItems->Items->GetFirstNode(); node; node = node->GetNext())
-        if (!node->Parent && (node->Tag==type))
-        {
+        if (!node->Parent && (node->Tag==type)){
             for (TElTreeItem* chield = node->GetFirstChild(); chield; chield = node->GetNextChild(chield))
-                if (chield->Data==obj) 
-                	return chield;
+                if (chield->Data==obj) return chield;
             break;
         }
     return 0;
@@ -178,10 +176,8 @@ void __fastcall TfrmObjectList::InitListBox()
     for(SceneToolsMapPairIt it=Scene->FirstTools(); it!=Scene->LastTools(); ++it)
     {
     	ESceneCustomOTools* ot = dynamic_cast<ESceneCustomOTools*>(it->second);
-        if (ot&&((m_cur_cls==OBJCLASS_DUMMY)||(it->first==m_cur_cls)))
-        {
-        	if (it->first==OBJCLASS_DUMMY)
-            	continue;
+        if (ot&&((m_cur_cls==OBJCLASS_DUMMY)||(it->first==m_cur_cls))){
+        	if (it->first==OBJCLASS_DUMMY) continue;
 
             TElTreeItem* tool_node	= FindFolderByType(it->first);
             if (!tool_node)
@@ -194,10 +190,8 @@ void __fastcall TfrmObjectList::InitListBox()
 
             ObjectList& lst = ot->GetObjects();
             
-            if (OBJCLASS_GROUP==it->first)
-            {
-                for(ObjectIt _F = lst.begin();_F!=lst.end();++_F)
-                {
+            if (OBJCLASS_GROUP==it->first){
+                for(ObjectIt _F = lst.begin();_F!=lst.end();++_F){
                     TElTreeItem* group_profile_node     = NULL;
                     
                     gen_group_name				((CGroupObject*)(*_F), str_name);
@@ -221,8 +215,7 @@ void __fastcall TfrmObjectList::InitListBox()
                 	chield->Collapse(true);
                 
 
-            }else
-            {
+            }else{
                 for(ObjectIt _F = lst.begin();_F!=lst.end();++_F)
                 {
                 	Flags32 fl 					= (*_F)->m_CO_Flags;
@@ -323,17 +316,14 @@ void TfrmObjectList::UpdateState()
 
     tvItems->IsUpdating = false;
 
-    if (need_sort) 
-    	tvItems->Sort		(true);
+    if (need_sort) tvItems->Sort		(true);
     
-    if (first_sel_node && sel_count==1) 
-    	tvItems->EnsureVisible(first_sel_node);
+    if (first_sel_node && sel_count==1) tvItems->EnsureVisible(first_sel_node);
 }                                                
 
 void TfrmObjectList::UpdateSelection()
 {
-	if(tvItems->Items->Count)
-    {
+	if(tvItems->Items->Count){
         bLockUpdate = true;
 
         Scene->SelectObjects( false, OBJCLASS_DUMMY/*m_cur_cls*/);
@@ -365,9 +355,7 @@ void TfrmObjectList::UpdateSelection()
 void __fastcall TfrmObjectList::ebHideSelClick(TObject *Sender)
 {
     for (TElTreeItem* node = tvItems->GetNextSelected(0); node; node=tvItems->GetNextSelected(node))
-        if (node->Parent) 
-        	((CCustomObject*)(node->Data))->Show(false);
-            
+        if (node->Parent) ((CCustomObject*)(node->Data))->Show(false);
     UpdateState();
 }
 //---------------------------------------------------------------------------
@@ -375,8 +363,7 @@ void __fastcall TfrmObjectList::ebHideSelClick(TObject *Sender)
 void __fastcall TfrmObjectList::ebShowSelClick(TObject *Sender)
 {
     for (TElTreeItem* node = tvItems->GetNextSelected(0); node; node=tvItems->GetNextSelected(node))
-        if (node->Parent)
-        {
+        if (node->Parent){
             ((CCustomObject*)(node->Data))->Show	(true);
             ((CCustomObject*)(node->Data))->Select	(true);
         }
@@ -439,9 +426,7 @@ void __fastcall TfrmObjectList::tvItemsKeyPress(TObject *Sender,
 		ExecCommand	(COMMAND_SHOW_PROPERTIES);
     }else{
 		TElTreeItem* node = tvItems->Items->LookForItemEx(tvItems->Selected,-1,false,false,false,&Key,LookupFunc);
-    	if (!node) 
-        	node = tvItems->Items->LookForItemEx(0,-1,false,false,false,&Key,LookupFunc);
-            
+    	if (!node) node = tvItems->Items->LookForItemEx(0,-1,false,false,false,&Key,LookupFunc);
 	    FHelper.RestoreSelection(tvItems,node,false);
     }
 }

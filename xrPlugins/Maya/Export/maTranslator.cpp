@@ -2,7 +2,7 @@
 #pragma hdrstop
 
 #include "maTranslator.h"
-#include "..\..\Shared\EditObject.h"
+#include "../../Shared/EditObject.h"
 
 #define NO_SMOOTHING_GROUP      -1
 #define INITIALIZE_SMOOTHING    -2

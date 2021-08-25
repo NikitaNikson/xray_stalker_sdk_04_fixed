@@ -1,6 +1,6 @@
 #include "stdafx.h"
-#include "ispatial.h"
-#include "irenderable.h"
+#include "ISpatial.h"
+#include "IRenderable.h"
 
 IRenderable::IRenderable()
 {

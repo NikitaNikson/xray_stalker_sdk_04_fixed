@@ -1,7 +1,7 @@
 #include "stdafx.h"
-#include "uiFrameRect.h"
-#include "hudmanager.h"
-#include "ui\uitexturemaster.h"
+#include "UIFrameRect.h"
+#include "HUDManager.h"
+#include "ui/UITextureMaster.h"
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction
 //////////////////////////////////////////////////////////////////////

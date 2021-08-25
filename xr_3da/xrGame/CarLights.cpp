@@ -6,10 +6,10 @@
 #include "PHDebug.h"
 #endif
 #include "alife_space.h"
-#include "hit.h"
+#include "Hit.h"
 #include "PHDestroyable.h"
 #include "Car.h"
-#include "../skeletoncustom.h"
+#include "../SkeletonCustom.h"
 #include "PHWorld.h"
 extern CPHWorld*	ph_world;
 

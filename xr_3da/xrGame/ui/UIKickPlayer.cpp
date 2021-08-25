@@ -7,10 +7,10 @@
 #include "UIListBox.h"
 #include "UIListBoxItem.h"
 #include "UISpinNum.h"
-#include "../level.h"
+#include "../Level.h"
 #include "../game_cl_base.h"
 #include "../game_cl_teamdeathmatch.h"
-#include "../../xr_ioconsole.h"
+#include "../../XR_IOConsole.h"
 
 CUIKickPlayer::CUIKickPlayer()
 {

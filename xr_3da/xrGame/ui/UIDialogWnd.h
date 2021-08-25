@@ -7,7 +7,7 @@
 
 #pragma once
 
-#include "uiwindow.h"
+#include "UIWindow.h"
 class CDialogHolder;
 
 class CUIDialogWnd : public CUIWindow  

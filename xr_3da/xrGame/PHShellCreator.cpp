@@ -1,9 +1,9 @@
 #include "stdafx.h"
 #include "PHShellCreator.h"
 #include "PhysicsShell.h"
-#include "gameobject.h"
-#include "physicsshellholder.h"
-#include "../skeletoncustom.h"
+#include "GameObject.h"
+#include "PhysicsShellHolder.h"
+#include "../SkeletonCustom.h"
 
 void CPHShellSimpleCreator::CreatePhysicsShell()
 {

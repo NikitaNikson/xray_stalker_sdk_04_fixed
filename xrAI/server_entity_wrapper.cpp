@@ -9,8 +9,8 @@
 #include "stdafx.h"
 #include "server_entity_wrapper.h"
 #include "xrServer_Objects.h"
-#include "xrmessages.h"
-#include "net_utils.h"
+#include "xrMessages.h"
+#include "../xrNetServer/NET_utils.h"
 
 #ifdef AI_COMPILER
 #	include "factory_api.h"

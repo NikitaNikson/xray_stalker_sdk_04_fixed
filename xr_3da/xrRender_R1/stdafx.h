@@ -5,7 +5,7 @@
 #pragma once
 
 #pragma warning(disable:4995)
-#include "..\stdafx.h"
+#include "../stdafx.h"
 #pragma warning(disable:4995)
 #include <d3dx9.h>
 #pragma warning(default:4995)
@@ -17,14 +17,14 @@
 #define		R_R2	2
 #define		RENDER	R_R1
 
-#include "..\resourcemanager.h"
-#include "..\vis_common.h"
-#include "..\render.h"
-#include "..\igame_level.h"
-#include "..\blenders\blender.h"
-#include "..\blenders\blender_clsid.h"
-#include "..\psystem.h"
-#include "..\xrRender\xrRender_console.h"
+#include "../ResourceManager.h"
+#include "../vis_common.h"
+#include "../Render.h"
+#include "../IGame_Level.h"
+#include "../blenders/Blender.h"
+#include "../blenders/Blender_CLSID.h"
+#include "../psystem.h"
+#include "../xrRender/xrRender_console.h"
 #include "FStaticRender.h"
 
 #define		TEX_POINT_ATT	"internal\\internal_light_attpoint"

@@ -11,7 +11,7 @@
 
 #include "stdafx.h"
 #include "UIFrameLine.h"
-#include "../hudmanager.h"
+#include "../HUDManager.h"
 #include "UITextureMaster.h"
 
 //////////////////////////////////////////////////////////////////////////

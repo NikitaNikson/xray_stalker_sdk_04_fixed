@@ -28,7 +28,7 @@
 #include "script_zone.h"
 #include "relation_registry.h"
 #include "GameTask.h"
-#include "car.h"
+#include "Car.h"
 
 using namespace luabind;
 

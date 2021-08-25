@@ -9,7 +9,7 @@
 #include "stdafx.h"
 #include "xrServer_Objects.h"
 #include "script_space.h"
-#include "phnetstate.h"
+#include "PHNetState.h"
 #include "xrServer_script_macroses.h"
 #include "script_ini_file.h"
 

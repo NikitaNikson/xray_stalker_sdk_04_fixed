@@ -13,7 +13,7 @@
 
 
 #include "../associative_vector.h"
-#include "restrictions.h"
+#include "Restrictions.h"
 
 struct string_lex_less
 {

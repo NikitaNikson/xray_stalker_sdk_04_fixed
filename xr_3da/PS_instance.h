@@ -1,9 +1,9 @@
 #ifndef _CPS_Instance_H_
 #define _CPS_Instance_H_
 
-#include "ispatial.h"
-#include "isheduled.h"
-#include "irenderable.h"
+#include "ISpatial.h"
+#include "ISheduled.h"
+#include "IRenderable.h"
 
 class ENGINE_API CPS_Instance	:
 	public ISpatial,

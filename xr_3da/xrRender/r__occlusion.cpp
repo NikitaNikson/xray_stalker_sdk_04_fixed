@@ -1,5 +1,5 @@
 #include "StdAfx.h"
-#include ".\r__occlusion.h"
+#include "r__occlusion.h"
 
 R_occlusion::R_occlusion(void)
 {
@@ -96,7 +96,7 @@ u32		R_occlusion::occq_get		(u32&	ID		)
 		pool.insert		(pool.begin()+it+1,Q);
 	}
 
-	// remove from used and shrink as nescessary
+	// remove from used and shrink as necessary
 	used[ID].Q			= 0;
 	fids.push_back		(ID);
 	ID					= 0;

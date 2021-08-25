@@ -11,8 +11,8 @@
 #include "motion.h"
 #include "bone.h"
 #include "SkeletonAnimated.h"
-#include "fmesh.h"
-#include "../xrEProps/folderlib.h"
+#include "Fmesh.h"
+#include "../xrEProps/FolderLib.h"
 #include "leftbar.h"
 #include "../xrEProps/ItemList.h"
 //---------------------------------------------------------------------------

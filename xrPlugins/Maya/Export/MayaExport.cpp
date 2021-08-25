@@ -2,8 +2,8 @@
 #pragma hdrstop
 
 #include "maTranslator.h"
-#include "..\..\Shared\EditObject.h"
-#include "..\..\Shared\EditMesh.h"
+#include "../../Shared/EditObject.h"
+#include "../../Shared/EditMesh.h"
 
 //-----------------------------------------------------------------------------------------
 BOOL CEditableObject::ParseMAMaterial(CSurface* dest, SXRShaderData& d)

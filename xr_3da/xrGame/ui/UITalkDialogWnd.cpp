@@ -151,8 +151,8 @@ void CUITalkDialogWnd::AddQuestion(LPCSTR str, LPCSTR value)
 	Register						(itm);
 }
 #include "../game_news.h"
-#include "../level.h"
-#include "../actor.h"
+#include "../Level.h"
+#include "../Actor.h"
 #include "../alife_registry_wrappers.h"
 void CUITalkDialogWnd::AddAnswer(LPCSTR SpeakerName, LPCSTR str, bool bActor)
 {

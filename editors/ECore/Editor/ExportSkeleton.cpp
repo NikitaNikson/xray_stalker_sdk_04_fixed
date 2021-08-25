@@ -8,7 +8,7 @@
 #include "ExportObjectOGF.h"
 #include "EditObject.h"
 #include "EditMesh.h"
-#include "fmesh.h"
+#include "Fmesh.h"
 #include "std_classes.h"
 #include "bone.h"
 #include "motion.h"
@@ -18,7 +18,7 @@
 #include "MgcCont3DMinBox.h"         
 
 #include "ui_main.h"
-#include "ui_toolscustom.h"
+#include "UI_ToolsCustom.h"
 #include "SkeletonAnimated.h"
 #include "nvMeshMender.h"
 

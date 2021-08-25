@@ -12,7 +12,7 @@
 #include "ai/stalker/ai_stalker_space.h"
 #include "ai_space.h"
 #include "../xr_object.h"
-#include "../skeletoncustom.h"
+#include "../SkeletonCustom.h"
 #include "profiler.h"
 #include "sound_collection_storage.h"
 #include "object_broker.h"

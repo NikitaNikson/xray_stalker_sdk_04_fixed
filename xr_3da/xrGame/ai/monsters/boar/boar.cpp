@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "boar.h"
 #include "boar_state_manager.h"
-#include "../../../../skeletoncustom.h"
+#include "../../../../SkeletonCustom.h"
 #include "../monster_velocity_space.h"
 #include "../../../game_object_space.h"
 #include "../control_animation_base.h"

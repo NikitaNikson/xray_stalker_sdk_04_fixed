@@ -5,7 +5,7 @@
 #include "WaveForm.H"
 
 #ifdef __BORLANDC__            
-#	include "ElTree.hpp"
+	#include "ElTree.hpp"
 #endif
 //---------------------------------------------------------------------------
 enum EPropType{
@@ -43,7 +43,7 @@ DEFINE_VECTOR			(PropItem*,PropItemVec,PropItemIt);
 
 //------------------------------------------------------------------------------
 #include "ChooseTypes.H"     
-#include "fastdelegate.h"                         
+#include "FastDelegate.h"                         
 //------------------------------------------------------------------------------
 typedef fastdelegate::FastDelegate2<PropValue*, xr_string&> 	TOnDrawTextEvent; 
 typedef fastdelegate::FastDelegate1<PropItem*> 					TOnClick;

@@ -1,21 +1,21 @@
 #include "stdafx.h"
 #pragma hdrstop
 #ifdef DEBUG
-#include "ode_include.h"
-#include "../StatGraph.h"
-#include "PHDebug.h"
+	#include "ode_include.h"
+	#include "../StatGraph.h"
+	#include "PHDebug.h"
 #endif
 #include "alife_space.h"
-#include "hit.h"
-#include "phdestroyable.h"
-#include "car.h"
-#include "actor.h"
+#include "Hit.h"
+#include "PHDestroyable.h"
+#include "Car.h"
+#include "Actor.h"
 #include "cameralook.h"
-#include "camerafirsteye.h"
+#include "CameraFirstEye.h"
 #include "script_entity_action.h"
 #include "xr_level_controller.h"
-#include "../skeletoncustom.h"
-#include "level.h"
+#include "../SkeletonCustom.h"
+#include "Level.h"
 #include "CarWeapon.h"
 
 void	CCar::OnMouseMove(int dx, int dy)

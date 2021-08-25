@@ -7,12 +7,12 @@
 #include "HudItem.h"
 #include "physic_item.h"
 #include "WeaponHUD.h"
-#include "actor.h"
-#include "actoreffector.h"
+#include "Actor.h"
+#include "ActorEffector.h"
 #include "Missile.h"
-#include "xrmessages.h"
-#include "level.h"
-#include "inventory.h"
+#include "xrMessages.h"
+#include "Level.h"
+#include "Inventory.h"
 #include "../CameraBase.h"
 
 

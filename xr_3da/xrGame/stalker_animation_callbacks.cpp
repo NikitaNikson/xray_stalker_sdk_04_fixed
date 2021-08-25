@@ -12,7 +12,7 @@
 #include "sight_manager.h"
 #include "stalker_movement_manager.h"
 #include "game_object_space.h"
-#include "effectorshot.h"
+#include "EffectorShot.h"
 
 #define TEMPLATE_SPECIALIZATION\
 	template <\

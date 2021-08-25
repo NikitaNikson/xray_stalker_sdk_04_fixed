@@ -10,7 +10,7 @@
 #include "PortalUtils.h"
 #include "ESceneDOTools.h"
 #include "../ECore/Editor/ui_main.h"
-#include "../ECore/Editor/ui_toolscustom.h"
+#include "../ECore/Editor/UI_ToolsCustom.h"
 #include "xrHemisphere.h"
 //----------------------------------------------------
 

@@ -3,10 +3,10 @@
 #include "FS.h"
 #include <lwrender.h>
 #include <lwhost.h>
-#include "..\..\Shared\Envelope.h"
-#include "..\..\Shared\Bone.h"
-#include "..\..\Shared\Motion.h"
-#include "scenscan\objectdb.h"
+#include "../../Shared/envelope.h"
+#include "../../Shared/bone.h"
+#include "../../Shared/motion.h"
+#include "scenscan/objectdb.h"
 #include <lwdisplay.h>
 
 extern "C"	LWItemInfo		*g_iteminfo;

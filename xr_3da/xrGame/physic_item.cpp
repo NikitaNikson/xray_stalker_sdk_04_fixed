@@ -8,9 +8,9 @@
 
 #include "stdafx.h"
 #include "physic_item.h"
-#include "physicsshell.h"
-#include "xrserver_objects.h"
-#include "../fbasicvisual.h"
+#include "PhysicsShell.h"
+#include "xrServer_Objects.h"
+#include "../FBasicVisual.h"
 #include "../SkeletonCustom.h"
 #define CHOOSE_MAX(x,inst_x,y,inst_y,z,inst_z)\
 	if(x>y)\

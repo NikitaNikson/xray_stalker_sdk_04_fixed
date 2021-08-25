@@ -10,8 +10,8 @@
 #include "client_spawn_manager.h" 
 #include "ai_space.h" 
 #include "script_engine.h" 
-#include "level.h"
-#include "gameobject.h"
+#include "Level.h"
+#include "GameObject.h"
 #include "script_game_object.h"
 
 CClientSpawnManager::~CClientSpawnManager	()

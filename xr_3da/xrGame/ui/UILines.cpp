@@ -9,7 +9,7 @@
 #include "StdAfx.h"
 
 #include "UILines.h"
-#include "../HUDmanager.h"
+#include "../HUDManager.h"
 #include "UIXmlInit.h"
 #include "uilinestd.h"
 

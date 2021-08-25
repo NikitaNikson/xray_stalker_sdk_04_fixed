@@ -1,7 +1,7 @@
 #pragma once
 
-#include "net_utils.h"
-#include "net_messages.h"
+#include "NET_utils.h"
+#include "NET_Messages.h"
 
 
 #ifdef XR_NETSERVER_EXPORTS
@@ -11,7 +11,7 @@
 	#pragma comment(lib,	"xrNetServer"	)
 #endif
 
-#include "net_compressor.h"
+#include "NET_Compressor.h"
 
 XRNETSERVER_API extern ClientID BroadcastCID;
 

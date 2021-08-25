@@ -2,7 +2,7 @@
 #include "dTriColliderCommon.h"
 #include "dTriColliderMath.h"
 #include "dTriSphere.h"
-#include "dctrilistcollider.h"
+#include "dcTriListCollider.h"
 ////////////////////////////////////////////////////////////////////////////
 IC dReal dcTriListCollider::PointSphereTest(const dReal* center, const dReal radius,
 							 const dReal* pt,dReal* norm)

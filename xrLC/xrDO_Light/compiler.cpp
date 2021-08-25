@@ -1,12 +1,12 @@
 #include "stdafx.h"
-#include "xrlevel.h"
-#include "shader_xrlc.h"
+#include "xrLevel.h"
+#include "Shader_xrLC.h"
 #include "communicate.h"
 #include "xrThread.h"
-#include "detailformat.h"
-#include "xrhemisphere.h"
+#include "DetailFormat.h"
+#include "xrHemisphere.h"
 #include "cl_intersect.h"
-#include "Etextureparams.h"
+#include "ETextureParams.h"
 #include "r_light.h"
 
 #define NUM_THREADS		3

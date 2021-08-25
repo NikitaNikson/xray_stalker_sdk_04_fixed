@@ -1,15 +1,16 @@
 #include "stdafx.h"
-#include "level.h"
+#include "Level.h"
 #include "Level_Bullet_Manager.h"
-#include "xrserver.h"
+#include "xrServer.h"
 #include "game_cl_base.h"
-#include "xrmessages.h"
+#include "xrMessages.h"
 #include "xrGameSpyServer.h"
 #include "../x_ray.h"
 #include "../device.h"
 #include "../IGame_Persistent.h"
-#include "../xr_ioconsole.h"
+#include "../XR_IOConsole.h"
 #include "MainMenu.h"
+#include "HUDManager.h"
 
 BOOL CLevel::net_Start	( LPCSTR op_server, LPCSTR op_client )
 {
@@ -222,7 +223,7 @@ bool CLevel::net_start5				()
 	};
 	return true;
 }
-#include "hudmanager.h"
+
 BOOL				g_start_total_res		= TRUE;
 xrServer::EConnect	g_connect_server_err	= xrServer::ErrConnect;
 

@@ -5,7 +5,7 @@
 
 #include "../ECore/Editor/EditObject.h"
 #include "BonePart.h"
-#include "Bone.h"
+#include "bone.h"
 #include "UI_ActorTools.h"
 #include "../ECore/Editor/UI_Main.h"
 #include "../xrEProps/FolderLib.h"

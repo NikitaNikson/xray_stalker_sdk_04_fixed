@@ -7,7 +7,7 @@
 
 #include "EditObject.h"
 #include "EditMesh.h"
-#include "d3dutils.h"
+#include "D3DUtils.h"
 #include "PropertiesListHelper.h"
 
 static const u32 color_bone_sel_color	=0xFFFFFFFF;

@@ -1,10 +1,10 @@
 #include "stdafx.h"
-#include "igame_level.h"
+#include "IGame_Level.h"
 
 #include "xr_area.h"
 #include "xr_object.h"
 #include "xrLevel.h"
-#include "feel_sound.h"
+#include "Feel_Sound.h"
 #include "x_ray.h"
 #include "GameFont.h"
 

@@ -7,11 +7,11 @@
 ////////////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "../../physicsshell.h"
+#include "../../PhysicsShell.h"
 #include "ai_crow.h"
-#include "../../hudmanager.h"
-#include "../../level.h"
-#include "../../../skeletonanimated.h"
+#include "../../HUDManager.h"
+#include "../../Level.h"
+#include "../../../SkeletonAnimated.h"
 
 void CAI_Crow::SAnim::Load	(CKinematicsAnimated* visual, LPCSTR prefix)
 {

@@ -1,10 +1,10 @@
 #pragma once
 
-#include "..\ispatial.h"
+#include "../ISpatial.h"
 #if RENDER==R_R2
-	#include "light_package.h"
+	#include "Light_Package.h"
 	#include "light_smapvis.h"
-	#include "light_GI.h"
+	#include "light_gi.h"
 #endif
 
 class	light		:	public IRender_Light, public ISpatial

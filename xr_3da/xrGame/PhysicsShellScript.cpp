@@ -1,5 +1,5 @@
 #include "pch_script.h"
-#include "physicsshell.h"
+#include "PhysicsShell.h"
 
 using namespace luabind;
 

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "..\..\Shared\helper.h"
+#include "../../Shared/helper.h"
 
 // refs
 class CExporter;

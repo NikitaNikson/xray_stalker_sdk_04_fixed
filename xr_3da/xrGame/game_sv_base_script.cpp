@@ -11,8 +11,8 @@
 #include "xrMessages.h"
 #include "ui/UIInventoryUtilities.h"
 #include "xr_time.h"
-#include "../../xrNetServer/net_utils.h"
-#include "UI/UIGameTutorial.h"
+#include "../../xrNetServer/NET_utils.h"
+#include "ui/UIGameTutorial.h"
 #include "string_table.h"
 #include "object_broker.h"
 

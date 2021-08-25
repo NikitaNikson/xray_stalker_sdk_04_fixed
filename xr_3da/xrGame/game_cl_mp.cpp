@@ -4,8 +4,8 @@
 #include "xrMessages.h"
 #include "GameObject.h"
 #include "Actor.h"
-#include "level.h"
-#include "hudmanager.h"
+#include "Level.h"
+#include "HUDManager.h"
 #include "ui/UIChatWnd.h"
 #include "ui/UIGameLog.h"
 #include "clsid_game.h"
@@ -26,6 +26,7 @@
 #include "string_table.h"
 #include "../IGame_Persistent.h"
 #include "MainMenu.h"
+#include "game_cl_mp_snd_messages.h"
 
 
 #define EQUIPMENT_ICONS "ui\\ui_mp_icon_kill"
@@ -37,7 +38,6 @@
 #define KILLEVENT_GRID_WIDTH	64
 #define KILLEVENT_GRID_HEIGHT	64
 
-#include "game_cl_mp_snd_messages.h"
 
 game_cl_mp::game_cl_mp()
 {

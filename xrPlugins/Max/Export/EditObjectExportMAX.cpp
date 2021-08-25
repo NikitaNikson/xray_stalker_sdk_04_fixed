@@ -5,11 +5,11 @@
 #include "stdafx.h"
 #pragma hdrstop
 
-#include "..\..\Shared\EditObject.h"
-#include "..\..\Shared\EditMesh.h"
-#include "..\..\Shared\Bone.h"
+#include "../../Shared/EditObject.h"
+#include "../../Shared/EditMesh.h"
+#include "../../Shared/bone.h"
 #include "Exporter.h"
-#include "..\..\Shared\GameMaterial.h"
+#include "../../Shared/GameMaterial.h"
 
 //----------------------------------------------------------------------------
 // Material parsing

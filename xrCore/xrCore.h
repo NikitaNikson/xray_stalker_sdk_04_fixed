@@ -60,7 +60,7 @@
 #include <math.h>
 #include <string.h>
 
-#include <typeinfo>
+#include <typeinfo.h>
 //#include <typeinfo.h>
 
 //#include <process.h>
@@ -138,7 +138,7 @@
     #define _MCW_EM MCW_EM
 #else
 	#define ALIGN(a)		__declspec(align(a))
-	#include <sys\utime.h>
+	#include <sys/utime.h>
 	#define MODULE_NAME 	"xrCore.dll"
 #endif
 
@@ -245,7 +245,7 @@ DEFINE_VECTOR	(xr_rtoken,RTokenVec,RTokenVecIt);
 #endif
 #include "FileSystem.h"
 #include "FTimer.h"
-#include "fastdelegate.h"
+#include "FastDelegate.h"
 #include "intrusive_ptr.h"
 
 // destructor

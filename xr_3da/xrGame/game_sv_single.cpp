@@ -1,15 +1,15 @@
 #include "stdafx.h"
 #include "game_sv_single.h"
-#include "xrserver_objects_alife_monsters.h"
+#include "xrServer_Objects_ALife_Monsters.h"
 #include "alife_simulator.h"
 #include "alife_object_registry.h"
 #include "alife_graph_registry.h"
 #include "alife_time_manager.h"
-#include "../../xrNetServer/net_utils.h"
+#include "../../xrNetServer/NET_utils.h"
 #include "object_broker.h"
-#include "gamepersistent.h"
+#include "GamePersistent.h"
 #include "xrServer.h"
-#include "..\x_ray.h"
+#include "../x_ray.h"
 
 game_sv_Single::game_sv_Single			()
 {

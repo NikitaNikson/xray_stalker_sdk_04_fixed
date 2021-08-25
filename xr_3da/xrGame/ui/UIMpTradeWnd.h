@@ -3,7 +3,7 @@
 #include "UIBuyWndShared.h"
 #include "UIBuyWndBase.h"
 #include "UIWndCallback.h"
-#include "restrictions.h"
+#include "Restrictions.h"
 
 
 class CUIDragDropListEx;

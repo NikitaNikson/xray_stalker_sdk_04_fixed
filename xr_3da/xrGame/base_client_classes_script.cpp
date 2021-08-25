@@ -9,11 +9,11 @@
 #include "pch_script.h"
 #include "base_client_classes.h"
 #include "base_client_classes_wrappers.h"
-#include "../feel_sound.h"
-#include "../fbasicvisual.h"
-#include "../skeletonanimated.h"
+#include "../Feel_Sound.h"
+#include "../FBasicVisual.h"
+#include "../SkeletonAnimated.h"
 #include "ai/stalker/ai_stalker.h"
-#include "../../xrNetServer/net_utils.h"
+#include "../../xrNetServer/NET_utils.h"
 
 using namespace luabind;
 

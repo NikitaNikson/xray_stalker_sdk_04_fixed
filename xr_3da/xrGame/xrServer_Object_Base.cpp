@@ -19,18 +19,18 @@
 #pragma warning(pop)
 
 #ifndef AI_COMPILER
-#	include "object_factory.h"
+	#include "object_factory.h"
 #endif
 
 #ifndef XRSE_FACTORY_EXPORTS
-#	include "xrEProps.h"
+	#include "xrEProps.h"
 	
 	IPropHelper &PHelper()
 	{
 		NODEFAULT;
-#	ifdef DEBUG
+	#ifdef DEBUG
 		return(*(IPropHelper*)0);
-#	endif
+	#endif
 	}
 #endif
 

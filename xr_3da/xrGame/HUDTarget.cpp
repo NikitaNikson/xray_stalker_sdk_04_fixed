@@ -4,16 +4,16 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "hudtarget.h"
-#include "hudmanager.h"
+#include "HUDTarget.h"
+#include "HUDManager.h"
 #include "GameMtlLib.h"
 
 #include "../Environment.h"
 #include "../CustomHUD.h"
 #include "Entity.h"
-#include "level.h"
+#include "Level.h"
 #include "game_cl_base.h"
-#include "../igame_persistent.h"
+#include "../IGame_Persistent.h"
 
 
 #include "InventoryOwner.h"
@@ -24,7 +24,7 @@
 #include "entity_alive.h"
 
 #include "inventory_item.h"
-#include "inventory.h"
+#include "Inventory.h"
 
 u32 C_ON_ENEMY		D3DCOLOR_XRGB(0xff,0,0);
 u32 C_ON_NEUTRAL	D3DCOLOR_XRGB(0xff,0xff,0x80);

@@ -3,7 +3,7 @@
 
 #include "CustomObject.h"
 #include "../ECore/Editor/ui_main.h"
-#include "../ECore/Editor/ui_toolscustom.h"
+#include "../ECore/Editor/UI_ToolsCustom.h"
 #include "../ECore/Editor/editorpreferences.h"
 #include "scene.h"
 

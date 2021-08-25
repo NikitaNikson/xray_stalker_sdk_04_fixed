@@ -7,7 +7,7 @@
 #include "ExportObjectOGF.h"
 #include "EditObject.h"
 #include "EditMesh.h"
-#include "fmesh.h"
+#include "Fmesh.h"
 #include "std_classes.h"
 #include "bone.h"
 #include "motion.h"

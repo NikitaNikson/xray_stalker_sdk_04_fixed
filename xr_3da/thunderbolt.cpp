@@ -2,16 +2,16 @@
 #pragma once
 
 #ifndef _EDITOR
-    #include "render.h"
-#endif    
-#include "Thunderbolt.h"
-#include "igame_persistent.h"
+	#include "Render.h"
+#endif
+#include "thunderbolt.h"
+#include "IGame_Persistent.h"
 #include "LightAnimLibrary.h"
 
 #ifdef _EDITOR
-    #include "ui_toolscustom.h"
+	#include "UI_ToolsCustom.h"
 #else
-	#include "igame_level.h"
+	#include "IGame_Level.h"
 	#include "xr_area.h"
 	#include "xr_object.h"
 #endif

@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include "actor_mp_client.h"
-#include "actorcondition.h"
+#include "ActorCondition.h"
 
 CActorMP::CActorMP			()
 {

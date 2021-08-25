@@ -3,7 +3,7 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include ".\uicheckbutton.h"
+#include "UICheckButton.h"
 #include "../HUDManager.h"
 #include "UILines.h"
 

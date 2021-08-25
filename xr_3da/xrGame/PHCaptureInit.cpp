@@ -1,12 +1,12 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////
 #include "StdAfx.h"
-#include "phcharacter.h"
+#include "PHCharacter.h"
 #include "Physics.h"
 #include "ExtendedGeom.h"
 #include "PHCapture.h"
 #include "Entity.h"
 #include "inventory_item.h"
-#include "../skeletoncustom.h"
+#include "../SkeletonCustom.h"
 #include "Actor.h"
 #include "Inventory.h"
 extern	class CPHWorld	*ph_world;

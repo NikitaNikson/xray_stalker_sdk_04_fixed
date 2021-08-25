@@ -5,10 +5,10 @@
 //. ?#include "ParticleSystem.h"
 #include "ParticleEffect.h"
 #include "ParticleGroup.h"
-#include "pure.h"
+#include "../../xr_3da/pure.h"
 #include "../xrEProps/PropertiesList.h"
-#include "ui_toolscustom.h"
-#include "ui_maincommand.h"
+#include "UI_ToolsCustom.h"
+#include "UI_MainCommand.h"
 
 // refs
 class CEditableObject;

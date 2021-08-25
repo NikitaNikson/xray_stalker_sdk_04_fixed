@@ -2,7 +2,7 @@
 
 [Modules]
 Module0=I:\xray-svn-trunk\editors\ECore\Editor\EThumbnailTexture.cpp
-Module1=I:\xray-svn-trunk\editors\xrEProps\folderlib.h
+Module1=I:\xray-svn-trunk\editors\xrEProps\FolderLib.h
 Module2=I:\xray-svn-trunk\editors\ECore\Editor\EThumbnail.cpp
 Module3=I:\xray-svn-trunk\editors\ECore\Editor\ETextureParams.cpp
 Count=4
@@ -13,7 +13,7 @@ ModuleType=SourceModule
 FormState=0
 FormOnTop=0
 
-[I:\xray-svn-trunk\editors\xrEProps\folderlib.h]
+[I:\xray-svn-trunk\editors\xrEProps\FolderLib.h]
 ModuleType=SourceModule
 FormState=0
 FormOnTop=0
@@ -130,7 +130,7 @@ TopLine=96
 LeftCol=1
 
 [View2]
-Module=I:\xray-svn-trunk\editors\xrEProps\folderlib.h
+Module=I:\xray-svn-trunk\editors\xrEProps\FolderLib.h
 CursorX=29
 CursorY=61
 TopLine=43

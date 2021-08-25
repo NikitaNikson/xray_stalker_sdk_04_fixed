@@ -5,9 +5,9 @@
 #include "UI3tButton.h"
 #include "UIListBox.h"
 #include "UIListBoxItem.h"
-#include "../level.h"
+#include "../Level.h"
 #include "../game_cl_teamdeathmatch.h"
-#include "../../xr_ioconsole.h"
+#include "../../XR_IOConsole.h"
 #include "UIMapList.h"
 #include "CExtraContentFilter.h"
 

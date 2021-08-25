@@ -1,8 +1,8 @@
 #ifndef EditObjectH
 #define EditObjectH
 
-#include "Bone.h"
-#include "Motion.h"
+#include "bone.h"
+#include "motion.h"
 #ifdef _EDITOR
 #	include "../xrEProps/PropertiesListTypes.h"
 //	#include "PropertiesListHelper.h"

@@ -15,7 +15,7 @@
 #include <d3dx9.h>
 #include <io.h>
 #include <fcntl.h>
-#include <sys\stat.h>
+#include <sys/stat.h>
 #pragma warning(default:4995)
 
 #ifndef	NDEBUG

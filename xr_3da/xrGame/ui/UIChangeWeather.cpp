@@ -5,7 +5,10 @@
 #include "../game_cl_teamdeathmatch.h"
 #include "UIKickPlayer.h"
 #include "UIChangeMap.h"
-//#include "UIMapList.h"
+#include <dinput.h>
+#include "../../XR_IOConsole.h"
+#include "UIMapList.h"
+#include "../UIGameCustom.h"
 
 CUIChangeWeather::CUIChangeWeather(){
 	bkgrnd = xr_new<CUIStatic>(); 
@@ -68,8 +71,6 @@ void CUIChangeWeather::SendMessage(CUIWindow* pWnd, s16 msg, void* pData){
 
 }
 
-#include <dinput.h>
-
 bool CUIChangeWeather::OnKeyboard(int dik, EUIMessages keyboard_action){
 	CUIDialogWnd::OnKeyboard(dik, keyboard_action);
 	if (WINDOW_KEY_PRESSED == keyboard_action){
@@ -86,8 +87,6 @@ bool CUIChangeWeather::OnKeyboard(int dik, EUIMessages keyboard_action){
 	return false;
 }
 
-#include "../../xr_ioconsole.h"
-
 void CUIChangeWeather::OnBtn(int i){
 	game_cl_mp* game		= smart_cast<game_cl_mp*>(&Game());
 	string1024				command;
@@ -100,9 +99,6 @@ void CUIChangeWeather::OnBtnCancel(){
 	game_cl_mp* game = smart_cast<game_cl_mp*>(&Game());
 	game->StartStopMenu(this, true);
 }
-
-#include "UIMapList.h"
-#include "../UIGameCustom.h"
 
 void CUIChangeWeather::ParseWeather()
 {

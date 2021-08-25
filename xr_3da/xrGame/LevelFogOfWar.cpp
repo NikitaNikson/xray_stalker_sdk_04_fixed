@@ -4,7 +4,7 @@
 
 #include "stdafx.h"
 #include "LevelFogOfWar.h"
-#include "level.h"
+#include "Level.h"
 #include "alife_registry_wrappers.h"
 #include "ui/UIMap.h"
 #include "game_base_space.h"

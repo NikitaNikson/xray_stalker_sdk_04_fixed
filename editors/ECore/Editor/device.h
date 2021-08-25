@@ -2,13 +2,13 @@
 #define DeviceH
 
 #include "ui_camera.h"
-#include "../../../xr_3da/hwcaps.h"
-#include "../../../xr_3da/hw.h"
+#include "../../../xr_3da/HWCaps.h"
+#include "../../../xr_3da/HW.h"
 #include "../../../xr_3da/pure.h"
 #include "../../../xrCore/ftimer.h"
 #include "estats.h"
-#include "../../../xr_3da/shader_xrlc.h"
-#include "../../../xr_3da/shader.h"
+#include "../../../xr_3da/Shader_xrLC.h"
+#include "../../../xr_3da/Shader.h"
 #include "../../../xr_3da/R_Backend.h"
 //---------------------------------------------------------------------------
 // refs

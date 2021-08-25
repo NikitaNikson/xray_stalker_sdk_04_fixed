@@ -12,11 +12,11 @@
 #	include "ESceneClassList.h"
 #	include "Scene.h"
 #	include "SceneObject.h"
-#	include "igame_persistent.h"
-#	include "environment.h"
+#	include "IGame_Persistent.h"
+#	include "Environment.h"
 #else
-#	include "..\igame_persistent.h"
-#	include "..\environment.h"
+#	include "../IGame_Persistent.h"
+#	include "../Environment.h"
 #endif
 
 const float dbgOffset			= 0.f;

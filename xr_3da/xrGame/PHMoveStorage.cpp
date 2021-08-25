@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "phmovestorage.h"
+#include "PHMoveStorage.h"
 #pragma warning(disable:4995)
 #pragma warning(disable:4267)
 #include "../../xrODE/ode/src/collision_kernel.h"

@@ -16,7 +16,7 @@
 #include "DetailFormat.h"
 #include "bottombar.h"
 #include "../ECore/Editor/ImageManager.h"
-#include "d3dutils.h"
+#include "D3DUtils.h"
 
 static const u32 DETMGR_VERSION = 0x0003ul;
 //------------------------------------------------------------------------------

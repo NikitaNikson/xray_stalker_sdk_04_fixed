@@ -1,8 +1,8 @@
 #include "stdafx.h"
 
-#include "resourcemanager.h"
+#include "ResourceManager.h"
 #include "xr_effgamma.h"
-#include "render.h"
+#include "Render.h"
 
 void CRenderDevice::_SetupStates	()
 {

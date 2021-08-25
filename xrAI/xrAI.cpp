@@ -1,5 +1,4 @@
 // xrAI.cpp : Defines the entry point for the application.
-//
 
 #include "stdafx.h"
 #include "xr_ini.h"
@@ -9,7 +8,6 @@
 #include "xr_graph_merge.h"
 #include "game_spawn_constructor.h"
 #include "xrCrossTable.h"
-//#include "path_test.h"
 #include "game_graph_builder.h"
 #include <mmsystem.h>
 #include "spawn_patcher.h"
@@ -51,7 +49,6 @@ static const char* h_str =
 	"-s (-s <level_name>)    == build game spawn data \n"
 	"\n"
 	"-no_separator_check     == skip check grid overlapping with restrictor shapes \n"
-	"-silent                 == suppress congratulation message \n"
 	"\n"
 	"NOTE: The last key is required for any functionality\n";
 
@@ -201,10 +198,9 @@ void Startup(LPSTR     lpCmdLine)
 	extern				HWND logWindow;
 	u32					dwEndTime = timeGetTime();
 	sprintf				(stats,"Time elapsed: %s",make_time((dwEndTime-dwStartupTime)/1000).c_str());
-	clMsg("Build succesful!\n%s", stats);
+	clMsg				("Build succesful!\n%s", stats);
 
-	if (!strstr(cmd, "-silent"))
-		MessageBox			(logWindow,stats,"Congratulation!",MB_OK|MB_ICONINFORMATION);
+	MessageBox			(logWindow,stats,"Congratulation!",MB_OK|MB_ICONINFORMATION);
 
 	bClose				= TRUE;
 	FlushLog			();
@@ -221,7 +217,7 @@ int APIENTRY WinMain(HINSTANCE hInstance,
                      LPSTR     lpCmdLine,
                      int       nCmdShow)
 {
-	Core._initialize		("xrai",0);
+	Core._initialize		("xrAI", 0);
 
 	HMODULE					hFactory;
 	LPCSTR					g_name	= "xrSE_Factory.dll";
@@ -233,7 +229,7 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 	create_entity			= (Factory_Create*)		GetProcAddress(hFactory,"_create_entity@4");	R_ASSERT(create_entity);
 	destroy_entity			= (Factory_Destroy*)	GetProcAddress(hFactory,"_destroy_entity@4");	R_ASSERT(destroy_entity);
 
-	Msg("Command line: '%s'", lpCmdLine);
+	Msg						("Command line: '%s'", lpCmdLine);
 	Startup					(lpCmdLine);
 
 	FreeLibrary				(hFactory);

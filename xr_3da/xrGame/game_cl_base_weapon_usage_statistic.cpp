@@ -3,10 +3,10 @@
 #include "Level.h"
 #include "Weapon.h"
 #include "alife_space.h"
-#include "hit.h"
+#include "Hit.h"
 #include "Actor.h"
 #include "xrServer.h"
-#include "hudmanager.h"
+#include "HUDManager.h"
 #include "game_cl_base_weapon_usage_statistic.h"
 //#include "GameFont.h"
 

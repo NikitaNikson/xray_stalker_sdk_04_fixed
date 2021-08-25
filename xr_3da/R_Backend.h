@@ -10,10 +10,10 @@
 #define PGO(a)
 #endif
 
-#include "r_DStreams.h"
+#include "R_DStreams.h"
 #include "r_constants_cache.h"
-#include "r_backend_xform.h"
-#include "fvf.h"
+#include "R_Backend_xform.h"
+#include "FVF.h"
 
 const	u32		CULL_CCW			= D3DCULL_CCW;
 const	u32		CULL_CW				= D3DCULL_CW;

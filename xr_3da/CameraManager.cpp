@@ -3,8 +3,8 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "igame_level.h"
-#include "igame_persistent.h"
+#include "IGame_Level.h"
+#include "IGame_Persistent.h"
 
 #include "Environment.h"
 #include "CameraBase.h"
@@ -13,8 +13,8 @@
 #include "EffectorPP.h"
 
 #include "x_ray.h"
-#include "gamefont.h"
-#include "render.h"
+#include "GameFont.h"
+#include "Render.h"
 
 float	psCamInert		= 0.7f;
 float	psCamSlideInert	= 0.25f;

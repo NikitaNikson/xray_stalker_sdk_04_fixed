@@ -1,17 +1,17 @@
 #include "stdafx.h"
 /*
-#include "actor.h"
+#include "Actor.h"
 #include "SleepEffector.h"
 #include "game_sv_single.h"
 #include "alife_simulator.h"
-#include "level.h"
-#include "xrmessages.h"
+#include "Level.h"
+#include "xrMessages.h"
 #include "game_cl_base.h"
 #include "xrServer.h"
 #include "autosave_manager.h"
 #include "ai_space.h"
-#include "actorcondition.h"
-#include "ui\UIVideoPlayerWnd.h"
+#include "ActorCondition.h"
+#include "ui/UIVideoPlayerWnd.h"
 
 #define ONLINE_RADIUS				2.f
 #define MIN_SPRING_TO_SLEEP			0.8f	

@@ -1,8 +1,8 @@
 #pragma once
 #include "xrGameSpy_MainDefs.h"
 
-#include "GameSpy\QR2\qr2regkeys.h"
-#include "GameSpy\QR2\qr2.h"
+#include "GameSpy/QR2/qr2regkeys.h"
+#include "GameSpy/QR2/qr2.h"
 
 
 extern "C"

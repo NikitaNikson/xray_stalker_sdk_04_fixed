@@ -1,10 +1,10 @@
 #include "stdafx.h"
 #pragma hdrstop
 
-#include "CameraLook.h"
-#include "../Cameramanager.h"
+#include "cameralook.h"
+#include "../CameraManager.h"
 #include "xr_level_controller.h"
-#include "actor.h"
+#include "Actor.h"
 
 CCameraLook::CCameraLook(CObject* p, u32 flags ) 
 :CCameraBase(p, flags)

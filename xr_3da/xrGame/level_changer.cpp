@@ -8,17 +8,19 @@
 
 #include "stdafx.h"
 #include "level_changer.h"
-#include "hit.h"
-#include "actor.h"
-#include "xrserver_objects_alife.h"
-#include "level.h"
+#include "Hit.h"
+#include "Actor.h"
+#include "xrServer_Objects_ALife.h"
+#include "Level.h"
 #include "ai_object_location.h"
 #include "ai_space.h"
 #include "level_graph.h"
 #include "game_level_cross_table.h"
 
-#include "HudManager.h"
+#include "HUDManager.h"
 #include "UIGameSP.h"
+#include "patrol_path.h"
+#include "patrol_path_storage.h"
 
 xr_vector<CLevelChanger*>	g_lchangers;
 
@@ -104,8 +106,7 @@ void CLevelChanger::shedule_Update(u32 dt)
 
 	update_actor_invitation		();
 }
-#include "patrol_path.h"
-#include "patrol_path_storage.h"
+
 void CLevelChanger::feel_touch_new	(CObject *tpObject)
 {
 	CActor*			l_tpActor = smart_cast<CActor*>(tpObject);

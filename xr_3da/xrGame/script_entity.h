@@ -9,7 +9,7 @@
 #pragma once
 
 #include "script_entity_space.h"
-#include "../skeletonanimated.h"
+#include "../SkeletonAnimated.h"
 
 class CSE_Abstract;
 class CGameObject;

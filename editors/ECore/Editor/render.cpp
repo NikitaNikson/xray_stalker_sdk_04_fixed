@@ -72,8 +72,8 @@ void CRender::Calculate()
 	ViewBase.CreateFromMatrix		(Device.mFullTransform,FRUSTUM_P_LRTB|FRUSTUM_P_FAR);
 }
 
-#include "igame_persistent.h"
-#include "environment.h"
+#include "IGame_Persistent.h"
+#include "Environment.h"
 void CRender::Render()
 {
 }

@@ -5,7 +5,7 @@
 #include "SHGameMtlTools.h"
 #include "../xrEProps/PropertiesListHelper.h"
 #include "ui_shadermain.h"
-#include "../xrEProps/folderlib.h"
+#include "../xrEProps/FolderLib.h"
 #include "UI_ShaderTools.h"
 #include "../xrEProps/ChoseForm.h"
 #include "leftbar.h"

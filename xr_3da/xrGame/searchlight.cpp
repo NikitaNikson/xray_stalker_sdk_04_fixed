@@ -3,7 +3,7 @@
 #include "../LightAnimLibrary.h"
 #include "script_entity_action.h"
 #include "xrServer_Objects_ALife.h"
-#include "../skeletoncustom.h"
+#include "../SkeletonCustom.h"
 #include "game_object_space.h"
 
 //////////////////////////////////////////////////////////////////////

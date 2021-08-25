@@ -1,13 +1,13 @@
 #include "stdafx.h"
 #ifdef DEBUG
-#include "physics.h"
+#include "Physics.h"
 #include "MathUtils.h"
 #include "../StatGraph.h"
 #include "PHDebug.h"
 #include "PHObject.h"
 #include "ExtendedGeom.h"
 #include "Level.h"
-#include "Hudmanager.h"
+#include "HUDManager.h"
 
 #include "debug_renderer.h"
 

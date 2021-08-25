@@ -18,7 +18,7 @@
 #include "sight_manager_space.h"
 #include "sight_control_action.h"
 #include "sight_manager.h"
-#include "inventoryBox.h"
+#include "InventoryBox.h"
 class CWeapon;
 
 //////////////////////////////////////////////////////////////////////////

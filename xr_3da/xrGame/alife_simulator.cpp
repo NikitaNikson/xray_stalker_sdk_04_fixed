@@ -12,7 +12,7 @@
 #include "ai_space.h"
 #include "../IGame_Persistent.h"
 #include "script_engine.h"
-#include "mainmenu.h"
+#include "MainMenu.h"
 #include "object_factory.h"
 
 LPCSTR alife_section = "alife";

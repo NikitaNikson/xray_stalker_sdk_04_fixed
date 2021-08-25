@@ -1,5 +1,5 @@
 #include "pch_script.h"
-#include "scope.h"
+#include "Scope.h"
 
 CScope::CScope	()
 {

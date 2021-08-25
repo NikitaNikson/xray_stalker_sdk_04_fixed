@@ -69,8 +69,8 @@ enum TMsgDlgType { mtWarning, mtError, mtInformation, mtConfirmation, mtCustom }
 enum TMsgDlgBtn { mbYes, mbNo, mbOK, mbCancel, mbAbort, mbRetry, mbIgnore, mbAll, mbNoToAll, mbYesToAll, mbHelp };
 typedef TMsgDlgBtn TMsgDlgButtons[mbHelp];
 
-#include "..\..\Shared\ELog.h"
-#include "..\..\Shared\bone.h"
+#include "../../Shared/ELog.h"
+#include "../../Shared/bone.h"
 #include <d3dtypes.h>
 #include <time.h>
 

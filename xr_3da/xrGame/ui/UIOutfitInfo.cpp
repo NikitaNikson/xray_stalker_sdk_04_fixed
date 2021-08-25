@@ -3,7 +3,7 @@
 #include "UIXmlInit.h"
 #include "UIStatic.h"
 #include "UIScrollView.h"
-#include "../actor.h"
+#include "../Actor.h"
 #include "../CustomOutfit.h"
 #include "../string_table.h"
 

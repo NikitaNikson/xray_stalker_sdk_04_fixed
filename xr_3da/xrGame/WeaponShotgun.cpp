@@ -1,12 +1,12 @@
 #include "stdafx.h"
-#include "weaponshotgun.h"
+#include "WeaponShotgun.h"
 #include "WeaponHUD.h"
-#include "entity.h"
+#include "Entity.h"
 #include "ParticlesObject.h"
 #include "xr_level_controller.h"
-#include "inventory.h"
-#include "level.h"
-#include "actor.h"
+#include "Inventory.h"
+#include "Level.h"
+#include "Actor.h"
 
 CWeaponShotgun::CWeaponShotgun(void) : CWeaponCustomPistol("TOZ34")
 {

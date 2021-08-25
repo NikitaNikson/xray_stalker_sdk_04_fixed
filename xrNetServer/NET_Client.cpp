@@ -1,8 +1,8 @@
 #include "stdafx.h"
 #include "NET_Common.h"
-#include "net_client.h"
-#include "net_server.h"
-#include "net_messages.h"
+#include "NET_Client.h"
+#include "NET_Server.h"
+#include "NET_Messages.h"
 #include "NET_Log.h"
 #include "../xr_3da/xrGame/battleye.h"
 

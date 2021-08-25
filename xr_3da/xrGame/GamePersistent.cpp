@@ -1,18 +1,18 @@
 #include "pch_script.h"
-#include "gamepersistent.h"
-#include "../fmesh.h"
-#include "../xr_ioconsole.h"
-#include "gamemtllib.h"
-#include "../skeletoncustom.h"
+#include "GamePersistent.h"
+#include "../Fmesh.h"
+#include "../XR_IOConsole.h"
+#include "GameMtlLib.h"
+#include "../SkeletonCustom.h"
 #include "profiler.h"
 #include "MainMenu.h"
 #include "UICursor.h"
 #include "game_base_space.h"
-#include "level.h"
+#include "Level.h"
 #include "ParticlesObject.h"
-#include "actor.h"
+#include "Actor.h"
 #include "game_base_space.h"
-#include "weaponhud.h"
+#include "WeaponHUD.h"
 #include "stalker_animation_data_storage.h"
 #include "stalker_velocity_holder.h"
 #include "ui/UIMainIngameWnd.h"
@@ -20,11 +20,11 @@
 #include "actor.h"
 
 #ifndef MASTER_GOLD
-#	include "custommonster.h"
+	#include "CustomMonster.h"
 #endif // MASTER_GOLD
 
 #ifndef _EDITOR
-#	include "ai_debug.h"
+	#include "ai_debug.h"
 #endif // _EDITOR
 
 #ifdef DEBUG_MEMORY_MANAGER
@@ -259,7 +259,7 @@ void CGamePersistent::WeathersUpdate()
 	}
 }
 
-#include "UI/UIGameTutorial.h"
+#include "ui/UIGameTutorial.h"
 
 void CGamePersistent::start_logo_intro		()
 {

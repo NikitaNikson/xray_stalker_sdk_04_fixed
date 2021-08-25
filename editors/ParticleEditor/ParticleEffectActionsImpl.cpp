@@ -3,10 +3,10 @@
 #pragma hdrstop
 
 #include "ParticleEffectActions.h"
-#include "../xrEProps/folderlib.h"
+#include "../xrEProps/FolderLib.h"
 #include "../xrEProps/PropertiesListHelper.h"
 #include "../../xrParticles/particle_actions_collection.h"
-#include "d3dutils.h"
+#include "D3DUtils.h"
 
 using namespace PAPI; 
 #define PARTICLE_ACTION_VERSION		0x0000

@@ -2,7 +2,7 @@
 #pragma hdrstop
 
 #include "EThumbnail.h"
-#include "folderlib.h"
+#include "FolderLib.h"
 #include "xrImage_Resampler.h"
 #pragma package(smart_init)
 //------------------------------------------------------------------------------

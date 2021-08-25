@@ -2,7 +2,7 @@
 #include "controller_animation.h"
 #include "controller.h"
 #include "../../../detail_path_manager.h"
-#include "../../../level.h"
+#include "../../../Level.h"
 #include "../control_direction_base.h"
 #include "../control_path_builder_base.h"
 #include "controller_direction.h"

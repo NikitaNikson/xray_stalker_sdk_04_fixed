@@ -6,7 +6,7 @@
 
 #include "ELight.h"
 #include "../ECore/Editor/ui_main.h"
-#include "d3dutils.h"
+#include "D3DUtils.h"
 #include "scene.h"
 #include "escenelighttools.h"
 

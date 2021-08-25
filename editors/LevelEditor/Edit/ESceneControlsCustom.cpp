@@ -271,11 +271,13 @@ void __fastcall TUI_CustomControl::RotateProcess(TShiftState _Shift)
     if (_Shift.Contains(ssLeft)){
         float amount = -UI->m_DeltaCpH.x * UI->m_MouseSR;
 
-		if( _Shift.Contains(ssCtrl) ) {
+		if( _Shift.Contains(ssCtrl) )
+		{
         	amount *= 8;
         	CHECK_SNAP(m_fRotateSnapAngle,amount,PI_DIV_2);
-        } else if( Tools->GetSettings(etfASnap) )
-        	CHECK_SNAP(m_fRotateSnapAngle,amount,Tools->m_RotateSnapAngle);
+        }
+		else
+        if( Tools->GetSettings(etfASnap) ) CHECK_SNAP(m_fRotateSnapAngle,amount,Tools->m_RotateSnapAngle);
 
         ObjectList lst;
         if (Scene->GetQueryObjects(lst,LTools->CurrentClassID(),1,1,0))

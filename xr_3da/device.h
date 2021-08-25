@@ -10,11 +10,11 @@ class	ENGINE_API	CResourceManager;
 class	ENGINE_API	CGammaControl;
 
 #include "pure.h"
-#include "hw.h"
+#include "HW.h"
 #include "ftimer.h"
-#include "stats.h"
+#include "Stats.h"
 #include "xr_effgamma.h"
-#include "shader.h"
+#include "Shader.h"
 #include "R_Backend.h"
 
 #define VIEWPORT_NEAR  0.2f

@@ -4,7 +4,7 @@
 #include "customobject.h"
 #include "motion.h"
 #include "envelope.h"
-#include "d3dutils.h"
+#include "D3DUtils.h"
 #include "../ECore/Editor/ui_main.h"
 
 void  CCustomObject::OnMotionableChange(PropValue* sender)

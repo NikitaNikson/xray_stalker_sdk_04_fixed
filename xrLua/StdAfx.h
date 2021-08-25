@@ -21,9 +21,9 @@
 //#include "xr_LuaAllocator.h"
 
 /*
-#include "src\lua.h"
-#include "src\lauxlib.h"
-#include "src\lualib.h"
+#include "src/lua.h"
+#include "src/lauxlib.h"
+#include "src/lualib.h"
 */
 
 #ifdef __BORLANDC__

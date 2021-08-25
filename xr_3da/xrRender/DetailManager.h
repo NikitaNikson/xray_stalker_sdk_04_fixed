@@ -7,8 +7,8 @@
 #pragma once
 
 #include "xrpool.h"
-#include "detailformat.h"
-#include "detailmodel.h"
+#include "DetailFormat.h"
+#include "DetailModel.h"
 
 #ifdef _EDITOR
 	#include	"ESceneClassList.h"

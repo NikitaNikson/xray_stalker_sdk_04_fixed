@@ -3,12 +3,12 @@
 #pragma hdrstop
                                                                
 #include "SHEngineTools.h"
-#include "blenders/Blender.h"
+#include "../../xr_3da/blenders/Blender.h"
 #include "UI_ShaderTools.h"
 #include "ui_shadermain.h"
 #include "LeftBar.h"
 #include "xr_trims.h"
-#include "../xrEProps/folderlib.h"
+#include "../xrEProps/FolderLib.h"
 #include "../ECore/Editor/EditMesh.h"
 #include "../ECore/Editor/Library.h"
 #include "../xrEProps/ChoseForm.h"

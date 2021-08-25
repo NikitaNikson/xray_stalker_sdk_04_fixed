@@ -4,7 +4,7 @@
 
 #include "entity_alive.h"
 #ifdef DEBUG
-#include "phdebug.h"
+#include "PHDebug.h"
 #endif
 
 void character_hit_animation_controller::SetupHitMotions(CKinematicsAnimated &ca)

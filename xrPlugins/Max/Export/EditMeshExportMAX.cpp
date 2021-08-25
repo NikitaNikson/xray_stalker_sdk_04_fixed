@@ -4,12 +4,12 @@
 #include "stdafx.h"
 #pragma hdrstop
 
-#include "..\..\Shared\EditMesh.h"
-#include "..\..\Shared\EditObject.h"
+#include "../../Shared/EditMesh.h"
+#include "../../Shared/EditObject.h"
 #include "MeshExpUtility.h"
 
 #include "Exporter.h"
-#include "..\..\Shared\GameMaterial.h"
+#include "../../Shared/GameMaterial.h"
 //----------------------------------------------------
 void CEditableMesh::FlipFaces(){
 	VERIFY(m_Faces);

@@ -13,10 +13,10 @@
 #include "motion.h"
 #include "bone.h"
 #include "../ECore/Editor/library.h"
-#include "fmesh.h"
+#include "Fmesh.h"
 #include "KeyBar.h"
 #include "main.h"
-#include "../xrEProps/folderlib.h"
+#include "../xrEProps/FolderLib.h"
 #include "SkeletonAnimated.h"
 #include "../xrEProps/ItemList.h"
 #include "../ECore/Editor/ImageManager.h"
@@ -253,9 +253,9 @@ void CActorTools::GetStatTime(float& a, float& b, float& c)
     }
 }
 //---------------------------------------------------------------------------
-//#include "d3dutils.h"
+//#include "D3DUtils.h"
 //DU.DrawIdentSpherePart(false,true,0xffffffff,0xffff);
-#include "igame_persistent.h"
+#include "IGame_Persistent.h"
 
 void CActorTools::Render()
 {

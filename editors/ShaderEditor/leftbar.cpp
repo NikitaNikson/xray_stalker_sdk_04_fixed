@@ -4,7 +4,7 @@
 #include "LeftBar.h"
 #include "BottomBar.h"
 #include "main.h"
-#include "blenders/Blender.h"
+#include "../../xr_3da/blenders/Blender.h"
 #include "xr_trims.h"
 #include "UI_ShaderTools.h"
 #include "UI_ShaderMain.h"

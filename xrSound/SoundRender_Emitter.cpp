@@ -1,8 +1,8 @@
 #include "stdafx.h"
 #pragma hdrstop
 
-#include "soundrender_emitter.h"
-#include "soundrender_core.h"
+#include "SoundRender_Emitter.h"
+#include "SoundRender_Core.h"
 
 extern	u32				psSoundModel;
 extern	u32				psSoundFreq;

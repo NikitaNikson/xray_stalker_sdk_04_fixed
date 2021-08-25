@@ -447,7 +447,8 @@ int ESceneAIMapTools::BuildNodes(const Fvector& pos, int sz, bool bIC)
 void ESceneAIMapTools::BuildNodes(bool bFromSelectedOnly)
 {
 	BOOL bHideNodes = m_Flags.is(flHideNodes);
-	if(m_Flags.is(flHideNodesWhileGenerating)) m_Flags.set(flHideNodes,TRUE);
+	if(m_Flags.is(flHideNodesWhileGenerating))
+		m_Flags.set(flHideNodes,TRUE);
 	// begin
 	m_Nodes.reserve	(1024*1024);
 

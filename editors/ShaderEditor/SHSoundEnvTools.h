@@ -3,7 +3,7 @@
 #define SHSoundEnvToolsH
 
 #include "SHToolsInterface.h"
-#include "../../xrSound/soundrender_environment.h"
+#include "../../xrSound/SoundRender_Environment.h"
 
 // refs
 class PropValue;

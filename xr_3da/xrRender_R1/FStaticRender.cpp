@@ -3,14 +3,14 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "..\igame_persistent.h"
-#include "..\environment.h"
-#include "..\fbasicvisual.h"
-#include "..\CustomHUD.h"
-#include "..\xr_object.h"
-#include "..\fmesh.h"
-#include "..\SkeletonCustom.h"
-#include "..\xrRender\lighttrack.h"
+#include "../IGame_Persistent.h"
+#include "../Environment.h"
+#include "../FBasicVisual.h"
+#include "../CustomHUD.h"
+#include "../xr_object.h"
+#include "../Fmesh.h"
+#include "../SkeletonCustom.h"
+#include "../xrRender/LightTrack.h"
  
 using	namespace		R_dsgraph;
 
@@ -561,7 +561,7 @@ void	CRender::ApplyBlur4		(FVF::TL4uv* pv, u32 w, u32 h, float k)
 	pv->p.set(float(_w+EPS),EPS,			EPS,1.f); pv->color=_c; pv->uv[0].set(p1.x-kw,p0.y-kh);pv->uv[1].set(p1.x+kw,p0.y+kh);pv->uv[2].set(p1.x+kw,p0.y-kh);pv->uv[3].set(p1.x-kw,p0.y+kh);pv++;
 }
 
-#include "..\GameFont.h"
+#include "../GameFont.h"
 void	CRender::Statistics	(CGameFont* _F)
 {
 	CGameFont&	F	= *_F;

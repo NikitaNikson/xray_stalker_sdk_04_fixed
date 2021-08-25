@@ -6,8 +6,8 @@
 #define AFX_LEVEL_H__38F63863_DB0C_494B_AFAB_C495876EC671__INCLUDED_
 #pragma once
 
-#include "../igame_level.h"
-#include "../../xrNetServer/net_client.h"
+#include "../IGame_Level.h"
+#include "../../xrNetServer/NET_Client.h"
 #include "script_export_space.h"
 #include "../StatGraph.h"
 #include "xrMessages.h"
@@ -45,7 +45,7 @@ class CFogOfWarMngr;
 class CBulletManager;
 class CMapManager;
 
-#include "../feel_touch.h"
+#include "../Feel_Touch.h"
 
 class GlobalFeelTouch : public Feel::Touch
 {

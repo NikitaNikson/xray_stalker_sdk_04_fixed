@@ -5,16 +5,16 @@
 #include "UIDragDropListEx.h"
 #include "../ui_base.h"
 #include "../UICursor.h"
-#include "../customoutfit.h"
-#include "../scope.h"
-#include "../silencer.h"
-#include "../grenadelauncher.h"
-#include "../game_cl_Deathmatch.h"
+#include "../CustomOutfit.h"
+#include "../Scope.h"
+#include "../Silencer.h"
+#include "../GrenadeLauncher.h"
+#include "../game_cl_deathmatch.h"
 #include "UIOutfitSlot.h"
 #include "UIListBoxItem.h"
 #include <dinput.h>
-#include "../actor.h"
-#include "restrictions.h"
+#include "../Actor.h"
+#include "Restrictions.h"
 
 #define 	BELT_SLOT			5
 

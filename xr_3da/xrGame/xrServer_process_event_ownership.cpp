@@ -1,6 +1,6 @@
 #include "stdafx.h"
-#include "xrserver.h"
-#include "xrserver_objects.h"
+#include "xrServer.h"
+#include "xrServer_Objects.h"
 
 void ReplaceOwnershipHeader	(NET_Packet& P)
 {

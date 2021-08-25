@@ -1,7 +1,7 @@
 #pragma once
 
 #include "ui/uiabstract.h"
-#include "uicustomitem.h"
+#include "UICustomItem.h"
 
 void		CreateUIGeom		();
 ref_geom	GetUIGeom			();

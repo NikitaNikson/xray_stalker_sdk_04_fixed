@@ -3,7 +3,7 @@
 #include "../xr_level_controller.h"
 #include "../../xr_input.h"
 #include "../HUDManager.h"
-#include "../level.h"
+#include "../Level.h"
 #include "../object_broker.h"
 
 CUICellItem::CUICellItem()

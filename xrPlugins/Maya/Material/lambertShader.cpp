@@ -30,7 +30,7 @@
 #pragma hdrstop
 
 #include <maya/MFnStringData.h>
-#include "..\..\Shared\BlenderListLoader.h"
+#include "../../Shared/BlenderListLoader.h"
 using namespace std;
 /////////////////////////////////
 // Plugin Lambert Shader Class //

@@ -9,7 +9,7 @@
 
 #include <io.h>
 #include <fcntl.h>
-#include <sys\stat.h>
+#include <sys/stat.h>
 
 bool EFS_Utils::GetOpenName(LPCSTR initial, xr_string& buffer, bool bMulti, LPCSTR offset, int start_flt_ext )
 {

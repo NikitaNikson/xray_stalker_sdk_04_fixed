@@ -16,7 +16,7 @@
 #include "relation_registry_defs.h"
 
 
-#include "gametaskdefs.h"
+#include "GameTaskDefs.h"
 #include "game_news.h"
 #include "map_location_defs.h"
 

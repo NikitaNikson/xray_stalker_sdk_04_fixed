@@ -8,7 +8,7 @@
 
 #include "stdafx.h"
 #include "profiler.h"
-#include "../gamefont.h"
+#include "../GameFont.h"
 
 #ifdef PROFILE_CRITICAL_SECTIONS
 static volatile LONG					critical_section_counter = 0;

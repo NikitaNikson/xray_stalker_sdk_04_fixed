@@ -6,9 +6,9 @@
 
 #pragma once
 
-#include "../effectorPP.h"
-#include "../effector.h"
-#include "../cameramanager.h"
+#include "../EffectorPP.h"
+#include "../Effector.h"
+#include "../CameraManager.h"
 
 
 #define SLEEP_EFFECTOR_TYPE_ID 8

@@ -2,9 +2,9 @@
 #ifndef PH_CAPTURE_H
 #define PH_CAPTURE_H
 
-#include "phobject.h"
-#include "gameobject.h"
-#include "physicsshellholder.h"
+#include "PHObject.h"
+#include "GameObject.h"
+#include "PhysicsShellHolder.h"
 
 class CPhysicShellHolder;
 class CPHCharacter;

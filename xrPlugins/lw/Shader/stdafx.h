@@ -18,7 +18,7 @@ typedef TMsgDlgBtn TMsgDlgButtons[mbHelp];
 
 #define ECORE_API
 
-#include "..\..\Shared\ELog.h"
+#include "../../Shared/ELog.h"
 #include <d3dtypes.h>
 #include <time.h>
 

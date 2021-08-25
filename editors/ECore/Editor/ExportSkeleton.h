@@ -9,7 +9,7 @@
 //---------------------------------------------------------------------------
 const int clpSMX = 28, clpSMY=16, clpSMZ=28;
 //---------------------------------------------------------------------------
-// refs
+// refs                                           
 
 extern ECORE_API BOOL g_force16BitTransformQuant;
 
@@ -46,8 +46,8 @@ struct ECORE_API SSkelVert: public st_SVert{
     	if (bones.size()!=V.bones.size())	return FALSE;
         for (u8 k=0; k<(u8)bones.size(); k++)	{ if (!bones[k].similar(V.bones[k])) return FALSE; }
         if (!uv.similar	(V.uv,EPS_S))		return FALSE;
-		if (!offs.similar(V.offs,EPS))	return FALSE;
-		if (!norm.similar(V.norm,EPS))	return FALSE;
+		if (!offs.similar(V.offs,EPS))		return FALSE;
+		if (!norm.similar(V.norm,EPS))		return FALSE;
 		return TRUE;
 	}
 };

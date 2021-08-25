@@ -4,7 +4,7 @@
 #include "bone.h"
 #include "envelope.h"
 #include "GameMtlLib.h"
-#include "ui_toolscustom.h"
+#include "UI_ToolsCustom.h"
 
 void SJointIKData::clamp_by_limits(Fvector& dest_xyz)
 {

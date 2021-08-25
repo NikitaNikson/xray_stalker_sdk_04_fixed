@@ -6,7 +6,7 @@
 
 #pragma once
 
-#include "fooditem.h"
+#include "FoodItem.h"
 
 
 class CBottleItem: public CFoodItem

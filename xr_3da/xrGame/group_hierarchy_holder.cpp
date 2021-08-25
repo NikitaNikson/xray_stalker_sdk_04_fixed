@@ -9,7 +9,7 @@
 #include "stdafx.h"
 #include "group_hierarchy_holder.h"
 #include "squad_hierarchy_holder.h"
-#include "entity.h"
+#include "Entity.h"
 #include "agent_manager.h"
 #include "agent_member_manager.h"
 #include "agent_memory_manager.h"

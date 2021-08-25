@@ -1,12 +1,12 @@
 #include "stdafx.h"
 #include "r2.h"
-#include "..\fbasicvisual.h"
-#include "..\xr_object.h"
-#include "..\CustomHUD.h"
-#include "..\igame_persistent.h"
-#include "..\environment.h"
-#include "..\SkeletonCustom.h"
-#include "..\xrRender\LightTrack.h"
+#include "../FBasicVisual.h"
+#include "../xr_object.h"
+#include "../CustomHUD.h"
+#include "../IGame_Persistent.h"
+#include "../Environment.h"
+#include "../SkeletonCustom.h"
+#include "../xrRender/LightTrack.h"
 
 CRender										RImplementation;
 
@@ -423,7 +423,7 @@ CRender::~CRender()
 {
 }
 
-#include "..\GameFont.h"
+#include "../GameFont.h"
 void	CRender::Statistics	(CGameFont* _F)
 {
 	CGameFont&	F	= *_F;

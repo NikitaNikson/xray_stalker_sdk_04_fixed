@@ -13,7 +13,7 @@
 
 #include "../InfoPortion.h"
 #include "../game_base_space.h"
-#include "../actor.h"
+#include "../Actor.h"
 
 #define BUY_MENU_TEXTURE "ui\\ui_mp_buy_menu"
 #define EQUIPMENT_ICONS  "ui\\ui_icon_equipment"

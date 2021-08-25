@@ -2,11 +2,11 @@
 #pragma hdrstop
 
 #ifdef _EDITOR
-#include "skeletonX.h"
-#include "skeletoncustom.h"
+	#include "SkeletonX.h"
+	#include "SkeletonCustom.h"
 #else
-#include "..\skeletonX.h"
-#include "..\skeletoncustom.h"
+	#include "../SkeletonX.h"
+	#include "../SkeletonCustom.h"
 #endif
 
 // -- offsets -------------------------------------------------------

@@ -6,10 +6,10 @@
 
 #include "entity_alive.h"
 #include "script_entity.h"
-#include "../feel_vision.h"
-#include "../feel_sound.h"
-#include "../feel_touch.h"
-#include "../skeletonanimated.h"
+#include "../Feel_Vision.h"
+#include "../Feel_Sound.h"
+#include "../Feel_Touch.h"
+#include "../SkeletonAnimated.h"
 #include "associative_vector.h"
 
 namespace MonsterSpace {
@@ -319,4 +319,4 @@ public:
 	virtual	void					destroy_anim_mov_ctrl						();
 };
 
-#include "custommonster_inline.h"
+#include "CustomMonster_inline.h"

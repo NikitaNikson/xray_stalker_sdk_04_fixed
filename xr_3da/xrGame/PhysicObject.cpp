@@ -1,9 +1,9 @@
 #include "pch_script.h"
-#include "physicobject.h"
+#include "PhysicObject.h"
 #include "PhysicsShell.h"
 #include "Physics.h"
-#include "xrserver_objects_alife.h"
-#include "../skeletonanimated.h"
+#include "xrServer_Objects_ALife.h"
+#include "../SkeletonAnimated.h"
 #include "../xr_collide_form.h"
 #include "game_object_space.h"
 

@@ -23,7 +23,7 @@
 #include "../control_manager_custom.h"
 #include "../ai_monster_shared_data.h"
 #include "../monster_sound_defs.h"
-#include "../../../inventoryowner.h"
+#include "../../../InventoryOwner.h"
 
 class CCharacterPhysicsSupport;
 class CMonsterCorpseCoverEvaluator;

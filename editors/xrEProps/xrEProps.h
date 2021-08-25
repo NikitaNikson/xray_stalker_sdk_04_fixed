@@ -2,11 +2,11 @@
 #define xrEPropsH
 
 #ifdef XR_EPROPS_EXPORTS
-#define XR_EPROPS_API __declspec(dllexport)
+	#define XR_EPROPS_API __declspec(dllexport)
 #else
-#	ifndef XR_EPROPS_API
-#		define XR_EPROPS_API __declspec(dllimport)
-#	endif
+	#ifndef XR_EPROPS_API
+		#define XR_EPROPS_API __declspec(dllimport)
+	#endif
 #endif
 
 #include "PropertiesListTypes.h"

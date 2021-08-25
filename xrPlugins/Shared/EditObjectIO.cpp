@@ -11,9 +11,9 @@
 #include "motion.h"
 
 #ifdef _EDITOR
- #include "exportskeleton.h"
- #include "exportobjectOGF.h"
- #include "Shader.h"
+#include "exportskeleton.h"
+#include "exportobjectOGF.h"
+#include "Shader.h"
 
 bool CEditableObject::Load(const char* fname)
 {

@@ -4,10 +4,10 @@
 
 #include "stdafx.h"
 #include "LightPPA.h"
-#include "..\igame_persistent.h"
-#include "..\environment.h"
-#include "..\fbasicvisual.h"
-#include "..\CustomHUD.h"
+#include "../IGame_Persistent.h"
+#include "../Environment.h"
+#include "../FBasicVisual.h"
+#include "../CustomHUD.h"
 
 const u32	MAX_POLYGONS			=	1024*8;
 const float MAX_DISTANCE			=	50.f;

@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "..\resourcemanager.h"
+#include "../ResourceManager.h"
 #include "blender_light_occq.h"
 #include "blender_light_mask.h"
 #include "blender_light_direct.h"

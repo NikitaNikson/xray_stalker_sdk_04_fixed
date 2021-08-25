@@ -6,15 +6,15 @@
 #include "script_game_object.h"
 #include "script_game_object_impl.h"
 #include "InventoryOwner.h"
-#include "Pda.h"
+#include "PDA.h"
 #include "xrMessages.h"
 #include "character_info.h"
-#include "gametask.h"
-#include "actor.h"
-#include "level.h"
+#include "GameTask.h"
+#include "Actor.h"
+#include "Level.h"
 #include "date_time.h"
-#include "uigamesp.h"
-#include "hudmanager.h"
+#include "UIGameSP.h"
+#include "HUDManager.h"
 #include "restricted_object.h"
 #include "script_engine.h"
 #include "attachable_item.h"
@@ -22,18 +22,19 @@
 #include "string_table.h"
 #include "alife_registry_wrappers.h"
 #include "relation_registry.h"
-#include "custommonster.h"
+#include "CustomMonster.h"
 #include "movement_manager.h"
-#include "actorcondition.h"
+#include "ActorCondition.h"
 #include "level_graph.h"
-#include "huditem.h"
-#include "ui/UItalkWnd.h"
+#include "HudItem.h"
+#include "ui/UITalkWnd.h"
 #include "ui/UITradeWnd.h"
-#include "inventory.h"
-#include "infoportion.h"
-#include "AI/Monsters/BaseMonster/base_monster.h"
-#include "weaponmagazined.h"
+#include "Inventory.h"
+#include "InfoPortion.h"
+#include "ai/monsters/basemonster/base_monster.h"
+#include "WeaponMagazined.h"
 #include "ai/stalker/ai_stalker.h"
+#include "GameTaskManager.h"
 
 bool CScriptGameObject::GiveInfoPortion(LPCSTR info_id)
 {
@@ -543,7 +544,6 @@ LPCSTR CScriptGameObject::sound_voice_prefix () const
 	return pInventoryOwner->SpecificCharacter().sound_voice_prefix();
 }
 
-#include "GameTaskManager.h"
 ETaskState CScriptGameObject::GetGameTaskState	(LPCSTR task_id, int objective_num)
 {
 /*	CActor* pActor = smart_cast<CActor*>(&object());

@@ -9,10 +9,10 @@
 #include "UIMapInfo.h"
 #include "UIComboBox.h"
 #include "UIListBoxItem.h"
-#include "../../xr_ioconsole.h"
+#include "../../XR_IOConsole.h"
 #include "../string_table.h"
 #include "CExtraContentFilter.h"
-
+#include "../UIGameCustom.h"
 #include "../object_broker.h"
 
 extern ENGINE_API string512  g_sLaunchOnExit_app;
@@ -191,7 +191,7 @@ const char* CUIMapList::GetCommandLine(LPCSTR player_name){
 
     return m_command.c_str();
 }
-#include "../UIGameCustom.h"
+
 void CUIMapList::LoadMapList()
 {
 

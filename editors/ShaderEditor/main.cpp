@@ -17,22 +17,22 @@ TfrmMain *frmMain;
 
 //------------------------------------------------------------------------------
 #include "../xrEProps/ChoseForm.h"
-#include "shader.h"
-#include "shader_xrlc.h"
+#include "../../xr_3da/Shader.h"
+#include "Shader_xrLC.h"
 #include "../ECore/Engine/texture.h"
 #include "../ECore/Editor/Library.h"
 #include "../ECore/Editor/EditObject.h"
 #include "../ECore/Editor/EThumbnail.h"
 #include "../xrEProps/FolderLib.h"
-#include "LightAnimLibrary.h"
+#include "../../xr_3da/LightAnimLibrary.h"
 #include "../ECore/Editor/ImageManager.h"
 #include "../ECore/Editor/SoundManager.h"
 #include "../ECore/Editor/ui_main.h"
-#include "PSLibrary.h"
+#include "../../xr_3da/xrRender/PSLibrary.h"
 #include "../ECore/Engine/GameMtlLib.h"
-#include "../../xrSound/soundrender_source.h"
+#include "../../xrSound/SoundRender_Source.h"
 #include "../ECore/Editor/render.h"
-#include "ResourceManager.h"
+#include "../../xr_3da/ResourceManager.h"
 #include "../xrEProps/EditorChooseEvents.h"
 
 

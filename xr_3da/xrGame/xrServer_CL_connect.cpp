@@ -1,8 +1,8 @@
 #include "stdafx.h"
-#include "xrserver.h"
-#include "xrmessages.h"
-#include "hudmanager.h"
-#include "xrserver_objects.h"
+#include "xrServer.h"
+#include "xrMessages.h"
+#include "HUDManager.h"
+#include "xrServer_Objects.h"
 #include "Level.h"
 
 xr_vector<u16> g_perform_spawn_ids;

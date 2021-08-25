@@ -3,7 +3,7 @@
 
 #include "UI_Camera.h"
 #include "ui_main.h"
-#include "ui_toolscustom.h"
+#include "UI_ToolsCustom.h"
 
 CUI_Camera::CUI_Camera()
 {

@@ -5,7 +5,7 @@
 #include "UIStatsPlayerInfo.h"
 #include "UIStatsIcon.h"
 #include "../string_table.h"
-#include "../level.h"
+#include "../Level.h"
 #include "UIStatic.h"
 #include "UIXmlInit.h"
 

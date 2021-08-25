@@ -3,24 +3,24 @@
 #include "ActorAnimation.h"
 #include "actor_anim_defs.h"
 
-#include "hudmanager.h"
+#include "HUDManager.h"
 #include "UI.h"
-#include "weapon.h"
-#include "inventory.h"
-#include "missile.h"
-#include "level.h"
+#include "Weapon.h"
+#include "Inventory.h"
+#include "Missile.h"
+#include "Level.h"
 #ifdef DEBUG
-#include "PHDebug.h"
+	#include "PHDebug.h"
 #endif
-#include "hit.h"
+#include "Hit.h"
 #include "PHDestroyable.h"
 #include "Car.h"
-#include "../skeletonanimated.h"
+#include "../SkeletonAnimated.h"
 #include "clsid_game.h"
 #include "ai_object_location.h"
 #include "game_cl_base.h"
 #include "../motion.h"
-#include "artifact.h"
+#include "Artifact.h"
 #include "IKLimbsController.h"
 static const float y_spin0_factor		= 0.0f;
 static const float y_spin1_factor		= 0.4f;

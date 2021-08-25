@@ -1,6 +1,6 @@
 #pragma once
 
-#include "entity.h"
+#include "Entity.h"
 
 
 DEFINE_VECTOR(ref_shader, SHADER_VECTOR, SHADER_VECTOR_IT);

@@ -1,27 +1,27 @@
 #include "pch_script.h"
 #include "GameObject.h"
-#include "../fbasicvisual.h"
+#include "../FBasicVisual.h"
 #include "PhysicsShell.h"
 #include "ai_space.h"
 #include "CustomMonster.h" 
-#include "physicobject.h"
+#include "PhysicObject.h"
 #include "HangingLamp.h"
 #include "PhysicsShell.h"
 #include "game_sv_single.h"
 #include "level_graph.h"
 #include "ph_shell_interface.h"
 #include "script_game_object.h"
-#include "xrserver_objects_alife.h"
+#include "xrServer_Objects_ALife.h"
 #include "xrServer_Objects_ALife_Items.h"
 #include "game_cl_base.h"
 #include "object_factory.h"
-#include "../skeletoncustom.h"
+#include "../SkeletonCustom.h"
 #include "ai_object_location_impl.h"
 #include "game_graph.h"
 #include "ai_debug.h"
-#include "../igame_level.h"
-#include "level.h"
-#include "../../xrNetServer/net_utils.h"
+#include "../IGame_Level.h"
+#include "Level.h"
+#include "../../xrNetServer/NET_utils.h"
 #include "script_callback_ex.h"
 #include "MathUtils.h"
 #include "game_cl_base_weapon_usage_statistic.h"
@@ -672,7 +672,7 @@ void CGameObject::u_EventSend(NET_Packet& P, u32 dwFlags )
 	Level().Send(P, dwFlags);
 }
 
-#include "bolt.h"
+#include "Bolt.h"
 void CGameObject::OnH_B_Chield()
 {
 	inherited::OnH_B_Chield();

@@ -76,7 +76,7 @@ void CUITrackBar::SetCurrentValue()
 	UpdatePos			();
 }
 
-//. #include "../HUDmanager.h"
+//. #include "../HUDManager.h"
 void CUITrackBar::Draw()
 {
 	CUIWindow::Draw();

@@ -4,7 +4,7 @@
 #include "xr_object.h"
 #include "cl_intersect.h"
 
-#include "igame_level.h"
+#include "IGame_Level.h"
 #include "x_ray.h"
 #include "GameFont.h"
 

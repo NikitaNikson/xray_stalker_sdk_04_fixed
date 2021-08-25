@@ -1,11 +1,11 @@
 //---------------------------------------------------------------------------
-#include 	"stdafx.h"
+#include "stdafx.h"
 #pragma hdrstop
 
-#include 	"SkeletonMotions.h"
-#include 	"SkeletonAnimated.h"
-#include	"fmesh.h"
-#include	"motion.h"
+#include "SkeletonMotions.h"
+#include "SkeletonAnimated.h"
+#include "Fmesh.h"
+#include "motion.h"
 
 motions_container*	g_pMotionsContainer	= 0;
 

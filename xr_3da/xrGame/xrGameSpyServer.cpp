@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "xrMessages.h"
 #include "xrGameSpyServer.h"
-#include "../igame_persistent.h"
+#include "../IGame_Persistent.h"
 
 #include "GameSpy/GameSpy_Base_Defs.h"
 #include "GameSpy/GameSpy_Available.h"

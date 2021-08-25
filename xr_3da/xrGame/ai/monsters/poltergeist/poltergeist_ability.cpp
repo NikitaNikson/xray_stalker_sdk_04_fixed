@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "poltergeist.h"
 #include "../../../PhysicsShell.h"
-#include "../../../level.h"
+#include "../../../Level.h"
 #include "../../../material_manager.h"
 #include "../../../level_debug.h"
 

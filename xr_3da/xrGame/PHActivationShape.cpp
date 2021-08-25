@@ -2,9 +2,9 @@
 #include "PHObject.h"
 #include "Physics.h"
 #include "MathUtils.h"
-#include "phvalidevalues.h"
+#include "PHValideValues.h"
 #include "PHActivationShape.h"
-#include "Extendedgeom.h"
+#include "ExtendedGeom.h"
 #include "SpaceUtils.h"
 #include "MathUtils.h"
 #include "GameMtlLib.h"
@@ -18,7 +18,7 @@
 
 #include "PHDynamicData.h"
 #include "PHSynchronize.h"
-#include "phnetstate.h"
+#include "PHNetState.h"
 static	float max_depth			=0.f;
 static	float friction_factor	=0.f;
 static	float cfm				=1.e-10f;

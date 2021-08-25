@@ -1,6 +1,6 @@
 #include "stdafx.h"
-#include "../fbasicvisual.h"
-#include "../fmesh.h"
+#include "../FBasicVisual.h"
+#include "../Fmesh.h"
 #include "../xrLevel.h"
 #include "../x_ray.h"
 #include "../IGame_Persistent.h"

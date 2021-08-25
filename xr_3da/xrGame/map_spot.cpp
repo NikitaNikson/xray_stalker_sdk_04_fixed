@@ -3,8 +3,8 @@
 #include "map_location.h"
 
 #include "ui/UIXmlInit.h"
-#include "ui/UIMApWnd.h"
-#include "level.h"
+#include "ui/UIMapWnd.h"
+#include "Level.h"
 #include "../xr_object.h"
 #include "object_broker.h"
 #include "ui/UITextureMaster.h"

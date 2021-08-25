@@ -1,14 +1,14 @@
 #include "stdafx.h"
-#include "climableobject.h "
+#include "ClimableObject.h "
 #include "PHStaticGeomShell.h"
 #include "xrServer_Objects_ALife.h"
 #include "PHCharacter.h"
 #include "MathUtils.h"
 
 #ifdef DEBUG
-#	include "debug_renderer.h"
-#	include "level.h"
-#	include "PHDebug.h"
+	#include "debug_renderer.h"
+	#include "Level.h"
+	#include "PHDebug.h"
 #endif
 
 #ifdef DEBUG

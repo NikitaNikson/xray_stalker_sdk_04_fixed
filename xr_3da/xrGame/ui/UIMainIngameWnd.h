@@ -11,7 +11,7 @@
 
 #include "UICarPanel.h"
 #include "UIMotionIcon.h"
-#include "../hudsound.h"
+#include "../HudSound.h"
 //для режима настройки HUD
 extern int				g_bHudAdjustMode;
 extern float			g_fHudAdjustValue;

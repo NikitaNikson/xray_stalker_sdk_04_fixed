@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CameraEffector.h"
-#include "../cameramanager.h"
+#include "../CameraManager.h"
 
 class CEffectorBobbing : public CEffectorCam  
 {

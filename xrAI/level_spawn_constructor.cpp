@@ -11,7 +11,7 @@
 #include "game_level_cross_table.h"
 #include "level_graph.h"
 #include "graph_engine.h"
-#include "xrmessages.h"
+#include "xrMessages.h"
 #include "xrServer_Objects_ALife_All.h"
 #include "factory_api.h"
 #include "clsid_game.h"

@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "dxerr9.h"
 #include "NET_Common.h"
-#include "net_server.h"
+#include "NET_Server.h"
 
 #include "NET_Log.h"
 

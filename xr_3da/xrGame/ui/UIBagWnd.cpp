@@ -8,9 +8,9 @@
 #include "UICellItemFactory.h"
 #include <dinput.h>
 #include "../HUDManager.h"
-#include "../weapon.h"
+#include "../Weapon.h"
 #include "../xrServer_Objects_ALife_Items.h"
-#include "../game_cl_Deathmatch.h"
+#include "../game_cl_deathmatch.h"
 
 CUIBagWnd::CUIBagWnd()
 {

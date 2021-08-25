@@ -3,6 +3,7 @@
 
 #include "particle_actions_collection.h"
 #include "particle_effect.h"
+#include "noise.h"
 
 using namespace PAPI;
 
@@ -1628,7 +1629,7 @@ void PAVortex::Transform(const Fmatrix& m)
 //-------------------------------------------------------------------------------------------------
 
 // Turbulence
-#include "noise.h"
+
 void PATurbulence::Execute(ParticleEffect *effect, float dt)
 {
     pVector pV;

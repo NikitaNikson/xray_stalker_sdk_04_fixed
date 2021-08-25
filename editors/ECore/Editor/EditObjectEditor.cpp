@@ -7,7 +7,7 @@
 #include "bone.h"
 #include "ExportSkeleton.h"
 #include "ExportObjectOGF.h"
-#include "d3dutils.h"
+#include "D3DUtils.h"
 #include "ui_main.h"
 #include "render.h"
 #include "PropertiesListHelper.h"

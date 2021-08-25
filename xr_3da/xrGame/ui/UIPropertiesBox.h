@@ -1,8 +1,8 @@
 #pragma once
 
 
-#include "uiframewindow.h"
-#include "uilistbox.h"
+#include "UIFrameWindow.h"
+#include "UIListBox.h"
 
 #include "../script_export_space.h"
 

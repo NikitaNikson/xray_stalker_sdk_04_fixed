@@ -13,7 +13,7 @@
 #include "ObjectAnimator.h"
 #include "../../xr_3da/xrGame/xrMessages.h"
 #include "scene.h"
-#include "d3dutils.h"
+#include "D3DUtils.h"
 
 #define SPAWNPOINT_VERSION   			0x0014
 //----------------------------------------------------

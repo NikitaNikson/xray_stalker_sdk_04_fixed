@@ -3,11 +3,11 @@
 
 #pragma once
 
-#include "../feel_touch.h"
-#include "../iinputreceiver.h"
+#include "../Feel_Touch.h"
+#include "../IInputReceiver.h"
 
-#include "entity.h"
-#include "actor_flags.h"
+#include "Entity.h"
+#include "Actor_Flags.h"
 
 // refs
 class CActor;

@@ -16,7 +16,7 @@
 #include "portalutils.h"
 #include "MgcConvexHull3D.h"
 #include "../ECore/Editor/ui_main.h"
-#include "d3dutils.h"
+#include "D3DUtils.h"
 
 #define SECTOR_VERSION   					0x0011
 //----------------------------------------------------

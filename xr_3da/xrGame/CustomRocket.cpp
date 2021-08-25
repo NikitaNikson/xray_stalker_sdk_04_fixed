@@ -4,17 +4,17 @@
 //////////////////////////////////////////////////////////////////////
 
 #include "stdafx.h"
-#include "customrocket.h"
+#include "CustomRocket.h"
 #include "ParticlesObject.h"
 #include "PhysicsShell.h"
-#include "extendedgeom.h"
-#include "level.h"
+#include "ExtendedGeom.h"
+#include "Level.h"
 #include "xrMessages.h"
-#include "gamemtllib.h"
+#include "GameMtlLib.h"
 #include "tri-colliderknoopc/dTriList.h"
-#include "../fbasicvisual.h"
+#include "../FBasicVisual.h"
 #include "CalculateTriangle.h"
-#include "actor.h"
+#include "Actor.h"
 #ifdef DEBUG
 #include "PHDebug.h"
 #include "game_base_space.h"

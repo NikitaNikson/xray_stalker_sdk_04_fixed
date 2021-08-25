@@ -7,9 +7,9 @@
 
 #include "EditMesh.h"
 #include "EditObject.h"
-#include "Bone.h"
+#include "bone.h"
 #ifdef _EDITOR
-#	include "ETools.h"
+	#include "ETools.h"
 #endif
 
 CEditableMesh::~CEditableMesh(){

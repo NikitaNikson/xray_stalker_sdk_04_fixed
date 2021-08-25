@@ -3,7 +3,7 @@
 #include "snork_state_manager.h"
 #include "../../../detail_path_manager_space.h"
 #include "../../../detail_path_manager.h"
-#include "../../../level.h"
+#include "../../../Level.h"
 #include "../monster_velocity_space.h"
 #include "../../../sound_player.h"
 #include "../control_animation_base.h"
@@ -12,7 +12,7 @@
 
 #ifdef _DEBUG
 #	include <dinput.h>
-#	include "../../../actor.h"
+#	include "../../../Actor.h"
 #	include "../../../ai_object_location.h"
 #	include "../../../level_debug.h"
 #	include "../../../cover_point.h"

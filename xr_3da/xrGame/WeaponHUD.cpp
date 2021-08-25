@@ -5,9 +5,9 @@
 #include "stdafx.h"
 #include "WeaponHUD.h"
 #include "Weapon.h"
-#include "../Motion.h"
-#include "../skeletonanimated.h"
-#include "level.h"
+#include "../motion.h"
+#include "../SkeletonAnimated.h"
+#include "Level.h"
 #include "MathUtils.h"
 weapon_hud_container* g_pWeaponHUDContainer=0;
 

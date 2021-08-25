@@ -1,8 +1,8 @@
 #include "stdafx.h"
-#include "ispatial.h"
-#include "render.h"
+#include "ISpatial.h"
+#include "Render.h"
 #include "xr_object.h"
-#include "PS_Instance.h"
+#include "PS_instance.h"
 
 ENGINE_API ISpatial_DB*		g_SpatialSpace			= NULL;
 ENGINE_API ISpatial_DB*		g_SpatialSpacePhysic	= NULL;

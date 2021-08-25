@@ -5,7 +5,7 @@
 #include "CalculateTriangle.h"
 #include "profiler.h"
 #ifdef DEBUG
-#include "phdebug.h"
+#include "PHDebug.h"
 #endif
 
 CWalmarkManager::CWalmarkManager()
