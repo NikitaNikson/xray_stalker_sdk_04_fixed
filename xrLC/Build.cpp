@@ -16,7 +16,7 @@ BOOL					b_nosun		= FALSE;
 BOOL					b_skipinvalidface = FALSE;
 CThreadManager			mu_base;
 CThreadManager			mu_secondary;
-#define		MU_THREADS	4
+#define		MU_THREADS	8
 BOOL					gl_linear	= FALSE;
 
 //////////////////////////////////////////////////////////////////////

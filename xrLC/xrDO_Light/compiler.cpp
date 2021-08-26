@@ -9,7 +9,7 @@
 #include "ETextureParams.h"
 #include "r_light.h"
 
-#define NUM_THREADS		3
+#define NUM_THREADS 8
 
 enum
 {
