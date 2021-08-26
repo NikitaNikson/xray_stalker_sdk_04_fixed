@@ -20,9 +20,12 @@ extern volatile BOOL bClose;
 
 static const char* h_str = 
 	"The following keys are supported / required:\n"
-	"-? or -h	== this help\n"
-	"-f<NAME>	== compile level in gamedata\\levels\\<NAME>\\\n"
-	"-o			== modify build options\n"
+	"-? or -h         == this help \n"
+	"-o               == modify build options, if exist xrLC_options.dll \n"
+	"\n"
+	"-f <level_name>  == compile level details in gamedata\\levels\\<level_name>\\ \n"
+	"\n"
+	"-silent          == suppress congratulation message \n"
 	"\n"
 	"NOTE: The last key is required for any functionality\n";
 
@@ -58,7 +61,9 @@ void Startup(LPSTR     lpCmdLine)
 	extern	std::string make_time(u32 sec);
 	extern  HWND logWindow;
 	sprintf				(stats,"Time elapsed: %s",make_time((dwStartupTime.GetElapsed_ms())/1000).c_str());
-	MessageBox			(logWindow,stats,"Congratulation!",MB_OK|MB_ICONINFORMATION);
+
+	if (!strstr(cmd,"-silent"))
+		MessageBox			(logWindow,stats,"Congratulation!",MB_OK|MB_ICONINFORMATION);
 
 	bClose				= TRUE;
 	Sleep				(500);

@@ -32,10 +32,20 @@ extern volatile BOOL bClose;
 
 static const char* h_str = 
 	"The following keys are supported / required:\n"
-	"-? or -h	== this help\n"
-	"-o			== modify build options\n"
-	"-nosun		== disable sun-lighting\n"
-	"-f<NAME>	== compile level in GameData\\Levels\\<NAME>\\\n"
+	"-? or -h         == this help \n"
+	"-o               == modify build options, if exist xrLC_options.dll \n"
+	"\n"
+	"-f <level_name>  == compile level in gamedata\\levels\\<level_name>\\ \n"
+	"\n"
+	"-att             == trace static light in linear (only static lights) \n"
+	"-gi              == compute global illumination on Radiosity algorithm (only static lights) \n"
+	"-noise           == dont create progressive-mesh (lods) \n"
+	"-nosun           == disable sun-lighting (for underground levels) \n"
+	"\n"
+	"-skip_inv_face   == skip crash if invalid faces exists \n"
+	"-skip_optimize   == skip Optimize stage \n"
+	"\n"
+	"-silent          == suppress congratulation message \n"
 	"\n"
 	"NOTE: The last key is required for any functionality\n";
 
@@ -59,6 +69,7 @@ void Startup(LPSTR     lpCmdLine)
 	if (strstr(cmd,"-gi"))								b_radiosity		= TRUE;
 	if (strstr(cmd,"-noise"))							b_noise			= TRUE;
 	if (strstr(cmd,"-nosun"))							b_nosun			= TRUE;
+	if (strstr(cmd,"-skip_inv_face"))					b_skipinvalidface	= TRUE;
 	
 	// Give a LOG-thread a chance to startup
 	//_set_sbh_threshold(1920);
@@ -138,7 +149,9 @@ void Startup(LPSTR     lpCmdLine)
 	u32	dwEndTime			= dwStartupTime.GetElapsed_ms();
 	sprintf					(inf,"Time elapsed: %s",make_time(dwEndTime/1000).c_str());
 	clMsg					("Build succesful!\n%s",inf);
-	MessageBox				(logWindow,inf,"Congratulation!",MB_OK|MB_ICONINFORMATION);
+
+	if (!strstr(cmd,"-silent"))
+		MessageBox				(logWindow,inf,"Congratulation!",MB_OK|MB_ICONINFORMATION);
 
 	// Close log
 	bClose					= TRUE;

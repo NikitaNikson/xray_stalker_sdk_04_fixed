@@ -13,6 +13,7 @@ BOOL					b_R2		= FALSE;
 BOOL					b_noise		= FALSE;
 BOOL					b_radiosity	= FALSE;
 BOOL					b_nosun		= FALSE;
+BOOL					b_skipinvalidface = FALSE;
 CThreadManager			mu_base;
 CThreadManager			mu_secondary;
 #define		MU_THREADS	4
@@ -124,7 +125,8 @@ void CBuild::Run	(LPCSTR P)
 	FPU::m64r					();
 	Phase						("Optimizing...");
 	mem_Compact					();
-	PreOptimize					();
+	if(strstr(Core.Params,"-skip_optimize") == 0)
+		PreOptimize				();
 	CorrectTJunctions			();
 
 	//****************************************** HEMI-Tesselate

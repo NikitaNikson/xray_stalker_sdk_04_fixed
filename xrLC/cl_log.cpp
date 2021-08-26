@@ -143,7 +143,7 @@ void logThread(void *dummy)
 	SendMessage(hwProgress, PBM_SETRANGE,	0, MAKELPARAM(0, 1000)); 
 	SendMessage(hwProgress, PBM_SETPOS,		0, 0); 
 
-	Msg("\"LevelBuilder v4.1\" beta build\nCompilation date: %s\n",__DATE__);
+	Msg("\"xrLC\"\nCompilation date: %s\n",__DATE__);
 	{
 		char tmpbuf[128];
 		Msg("Startup time: %s",_strtime(tmpbuf));
@@ -154,14 +154,16 @@ void logThread(void *dummy)
 	unsigned long		u_size	= sizeof(u_name)-1;
 	GetUserName	(u_name,&u_size);
 	_strlwr		(u_name);
-	if ((0==xr_strcmp(u_name,"oles"))||(0==xr_strcmp(u_name,"alexmx")))	bHighPriority	= TRUE;
+	
+	//if ( (0==xr_strcmp(u_name,"oles")) || (0==xr_strcmp(u_name,"alexmx")) )
+	//	bHighPriority = TRUE;
 
 	// Main cycle
 	u32		LogSize = 0;
 	float	PrSave	= 0;
 	while (TRUE)
 	{
-		SetPriorityClass	(GetCurrentProcess(),IDLE_PRIORITY_CLASS);	// bHighPriority?NORMAL_PRIORITY_CLASS:IDLE_PRIORITY_CLASS
+		SetPriorityClass	(GetCurrentProcess(),bHighPriority?NORMAL_PRIORITY_CLASS:IDLE_PRIORITY_CLASS);
 
 		// transfer data
 		while (!csLog.TryEnter())	{
