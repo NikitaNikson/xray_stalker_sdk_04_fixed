@@ -145,7 +145,7 @@ void CLightmap::Save()
 		u32	pitch				= w*4;
 
 		STextureParams fmt;
-		fmt.fmt					= STextureParams::tfDXT5;
+		fmt.fmt					= STextureParams::tfRGBA;
 		fmt.flags.set			(STextureParams::flDitherColor,		FALSE);
 		fmt.flags.set			(STextureParams::flGenerateMipMaps,	FALSE);
 		fmt.flags.set			(STextureParams::flBinaryAlpha,		FALSE);
@@ -166,7 +166,7 @@ void CLightmap::Save()
 		BYTE*	raw_data		= LPBYTE(&*packed.begin());
 
 		STextureParams fmt;
-		fmt.fmt					= STextureParams::tfDXT5;
+		fmt.fmt					= STextureParams::tfRGBA;
 		fmt.flags.set			(STextureParams::flDitherColor,		FALSE);
 		fmt.flags.set			(STextureParams::flGenerateMipMaps,	FALSE);
 		fmt.flags.set			(STextureParams::flBinaryAlpha,		FALSE);

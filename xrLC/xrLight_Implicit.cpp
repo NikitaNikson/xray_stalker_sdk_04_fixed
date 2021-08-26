@@ -251,7 +251,7 @@ void CBuild::ImplicitLighting()
 			u32	h					=	TEX.dwHeight;
 			u32	pitch				=	w*4;
 			STextureParams			fmt	= TEX.THM;
-			fmt.fmt					= STextureParams::tfDXT5;
+			fmt.fmt					= STextureParams::tfRGBA;
 			fmt.flags.set			(STextureParams::flDitherColor,		FALSE);
 			fmt.flags.set			(STextureParams::flGenerateMipMaps,	FALSE);
 			fmt.flags.set			(STextureParams::flBinaryAlpha,		FALSE);
@@ -276,7 +276,7 @@ void CBuild::ImplicitLighting()
 			u32	h					= TEX.dwHeight;
 			u32	pitch				= w*4;
 			STextureParams			fmt;
-			fmt.fmt					= STextureParams::tfDXT5;
+			fmt.fmt					= STextureParams::tfRGBA;
 			fmt.flags.set			(STextureParams::flDitherColor,		FALSE);
 			fmt.flags.set			(STextureParams::flGenerateMipMaps,	FALSE);
 			fmt.flags.set			(STextureParams::flBinaryAlpha,		FALSE);
