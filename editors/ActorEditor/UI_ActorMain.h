@@ -47,7 +47,7 @@ public:
     virtual void 	OutInfo					();
 
     virtual LPCSTR	EditorName				(){return "actor";}
-    virtual LPCSTR	EditorDesc				(){return "Actor Editor";}
+    virtual LPCSTR	EditorDesc				(){return "Actor Editor SMG";}
 
     virtual bool 	ApplyShortCut			(WORD Key, TShiftState Shift);
     virtual bool 	ApplyGlobalShortCut		(WORD Key, TShiftState Shift);
