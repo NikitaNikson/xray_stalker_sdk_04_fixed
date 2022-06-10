@@ -66,7 +66,7 @@ BOOL SceneBuilder::Compile()
     	    VERIFY_COMPILE(Scene->Validate(false,bTestPortal,true,true,true,true),"Validation failed.","Invalid scene.");
 			// fill simple hemi
             simple_hemi.clear	();
-	        xrHemisphereBuild	(1,2.f,simple_hemi_callback,&simple_hemi);
+	        xrHemisphereBuild	(1,Scene->m_LevelOp.m_BuildParams.area_energy_summary,simple_hemi_callback,&simple_hemi);
         	// build
             VERIFY_COMPILE		(PreparePath(),				"Failed to prepare level path","");
             VERIFY_COMPILE		(PrepareFolders(),			"Failed to prepare level folders","");

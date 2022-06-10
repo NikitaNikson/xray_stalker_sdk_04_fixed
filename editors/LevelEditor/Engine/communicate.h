@@ -139,8 +139,10 @@ struct b_params
 	float		m_weld_distance;		// by default 0.005f		- 5mm
 
 	// Light maps
+	float		area_energy_summary;	// Amount of energy distributed across hemisphere
 	float		m_lm_pixels_per_meter;	// LM - by default: 4 ppm
 	u32			m_lm_jitter_samples;	// 1/4/9 - by default		- 4
+	float		m_lm_jitter;			// jittering distortion		- 0.45
 	u32			m_lm_rms_zero;			// RMS - after what the lightmap will be shrinked to ZERO pixels
 	u32			m_lm_rms;				// RMS - shrink and recalc
 
@@ -158,6 +160,8 @@ struct b_params
         m_weld_distance         = 0.005f;
 
         // Light maps
+		area_energy_summary		= 2.f;
+		m_lm_jitter				= 0.49f;
 		m_lm_rms_zero			= 4;
 		m_lm_rms				= 4;
 

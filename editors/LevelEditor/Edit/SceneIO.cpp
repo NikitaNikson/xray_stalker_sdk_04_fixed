@@ -72,6 +72,7 @@ void st_LevelOptions::Save( IWriter& F ){
     F.open_chunk( CHUNK_LIGHT_QUALITY );
 	F.w_u8		( m_LightHemiQuality );
 	F.w_u8		( m_LightSunQuality );
+	//F.w_float	( m_LightSunDispersion );
     F.close_chunk();
 
     F.open_chunk( CHUNK_MAP_USAGE );
@@ -113,6 +114,7 @@ void st_LevelOptions::Read(IReader& F)
     if (F.find_chunk(CHUNK_LIGHT_QUALITY)){
 	    m_LightHemiQuality 	= F.r_u8( );
 	    m_LightSunQuality 	= F.r_u8( );
+	    //m_LightSunDispersion 	= F.r_float( );
     }
     if (F.find_chunk(CHUNK_MAP_USAGE))
     {
