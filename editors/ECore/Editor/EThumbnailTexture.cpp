@@ -51,6 +51,7 @@ int ETextureThumbnail::MemoryUsage()
     case STextureParams::tf4444:
     case STextureParams::tf1555:
     case STextureParams::tf565: 	mem_usage/=2; break;
+    case STextureParams::tfRGB:		break;
     case STextureParams::tfRGBA:	break;
     }
     string_path fn;

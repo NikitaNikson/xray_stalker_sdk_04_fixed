@@ -42,6 +42,7 @@ xr_token					tfmt_token								[ ]={
 	{ "DXT5",				STextureParams::tfDXT5						},
 	{ "16 bit (1:5:5:5)",	STextureParams::tf1555						},
 	{ "16 bit (5:6:5)",		STextureParams::tf565						},
+	{ "24 bit (8:8:8)",		STextureParams::tfRGB						},
 	{ "32 bit (8:8:8:8)",	STextureParams::tfRGBA						},
 	{ "8 bit (alpha)",		STextureParams::tfA8						},
 	{ "8 bit (luminance)",	STextureParams::tfL8						},
@@ -269,6 +270,7 @@ u32 STextureParams::MemoryUsage(LPCSTR base_name)
     case STextureParams::tf4444:
     case STextureParams::tf1555:
     case STextureParams::tf565: 	mem_usage/=2; break;
+    case STextureParams::tfRGB:		break;
     case STextureParams::tfRGBA:	break;
     }
     xr_string fn;
