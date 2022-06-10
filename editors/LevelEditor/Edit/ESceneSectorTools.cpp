@@ -3,7 +3,7 @@
 
 #include "ESceneSectorTools.h"
 #include "ESceneSectorControls.h"
-#include "ui_leveltools.h"
+#include "UI_LevelTools.h"
 #include "FrameSector.h"
 #include "SceneObject.h"
 #include "sector.h"

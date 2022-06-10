@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "build.h"
+#include "Build.h"
 
 void LightPatch(Fcolor &C, Fvector &P, float scale)
 {

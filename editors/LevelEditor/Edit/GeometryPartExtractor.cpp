@@ -3,7 +3,7 @@
 
 #include "GeometryPartExtractor.h"
 #include "../ECore/Editor/EditObject.h"
-#include "../ECore/Editor/UI_Main.h"
+#include "../ECore/Editor/ui_main.h"
 #include "UI_LevelTools.h"
 
 //------------------------------------------------------------------------------

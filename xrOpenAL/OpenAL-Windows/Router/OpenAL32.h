@@ -30,8 +30,8 @@ extern "C" {
 
 #define AL_BUILD_LIBRARY
 
-//.#include "al\al.h"
-#include "../../include/al/al.h"
+//.#include "AL/al.h"
+#include "../../include/AL/al.h"
 
 // ALAPI
 typedef ALAPI ALvoid         (ALAPIENTRY *ALAPI_ENABLE)(ALenum capability);
@@ -205,8 +205,8 @@ typedef struct ALAPI_FXN_TABLE_STRUCT
 
 } ALAPI_FXN_TABLE;
 
-//.#include "al\alc.h"
-#include "../../include/al/alc.h"
+//.#include "AL/alc.h"
+#include "../../include/AL/alc.h"
 
 // ALCAPI
 typedef struct ALCdevice_struct ALCdevice;

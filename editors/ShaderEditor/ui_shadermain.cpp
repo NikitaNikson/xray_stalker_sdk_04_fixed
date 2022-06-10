@@ -2,12 +2,12 @@
 #include "stdafx.h"
 #pragma hdrstop
 
-#include "UI_ShaderMain.h"
-#include "UI_ShaderTools.h"
-#include "topbar.h"
+#include "ui_shadermain.h"
+#include "UI_shadertools.h"
+#include "TopBar.h"
 #include "leftbar.h"
 #include "../../xr_3da/D3DUtils.h"
-#include "bottombar.h"
+#include "BottomBar.h"
 #include "xr_trims.h"
 #include "main.h"
 #include "xr_input.h"

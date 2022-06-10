@@ -2,7 +2,7 @@
 #pragma hdrstop
 
 #include "SoundManager_LE.h"
-#include "Scene.h"
+#include "scene.h"
 #include "ESound_Source.h"
 #include "ESound_Environment.h"
 #include "du_box.h"

@@ -2,10 +2,10 @@
 #pragma hdrstop
 
 #include "scene.h"
-#include "leftbar.h"
-#include "ui_leveltools.h"
+#include "LeftBar.h"
+#include "UI_LevelTools.h"
 #include "SceneObject.h"
-#include "../ECore/Editor/UI_Main.h"
+#include "../ECore/Editor/ui_main.h"
 //------------------------------------------------------------------------------
  
 ObjectList* EScene::GetSnapList(bool bIgnoreUse)

@@ -1,10 +1,10 @@
 #include "stdafx.h"
 #pragma hdrstop
 
-#include "ui_leveltools.h"
+#include "UI_LevelTools.h"
 #include "FrameLight.h"
 #include "ELight.h"
-#include "Scene.h"
+#include "scene.h"
 #include "../ECore/Editor/ui_main.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)

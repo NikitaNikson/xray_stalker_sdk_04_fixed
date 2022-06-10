@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "build.h"
+#include "Build.h"
 #include "OGF_Face.h"
 
 void CBuild::BuildHierrarhy()

@@ -4,7 +4,7 @@
 #include "ESceneCustomOTools.h"
 #include "scene.h"
 #include "../ECore/Editor/ui_main.h"
-#include "builder.h"
+#include "Builder.h"
 #include "CustomObject.h"
 
 // chunks

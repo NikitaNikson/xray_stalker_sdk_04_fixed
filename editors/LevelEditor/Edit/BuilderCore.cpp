@@ -6,9 +6,9 @@
 #pragma hdrstop
 
 #include "Builder.h"
-#include "Scene.h"
+#include "scene.h"
 #include "SceneObject.h"
-#include "Sector.h"
+#include "sector.h"
 #include "../ECore/Editor/ui_main.h"
 //------------------------------------------------------------------------------
 

@@ -8,7 +8,7 @@ class TfrmObjectList;
 
 #include "ESceneClassList.h"
 #include "../ECore/Editor/UI_ToolsCustom.h"
-#include "../ECore/Editor/UI_mainCommand.h"
+#include "../ECore/Editor/UI_MainCommand.h"
 
 //---------------------------------------------------------------------------
 #define estDefault 0

@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "build.h"
+#include "Build.h"
 #include "std_classes.h"
 #include "xrThread.h"
 

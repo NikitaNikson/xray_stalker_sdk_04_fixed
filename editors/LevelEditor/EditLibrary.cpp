@@ -5,10 +5,10 @@
 
 #include "EditLibrary.h"
 #include "../ECore/Editor/Library.h"
-#include "ui_leveltools.h"
+#include "UI_LevelTools.h"
 #include "../ECore/Editor/EditObject.h"
-#include "Main.h"
-#include "Scene.h"
+#include "main.h"
+#include "scene.h"
 #include "Builder.h"
 #include "../ECore/Engine/Texture.h"
 #include "BottomBar.h"

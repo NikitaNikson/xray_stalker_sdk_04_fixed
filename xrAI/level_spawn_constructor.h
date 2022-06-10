@@ -8,7 +8,7 @@
 
 #pragma once
 
-#include "xrthread.h"
+#include "xrThread.h"
 #include "spawn_constructor_space.h"
 
 class CLevelGraph;

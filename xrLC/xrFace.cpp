@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "build.h"
+#include "Build.h"
 
 bool	base_basis::similar			(const base_basis& o)
 {

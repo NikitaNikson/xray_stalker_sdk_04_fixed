@@ -9,7 +9,7 @@
 #include "../ECore/Editor/ExportSkeleton.h"
 //.#include "clsid_game.h"
 #include "../ECore/Editor/ui_main.h"
-#include "ui_leveltools.h"
+#include "UI_LevelTools.h"
 #include "../ECore/Editor/GeometryCollector.h"
 
 #include "../../xr_3da/xrGame/xrServer_Objects_Abstract.h"

@@ -3,12 +3,12 @@
 #pragma hdrstop
 
 #include "UI_ActorTools.h"
-#include "../ECore/Editor/UI_Main.h"
+#include "../ECore/Editor/ui_main.h"
 #include "../ECore/Editor/EditObject.h"
 #include "../xrEProps/PropertiesList.h"
 #include "motion.h"
 #include "bone.h"
-#include "leftbar.h"
+#include "LeftBar.h"
 #include "SkeletonAnimated.h"
 #include "../xrEProps/ItemList.h"
 //------------------------------------------------------------------------------

@@ -15,7 +15,7 @@
 #include "stdafx.h"
 #pragma hdrstop
 
-#include "Scene.h"
+#include "scene.h"
 #include "../ECore/Editor/EditorPreferences.h"
 #include "../ECore/Editor/ui_main.h"
 

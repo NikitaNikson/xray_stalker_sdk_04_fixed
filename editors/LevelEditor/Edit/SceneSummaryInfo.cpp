@@ -4,11 +4,10 @@
 #include "SceneSummaryInfo.h"
 #include "../ECore/Editor/ImageManager.h"
 #include "../ECore/Editor/EThumbnail.h"
-#include "SceneSummaryInfo.h"
-#include "Scene.h"
+#include "scene.h"
 #include "SceneObject.h"
 #include "../ECore/Editor/ui_main.h"
-#include "ui_levelmain.h"
+#include "UI_LevelMain.h"
 #include "../ECore/Editor/Library.h"
 
 static SSceneSummary s_summary;

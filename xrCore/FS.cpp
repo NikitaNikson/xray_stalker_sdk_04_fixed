@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #pragma hdrstop
 
-#include "fs_internal.h"
+#include "FS_internal.h"
 
 #pragma warning(disable:4995)
 #include <io.h>

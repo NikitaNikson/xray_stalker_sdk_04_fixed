@@ -1,9 +1,9 @@
 #include "stdafx.h"
-#include "build.h"
+#include "Build.h"
 #include "OGF_Face.h"
 #include "vbm.h"
 #include "std_classes.h"
-#include "lightmap.h"
+#include "Lightmap.h"
 
 #define	TRY(a) try { a; } catch (...) { clMsg("* E: %s", #a); }
 

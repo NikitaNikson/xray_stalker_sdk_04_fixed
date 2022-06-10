@@ -4,9 +4,9 @@
 #include "stdafx.h"
 #pragma hdrstop
 
-#include "spawnpoint.h"
+#include "SpawnPoint.h"
 #include "ESceneSpawnTools.h"
-#include "eshape.h"
+#include "EShape.h"
 #include "../../xr_3da/xrGame/xrServer_Objects_Abstract.h"
 #include "../ECore/Editor/ui_main.h"
 #include "SkeletonAnimated.h"

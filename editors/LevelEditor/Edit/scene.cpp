@@ -5,13 +5,13 @@
 #include "stdafx.h"
 #pragma hdrstop
 
-#include "Scene.h"
+#include "scene.h"
 #include "SceneObject.h"
 #include "../ECore/Editor/ui_main.h"
-#include "Sector.h"
+#include "sector.h"
 #include "../ECore/Editor/SoundManager.h"
 #include "EParticlesObject.h"
-#include "ui_leveltools.h"
+#include "UI_LevelTools.h"
 #include "../ECore/Engine/guid_generator.h"
 
 #include "ESceneAIMapTools.h"
@@ -459,7 +459,6 @@ xr_string EScene::LevelPath()
     return path;
 }
 
-#include "ESceneLightTools.h"
 void EScene::SelectLightsForObject(CCustomObject* obj)
 {
 	ESceneLightTools* lt = dynamic_cast<ESceneLightTools*>(Scene->GetOTools(OBJCLASS_LIGHT)); VERIFY(lt);

@@ -6,7 +6,7 @@
 #include "../xrEProps/PropertiesListHelper.h"
 #include "ui_shadermain.h"
 #include "../xrEProps/FolderLib.h"
-#include "UI_ShaderTools.h"
+#include "UI_shadertools.h"
 #include "../xrEProps/ChoseForm.h"
 #include "leftbar.h"
 #include "../xrEProps/ItemList.h"

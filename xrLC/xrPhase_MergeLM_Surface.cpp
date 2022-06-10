@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "build.h"
+#include "Build.h"
 #include "xrPhase_MergeLM_Rect.h"
 
 static	BYTE	surface			[c_LMAP_size*c_LMAP_size];

@@ -265,7 +265,7 @@ bool ESceneLightTools::Validate(bool full_test)
 //------------------------------------------------------------------------------
 
 
-#include "frameLight.h"
+#include "FrameLight.h"
 #include "UI_LevelTools.h"
 
 void ESceneLightTools::CreateControls()

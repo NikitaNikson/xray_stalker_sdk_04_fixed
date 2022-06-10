@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "build.h"
+#include "Build.h"
 
 void CBuild::SaveLights(IWriter &fs)
 {

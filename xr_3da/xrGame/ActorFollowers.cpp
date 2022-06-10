@@ -1,7 +1,7 @@
 #include "stdafx.h"
 /*
 #include "ActorFollowers.h"
-#include "ui/xrxmlparser.h"
+#include "ui/xrXMLParser.h"
 #include "ui/UIFollowerPanel.h"
 #include "Level.h"
 #include "HUDManager.h"

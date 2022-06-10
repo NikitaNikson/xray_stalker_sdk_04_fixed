@@ -1,7 +1,7 @@
 #pragma once
 
 #include "communicate.h"
-#include "xruvpoint.h"
+#include "xrUVpoint.h"
 #include "progmesh.h"
 #include "xrSpherical.h"
 

@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include <lwrender.h>
 #include <lwhost.h>
-#include "../../Shared/editobject.h"
+#include "../../Shared/EditObject.h"
 #include "FileSystem.h"
 #include "FS.h"
 #include "../../Shared/bone.h"

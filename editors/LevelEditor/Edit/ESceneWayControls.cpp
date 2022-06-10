@@ -3,11 +3,11 @@
 
 #include "ESceneWayTools.h"
 #include "ESceneWayControls.h"
-#include "ui_leveltools.h"
+#include "UI_LevelTools.h"
 #include "FrameWayPoint.h"
 #include "WayPoint.h"
 #include "scene.h"
-#include "ui_levelmain.h"
+#include "UI_LevelMain.h"
 
 void ESceneWayTools::OnActivate()
 {

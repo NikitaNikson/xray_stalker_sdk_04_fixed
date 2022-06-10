@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "xrmu_model.h"
+#include "xrMU_Model.h"
 
 poolSS<xrMU_Model::_vertex,8*1024>	mu_vertices;
 poolSS<xrMU_Model::_face,8*1024>	mu_faces;

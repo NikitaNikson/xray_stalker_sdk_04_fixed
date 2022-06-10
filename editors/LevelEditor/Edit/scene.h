@@ -1,11 +1,11 @@
 //----------------------------------------------------
-// file: Scene.h
+// file: scene.h
 //----------------------------------------------------
 #ifndef SceneH
 #define SceneH
 
 #include "SceneGraph.h"
-#include "Communicate.h"
+#include "communicate.h"
 #include "pure.h"
 #include "ElTree.hpp"
 

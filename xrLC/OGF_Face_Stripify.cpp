@@ -1,6 +1,6 @@
 #include "stdafx.h"
-#include "build.h"
-#include "ogf_face.h"
+#include "Build.h"
+#include "OGF_Face.h"
 #include "NV_Library/NvTriStrip.h"
 #include "NV_Library/VertexCache.h"
 #include <d3dx9.h>

@@ -9,6 +9,7 @@
 #include "pch_script.h"
 #include "Level.h"
 #include "Actor.h"
+#include "ActorEffector.h"
 #include "script_game_object.h"
 #include "patrol_path_storage.h"
 #include "xrServer.h"
@@ -28,6 +29,10 @@
 #include "map_manager.h"
 #include "map_location.h"
 #include "PHWorld.h"
+#include "relation_registry.h"
+#include "UIGameCustom.h"
+#include "actor_statistic_mgr.h"
+#include "PostprocessAnimator.h"
 
 using namespace luabind;
 
@@ -252,7 +257,7 @@ CUIDialogWnd* main_input_receiver()
 {
 	return HUD().GetUI()->MainInputReceiver();
 }
-#include "UIGameCustom.h"
+
 void hide_indicators()
 {
 	HUD().GetUI()->UIGame()->HideShownDialogs();
@@ -400,7 +405,6 @@ void iterate_sounds2				(LPCSTR prefix, u32 max_count, luabind::object object, l
 	iterate_sounds				(prefix,max_count,temp);
 }
 
-#include "ActorEffector.h"
 float add_cam_effector(LPCSTR fn, int id, bool cyclic, LPCSTR cb_func)
 {
 	CAnimatorCamEffectorScriptCB* e		= xr_new<CAnimatorCamEffectorScriptCB>(cb_func);
@@ -437,7 +441,7 @@ void set_snd_volume(float v)
 	psSoundVFactor = v;
 	clamp(psSoundVFactor,0.0f,1.0f);
 }
-#include "actor_statistic_mgr.h"
+
 void add_actor_points(LPCSTR sect, LPCSTR detail_key, int cnt, int pts)
 {
 	return Actor()->StatisticMgr().AddPoints(sect, detail_key, cnt, pts);
@@ -468,7 +472,7 @@ void remove_complex_effector(int id)
 	RemoveEffector(Actor(),id);
 }
 
-#include "PostprocessAnimator.h"
+
 void add_pp_effector(LPCSTR fn, int id, bool cyclic)
 {
 	CPostprocessAnimator* pp		= xr_new<CPostprocessAnimator>(id, cyclic);
@@ -497,8 +501,6 @@ void set_pp_effector_factor2(int id, float f)
 
 	if(pp) pp->SetCurrentFactor(f);
 }
-
-#include "relation_registry.h"
 
  int g_community_goodwill(LPCSTR _community, int _entity_id)
  {

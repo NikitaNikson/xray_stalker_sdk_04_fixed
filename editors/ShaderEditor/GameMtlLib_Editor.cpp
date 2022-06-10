@@ -7,7 +7,7 @@
 #include "../xrEProps/PropertiesListTypes.h"
 #include "../xrEProps/PropertiesListHelper.h"
 #include "../xrEProps/FolderLib.h"
-#include "LeftBar.h"
+#include "leftbar.h"
 #include "../xrEProps/ChoseForm.h"
 #include "../ECore/Editor/ui_main.h"
 

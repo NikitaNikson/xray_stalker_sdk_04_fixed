@@ -6,7 +6,7 @@
 #pragma hdrstop
 
 #include "Builder.h"
-#include "Scene.h"
+#include "scene.h"
 #include "LevelGameDef.h"
 #include "SoundManager_LE.h"
 #include "CustomObject.h"

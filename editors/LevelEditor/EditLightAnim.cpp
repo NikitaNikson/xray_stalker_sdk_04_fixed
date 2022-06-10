@@ -4,7 +4,7 @@
 #pragma hdrstop
 
 #include "EditLightAnim.h"
-#include "Scene.h"
+#include "scene.h"
 #include "LightAnimLibrary.h"
 #include "../ECore/Editor/ColorPicker.h"
 #include "../ECore/Editor/ui_main.h"

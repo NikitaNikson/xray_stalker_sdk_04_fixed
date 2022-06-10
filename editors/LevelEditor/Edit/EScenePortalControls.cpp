@@ -2,7 +2,7 @@
 #pragma hdrstop
 
 #include "EScenePortalControls.h"
-#include "framePortal.h"
+#include "FramePortal.h"
 
 //------------------------------------------------------------------------------
 //

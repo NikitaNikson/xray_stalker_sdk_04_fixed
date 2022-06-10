@@ -4,7 +4,7 @@
 
 #include "ESound_Environment.h"
 #include "EShape.h"
-#include "ui_levelmain.h"
+#include "UI_LevelMain.h"
 //----------------------------------------------------
 
 #define SOUND_SEL0_COLOR 	0x00A0A0A0

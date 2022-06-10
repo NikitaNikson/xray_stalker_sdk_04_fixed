@@ -4,8 +4,8 @@
 #pragma hdrstop
 
 #include "UI_ActorTools.h"
-#include "../ECore/Editor/UI_Main.h"
-#include "leftbar.h"
+#include "../ECore/Editor/ui_main.h"
+#include "LeftBar.h"
 #include "../ECore/Editor/EditObject.h"
 #include "../xrEProps/PropertiesList.h"
 #include "motion.h"
@@ -13,7 +13,6 @@
 #include "SkeletonAnimated.h"
 #include "Fmesh.h"
 #include "../xrEProps/FolderLib.h"
-#include "leftbar.h"
 #include "../xrEProps/ItemList.h"
 //---------------------------------------------------------------------------
 MotionID EngineModel::FindMotionID(LPCSTR name, u16 slot)

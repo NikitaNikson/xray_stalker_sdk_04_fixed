@@ -5,7 +5,7 @@
 #include "stdafx.h"
 #pragma hdrstop
 
-#include "Log.h"
+#include "log.h"
 #include "Library.h"
 #include "EditObject.h"
 #include "ui_main.h"

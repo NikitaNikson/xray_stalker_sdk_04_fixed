@@ -5,7 +5,7 @@
 #include "ParticleGroup.h"
 #include "../xrEProps/PropertiesListHelper.h"
 #include "ui_main.h"
-#include "ui_particletools.h"
+#include "UI_ParticleTools.h"
 
 BOOL PS::CPGDef::SEffect::Equal(const SEffect& src)
 {

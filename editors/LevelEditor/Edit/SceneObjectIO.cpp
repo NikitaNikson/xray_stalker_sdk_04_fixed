@@ -6,7 +6,7 @@
 #pragma hdrstop
 
 #include "SceneObject.h"
-#include "Scene.h"
+#include "scene.h"
 //----------------------------------------------------
 #define SCENEOBJ_CURRENT_VERSION		0x0011
 //----------------------------------------------------

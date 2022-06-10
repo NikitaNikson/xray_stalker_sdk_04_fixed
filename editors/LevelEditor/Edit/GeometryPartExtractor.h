@@ -3,7 +3,7 @@
 
 #include "../ECore/Editor/GeometryCollector.h"
 #include "../ECore/Editor/ExportSkeleton.h"
-#include "Scene.h"
+#include "scene.h"
 
 struct 	SBFace;
 class 	CSurface;

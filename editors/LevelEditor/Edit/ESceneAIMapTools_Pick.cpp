@@ -4,9 +4,9 @@
 #include "ESceneAIMapTools.h"                            
 #include "scene.h"
 #include "../ECore/Editor/ui_main.h"
-#include "ui_leveltools.h"
-#include "ESceneAIMapControls.h"   
-#include "ui_levelmain.h"
+#include "UI_LevelTools.h"
+#include "ESceneAIMapControls.h"
+#include "UI_LevelMain.h"
 
 SAINode* ESceneAIMapTools::PickNode(const Fvector& start, const Fvector& dir, float& dist)
 {

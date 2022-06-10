@@ -4,9 +4,9 @@
                                                                
 #include "SHEngineTools.h"
 #include "../../xr_3da/blenders/Blender.h"
-#include "UI_ShaderTools.h"
+#include "UI_shadertools.h"
 #include "ui_shadermain.h"
-#include "LeftBar.h"
+#include "leftbar.h"
 #include "xr_trims.h"
 #include "../xrEProps/FolderLib.h"
 #include "../ECore/Editor/EditMesh.h"

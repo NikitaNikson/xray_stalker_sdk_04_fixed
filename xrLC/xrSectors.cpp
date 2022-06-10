@@ -1,6 +1,6 @@
 #include "stdafx.h"
-#include "build.h"
-#include "sector.h"
+#include "Build.h"
+#include "Sector.h"
 
 xr_vector<CSector*>	g_sectors;
 

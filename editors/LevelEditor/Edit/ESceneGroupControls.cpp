@@ -4,7 +4,7 @@
 #include "ESceneGroupControls.h"
 #include "ESceneGroupTools.h"
 #include "GroupObject.h"
-#include "Scene.h"
+#include "scene.h"
 
 //------------------------------------------------------------------------------
 //

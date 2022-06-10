@@ -3,8 +3,8 @@
 
 #include "ObjectList.h"
 #include "GroupObject.h"
-#include "ui_leveltools.h"
-#include "Scene.h"
+#include "UI_LevelTools.h"
+#include "scene.h"
 #include "../ECore/Editor/ui_main.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)

@@ -8,7 +8,7 @@
 #include "game_cl_base.h"
 #include "Level.h"
 #include "BoneProtections.h"
-
+#include "Torch.h"
 
 CCustomOutfit::CCustomOutfit()
 {
@@ -108,7 +108,6 @@ BOOL	CCustomOutfit::BonePassBullet					(int boneID)
 	return m_boneProtection->getBonePassBullet(s16(boneID));
 };
 
-#include "Torch.h"
 void	CCustomOutfit::OnMoveToSlot		()
 {
 	if (m_pCurrentInventory)

@@ -1,9 +1,9 @@
 #include "stdafx.h"
 #pragma hdrstop
 
-#include "ui_leveltools.h"
+#include "UI_LevelTools.h"
 #include "FrameAIMap.h"
-#include "Scene.h"
+#include "scene.h"
 #include "ESceneAIMapTools.h"
 #include "ESceneAIMapControls.h"
 #include "../ECore/Editor/ui_main.h"

@@ -1,13 +1,13 @@
 #include "stdafx.h"
 #pragma hdrstop
 
-#include "LeftBar.h"
+#include "leftbar.h"
 #include "BottomBar.h"
 #include "main.h"
 #include "../../xr_3da/blenders/Blender.h"
 #include "xr_trims.h"
-#include "UI_ShaderTools.h"
-#include "UI_ShaderMain.h"
+#include "UI_shadertools.h"
+#include "ui_shadermain.h"
 #include "../xrEProps/FolderLib.h"
 #include "../xrEProps/PropertiesList.h"
 #include "../xrEProps/ChoseForm.h"

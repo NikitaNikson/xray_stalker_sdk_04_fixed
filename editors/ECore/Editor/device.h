@@ -1,12 +1,12 @@
 #ifndef DeviceH
 #define DeviceH
 
-#include "ui_camera.h"
+#include "UI_Camera.h"
 #include "../../../xr_3da/HWCaps.h"
 #include "../../../xr_3da/HW.h"
 #include "../../../xr_3da/pure.h"
-#include "../../../xrCore/ftimer.h"
-#include "estats.h"
+#include "../../../xrCore/FTimer.h"
+#include "EStats.h"
 #include "../../../xr_3da/Shader_xrLC.h"
 #include "../../../xr_3da/Shader.h"
 #include "../../../xr_3da/R_Backend.h"

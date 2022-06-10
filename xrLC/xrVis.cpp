@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "build.h"
+#include "Build.h"
 #include "math.h"
 #include "ffileops.h"
 

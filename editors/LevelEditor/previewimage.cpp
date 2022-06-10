@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #pragma hdrstop
 
-#include "PreviewImage.h"
+#include "previewimage.h"
 #include "../ECore/Engine/Texture.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)

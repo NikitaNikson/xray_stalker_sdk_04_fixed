@@ -2,7 +2,7 @@
 #pragma hdrstop
 
 #include "main.h"
-#include "splash.h"
+#include "Splash.h"
 #include "UI_ActorMain.h"
 #include "UI_ActorTools.h"
 #include "../ECore/Editor/LogForm.h"

@@ -6,8 +6,8 @@
 #pragma hdrstop
 
 #include "SceneObject.h"
-#include "bottombar.h"
-#include "../ECore/Editor/library.h"
+#include "BottomBar.h"
+#include "../ECore/Editor/Library.h"
 #include "../ECore/Editor/EditMesh.h"
 #include "../ECore/Editor/ui_main.h"
 #include "D3DUtils.h"

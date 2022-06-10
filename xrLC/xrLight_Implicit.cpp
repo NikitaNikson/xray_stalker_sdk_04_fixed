@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "build.h"
+#include "Build.h"
 #include "tga.h"
 #include "xrThread.h"
 #include "hash2D.h"

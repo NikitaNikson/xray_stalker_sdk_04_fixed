@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "build.h"
+#include "Build.h"
 
 const int	 HDIM_X = 56;
 const int	 HDIM_Y = 24;

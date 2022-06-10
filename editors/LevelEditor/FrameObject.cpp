@@ -1,16 +1,15 @@
 #include "stdafx.h"
 #pragma hdrstop
 
-#include "ui_leveltools.h"
+#include "UI_LevelTools.h"
 #include "FrameObject.h"
 #include "scene.h"
 #include "../ECore/Editor/ui_main.h"
 #include "../ECore/Editor/EditObject.h"
 #include "SceneObject.h"
-#include "../ECore/Editor/library.h"
+#include "../ECore/Editor/Library.h"
 #include "ESceneObjectTools.h"
 #include "../ECore/Editor/EThumbnail.h"
-#include "Scene.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma link "multi_edit"

@@ -106,7 +106,7 @@ DEFINE_VECTOR		(AnsiString,AStringVec,AStringIt);
 DEFINE_VECTOR		(AnsiString*,LPAStringVec,LPAStringIt);
 
 #include "../xrEProps/xrEProps.h"
-#include "../../xrCore/Log.h"
+#include "../../xrCore/log.h"
 #include "../ECore/editor/engine.h"
 #include "../../xr_3da/defines.h"
 

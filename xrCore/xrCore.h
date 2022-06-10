@@ -191,7 +191,6 @@
 #include "clsid.h"
 #include "xrSyncronize.h"
 #include "xrMemory.h"
-#include "xrDebug.h"
 
 #include "_stl_extensions.h"
 #include "xrsharedmem.h"
@@ -245,7 +244,7 @@ DEFINE_VECTOR	(xr_rtoken,RTokenVec,RTokenVecIt);
 #endif
 #include "FileSystem.h"
 #include "FTimer.h"
-#include "FastDelegate.h"
+#include "fastdelegate.h"
 #include "intrusive_ptr.h"
 
 // destructor

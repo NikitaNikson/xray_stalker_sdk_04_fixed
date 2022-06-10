@@ -3,8 +3,8 @@
 
 #include "ImageManager.h"
 #include "Image.h"
-#include "editobject.h"
-#include "editmesh.h"
+#include "EditObject.h"
+#include "EditMesh.h"
 #include "ui_main.h"
 #include "xrHemisphere.h"
 #include "xrImage_Resampler.h"

@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "cl_collector.h"
-#include "build.h"
-#include "fs.h"
+#include "Build.h"
+#include "FS.h"
 
 int GetVertexIndex(Vertex *F)
 {

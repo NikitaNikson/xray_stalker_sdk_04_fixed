@@ -6,8 +6,8 @@
 #pragma hdrstop
 
 #include "Builder.h"
-#include "Scene.h"
-#include "PortalUtils.h"
+#include "scene.h"
+#include "portalutils.h"
 #include "ESceneDOTools.h"
 #include "../ECore/Editor/ui_main.h"
 #include "../ECore/Editor/UI_ToolsCustom.h"

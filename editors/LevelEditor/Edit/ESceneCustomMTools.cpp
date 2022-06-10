@@ -3,7 +3,7 @@
 
 #include "ESceneCustomMTools.h"
 #include "../ECore/Editor/ui_main.h"
-#include "ui_levelmain.h"
+#include "UI_LevelMain.h"
 #include "scene.h"
 
 #define CHUNK_TOOLS_TAG	0x7777

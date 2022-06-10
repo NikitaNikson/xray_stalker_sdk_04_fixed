@@ -8,9 +8,9 @@
 #include "ElTree.hpp"
 #include "motion.h"
 #include "SkeletonCustom.h"
-#include "../ECore/Editor/editobject.h"
+#include "../ECore/Editor/EditObject.h"
 #include "UI_ActorTools.h"
-#include "../ECore/Editor/UI_Main.h"
+#include "../ECore/Editor/ui_main.h"
 #include "SkeletonAnimated.h"
 #include "../xrEProps/ItemList.h"
 

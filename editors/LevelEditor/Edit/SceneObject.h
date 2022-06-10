@@ -3,7 +3,7 @@
 #define SceneObjectH
 
 #include "../ECore/Editor/EditObject.h"
-#include "customobject.h"
+#include "CustomObject.h"
 //----------------------------------------------------
 
 class CSceneObject : public CCustomObject {

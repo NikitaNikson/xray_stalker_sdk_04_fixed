@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #pragma hdrstop
-#include "splash.h"
+#include "Splash.h"
 #include "../ECore/Editor/LogForm.h"
 #include "main.h"
 #include "scene.h"

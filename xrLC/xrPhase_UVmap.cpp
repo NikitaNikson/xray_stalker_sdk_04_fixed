@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "build.h"
+#include "Build.h"
 
 int			affected	= 0;
 void Face::OA_Unwarp()

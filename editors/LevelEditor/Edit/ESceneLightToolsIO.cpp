@@ -2,7 +2,7 @@
 #pragma hdrstop
 
 #include "ESceneLightTools.h"
-#include "elight.h"
+#include "ELight.h"
 #include "scene.h"
 #include "../ECore/Editor/ui_main.h"
 

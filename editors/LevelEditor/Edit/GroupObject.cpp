@@ -6,7 +6,7 @@
 #pragma hdrstop
 
 #include "GroupObject.h"
-#include "Scene.h"
+#include "scene.h"
 #include "ESceneCustomMTools.h"
 #include "D3DUtils.h"
 //----------------------------------------------------

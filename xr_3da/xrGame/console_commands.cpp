@@ -40,17 +40,16 @@
 #include "../ResourceManager.h"
 #include "doug_lea_memory_allocator.h"
 #include "cameralook.h"
-
+#include "UIGameCustom.h"
 #include "GameSpy/GameSpy_Full.h"
 #include "GameSpy/GameSpy_Patching.h"
+#include "HUDManager.h"
 
 #ifdef DEBUG
 	#include "PHDebug.h"
 	#include "ui/UIDebugFonts.h" 
 	#include "game_graph.h"
 #endif // DEBUG
-
-#include "HUDManager.h"
 
 string_path		g_last_saved_game;
 
@@ -395,9 +394,6 @@ bool valid_file_name(LPCSTR file_name)
 	return		(true);
 }
 
-
-#include "UIGameCustom.h"
-#include "HUDManager.h"
 class CCC_ALifeSave : public IConsole_Command {
 public:
 	CCC_ALifeSave(LPCSTR N) : IConsole_Command(N)  { bEmptyArgsHandled = true; };

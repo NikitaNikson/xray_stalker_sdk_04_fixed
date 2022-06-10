@@ -1,5 +1,5 @@
 #include "stdafx_.h"
-#include "BugSlayerUtil.h"
+#include "BugslayerUtil.h"
 #include <stdio.h>
 
 #define MAX_STACK_TRACE	100

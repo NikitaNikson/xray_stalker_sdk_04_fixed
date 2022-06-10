@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "build.h"
+#include "Build.h"
 #include "cl_intersect.h"
 #include "std_classes.h"
 #include "xrImage_Resampler.h"

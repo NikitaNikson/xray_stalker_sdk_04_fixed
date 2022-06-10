@@ -7,7 +7,7 @@
 #include "xrHemisphere.h"
 #include "cl_intersect.h"
 #include "ETextureParams.h"
-#include "r_light.h"
+#include "R_light.h"
 
 #define NUM_THREADS 8
 

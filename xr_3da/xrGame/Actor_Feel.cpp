@@ -12,7 +12,7 @@
 #include "ui/UIMainIngameWnd.h"
 #include "Grenade.h"
 #include "clsid_game.h"
-
+#include "../CameraBase.h"
 #include "game_cl_base.h"
 #include "Level.h"
 
@@ -136,7 +136,6 @@ void CActor::PickupModeUpdate()
 		if (CanPickItem(frustum,Device.vCameraPosition,*it)) PickupInfoDraw(*it);
 }
 
-#include "../CameraBase.h"
 BOOL	g_b_COD_PickUpMode = TRUE;
 void	CActor::PickupModeUpdate_COD	()
 {

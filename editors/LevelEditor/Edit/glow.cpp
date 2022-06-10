@@ -4,10 +4,10 @@
 #include "stdafx.h"
 #pragma hdrstop
 
-#include "Log.h"
-#include "Glow.h"
+#include "log.h"
+#include "glow.h"
 #include "xr_trims.h"
-#include "bottombar.h"
+#include "BottomBar.h"
 #include "D3DUtils.h"
 #include "scene.h"
 #include "ESceneGlowTools.h"

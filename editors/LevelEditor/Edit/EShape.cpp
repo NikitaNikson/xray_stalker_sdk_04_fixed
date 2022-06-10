@@ -5,7 +5,7 @@
 #include "EShape.h"
 #include "D3DUtils.h"
 #include "du_box.h"
-#include "Scene.h"
+#include "scene.h"
 
 #define SHAPE_COLOR_TRANSP		0x1800FF00
 #define SHAPE_COLOR_EDGE		0xFF202020

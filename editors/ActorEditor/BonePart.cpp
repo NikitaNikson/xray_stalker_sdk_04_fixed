@@ -7,7 +7,7 @@
 #include "BonePart.h"
 #include "bone.h"
 #include "UI_ActorTools.h"
-#include "../ECore/Editor/UI_Main.h"
+#include "../ECore/Editor/ui_main.h"
 #include "../xrEProps/FolderLib.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)

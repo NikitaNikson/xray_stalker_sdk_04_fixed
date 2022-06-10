@@ -2,7 +2,7 @@
 #pragma hdrstop
 
 #include "ESceneAIMapTools.h"
-#include "ui_leveltools.h"
+#include "UI_LevelTools.h"
 #include "ESceneAIMapControls.h"
 #include "FrameAIMap.h"
 

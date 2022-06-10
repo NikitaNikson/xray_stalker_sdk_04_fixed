@@ -1,9 +1,9 @@
 #include "stdafx.h"
 #pragma hdrstop
-#include "splash.h"
+#include "Splash.h"
 #include "LogForm.h"
 #include "main.h"
-#include "ui_particlemain.h"
+#include "UI_ParticleMain.h"
 #include "UI_ParticleTools.h"
 //---------------------------------------------------------------------------
 USEFORM("Splash.cpp", frmSplash);

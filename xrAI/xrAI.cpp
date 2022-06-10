@@ -1,7 +1,7 @@
 // xrAI.cpp : Defines the entry point for the application.
 
 #include "stdafx.h"
-#include "xr_ini.h"
+#include "../xrCore/xr_ini.h"
 #include "process.h"
 #include "xrAI.h"
 

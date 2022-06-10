@@ -2,12 +2,12 @@
 #pragma hdrstop
 
 #include "ESceneObjectTools.h"
-#include "ui_leveltools.h"
+#include "UI_LevelTools.h"
 #include "ESceneObjectControls.h" 
 #include "FrameObject.h"
 #include "SceneObject.h"
-#include "../ECore/Editor/library.h"
-#include "Scene.h"
+#include "../ECore/Editor/Library.h"
+#include "scene.h"
 #include "../ECore/Editor/ui_main.h"
 #include "../ECore/Editor/EditObject.h"
 #include "../ECore/Editor/EditMesh.h"

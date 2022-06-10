@@ -2,11 +2,11 @@
 #pragma hdrstop
 
 #include "ESceneControlsCustom.h"
-#include "ui_leveltools.h"
+#include "UI_LevelTools.h"
 #include "scene.h"
-#include "bottombar.h"
-#include "ui_levelmain.h"
-#include "leftbar.h"
+#include "BottomBar.h"
+#include "UI_LevelMain.h"
+#include "LeftBar.h"
 
 TUI_CustomControl::TUI_CustomControl(int st, int act, ESceneCustomMTools* parent){
 	parent_tool		= parent; VERIFY(parent);

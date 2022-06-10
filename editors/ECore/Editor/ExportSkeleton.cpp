@@ -12,7 +12,7 @@
 #include "std_classes.h"
 #include "bone.h"
 #include "motion.h"
-#include "library.h"
+#include "Library.h"
 
 #include "MgcCont3DBox.h"         
 #include "MgcCont3DMinBox.h"         

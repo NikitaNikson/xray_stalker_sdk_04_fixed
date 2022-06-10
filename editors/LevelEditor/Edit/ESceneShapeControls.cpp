@@ -2,7 +2,7 @@
 #pragma hdrstop
 
 #include "ESceneShapeControls.h"
-#include "ui_leveltools.h"
+#include "UI_LevelTools.h"
 #include "FrameShape.h"
 #include "EShape.h"
 #include "scene.h"

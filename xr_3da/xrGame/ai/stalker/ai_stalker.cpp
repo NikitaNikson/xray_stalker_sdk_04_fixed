@@ -720,8 +720,6 @@ CPHDestroyable*		CAI_Stalker::		ph_destroyable	()
 	return smart_cast<CPHDestroyable*>(character_physics_support());
 }
 
-#include "../../enemy_manager.h"
-
 void CAI_Stalker::shedule_Update		( u32 DT )
 {
 	START_PROFILE("stalker")

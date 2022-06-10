@@ -5,8 +5,8 @@
 #include "LevelPreferences.h"
 #include "ESceneCustomMTools.h"
 #include "scene.h"
-#include "ui_levelmain.h"
-#include "ui_leveltools.h"
+#include "UI_LevelMain.h"
+#include "UI_LevelTools.h"
 //---------------------------------------------------------------------------
 
 void CLevelPreferences::Load(CInifile* I)

@@ -4,7 +4,7 @@
 #include "FrameDetObj.h"
 #include "../ECore/Editor/ui_main.h"
 #include "ESceneDOTools.h"
-#include "Scene.h"
+#include "scene.h"
 #include "DOShuffle.h"
 
 //---------------------------------------------------------------------------

@@ -3,10 +3,10 @@
 #pragma hdrstop
 
 #include "SHGameMtlPairTools.h"
-#include "UI_ShaderTools.h"
+#include "UI_shadertools.h"
 #include "../xrEProps/FolderLib.h"
 #include "../xrEProps/ChoseForm.h"
-#include "../ECore/Editor/UI_Main.h"
+#include "../ECore/Editor/ui_main.h"
 #include "../xrEProps/ItemList.h"
 //------------------------------------------------------------------------------
 

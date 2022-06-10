@@ -3,13 +3,13 @@
 
 #include "ESceneSectorControls.h"
 #include "scene.h"
-#include "Sector.h"
-#include "../ECore/Editor/editmesh.h"
+#include "sector.h"
+#include "../ECore/Editor/EditMesh.h"
 #include "../ECore/Editor/EditObject.h"
 #include "SceneObject.h"
-#include "frameSector.h"
-#include "ui_leveltools.h"
-#include "ui_levelmain.h"
+#include "FrameSector.h"
+#include "UI_LevelTools.h"
+#include "UI_LevelMain.h"
 
 //---------------------------------------------------------------------------
 // add

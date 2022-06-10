@@ -2,7 +2,7 @@
 #define UI_ShaderMainH
 
 #include "../ECore/Editor/UI_MainCommand.h"
-#include "../ECore/Editor/UI_Main.h"
+#include "../ECore/Editor/ui_main.h"
 
 enum {
 	COMMAND_EXTFIRST_EXT = COMMAND_MAIN_LAST-1,

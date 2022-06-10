@@ -5,15 +5,15 @@
 #pragma hdrstop
 
 #include "EScenePortalTools.h"
-#include "Portal.h"
-#include "Scene.h"
+#include "portal.h"
+#include "scene.h"
 #include "cl_intersect.h"
 #include "sector.h"
 #include "MgcConvexHull2D.h"
 #include "MgcAppr3DPlaneFit.h"
 #include "D3DUtils.h"
 #include "../ECore/Editor/ui_main.h"
-#include "ui_leveltools.h"
+#include "UI_LevelTools.h"
 #include "SceneObject.h"
 
 #define PORTAL_VERSION   					0x0010

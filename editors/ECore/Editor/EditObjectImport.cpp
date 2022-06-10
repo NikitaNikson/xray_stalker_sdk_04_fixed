@@ -7,7 +7,7 @@
 
 #include "EditObject.h"
 //#include "lwo2.h"
-#include "LW_SHADERDEF.h"
+#include "LW_ShaderDef.h"
 #include "EditMesh.h"
 
 extern "C" {

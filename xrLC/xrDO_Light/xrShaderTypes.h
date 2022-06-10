@@ -1,6 +1,6 @@
 #pragma once
 
-#include "fixedvector.h"
+#include "FixedVector.h"
 
 const u32			sh_STAGE_MAX	= 4;
 const u32			sh_PASS_MAX		= 8;

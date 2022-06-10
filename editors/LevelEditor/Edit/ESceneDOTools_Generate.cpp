@@ -6,15 +6,15 @@
 #include "../ECore/Editor/EditMesh.h"
 #include "../ECore/Editor/EditObject.h"
 #include "../ECore/Engine/Texture.h"
-#include "Scene.h"
+#include "scene.h"
 #include "SceneObject.h"
-#include "leftbar.h"
+#include "LeftBar.h"
 #include "../ECore/Engine/cl_intersect.h"
 #include "../ECore/Editor/Library.h"
 #include "../ECore/Editor/ui_main.h"
 
 #include "DetailFormat.h"
-#include "bottombar.h"
+#include "BottomBar.h"
 #include "../ECore/Editor/ImageManager.h"
 #include "../../ETools/ETools.h"
 

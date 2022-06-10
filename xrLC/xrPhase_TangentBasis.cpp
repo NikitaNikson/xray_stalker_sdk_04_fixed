@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "nvMeshMender.h"
+#include "NVMeshMender.h"
 
 void CBuild::xrPhase_TangentBasis()
 {

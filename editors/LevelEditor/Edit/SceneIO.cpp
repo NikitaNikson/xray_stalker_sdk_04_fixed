@@ -7,7 +7,7 @@
 
 #include "scene.h"
 #include "../ECore/Editor/ui_main.h"
-#include "ui_leveltools.h"
+#include "UI_LevelTools.h"
 #include "CustomObject.h"
 
 // file: SceneChunks.h

@@ -63,6 +63,7 @@
 #include "script_callback_ex.h"
 #include "InventoryBox.h"
 #include "location_manager.h"
+#include "debug_renderer.h"
 
 const u32		patch_frames	= 50;
 const float		respawn_delay	= 1.f;
@@ -1194,7 +1195,7 @@ void CActor::shedule_Update	(u32 DT)
 	m_pPhysics_support->in_shedule_Update		(DT);
 	Check_for_AutoPickUp						();
 };
-#include "debug_renderer.h"
+
 void CActor::renderable_Render	()
 {
 	inherited::renderable_Render			();

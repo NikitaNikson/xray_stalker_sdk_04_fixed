@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "build.h"
+#include "Build.h"
 
 Vertex*	tessEdge(Face *F, int id1, int id2)
 {

@@ -1,8 +1,8 @@
 #include "stdafx.h"
 #pragma hdrstop
 
-#include "tlsprite.h"
-#include "texture.h"
+#include "TLSPRITE.h"
+#include "Texture.h"
 #include "ui_main.h"
 #include "D3DUtils.h"
 

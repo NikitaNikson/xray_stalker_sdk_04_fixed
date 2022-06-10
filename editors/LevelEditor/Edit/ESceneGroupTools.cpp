@@ -3,9 +3,9 @@
 
 #include "ESceneGroupTools.h"
 #include "ESceneGroupControls.h"
-#include "ui_leveltools.h"
+#include "UI_LevelTools.h"
 #include "FrameGroup.h"
-#include "Scene.h"
+#include "scene.h"
 #include "GroupObject.h"
 #include "../ECore/Editor/EThumbnail.h"
 

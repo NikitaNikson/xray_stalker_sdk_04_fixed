@@ -1,11 +1,11 @@
 #include "stdafx.h"
-#include "build.h"
-#include "ogf_face.h"
+#include "Build.h"
+#include "OGF_Face.h"
 #include "std_classes.h"
-#include "fs.h"
+#include "FS.h"
 #include "../xr_3da/Fmesh.h"
 #include "xrOcclusion.h"
-#include "nvMeshMender.h"
+#include "NVMeshMender.h"
 
 using namespace std;
 

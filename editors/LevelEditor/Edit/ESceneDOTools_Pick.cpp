@@ -5,9 +5,9 @@
 #pragma hdrstop
 
 #include "ESceneDOTools.h"
-#include "Scene.h"
+#include "scene.h"
 #include "cl_intersect.h"
-#include "bottombar.h"
+#include "BottomBar.h"
 #include "../ECore/Editor/ui_main.h"
 
 int EDetailManager::RaySelect(int flag, float& dist, const Fvector& start, const Fvector& direction, BOOL bDistanceOnly)

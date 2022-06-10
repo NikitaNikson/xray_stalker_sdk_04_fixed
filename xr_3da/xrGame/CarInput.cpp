@@ -17,6 +17,9 @@
 #include "../SkeletonCustom.h"
 #include "Level.h"
 #include "CarWeapon.h"
+#include "script_game_object.h"
+#include "car_memory.h"
+#include "visual_memory_manager.h"
 
 void	CCar::OnMouseMove(int dx, int dy)
 {
@@ -212,9 +215,6 @@ float CCar::FireDirDiff()
 	if(m_car_weapon) return m_car_weapon->FireDirDiff();
 	return 0.0f;
 }
-#include "script_game_object.h"
-#include "car_memory.h"
-#include "visual_memory_manager.h"
 
 bool CCar::isObjectVisible			(CScriptGameObject* O_)
 {

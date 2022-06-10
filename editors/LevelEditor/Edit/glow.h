@@ -1,12 +1,12 @@
 //----------------------------------------------------
-// file: Glow.h
+// file: glow.h
 //----------------------------------------------------
 
 #ifndef GlowH
 #define GlowH
 
-#include "../ECore/Editor/tlsprite.h"
-#include "customobject.h"
+#include "../ECore/Editor/TLSPRITE.h"
+#include "CustomObject.h"
 class CFrustum;
 
 class CGlow : public CCustomObject {

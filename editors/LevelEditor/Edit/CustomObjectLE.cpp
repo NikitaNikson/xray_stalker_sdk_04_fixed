@@ -4,7 +4,7 @@
 #include "CustomObject.h"
 #include "../ECore/Editor/ui_main.h"
 #include "../ECore/Editor/UI_ToolsCustom.h"
-#include "../ECore/Editor/editorpreferences.h"
+#include "../ECore/Editor/EditorPreferences.h"
 #include "scene.h"
 
 //------------------------------------------------------------------------------

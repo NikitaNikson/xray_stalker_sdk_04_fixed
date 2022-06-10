@@ -1,7 +1,7 @@
 #ifndef ESceneControlsCustomH
 #define ESceneControlsCustomH
 
-#include "customobject.h"
+#include "CustomObject.h"
 //---------------------------------------------------------------------------
 // refs
 class ESceneCustomMTools;

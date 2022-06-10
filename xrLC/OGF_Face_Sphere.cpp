@@ -1,6 +1,6 @@
 #include "stdafx.h"
-#include "build.h"
-#include "ogf_face.h"
+#include "Build.h"
+#include "OGF_Face.h"
 #pragma warning(disable:4995)
 #include "MgcCont3DMinSphere.h"
 

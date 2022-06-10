@@ -6,13 +6,13 @@
 #pragma hdrstop
 
 #include "Builder.h"
-#include "Scene.h"
+#include "scene.h"
 #include "../ECore/Editor/EditObject.h"
 #include "SceneObject.h"
 #include "ELight.h"
 #include "SpawnPoint.h"
 #include "WayPoint.h"
-#include "xr_ini.h"
+#include "../../../xrCore/xr_ini.h"
 #include "xr_efflensflare.h"
 #include "GroupObject.h"
 #include "EShape.h"

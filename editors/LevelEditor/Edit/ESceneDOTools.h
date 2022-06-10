@@ -5,7 +5,7 @@
 #include "DetailFormat.h"
 #include "../ECore/Editor/EDetailModel.h"
 #include "../ECore/Editor/Library.h"
-#include "customobject.h"
+#include "CustomObject.h"
 #include "DetailManager.h"
 #include "Custom2DProjector.h"
 #include "ESceneCustomMTools.H"

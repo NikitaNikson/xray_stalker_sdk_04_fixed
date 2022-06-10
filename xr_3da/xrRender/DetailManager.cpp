@@ -9,14 +9,14 @@
 #include "cl_intersect.h"
 
 #ifdef _EDITOR
-#	include "ESceneClassList.h"
-#	include "Scene.h"
-#	include "SceneObject.h"
-#	include "IGame_Persistent.h"
-#	include "Environment.h"
+	#include "ESceneClassList.h"
+	#include "scene.h"
+	#include "SceneObject.h"
+	#include "IGame_Persistent.h"
+	#include "Environment.h"
 #else
-#	include "../IGame_Persistent.h"
-#	include "../Environment.h"
+	#include "../IGame_Persistent.h"
+	#include "../Environment.h"
 #endif
 
 const float dbgOffset			= 0.f;

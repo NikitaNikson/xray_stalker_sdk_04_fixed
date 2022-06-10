@@ -6,7 +6,7 @@
 
 #include "Builder.h"
 
-#include "Scene.h"
+#include "scene.h"
 #include "../ECore/Editor/EditObject.h"
 #include "../ECore/Editor/EditMesh.h"
 #include "SceneObject.h"

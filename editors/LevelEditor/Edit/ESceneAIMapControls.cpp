@@ -6,7 +6,7 @@
 #include "../ECore/Editor/ui_main.h"
 #include "FrameAIMap.h"
 #include "scene.h"
-#include "ui_leveltools.h"
+#include "UI_LevelTools.h"
 
 //------------------------------------------------------------------------------
 // Node Add

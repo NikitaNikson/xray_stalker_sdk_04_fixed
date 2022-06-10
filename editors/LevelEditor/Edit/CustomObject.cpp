@@ -5,7 +5,7 @@
 #include "stdafx.h"
 #pragma hdrstop
 
-#include "customobject.h"
+#include "CustomObject.h"
 #include "../ECore/Editor/ui_main.h"
 #include "D3DUtils.h"
 #include "motion.h"

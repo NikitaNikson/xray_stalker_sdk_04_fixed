@@ -8,7 +8,7 @@
 #include "ParticleEffect.h"
 #include "ParticleEffectActions.h"
 #include "../xrEProps/PropertiesListHelper.h"
-#include "ui_particletools.h"
+#include "UI_ParticleTools.h"
 #include "ui_main.h"
 #include "../xrEProps/FolderLib.h"
              

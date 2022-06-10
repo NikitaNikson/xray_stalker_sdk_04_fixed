@@ -1,9 +1,9 @@
 #include "stdafx.h"
 #pragma hdrstop
 
-#include "Scene.h"
+#include "scene.h"
 #include "SceneObject.h"
-#include "bottombar.h"
+#include "BottomBar.h"
 #include "D3DUtils.h"
 
 //------------------------------------------------------------------------------

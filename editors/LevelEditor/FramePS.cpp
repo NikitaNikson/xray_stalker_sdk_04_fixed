@@ -4,7 +4,7 @@
 #include "../ECore/Editor/ui_main.h"
 #include "FramePS.h"
 #include "PSLibrary.h"
-#include "Scene.h"
+#include "scene.h"
 #include "EParticlesObject.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)

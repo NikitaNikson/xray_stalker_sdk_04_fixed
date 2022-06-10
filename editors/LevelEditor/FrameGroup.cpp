@@ -4,8 +4,8 @@
 #include "../ECore/Editor/ui_main.h"
 #include "FrameGroup.h"
 #include "GroupObject.h"
-#include "Scene.h"
-#include "escenegrouptools.h"
+#include "scene.h"
+#include "ESceneGroupTools.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma link "MXCtrls"

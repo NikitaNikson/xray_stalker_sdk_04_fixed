@@ -3,12 +3,12 @@
 
 #include "UI_LevelTools.h"
 #include "ESceneControlsCustom.h"
-#include "cursor3d.h"
+#include "Cursor3D.h"
 #include "LeftBar.h"
-#include "Scene.h"
-#include "ui_levelmain.h"
+#include "scene.h"
+#include "UI_LevelMain.h"
 
-#include "editlibrary.h"
+#include "EditLibrary.h"
 #include "ObjectList.h"
 
 #include "IGame_Persistent.h"

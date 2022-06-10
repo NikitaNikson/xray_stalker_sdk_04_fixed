@@ -11,7 +11,7 @@ class	ENGINE_API	CGammaControl;
 
 #include "pure.h"
 #include "HW.h"
-#include "ftimer.h"
+#include "FTimer.h"
 #include "Stats.h"
 #include "xr_effgamma.h"
 #include "Shader.h"

@@ -2,14 +2,14 @@
 #pragma hdrstop
 
 #include "ESceneObjectTools.h"
-#include "ui_leveltools.h"
+#include "UI_LevelTools.h"
 #include "ESceneObjectControls.h" 
 #include "FrameObject.h"
 #include "SceneObject.h"
 #include "PropertiesList.h"
 #include "PropertiesListHelper.h"
-#include "library.h"
-#include "Scene.h"
+#include "Library.h"
+#include "scene.h"
 #include "ui_main.h"
 #include "EditObject.h"
 #include "EditMesh.h"

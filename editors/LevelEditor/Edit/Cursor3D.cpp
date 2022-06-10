@@ -4,8 +4,8 @@
 
 #include "Cursor3D.h"
 #include "scene.h"
-#include "sceneobject.h"
-#include "ui_levelmain.h"
+#include "SceneObject.h"
+#include "UI_LevelMain.h"
 #include "D3DUtils.h"
 
 //---------------------------------------------------------------------------

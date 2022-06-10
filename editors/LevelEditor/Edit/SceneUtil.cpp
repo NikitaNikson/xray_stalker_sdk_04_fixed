@@ -5,10 +5,10 @@
 #include "stdafx.h"
 #pragma hdrstop
 
-#include "Scene.h"
+#include "scene.h"
 #include "ELight.h"
 #include "SceneObject.h"
-#include "ui_leveltools.h"
+#include "UI_LevelTools.h"
 
 //----------------------------------------------------
 CCustomObject* EScene::FindObjectByName( LPCSTR name, ObjClassID classfilter )

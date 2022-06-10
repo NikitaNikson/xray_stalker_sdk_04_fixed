@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include "resource.h"
-#include "build.h"
+#include "Build.h"
 #include "xrIsect.h"
 #include "math.h"
 

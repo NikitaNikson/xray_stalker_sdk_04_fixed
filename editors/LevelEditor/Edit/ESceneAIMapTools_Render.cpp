@@ -7,8 +7,8 @@
 #include "ESceneAIMapTools.h"
 #include "D3DUtils.h"
 #include "SceneObject.h"
-#include "bottombar.h"
-#include "ui_leveltools.h"
+#include "BottomBar.h"
+#include "UI_LevelTools.h"
 
 typedef Fvector2 t_node_tc[4];
 static const float dtc = 0.25f;

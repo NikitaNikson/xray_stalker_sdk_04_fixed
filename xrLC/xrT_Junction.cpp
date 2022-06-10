@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "build.h"
+#include "Build.h"
 
 #define VPUSH(a) a.x,a.y,a.z
 

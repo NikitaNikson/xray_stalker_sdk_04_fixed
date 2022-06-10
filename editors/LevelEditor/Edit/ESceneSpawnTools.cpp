@@ -2,11 +2,11 @@
 #pragma hdrstop
 
 #include "ESceneSpawnTools.h"
-#include "ui_leveltools.h"
+#include "UI_LevelTools.h"
 #include "ESceneSpawnControls.h"
 #include "FrameSpawn.h"
-#include "Scene.h"
-#include "spawnpoint.h"
+#include "scene.h"
+#include "SpawnPoint.h"
 #include "EShape.h"
 
 static HMODULE hXRSE_FACTORY = 0;

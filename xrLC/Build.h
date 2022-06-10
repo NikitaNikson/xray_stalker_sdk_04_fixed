@@ -8,7 +8,7 @@
 
 #include "communicate.h"
 #include "b_globals.h"
-#include "fs.h"
+#include "FS.h"
 #include "xrLevel.h"
 #include "ETextureParams.h"
 #include "Shader_xrLC.h"

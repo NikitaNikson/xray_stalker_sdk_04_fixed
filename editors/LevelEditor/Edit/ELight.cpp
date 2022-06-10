@@ -8,7 +8,7 @@
 #include "../ECore/Editor/ui_main.h"
 #include "D3DUtils.h"
 #include "scene.h"
-#include "escenelighttools.h"
+#include "ESceneLightTools.h"
 
 static const u32 LIGHT_VERSION   			= 0x0011;
 //----------------------------------------------------

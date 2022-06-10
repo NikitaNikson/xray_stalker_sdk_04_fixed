@@ -5,7 +5,7 @@
 #pragma hdrstop
 
 #include "WayPoint.h"
-#include "ui_leveltools.h"
+#include "UI_LevelTools.h"
 #include "FrameWayPoint.h"
 #include "D3DUtils.h"
 #include "../ECore/Editor/ui_main.h"

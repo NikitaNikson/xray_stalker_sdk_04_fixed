@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "build.h"
+#include "Build.h"
 #include "cl_collector.h"
 #include "cform_build.h"
 

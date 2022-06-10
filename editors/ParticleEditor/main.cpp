@@ -11,15 +11,15 @@ TfrmMain *frmMain;
 #pragma link "RenderWindow"
 #pragma resource "*.dfm"
 
-#include "topbar.h"
-#include "leftbar.h"
-#include "bottombar.h"
+#include "TopBar.h"
+#include "LeftBar.h"
+#include "BottomBar.h"
 
 //------------------------------------------------------------------------------
 #include "../xrEProps/ChoseForm.h"
 #include "Shader.h"
 #include "Shader_xrLC.h"
-#include "../ECore/Engine/texture.h"
+#include "../ECore/Engine/Texture.h"
 #include "../ECore/Editor/Library.h"
 #include "../ECore/Editor/EditObject.h"
 #include "../ECore/Editor/EThumbnail.h"

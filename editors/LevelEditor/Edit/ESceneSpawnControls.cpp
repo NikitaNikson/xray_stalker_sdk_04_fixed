@@ -2,10 +2,10 @@
 #pragma hdrstop
 
 #include "ESceneSpawnControls.h"
-#include "ui_leveltools.h"
+#include "UI_LevelTools.h"
 #include "../ECore/Editor/ui_main.h"
 #include "FrameSpawn.h"
-#include "Scene.h"
+#include "scene.h"
 #include "SpawnPoint.h"
 //---------------------------------------------------------------------------
 __fastcall TUI_ControlSpawnAdd::TUI_ControlSpawnAdd(int st, int act, ESceneCustomMTools* parent):TUI_CustomControl(st,act,parent){

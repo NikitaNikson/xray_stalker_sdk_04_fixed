@@ -3,7 +3,7 @@
 
 #ifndef _EDITOR
 
-#include "xrdebug.h"
+#include "xrDebug.h"
 #include "resource.h"
 #include "dbghelp.h"
  

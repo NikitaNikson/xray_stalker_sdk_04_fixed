@@ -2,11 +2,11 @@
 #pragma hdrstop
 
 #include "EScenePortalTools.h"
-#include "ui_leveltools.h"
+#include "UI_LevelTools.h"
 #include "FramePortal.h"
 #include "EScenePortalControls.h"
 #include "portal.h"
-#include "Scene.h"
+#include "scene.h"
 #include "MgcAppr3DPlaneFit.h"
 
 /* TODO 1 -oAlexMX -cTODO: Create tools as AI Map */

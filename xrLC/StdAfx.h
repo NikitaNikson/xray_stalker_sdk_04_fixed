@@ -37,7 +37,7 @@
 #include "communicate.h"
 extern b_params	g_params;
 
-#include "build.h"
+#include "Build.h"
 
 // TODO: reference additional headers your program requires here
 

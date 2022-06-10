@@ -5,13 +5,13 @@
 
 #include "scene.h"
 #include "../ECore/Editor/ui_main.h"
-#include "ui_leveltools.h"
+#include "UI_LevelTools.h"
 #include "cl_intersect.h"
 #include "MgcAppr3DPlaneFit.h"
-#include "sceneobject.h"
+#include "SceneObject.h"
 #include "../ECore/Editor/EditObject.h"
 #include "../ECore/Editor/EditMesh.h"
-#include "leftbar.h"
+#include "LeftBar.h"
 #include "../../ETools/ETools.h"
 
 static SPickQuery	PQ;

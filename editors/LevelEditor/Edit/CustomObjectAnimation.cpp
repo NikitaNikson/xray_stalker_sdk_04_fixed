@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #pragma hdrstop
 
-#include "customobject.h"
+#include "CustomObject.h"
 #include "motion.h"
 #include "envelope.h"
 #include "D3DUtils.h"

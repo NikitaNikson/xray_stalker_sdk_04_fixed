@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Shader_xrLC.h"
-#include "r_light.h"
+#include "R_light.h"
 
 template<u32 range>
 struct fixed16

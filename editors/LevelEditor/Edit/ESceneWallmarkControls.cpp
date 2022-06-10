@@ -7,8 +7,8 @@
 #include "ESceneWallmarkTools.h"
 #include "../ECore/Editor/ui_main.h"
 #include "scene.h"
-#include "ui_leveltools.h"
-#include "ui_levelmain.h"
+#include "UI_LevelTools.h"
+#include "UI_LevelMain.h"
 
 //------------------------------------------------------------------------------
 // Node Add

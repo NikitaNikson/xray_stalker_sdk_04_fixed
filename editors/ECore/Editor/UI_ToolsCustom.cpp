@@ -11,7 +11,7 @@
 #include "PropertiesList.h"               
 #include "motion.h"
 #include "bone.h"
-#include "library.h"
+#include "Library.h"
 #include "Fmesh.h"
 #include "FolderLib.h"
 #include "D3DUtils.h"

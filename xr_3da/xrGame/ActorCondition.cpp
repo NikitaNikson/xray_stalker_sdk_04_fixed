@@ -15,6 +15,9 @@
 #include "ui/UIVideoPlayerWnd.h"
 #include "object_broker.h"
 #include "Weapon.h"
+#include "CustomOutfit.h"
+#include "UI.h"
+#include "HUDManager.h"
 
 #define MAX_SATIETY					1.0f
 #define START_SATIETY				0.5f
@@ -95,11 +98,6 @@ void CActorCondition::LoadCondition(LPCSTR entity_section)
 	
 	m_MaxWalkWeight					= pSettings->r_float(section,"max_walk_weight");
 }
-
-
-//вычисление параметров с ходом времени
-#include "UI.h"
-#include "HUDManager.h"
 
 void CActorCondition::UpdateCondition()
 {
@@ -257,8 +255,6 @@ bool CActorCondition::IsCantWalk() const
 		m_bCantWalk		= false;
 	return				m_bCantWalk;
 }
-
-#include "CustomOutfit.h"
 
 bool CActorCondition::IsCantWalkWeight()
 {

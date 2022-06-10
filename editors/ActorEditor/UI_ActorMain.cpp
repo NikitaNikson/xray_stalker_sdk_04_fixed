@@ -4,10 +4,10 @@
 
 #include "UI_ActorMain.h"
 #include "UI_ActorTools.h"
-#include "topbar.h"
-#include "leftbar.h"
+#include "TopBar.h"
+#include "LeftBar.h"
 #include "D3DUtils.h"
-#include "bottombar.h"
+#include "BottomBar.h"
 #include "main.h"
 #include "xr_input.h"
 #include "../xrEProps/ChoseForm.h"           

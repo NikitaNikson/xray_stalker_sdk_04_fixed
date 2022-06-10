@@ -3,9 +3,9 @@
 
 #include "ESceneAIMapTools.h"
 #include "xrLevel.h"
-#include "Scene.h"
-#include "ui_levelmain.h"
-#include "ui_leveltools.h"
+#include "scene.h"
+#include "UI_LevelMain.h"
+#include "UI_LevelTools.h"
 #include "ESceneAIMapControls.h"
 #include "xrPool.h"
 

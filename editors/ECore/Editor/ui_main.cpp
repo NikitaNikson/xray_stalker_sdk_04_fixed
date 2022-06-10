@@ -6,7 +6,7 @@
 #include "xr_input.h"
 #include "UI_ToolsCustom.h"
 
-#include "UI_Main.h"
+#include "ui_main.h"
 #include "D3DUtils.h"
 #include "SoundManager.h"
 #include "PSLibrary.h"

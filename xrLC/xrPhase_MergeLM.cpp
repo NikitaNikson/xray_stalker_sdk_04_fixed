@@ -1,6 +1,6 @@
 #include "stdafx.h"
-#include "build.h"
-#include "lightmap.h"
+#include "Build.h"
+#include "Lightmap.h"
 #include "xrPhase_MergeLM_Rect.h"
 
 // Surface access

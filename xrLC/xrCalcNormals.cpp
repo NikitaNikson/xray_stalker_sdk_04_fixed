@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "build.h"
+#include "Build.h"
 
 bool has_same_edge(Face* F1, Face* F2)
 {
