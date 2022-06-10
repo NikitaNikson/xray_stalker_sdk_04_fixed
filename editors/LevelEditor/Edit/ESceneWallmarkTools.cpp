@@ -410,7 +410,7 @@ void ESceneWallmarkTools::Save(IWriter& F)
 
 bool ESceneWallmarkTools::LoadSelection(IReader& F)
 {
-	Clear();
+	//Clear();
 	return Load(F);
 }
 
@@ -804,7 +804,7 @@ void ESceneWallmarkTools::CreateControls()
 	inherited::CreateDefaultControls(estDefault);
 	// node tools
     AddControl(xr_new<TUI_ControlWallmarkAdd>		(0,		etaAdd, 	this));
-    AddControl(xr_new<TUI_ControlWallmarkMove>		(0,		etaMove,	this));
+    //AddControl(xr_new<TUI_ControlWallmarkMove>		(0,		etaMove,	this));
 }
 //----------------------------------------------------
  
