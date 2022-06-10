@@ -409,7 +409,7 @@ void TfrmEditLibrary::MakeLOD(bool bHighQuality)
                         if (GenerateLOD(I,bHighQuality)) iLODcnt++;
                         if (UI->NeedAbort()) break;
                     }
-                    ELog.DlgMsg 	(mtInformation,"'%d' LOD's succesfully created.",iLODcnt);
+                    ELog.Msg 	(mtInformation,"'%d' LOD's succesfully created.",iLODcnt);
                     UI->ProgressEnd	(pb);
                 }
             }else{
@@ -429,7 +429,7 @@ void TfrmEditLibrary::MakeLOD(bool bHighQuality)
                             if (UI->NeedAbort()) break;
                         }
                         UI->ProgressEnd(pb);
-                        ELog.DlgMsg 	(mtInformation,"'%d' LOD's succesfully created.",iLODcnt);
+                        ELog.Msg 	(mtInformation,"'%d' LOD's succesfully created.",iLODcnt);
                     }
                 }
             }
