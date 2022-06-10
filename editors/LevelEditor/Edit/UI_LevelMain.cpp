@@ -176,7 +176,15 @@ CCommandVar CommandLoad(CCommandVar p1, CCommandVar p2)
                 LTools->m_LastFileName	= temp_fn.c_str();
                 UI->ResetStatus		();
                 Scene->UndoClear	();
+
+                BOOL bk1 			= Scene->m_RTFlags.is(EScene::flRT_Unsaved);
+                BOOL bk2 			= Scene->m_RTFlags.is(EScene::flRT_Modified);
+
                 Scene->UndoSave		();
+
+                 Scene->m_RTFlags.set(EScene::flRT_Unsaved,bk1);
+                 Scene->m_RTFlags.set(EScene::flRT_Modified,bk2);
+
 //.             Scene->m_RTFlags.set(EScene::flRT_Unsaved|EScene::flRT_Modified,FALSE);
 				ExecCommand			(COMMAND_CLEAN_LIBRARY);
                 ExecCommand			(COMMAND_UPDATE_CAPTION);
