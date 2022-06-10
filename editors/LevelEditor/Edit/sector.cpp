@@ -288,47 +288,6 @@ void CSector::CaptureInsideVolume(){
 }
 //----------------------------------------------------
 
-//. Fvector _dir[6]={{0,-1,0},{0,1,0},}
-
-void CSector::DistributeInsideObjects(){
-/*
-	// test all mesh faces
-	// fill object list (test bounding sphere intersection)
-    ObjectList lst;
-	if (Scene->SpherePick(m_SectorCenter, m_SectorRadius, OBJCLASS_SCENEOBJECT, lst)){
-    // test all object meshes
-        Fmatrix matrix;
-	    CSceneObject *obj=NULL;
-        // ignore dynamic objects
-		for(ObjectIt _F = lst.begin();_F!=lst.end();_F++){
-	        obj = (CSceneObject*)(*_F);
-	        if (!(obj->IsStatic()||obj->IsMUStatic())) continue;
-	        EditMeshVec* M = obj->Meshes();
-            R_ASSERT(M);
-            for(EditMeshIt m_def = M->begin();m_def!=M->end();m_def++){
-                obj->GetFullTransformToWorld(matrix);
-                Fbox bb;
-				(*m_def)->GetBox(bb);
-                bb.xform		(matrix);
-                EVisible vis=Intersect(bb);
-            	if ((fvFully==vis)||(fvPartialInside==vis)){
-					float dist		= m_SectorRadius;
-                    Fvector start,dir;
-                    bb.getcenter	(start);
-                    _f o r ()
-                    Scene->RayPickObject(dist,start,dir,)
-					//.AddMesh(obj,*m_def);
-                }
-            }
-        }
-		m_Flags.set		(flNeedUpdateVolume,TRUE);
-		UI->RedrawScene	();
-        ExecCommand		(COMMAND_UPDATE_PROPERTIES);
-    }
-*/    
-}
-//----------------------------------------------------
-
 
 void CSector::CaptureAllUnusedMeshes()
 {

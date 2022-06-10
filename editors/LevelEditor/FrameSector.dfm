@@ -495,25 +495,6 @@ object fraSector: TfraSector
       Width = 215
       Height = 2
     end
-    object ebDistributeObjects: TExtBtn
-      Left = 2
-      Top = 46
-      Width = 215
-      Height = 15
-      Align = alNone
-      BevelShow = False
-      HotTrack = True
-      HotColor = 15790320
-      Caption = 'Distribute Objects'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
-      Font.Height = -11
-      Font.Name = 'MS Sans Serif'
-      Font.Style = []
-      Margin = 13
-      ParentFont = False
-      OnClick = ebDistributeObjectsClick
-    end
   end
   object fsStorage: TFormStorage
     IniSection = 'FrameSector'

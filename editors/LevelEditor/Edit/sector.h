@@ -92,7 +92,6 @@ public:
     void 			SetColor 	(u32 clr){sector_color.set(subst_alpha(clr,0));}
     
     void			CaptureInsideVolume();
-	void 			DistributeInsideObjects	();
     void			CaptureAllUnusedMeshes	();
     void			GetCounts	(int* objects, int* meshes, int* faces);
     bool			IsEmpty		();

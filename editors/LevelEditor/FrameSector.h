@@ -45,7 +45,6 @@ __published:	// IDE-managed Components
 	void __fastcall ebRemoveDefaultClick(TObject *Sender);
 	void __fastcall ebValidateClick(TObject *Sender);
 	void __fastcall ebBoxPickClick(TObject *Sender);
-	void __fastcall ebDistributeObjectsClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
         __fastcall TfraSector(TComponent* Owner);

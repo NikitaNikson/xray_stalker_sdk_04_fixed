@@ -39,16 +39,6 @@ void __fastcall TfraSector::ebCaptureInsideVolumeClick(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
-void __fastcall TfraSector::ebDistributeObjectsClick(TObject *Sender)
-{
-	CSector* S = PortalUtils.GetSelectedSector();
-	if (S){
-    	S->DistributeInsideObjects	();
-        Scene->UndoSave				();
-    }
-}
-//---------------------------------------------------------------------------
-
 void __fastcall TfraSector::ebCreateDefaultClick(TObject *Sender)
 {
     CCustomObject* O=Scene->FindObjectByName(DEFAULT_SECTOR_NAME,OBJCLASS_SECTOR);
