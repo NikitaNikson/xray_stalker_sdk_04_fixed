@@ -386,7 +386,7 @@ void CObjectOGFCollectorPacked::CalculateTB()
     Fvector2	Tsize;
     Tsize.sub	(Tmax,Tmin);
 //	if ((Tsize.x>32)||(Tsize.y>32))
-//    	Msg		("#!Surface [T:'%s', S:'%s'] has UV tiled more than 32 times.",m_Texture.c_str(),m_Shader.c_str());
+//    Log("! Surface [T:'%s', S:'%s'] has UV tiled more than 32 times.",m_Texture.c_str(),m_Shader.c_str());
     
     // 2. Recalc UV mapping
     for (v_idx=0; v_idx!=v_cnt; v_idx++){

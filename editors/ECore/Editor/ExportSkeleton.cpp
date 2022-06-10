@@ -442,7 +442,7 @@ void CExportSkeleton::SSplit::CalculateTB()
     Fvector2	Tsize;
     Tsize.sub	(Tmax,Tmin);
     if ((Tsize.x>32)||(Tsize.y>32))
-    	Msg		("#!Surface [T:'%s', S:'%s'] has UV tiled more than 32 times.",*m_Texture,*m_Shader);
+        Msg("! ..Surface [T:'%s', S:'%s'] has UV tiled more than 32 times.",*m_Texture,*m_Shader);
     
     // 2. Recalc UV mapping
     for (v_idx=0; v_idx!=v_cnt; v_idx++){
@@ -1076,7 +1076,7 @@ bool CExportSkeleton::ExportMotionKeys(IWriter& F)
             if(g_force16BitTransformQuant || St.magnitude()>1.5f)
             {
             	bTransform16Bit = true;
-                Msg("animation [%s] is 16bit-transform (%f)m", motion->Name(), St.magnitude());
+                Msg("..animation [%s] is 16bit-transform (%f)m", motion->Name(), St.magnitude());
             }
             for (t_idx=0; t_idx<dwLen; t_idx++){
             	Fvector& t	= BM._keysT[t_idx];
