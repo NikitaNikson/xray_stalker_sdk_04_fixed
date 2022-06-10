@@ -887,6 +887,33 @@ bool CActorTools::BatchConvert(LPCSTR fn)
             if (UI->NeedAbort()) break;
         }
     }
+    if (ini->section_exist("omf"))
+    {
+    	CInifile::Sect& sect	= ini->r_section("omf");
+        Msg						("Start converting %d items...",sect.Data.size());
+        for (CInifile::Item* it=sect.Data.begin(); it!=sect.Data.end(); ++it)
+        {
+        	string_path 		src_name;
+            string_path 		tgt_name;
+            FS.update_path		(src_name,_objects_,		it->first.c_str());
+            FS.update_path		(tgt_name,_game_meshes_, 	it->second.c_str());
+            strcpy				(src_name,EFS.ChangeFileExt	(src_name,".object").c_str());
+            strcpy				(tgt_name,EFS.ChangeFileExt	(tgt_name,".omf").c_str());
+            if (FS.exist(src_name))
+            {
+            	Msg				(".Converting '%s' <-> '%s'",it->first.c_str(),it->second.c_str());
+                CEditableObject* O = xr_new<CEditableObject>("convert");
+                BOOL res		= O->Load		(src_name);
+                if (res) res	= O->ExportOMF	(tgt_name);
+                Log				(res?".OK":"!.FAILED");
+                xr_delete		(O);
+            }else{
+            	Log				("!Invalid source file name:",it->first.c_str());
+                bRes			= false;
+            }
+            if (UI->NeedAbort()) break;
+        }
+    }
     return bRes;
 }
 
