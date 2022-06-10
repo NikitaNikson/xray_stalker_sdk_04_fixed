@@ -140,7 +140,7 @@ void ESceneCustomOTools::RemoveSelection()
 {
     ObjectIt _F = m_Objects.begin();
     while(_F!=m_Objects.end()){
-        if((*_F)->Selected()){
+        if((*_F)->Selected()&&(!(*_F)->Locked())){
             if ((*_F)->OnSelectionRemove()){
                 ObjectIt _D = _F; _F++;
                 CCustomObject* obj 	= *_D; 
