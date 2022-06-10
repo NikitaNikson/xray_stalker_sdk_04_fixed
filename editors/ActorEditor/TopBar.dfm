@@ -185,7 +185,7 @@ object fraTopBar: TfraTopBar
       Top = 0
       Width = 25
       Height = 20
-      Hint = 'Move'
+      Hint = 'Move (hold ALT or CTRL for mesh/bone/shape manipulation)'
       Align = alNone
       HotTrack = True
       GroupIndex = 1
@@ -256,7 +256,7 @@ object fraTopBar: TfraTopBar
       Top = 0
       Width = 25
       Height = 20
-      Hint = 'Rotate'
+      Hint = 'Rotate (hold ALT or CTRL for mesh/bone/shape manipulation)'
       Align = alNone
       HotTrack = True
       GroupIndex = 1
@@ -327,7 +327,7 @@ object fraTopBar: TfraTopBar
       Top = 0
       Width = 25
       Height = 20
-      Hint = 'Uniform Scale'
+      Hint = 'Uniform Scale (hold CTRL for bone shape manipulation)'
       Align = alNone
       HotTrack = True
       GroupIndex = 1
@@ -398,7 +398,7 @@ object fraTopBar: TfraTopBar
       Top = 0
       Width = 25
       Height = 20
-      Hint = 'Select'
+      Hint = 'Select (hold CTRL + click on bones: open list bones)'
       Align = alNone
       HotTrack = True
       GroupIndex = 1
