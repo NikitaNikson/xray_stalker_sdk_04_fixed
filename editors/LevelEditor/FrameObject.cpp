@@ -155,6 +155,7 @@ void __fastcall TfraObject::ebMultiAppendClick(TObject *Sender)
 */
             obj->MoveTo(pos,up);
             Scene->AppendObject( obj );
+			ELog.Msg(mtInformation, "Appended object: %s", it->c_str());
 #pragma todo(" Чтобы снималось выделение с объекта, который добавлен через Multipe Append. ")
 			//obj->Select(FALSE);
         }         
