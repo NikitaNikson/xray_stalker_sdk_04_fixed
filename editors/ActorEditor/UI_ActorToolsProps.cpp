@@ -431,7 +431,7 @@ void CActorTools::FillBoneProperties(PropItemVec& items, LPCSTR pref, ListItem* 
         PHelper().CreateCaption		(items, PrepareKey(pref,"Bone\\Name"),						BONE->Name());
 //.		PHelper().CreateCaption		(items, PrepareKey(pref,"Bone\\Influence"),					shared_str().sprintf("%d vertices",0));
 		PHelper().CreateChoose		(items,	PrepareKey(pref,"Bone\\Game Material"),				&BONE->game_mtl, smGameMaterial);
-        PHelper().CreateFloat	 	(items, PrepareKey(pref,"Bone\\Mass"),						&BONE->mass, 			0.f, 10000.f);
+        PHelper().CreateFloat	 	(items, PrepareKey(pref,"Bone\\Mass"),						&BONE->mass, 			0.f, 1000000000.f);
         PHelper().CreateVector		(items, PrepareKey(pref,"Bone\\Center Of Mass"),			&BONE->center_of_mass, 	-10000.f, 10000.f, 0.01f, 4);
         V=PHelper().CreateVector 	(items, PrepareKey(pref,"Bone\\Bind Position"),				&BONE->_RestOffset(),	-10000.f, 10000.f, 0.01f, 4);	V->OnChangeEvent.bind	(this,&CActorTools::OnBindTransformChange);
         V=PHelper().CreateAngle3 	(items, PrepareKey(pref,"Bone\\Bind Rotation"),				&BONE->_RestRotate(),	flt_min, flt_max, 0.01f, 2);						V->OnChangeEvent.bind	(this,&CActorTools::OnBindTransformChange);
