@@ -133,3 +133,23 @@ void __fastcall TfraAIMap::ebSelLinkClick(TObject *Sender)
 
 
 
+void __fastcall TfraAIMap::btnAddIgnoredMaterialClick(TObject *Sender)
+{
+    LPCSTR new_val = 0;
+    if ( TfrmChoseItem::SelectItem(smGameMaterial,new_val,1) )
+    {
+        lbIgnoreMaterialsList->AddItem(new_val, NULL);
+        SGameMtl* mtl		= GMLib.GetMaterial(new_val);
+        tools->m_ignored_materials.push_back(mtl->GetID());
+    }
+}
+
+//---------------------------------------------------------------------------
+
+void __fastcall TfraAIMap::btnIgnoreMaterialClearClick(TObject *Sender)
+{
+    lbIgnoreMaterialsList->Clear();
+    tools->m_ignored_materials.clear();
+}
+//---------------------------------------------------------------------------
+

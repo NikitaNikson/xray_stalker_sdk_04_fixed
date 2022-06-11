@@ -60,6 +60,12 @@ BOOL ESceneAIMapTools::CreateNode(Fvector& vAt, SAINode& N, bool bIC)
             CSurface* surf		= R->e_mesh->GetSurfaceByFaceID(R->tag);
 //.			SGameMtl* mtl 		= GMLib.GetMaterialByID(surf->_GameMtl());
 //.			if (mtl->Flags.is(SGameMtl::flPassable))continue;
+
+			xr_vector<u16>::iterator start = m_ignored_materials.begin();
+			xr_vector<u16>::iterator end = m_ignored_materials.end();
+			if(std::find(start, end, surf->_GameMtl()) != end)
+				continue;
+
             Shader_xrLC* c_sh	= Device.ShaderXRLC.Get(surf->_ShaderXRLCName());
             if (!c_sh->flags.bCollision) 			continue;
         }
@@ -571,6 +577,7 @@ void ESceneAIMapTools::UpdateLinks(SAINode* N, bool bIC)
 
 bool ESceneAIMapTools::GenerateMap(bool bFromSelectedOnly)
 {
+	std::sort(m_ignored_materials.begin(),m_ignored_materials.end());
 	bool bRes = false;
 	if (!GetSnapList()->empty()){
 	    if (!RealUpdateSnapList()) return false;
@@ -618,15 +625,20 @@ bool ESceneAIMapTools::GenerateMap(bool bFromSelectedOnly)
                         // test passable
     //.			        SGameMtl* mtl 		= GMLib.GetMaterialByID(surf->_GameMtl());
     //.					if (mtl->Flags.is(SGameMtl::flPassable))continue;
+
+						xr_vector<u16>::iterator start = m_ignored_materials.begin();
+						xr_vector<u16>::iterator end = m_ignored_materials.end();
+						if(std::find(start, end, surf->_GameMtl()) != end)
+							continue;
                         Shader_xrLC* c_sh	= Device.ShaderXRLC.Get(surf->_ShaderXRLCName());
                         if (!c_sh->flags.bCollision) 			continue;
                         // collect tris
                         const IntVec& face_lst 	= sp_it->second;
                         for (IntVec::const_iterator it=face_lst.begin(); it!=face_lst.end(); it++){
                             E->GetFaceWorld	(S->_Transform(),*m_it,*it,verts);
-                            ETOOLS::collector_add_face_d(CL,verts[0],verts[1],verts[2], *it);
+                            ETOOLS::collector_add_face_d(CL,verts[0],verts[1],verts[2], surf->_GameMtl() /* *it */);
                             if (surf->m_Flags.is(CSurface::sf2Sided))
-                                ETOOLS::collector_add_face_d(CL,verts[2],verts[1],verts[0], *it);
+                                ETOOLS::collector_add_face_d(CL,verts[2],verts[1],verts[0], surf->_GameMtl() /* *it */);
                         }
                     }
                 }

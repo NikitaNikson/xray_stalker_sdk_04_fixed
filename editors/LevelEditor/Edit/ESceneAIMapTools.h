@@ -136,6 +136,7 @@ public:
     float 				m_VisRadius;
     float 				m_SmoothHeight;
     u32					m_BrushSize;
+    xr_vector<u16>		m_ignored_materials;
 
     bool				PickObjects				(Fvector& dest, const Fvector& start, const Fvector& dir, float dist);
 public:

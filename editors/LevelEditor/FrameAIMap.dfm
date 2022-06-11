@@ -1,11 +1,11 @@
 object fraAIMap: TfraAIMap
-  Left = 753
-  Top = 576
+  Left = 817
+  Top = 465
   VertScrollBar.Visible = False
   Align = alClient
   BorderStyle = bsNone
-  ClientHeight = 250
-  ClientWidth = 217
+  ClientHeight = 332
+  ClientWidth = 219
   Color = 10528425
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clBlack
@@ -18,7 +18,7 @@ object fraAIMap: TfraAIMap
   object paObjectList: TPanel
     Left = 0
     Top = 0
-    Width = 217
+    Width = 219
     Height = 64
     Align = alTop
     ParentColor = True
@@ -26,7 +26,7 @@ object fraAIMap: TfraAIMap
     object Label2: TLabel
       Left = 1
       Top = 1
-      Width = 215
+      Width = 217
       Height = 13
       Align = alTop
       Alignment = taCenter
@@ -157,15 +157,16 @@ object fraAIMap: TfraAIMap
   object paLink: TPanel
     Left = 0
     Top = 64
-    Width = 217
-    Height = 117
-    Align = alTop
+    Width = 219
+    Height = 268
+    Align = alClient
+    Constraints.MinHeight = 268
     ParentColor = True
     TabOrder = 1
     object Label3: TLabel
       Left = 1
       Top = 1
-      Width = 215
+      Width = 217
       Height = 13
       Align = alTop
       Alignment = taCenter
@@ -199,7 +200,7 @@ object fraAIMap: TfraAIMap
     end
     object ebModeAppend: TExtBtn
       Left = 6
-      Top = 69
+      Top = 215
       Width = 46
       Height = 15
       Align = alNone
@@ -220,7 +221,7 @@ object fraAIMap: TfraAIMap
     end
     object ebModeRemove: TExtBtn
       Left = 6
-      Top = 84
+      Top = 230
       Width = 46
       Height = 15
       Align = alNone
@@ -241,7 +242,7 @@ object fraAIMap: TfraAIMap
     object ebUp: TExtBtn
       Tag = 1
       Left = 82
-      Top = 69
+      Top = 215
       Width = 24
       Height = 15
       Align = alNone
@@ -269,7 +270,7 @@ object fraAIMap: TfraAIMap
     object ebDown: TExtBtn
       Tag = 3
       Left = 82
-      Top = 99
+      Top = 245
       Width = 24
       Height = 15
       Align = alNone
@@ -296,7 +297,7 @@ object fraAIMap: TfraAIMap
     end
     object ebLeft: TExtBtn
       Left = 58
-      Top = 84
+      Top = 230
       Width = 24
       Height = 15
       Align = alNone
@@ -324,7 +325,7 @@ object fraAIMap: TfraAIMap
     object ebRight: TExtBtn
       Tag = 2
       Left = 106
-      Top = 84
+      Top = 230
       Width = 24
       Height = 15
       Align = alNone
@@ -352,7 +353,7 @@ object fraAIMap: TfraAIMap
     object ebFull: TExtBtn
       Tag = 4
       Left = 82
-      Top = 84
+      Top = 230
       Width = 24
       Height = 15
       Align = alNone
@@ -387,7 +388,7 @@ object fraAIMap: TfraAIMap
     end
     object ebModeInvert: TExtBtn
       Left = 6
-      Top = 99
+      Top = 245
       Width = 46
       Height = 15
       Align = alNone
@@ -407,7 +408,7 @@ object fraAIMap: TfraAIMap
     end
     object Label5: TLabel
       Left = 5
-      Top = 53
+      Top = 199
       Width = 78
       Height = 13
       Caption = 'Link Commands:'
@@ -444,7 +445,7 @@ object fraAIMap: TfraAIMap
     object ebAutoLink: TExtBtn
       Left = 2
       Top = 31
-      Width = 215
+      Width = 213
       Height = 15
       Align = alNone
       AllowAllUp = True
@@ -473,7 +474,7 @@ object fraAIMap: TfraAIMap
     end
     object ExtBtn1: TExtBtn
       Left = 137
-      Top = 69
+      Top = 215
       Width = 77
       Height = 15
       Align = alNone
@@ -494,7 +495,7 @@ object fraAIMap: TfraAIMap
     object ExtBtn5: TExtBtn
       Tag = 1
       Left = 137
-      Top = 84
+      Top = 230
       Width = 77
       Height = 15
       Align = alNone
@@ -515,7 +516,7 @@ object fraAIMap: TfraAIMap
     object ExtBtn3: TExtBtn
       Tag = 2
       Left = 137
-      Top = 99
+      Top = 245
       Width = 77
       Height = 15
       Align = alNone
@@ -532,6 +533,90 @@ object fraAIMap: TfraAIMap
       ParentFont = False
       FlatAlwaysEdge = True
       OnClick = ebSelLinkClick
+    end
+    object btnIgnoreMaterialClear: TExtBtn
+      Left = 171
+      Top = 81
+      Width = 37
+      Height = 14
+      Hint = 'Clear snap list'
+      Align = alNone
+      BevelShow = False
+      HotTrack = True
+      HotColor = 15790320
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      Glyph.Data = {
+        56010000424D560100000000000036000000280000000A000000090000000100
+        18000000000020010000120B0000120B00000000000000000000C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D40000C8D0D4000000
+        000000C8D0D4C8D0D4C8D0D4C8D0D4000000000000C8D0D40000C8D0D4C8D0D4
+        000000000000C8D0D4C8D0D4000000000000C8D0D4C8D0D40000C8D0D4C8D0D4
+        C8D0D4000000000000000000000000C8D0D4C8D0D4C8D0D40000C8D0D4C8D0D4
+        C8D0D4C8D0D4000000000000C8D0D4C8D0D4C8D0D4C8D0D40000C8D0D4C8D0D4
+        C8D0D4000000000000000000000000C8D0D4C8D0D4C8D0D40000C8D0D4C8D0D4
+        000000000000C8D0D4C8D0D4000000000000C8D0D4C8D0D40000C8D0D4000000
+        000000C8D0D4C8D0D4C8D0D4C8D0D4000000000000C8D0D40000C8D0D4C8D0D4
+        C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D4C8D0D40000}
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      OnClick = btnIgnoreMaterialClearClick
+    end
+    object Label1: TLabel
+      Left = 1
+      Top = 65
+      Width = 208
+      Height = 13
+      Alignment = taCenter
+      AutoSize = False
+      Caption = 'Ignore materials'
+      Color = clGray
+      ParentColor = False
+      OnClick = ExpandClick
+    end
+    object btnAddIgnoredMaterial: TExtBtn
+      Left = 11
+      Top = 81
+      Width = 30
+      Height = 14
+      Hint = 'add material to ignore list'
+      Align = alNone
+      BevelShow = False
+      HotTrack = True
+      HotColor = 15790320
+      Caption = 'Add'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      OnClick = btnAddIgnoredMaterialClick
+    end
+    object lbIgnoreMaterialsList: TListBox
+      Left = 4
+      Top = 98
+      Width = 210
+      Height = 87
+      BorderStyle = bsNone
+      Color = clGray
+      ExtendedSelect = False
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ItemHeight = 13
+      MultiSelect = True
+      ParentFont = False
+      Sorted = True
+      TabOrder = 0
     end
   end
   object fsStorage: TFormStorage
