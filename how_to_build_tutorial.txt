@@ -14,14 +14,14 @@ Service Packs - Visual Studio 2005 SP1 Update for Windows Vista - VS80sp1-KB9322
 Установить Borland C++ Builder 6
 https://rutracker.org/forum/viewtopic.php?t=3638325
 
-
-Скачать: https://drive.google.com/file/d/1WTLXUqOPPrcHTv9yhl75k57uSU-dYxdQ/view?usp=sharing
+Исходный код игры: S.T.A.L.K.E.R. Тень Чернобыля (1.0007rc1) (*1)
+Скачать: https://drive.google.com/file/d/1GVTzdiMNVhKK-6C831J_GMhfeEVmNyI4/view?usp=sharing
 
 и распаковать архив xray_engine.rar, как пример: D:\xray_engine
 
-Скопировать из D:\xray_engine\stalker\for_borland\, папку Borland в C:\Program Files (x86) или туда, куда установлен борланд.
+Скопировать из D:\xray_engine\sdk\for_borland\, папку Borland в C:\Program Files (x86) или туда, куда установлен борланд.
 
-Скопировать из D:\xray_engine\stalker\SDK\components\ElPack\bpl
+Скопировать из D:\xray_engine\sdk\components\ElPack\bpl
 ...
 elpackB6.BPL
 elpkdbB6.BPL
@@ -29,36 +29,42 @@ elpproB6.BPL
 ...
 в windows\SysWOW64 или в windows\system32 (если x86)
 
+***
+
+*1 - первоисточник: http://files.xray-engine.org/files/xray_engine/src/soc_cs/
+Архив: stk-src-tags.7z
+Папка: stalker patch 1.0004 (30.07.2007)
+
 *********************************************************************
 
-Смонтировать диски: D:\xray_engine\xray_src_disks_mount.cmd
+Смонтировать диски: D:\xray_engine\disk_i_x_mount.cmd
 
 Запустить Visual Studio, в Tools -> Options -> Projects and Solutions -> VC++ Directories -> Show directories for:
 
 добавить в include files:
 
-D:\xray_engine\stalker\SDK\boost_1_30_0
-D:\xray_engine\stalker\SDK\dxsdk9\include
-D:\xray_engine\stalker\SDK\eax\include
-D:\xray_engine\stalker\SDK\freeimage
-D:\xray_engine\stalker\SDK\loki
-D:\xray_engine\stalker\SDK\luabind\luabind
-D:\xray_engine\stalker\SDK\magicsoftware\sdk\include
-D:\xray_engine\stalker\SDK\openal\include
-D:\xray_engine\stalker\SDK\xiph\include
-D:\xray_engine\xray-svn-trunk\xrCore
-D:\xray_engine\xray-svn-trunk\xrLua\src
+X:\sdk\boost_1_30_0
+X:\sdk\dxsdk9\include
+X:\sdk\eax\include
+X:\sdk\FreeImage
+X:\sdk\loki
+X:\sdk\luabind\luabind
+X:\sdk\MagicSoftware\Sdk\Include
+X:\sdk\OpenAL\Include
+X:\sdk\Xiph\Include
+X:\xray-svn-trunk\xrCore
+X:\xray-svn-trunk\xrLua\src
 
 
 добавить в library files:
 
-D:\xray_engine\stalker\SDK\dxsdk9\lib
-D:\xray_engine\stalker\SDK\eax
-D:\xray_engine\stalker\SDK\freeimage
-D:\xray_engine\stalker\SDK\magicsoftware\sdk\library\releasedll
-D:\xray_engine\stalker\SDK\openal\libs
-D:\xray_engine\stalker\SDK\xiph\libs
-D:\xray_engine\libraries
+X:\sdk\dxsdk9\lib
+X:\sdk\eax
+X:\sdk\FreeImage
+X:\sdk\MagicSoftware\Sdk\Library\ReleaseDLL
+X:\sdk\OpenAL\libs
+X:\sdk\Xiph\Libs
+X:\libraries
 
 *********************************************************************
 
@@ -79,23 +85,23 @@ xrSE_Factory
 
 добавить:
 
-AL_DIR = D:\xray_engine\stalker\SDK\openal
-COMPONENTS = D:\xray_engine\stalker\SDK\components
+AL_DIR = D:\xray_engine\sdk\openal
+COMPONENTS = D:\xray_engine\sdk\components
 CORE_DIR = D:\xray_engine\xray-svn-trunk\xrCore
-DXSDK9_DIR = D:\xray_engine\stalker\SDK\dxsdk9\include
-EAX_DIR = D:\xray_engine\stalker\SDK\eax
+DXSDK9_DIR = D:\xray_engine\sdk\dxsdk9\include
+EAX_DIR = D:\xray_engine\sdk\eax
 ETOOLS_DIR = D:\xray_engine\xray-svn-trunk\ETools
-MAGIC_SW_DIR = D:\xray_engine\stalker\SDK\magicsoftware\freemagic\include
-SDK_DIR = D:\xray_engine\stalker\SDK
-XIPH_DIR = D:\xray_engine\stalker\SDK\xiph\include
+MAGIC_SW_DIR = D:\xray_engine\sdk\magicsoftware\freemagic\include
+SDK_DIR = D:\xray_engine\sdk
+XIPH_DIR = D:\xray_engine\sdk\xiph\include
 
 
 в меню Component -> Install Packages -> Add...
 
-D:\xray_engine\stalker\SDK\components\AlexMX\editor.bpl
-D:\xray_engine\stalker\SDK\components\ElPack\Code\dceldbB6.bpl
-D:\xray_engine\stalker\SDK\components\ElPack\Code\dcelppB6.bpl
-D:\xray_engine\stalker\SDK\components\ElPack\Code\dclelpB6.bpl
+D:\xray_engine\sdk\components\AlexMX\editor.bpl
+D:\xray_engine\sdk\components\ElPack\Code\dceldbB6.bpl
+D:\xray_engine\sdk\components\ElPack\Code\dcelppB6.bpl
+D:\xray_engine\sdk\components\ElPack\Code\dclelpB6.bpl
 
 *********************************************************************
 
@@ -112,4 +118,3 @@ ActorEditor
 ParticleEditor
 ShaderEditor
 LevelEditor
-
